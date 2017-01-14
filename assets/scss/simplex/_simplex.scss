@@ -1,0 +1,132 @@
+//
+
+p code,
+li code {
+  font-size: 100%;
+  color: $black;
+  background-color: $gray10;
+}
+
+
+// link utility classes - should not be available to authors
+
+.c-link                 { color: $link-color; }
+.c-link-visited         { color: $link-color-visited; }
+.c-link-hover           { color: $link-color-hover; }
+.c-link-active          { color: $link-color-active; }
+
+
+// example
+
+.example {
+  border: 1px solid $gray15;
+  margin: .5em 0;
+  padding: 1em;
+}
+
+.example-heading {
+  color: $base-text-color;
+  font-size: $font16;
+  text-transform: uppercase;
+}
+
+
+// color
+
+.color-sample {
+  border: 2px solid $gray15;
+  margin: 0 0 1em;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+
+// sidebar
+
+.list-sidebar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+}
+
+.list-sidebar a {
+  display: block;
+  padding: .5em;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+}
+
+.list-sidebar b {
+  display: block;
+  padding: .5em;
+  border-bottom: 1px solid #ddd;
+  background: $gray5;
+}
+
+.list-sidebar a:link,
+.list-sidebar a:visited {
+  color: $link-color;
+}
+
+.list-sidebar a:focus,
+.list-sidebar a:hover {
+  color: $black;
+  background: $gray5;
+}
+
+
+// A visual representation of each breakpoint.
+
+body:before {
+  position: fixed;
+  z-index: 2;
+  top: 1px;
+  right: 1px;
+  border: 2px solid $white;
+  border-radius: 5px;
+  padding: .2em .5em;
+  color: $white;
+  box-shadow: 0 3px 3px rgba(0,0,0,.4);
+  font-size: 1.2em;
+}
+
+
+// xs small only
+
+@media (max-width: $screen-xs-max) {
+  body:before {
+    content: 'XS';
+    background: red;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  body:before {
+    content: 'SM';
+    background: green;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  body:before {
+    content: 'MD';
+    background: blue;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  body:before {
+    content: 'LG';
+    background: black;
+  }
+}

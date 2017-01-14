@@ -1,0 +1,40 @@
+.textarea {
+  margin-bottom: 1em;
+}
+
+.textarea__control {
+  font-size: $font16;
+}
+
+.textarea__content {
+  display: block;
+  padding-bottom: .1em;
+}
+
+
+// disabled
+
+.textarea--disabled .textarea__content {
+  color: $disabled-color;
+}
+
+
+// invalid
+
+.isInvalid .textarea__control {
+  border: 1px solid $isinvalid-color;
+}
+
+.isInvalid .textarea__content {
+  color: $isinvalid-color;
+}
+
+
+// required
+
+.textarea--required .textarea__content:after {
+  display: inline-block;
+  padding: 0 0 0 .2em;
+  content: '*';
+  color: $required-color;
+}

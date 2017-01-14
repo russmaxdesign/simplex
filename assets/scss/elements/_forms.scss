@@ -1,0 +1,152 @@
+// form
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+
+// fieldset
+
+fieldset {
+  min-width: 0;
+  border: 0;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+
+// legend
+
+legend {
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  color: $heading-color;
+  font-family: $base-font-family;
+  font-size: $font18;
+  line-height: 1.1;
+}
+
+
+// label
+
+label {
+  display: block;
+  max-width: 100%;
+}
+
+
+// inputs, selects and textarea
+
+select,
+textarea,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'] {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  border: 1px solid $input-border-color;
+  border-radius: $form-border-radius;
+  margin: 0;
+  padding: $input-padding;
+  color: $input-color;
+  background-color: $white;
+  background-image: none;
+  font: inherit;
+  font-size: $font16;
+  line-height: $input-height;
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    opacity: 1;
+    color: $disabled-color;
+    background-color: $disabled-background;
+  }
+}
+
+
+// buttons, selects and others
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+
+  -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+// checkbox and radio buttons
+
+input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+  }
+}
+
+
+// textarea
+
+textarea {
+  overflow: auto;
+  height: auto;
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+
+// placeholders
+
+::-webkit-input-placeholder,
+:-ms-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  opacity: 1;
+  color: $gray35;
+  font-size: $font16;
+  text-indent: 20px;
+}

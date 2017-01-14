@@ -1,0 +1,63 @@
+// primary button
+
+$button-primary-color:                  $white;
+$button-primary-background:             $link-color;
+$button-primary-border:                 $link-color;
+$button-primary-hover-color:            $white;
+$button-primary-hover-background:       $link-color-hover;
+$button-primary-hover-border:           $link-color-hover;
+$button-primary-active-color:           $white;
+$button-primary-active-background:      $link-color-active;
+$button-primary-active-border:          $link-color-active;
+
+
+// secondary button
+
+$button-secondary-color:                $link-color;
+$button-secondary-background:           $white;
+$button-secondary-border:               $link-color;
+$button-secondary-hover-color:          $link-color-hover;
+$button-secondary-hover-background:     $white;
+$button-secondary-hover-border:         $link-color-hover;
+$button-secondary-active-color:         $link-color-active;
+$button-secondary-active-background:    $white;
+$button-secondary-active-border:        $link-color-active;
+
+
+// success button
+
+$button-success-color:                  $white;
+$button-success-background:             $green;
+$button-success-border:                 darken($button-success-background, 3%);
+$button-success-hover-color:            $white;
+$button-success-hover-background:       darken($button-success-background, 10%);
+$button-success-hover-border:           darken($button-success-background, 13%);
+$button-success-active-color:           $white;
+$button-success-active-background:      $link-color-active;
+$button-success-active-border:          $link-color-active;
+
+
+// warning button
+
+$button-warning-color:                  $white;
+$button-warning-background:             $red;
+$button-warning-border:                 darken($button-warning-background, 3%);
+$button-warning-hover-color:            $white;
+$button-warning-hover-background:       darken($button-warning-background, 10%);
+$button-warning-hover-border:           darken($button-warning-background, 13%);
+$button-warning-active-color:           $white;
+$button-warning-active-background:      $link-color-active;
+$button-warning-active-border:          $link-color-active;
+
+
+// link button
+
+$button-link-color:                     $link-color;
+$button-link-background:                transparent;
+$button-link-border:                    transparent;
+$button-link-hover-color:               $link-color-hover;
+$button-link-hover-background:          transparent;
+$button-link-hover-border:              transparent;
+$button-link-active-color:              $link-color-active;
+$button-link-active-background:         transparent;
+$button-link-active-border:             transparent;

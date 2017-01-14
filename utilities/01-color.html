@@ -1,0 +1,184 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Color utility classes - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Color utility classes - usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+    <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><b>utility classes</b></li>
+        <li><a href="../modules/index.html">Modules</a></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary pad-y-3">
+    <div class="container" id="content">
+      <h1 class="c-white mar-y-0">Utility classes</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="pad-y-3 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-sidebar">
+            <li><a href="index.html">Introduction</a></li>
+            <li><b>Color</b></li>
+            <li><a href="02-background.html">Backgrounds</a></li>
+            <li><a href="03-font.html">Font</a></li>
+            <li><a href="04-hidden.html">Hidden</a></li>
+            <li><a href="05-visible.html">Visible</a></li>
+            <li><a href="06-float.html">Float</a></li>
+            <li><a href="07-border.html">Border</a></li>
+            <li><a href="08-text-align.html">Text-align</a></li>
+            <li><a href="09-margin.html">Margin</a></li>
+            <li><a href="10-padding.html">Padding</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="mar-t-0">Color utility classes</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>Color utility classes allow authors to apply colors to any element, including extending modules.</p>
+          <hr>
+
+          <h5 class="example-heading">Usage</h5>
+          <p>Primary and secondary colors can be used for special headings and feature fonts. The red and green colors can be used for warning and success. The gray color utility classes allow authors to soften colors slightly, while still maintaining acceptable color contrast levels.</p>
+          <hr>
+
+          <h5 class="example-heading">Primary and secondary examples</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample c-primary">c-primary<br>5.54:1 = PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-secondary">c-secondary<br>5.62:1 - PASS</div>
+            </div>
+          </div>
+          <h5 class="example-heading">General color examples</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample c-black">c-black<br>21.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-white bg-black">c-white<br>21.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-red">c-red<br>6.08:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-green">c-green<br>5.14:1 - PASS</div>
+            </div>
+          </div>
+          <h5 class="example-heading">Gray color examples</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample c-gray90">c-gray90<br>17.40:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray85">c-gray85<br>15.13:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray80">c-gray80<br>12.63:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray75">c-gray75<br>10.37:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray70">c-gray70<br>7.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray65">c-gray65<br>5.74:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample c-gray60">c-gray60<br>4.74:1 - PASS</div>
+            </div>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="c-primary"&gt;c-primary&lt;/div&gt;
+&lt;div class="c-secondary"&gt;c-secondary&lt;/div&gt;
+
+&lt;div class="c-black"&gt;c-black&lt;/div&gt;
+&lt;div class="c-white"&gt;c-white&lt;/div&gt;
+&lt;div class="c-red"&gt;c-red&lt;/div&gt;
+&lt;div class="c-green"&gt;c-green&lt;/div&gt;
+
+&lt;div class="c-link"&gt;c-link&lt;/div&gt;
+&lt;div class="c-link-visited"&gt;c-link-visited&lt;/div&gt;
+&lt;div class="c-link-hover"&gt;c-link-hover&lt;/div&gt;
+&lt;div class="c-link-active"&gt;c-link-active&lt;/div&gt;
+
+&lt;div class="c-gray90"&gt;c-gray90&lt;/div&gt;
+&lt;div class="c-gray85"&gt;c-gray85&lt;/div&gt;
+&lt;div class="c-gray80"&gt;c-gray80&lt;/div&gt;
+&lt;div class="c-gray75"&gt;c-gray75&lt;/div&gt;
+&lt;div class="c-gray70"&gt;c-gray70&lt;/div&gt;
+&lt;div class="c-gray65"&gt;c-gray65&lt;/div&gt;
+&lt;div class="c-gray60"&gt;c-gray60&lt;/div&gt;
+</code></pre>
+          <hr>
+
+          <h5 class="example-heading">Accessibility</h5>
+          <p>Color combinations should only be used as presented to maintain color contrast ratios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

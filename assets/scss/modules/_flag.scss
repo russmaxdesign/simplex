@@ -1,0 +1,33 @@
+.flag {
+  display: table;
+  width: 100%;
+}
+
+.flag__body {
+  width: 100%;
+}
+
+.flag__feature,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flag--bottom .flag__feature,
+.flag--bottom .flag__body {
+  vertical-align: bottom;
+}
+
+.flag__feature {
+  padding-right: 10px;
+}
+
+.flag__feature > img {
+  display: block;
+  max-width: none;
+}
+
+.flag--rev .flag__feature {
+  padding-right: 0;
+  padding-left: 10px;
+}

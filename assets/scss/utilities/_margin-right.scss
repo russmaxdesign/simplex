@@ -1,0 +1,51 @@
+// all
+
+.mar-r-0 { margin-right: 0; }
+.mar-r-h { margin-right: .5em; }
+.mar-r-1 { margin-right: 1em; }
+.mar-r-2 { margin-right: 2em; }
+.mar-r-3 { margin-right: 3em; }
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .mar-r-0-xs { margin-right: 0; }
+  .mar-r-h-xs { margin-right: .5em; }
+  .mar-r-1-xs { margin-right: 1em; }
+  .mar-r-2-xs { margin-right: 2em; }
+  .mar-r-3-xs { margin-right: 3em; }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .mar-r-0-sm { margin-right: 0; }
+  .mar-r-h-sm { margin-right: .5em; }
+  .mar-r-1-sm { margin-right: 1em; }
+  .mar-r-2-sm { margin-right: 2em; }
+  .mar-r-3-sm { margin-right: 3em; }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .mar-r-0-md { margin-right: 0; }
+  .mar-r-h-md { margin-right: .5em; }
+  .mar-r-1-md { margin-right: 1em; }
+  .mar-r-2-md { margin-right: 2em; }
+  .mar-r-3-md { margin-right: 3em; }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .mar-r-0-lg { margin-right: 0; }
+  .mar-r-h-lg { margin-right: .5em; }
+  .mar-r-1-lg { margin-right: 1em; }
+  .mar-r-2-lg { margin-right: 2em; }
+  .mar-r-3-lg { margin-right: 3em; }
+}

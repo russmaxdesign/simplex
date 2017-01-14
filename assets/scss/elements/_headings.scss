@@ -1,0 +1,162 @@
+// all
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  color: $heading-color;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: $gray80;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+}
+
+// individual heading
+
+h1,
+.h1 {
+  margin: $heading1-margin;
+  font-size: $heading1-size;
+}
+
+h2,
+.h2 {
+  margin: $heading2-margin;
+  font-size: $heading2-size;
+}
+
+h3,
+.h3 {
+  margin: $heading3-margin;
+  font-size: $heading3-size;
+}
+
+h4,
+.h4 {
+  margin: $heading4-margin;
+  font-size: $heading4-size;
+}
+
+h5,
+.h5 {
+  margin: $heading5-margin;
+  font-size: $heading5-size;
+}
+
+h6,
+.h6 {
+  margin: $heading6-margin;
+  font-size: $heading6-size;
+}
+
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  h1,
+  .h1 {
+    font-size: $heading1-size-sm;
+  }
+
+  h2,
+  .h2 {
+    font-size: $heading2-size-sm;
+  }
+
+  h3,
+  .h3 {
+    font-size: $heading3-size-sm;
+  }
+
+  h4,
+  .h4 {
+    font-size: $heading4-size-sm;
+  }
+
+  h5,
+  .h5 {
+    font-size: $heading5-size-sm;
+  }
+
+  h6,
+  .h6 {
+    font-size: $heading6-size-sm;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  h1,
+  .h1 {
+    font-size: $heading1-size-md;
+  }
+
+  h2,
+  .h2 {
+    font-size: $heading2-size-md;
+  }
+
+  h3,
+  .h3 {
+    font-size: $heading3-size-md;
+  }
+
+  h4,
+  .h4 {
+    font-size: $heading4-size-md;
+  }
+
+  h5,
+  .h5 {
+    font-size: $heading5-size-md;
+  }
+
+  h6,
+  .h6 {
+    font-size: $heading6-size-md;
+  }
+}
+
+
+@media (min-width: $screen-lg-min) {
+  h1,
+  .h1 {
+    font-size: $heading1-size-lg;
+  }
+
+  h2,
+  .h2 {
+    font-size: $heading2-size-lg;
+  }
+
+  h3,
+  .h3 {
+    font-size: $heading3-size-lg;
+  }
+
+  h4,
+  .h4 {
+    font-size: $heading4-size-lg;
+  }
+
+  h5,
+  .h5 {
+    font-size: $heading5-size-lg;
+  }
+
+  h6,
+  .h6 {
+    font-size: $heading6-size-lg;
+  }
+}

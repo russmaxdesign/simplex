@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Radio buttons - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Radio button module usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><a href="../utilities/index.html">Utility classes</a></li>
+        <li><b>Modules</b></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary pad-y-3">
+    <div class="container" id="content">
+      <h1 class="c-white mar-y-0">Modules</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="pad-y-3 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-sidebar">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="01-button.html">Button</a></li>
+            <li><a href="02-link-button.html">Link-button</a></li>
+            <li><a href="03-input.html">Input</a></li>
+            <li><a href="04-checkbox.html">Checkbox</a></li>
+            <li><b>Radio</b></li>
+            <li><a href="06-select.html">Select</a></li>
+            <li><a href="07-textarea.html">Textarea</a></li>
+            <li><a href="08-container.html">Container</a></li>
+            <li><a href="09-lists.html">List</a></li>
+            <li><a href="10-table.html">Table</a></li>
+            <li><a href="11-media.html">Media</a></li>
+            <li><a href="12-flag.html">Flag</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="mar-t-0">Radio</h2>
+          <h5 class="example-heading">Usage</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          nisi officiis necessitatibus sapiente, expedita neque nihil sunt, vel
+          debitis tempora quaerat rem, amet quas dolor. Neque earum necessitatibus
+          nihil repudiandae?</p>
+          <hr>
+
+          <h5 class="example-heading">Example</h5>
+          <div class="example">
+            <div class="input-radio">
+              <label class="input-radio__label" for="example1">
+                <input class="input-radio__control" type="radio" name="example2" id="example1">
+                <span class="input-radio__content">Radio button</span>
+              </label>
+            </div>
+            <div class="input-radio input-radio--required">
+              <label class="input-radio__label" for="example2">
+                <input class="input-radio__control" type="radio" name="example2" id="example2">
+                <span class="input-radio__content">Required radio button</span>
+              </label>
+            </div>
+            <div class="input-radio isInvalid">
+              <label class="input-radio__label" for="example3">
+                <input class="input-radio__control" type="radio" name="example2" id="example3">
+                <span class="input-radio__content">Invalid radio button</span>
+              </label>
+            </div>
+            <div class="input-radio input-radio--disabled">
+              <label class="input-radio__label" for="example4">
+                <input class="input-radio__control" type="radio" name="example2" id="example4">
+                <span class="input-radio__content">Disabled radio button</span>
+              </label>
+            </div>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Radio button --&gt;
+&lt;div class="input-radio"&gt;
+  &lt;label class="input-radio__label" for="example1"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example1"&gt;
+    &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Required radio button --&gt;
+&lt;div class="input-radio input-radio--required"&gt;
+  &lt;label class="input-radio__label" for="example2"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example2" required&gt;
+    &lt;span class="input-radio__content"&gt;Required radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Invalid radio button --&gt;
+&lt;div class="input-radio isInvalid"&gt;
+  &lt;label class="input-radio__label" for="example3"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example3"&gt;
+    &lt;span class="input-radio__content"&gt;Invalid radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled radio button --&gt;
+&lt;div class="input-radio input-radio--disabled"&gt;
+  &lt;label class="input-radio__label" for="example4"&gt;
+    &lt;input class="input-radio__control" type="radio" name="example2" id="example4" disabled&gt;
+    &lt;span class="input-radio__content"&gt;Disabled radio button&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

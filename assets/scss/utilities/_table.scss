@@ -1,0 +1,24 @@
+.table-striped {
+  tbody > tr:nth-of-type(odd) {
+    background: $gray5;
+  }
+}
+
+.table-hover {
+  tbody > tr:hover {
+    background: $gray5;
+  }
+}
+
+.table-border {
+
+  th,
+  td {
+    border: 1px solid $gray15;
+  }
+
+  th {
+    border-bottom-width: 2px;
+  }
+
+}

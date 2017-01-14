@@ -1,0 +1,51 @@
+// all
+
+.mar-x-0 { margin-left: 0; margin-right: 0; }
+.mar-x-h { margin-left: .5em;  margin-right: .5em;  }
+.mar-x-1 { margin-left: 1em;  margin-right: 1em;  }
+.mar-x-2 { margin-left: 2em;  margin-right: 2em;  }
+.mar-x-3 { margin-left: 3em;  margin-right: 3em;  }
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .mar-x-0-xs { margin-left: 0; margin-right: 0; }
+  .mar-x-h-xs { margin-left: .5em;  margin-right: .5em;  }
+  .mar-x-1-xs { margin-left: 1em;  margin-right: 1em;  }
+  .mar-x-2-xs { margin-left: 2em;  margin-right: 2em;  }
+  .mar-x-3-xs { margin-left: 3em;  margin-right: 3em;  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .mar-x-0-sm { margin-left: 0; margin-right: 0; }
+  .mar-x-h-sm { margin-left: .5em;  margin-right: .5em;  }
+  .mar-x-1-sm { margin-left: 1em;  margin-right: 1em;  }
+  .mar-x-2-sm { margin-left: 2em;  margin-right: 2em;  }
+  .mar-x-3-sm { margin-left: 3em;  margin-right: 3em;  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .mar-x-0-md { margin-left: 0; margin-right: 0; }
+  .mar-x-h-md { margin-left: .5em;  margin-right: .5em;  }
+  .mar-x-1-md { margin-left: 1em;  margin-right: 1em;  }
+  .mar-x-2-md { margin-left: 2em;  margin-right: 2em;  }
+  .mar-x-3-md { margin-left: 3em;  margin-right: 3em;  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .mar-x-0-lg { margin-left: 0; margin-right: 0; }
+  .mar-x-h-lg { margin-left: .5em;  margin-right: .5em;  }
+  .mar-x-1-lg { margin-left: 1em;  margin-right: 1em;  }
+  .mar-x-2-lg { margin-left: 2em;  margin-right: 2em;  }
+  .mar-x-3-lg { margin-left: 3em;  margin-right: 3em;  }
+}

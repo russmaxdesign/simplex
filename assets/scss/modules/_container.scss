@@ -1,0 +1,58 @@
+
+// xs
+
+.container,
+.container-medium,
+.container-narrow {
+  padding-right: $page-gutter-xs;
+  padding-left: $page-gutter-xs;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: $container-width;
+}
+
+.container-medium {
+  max-width: $container-width-medium;
+}
+
+.container-narrow {
+  max-width: $container-width-narrow;
+}
+
+// sm
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .container,
+  .container-medium,
+  .container-narrow {
+    padding-right: $page-gutter-sm;
+    padding-left: $page-gutter-sm;
+  }
+}
+
+
+// md
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .container,
+  .container-medium,
+  .container-narrow {
+    padding-right: $page-gutter-md;
+    padding-left: $page-gutter-md;
+  }
+}
+
+
+// lg
+
+@media (min-width: $screen-lg-min) {
+  .container,
+  .container-medium,
+  .container-narrow {
+    padding-right: $page-gutter-lg;
+    padding-left: $page-gutter-lg;
+  }
+}

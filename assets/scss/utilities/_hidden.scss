@@ -1,0 +1,41 @@
+// all
+
+.hidden {
+  @include hidden;
+}
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .hidden-lg {
+    display: none !important;
+  }
+}

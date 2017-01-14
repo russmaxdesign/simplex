@@ -1,0 +1,18 @@
+html {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  overflow-y: scroll;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+/**
+ *
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ *
+ */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

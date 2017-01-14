@@ -1,0 +1,320 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Background-color utility classes - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Background-color utility classes - usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+    <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><b>utility classes</b></li>
+        <li><a href="../modules/index.html">Modules</a></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary pad-y-3">
+    <div class="container" id="content">
+      <h1 class="c-white mar-y-0">Utility classes</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="pad-y-3 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-sidebar">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="01-color.html">Color</a></li>
+            <li><b>Backgrounds</b></li>
+            <li><a href="03-font.html">Font</a></li>
+            <li><a href="04-hidden.html">Hidden</a></li>
+            <li><a href="05-visible.html">Visible</a></li>
+            <li><a href="06-float.html">Float</a></li>
+            <li><a href="07-border.html">Border</a></li>
+            <li><a href="08-text-align.html">Text-align</a></li>
+            <li><a href="09-margin.html">Margin</a></li>
+            <li><a href="10-padding.html">Padding</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="mar-t-0">Background-color utility classes</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>Background-color utility classes allow authors to apply colors to any element, including extending modules.</p>
+          <hr>
+
+          <h5 class="example-heading">Usage</h5>
+          <p>Tints of the primary and secondary color can be used as background for feature panels or colored rows.</p>
+          <hr>
+
+          <h5 class="example-heading">Primary example</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary c-white">bg-primary<br>5.54:1 = PASS</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary90">bg-primary90:<br>6.19:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary85">bg-primary85:<br>7.69:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary80">bg-primary80<br>9.39:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary75">bg-primary75<br>10.03:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary70">bg-primary70<br>10.76:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary65">bg-primary65<br>11.60:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary60">bg-primary60<br>12.55:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary55">bg-primary55<br>13.63:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary50">bg-primary50<br>14.83:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary45">bg-primary45<br>16.18:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-primary40">bg-primary40<br>17.65:1 - PASS</div>
+            </div>
+          </div>
+          <h5 class="example-heading">Secondary example</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary c-white">bg-secondary<br>5.62:1 - PASS</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary90">bg-secondary90<br>5.53:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary85">bg-secondary85<br>5.78:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary80">bg-secondary80<br>6.17:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary75">bg-secondary75<br>6.84:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary70">bg-secondary70<br>7.76:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary65">bg-secondary65<br>9.08:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary60">bg-secondary60<br>10.62:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary55">bg-secondary55<br>12.62:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary50">bg-secondary50<br>14.93:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary45">bg-secondary45<br>17.74:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-secondary40">bg-secondary40<br>20.87:1 - PASS</div>
+            </div>
+          </div>
+          <h5 class="example-heading">General color examples</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-black c-white">bg-black<br>21.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-white">bg-white<br>21.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-red c-white">bg-red<br>6.08:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-green c-white">bg-green<br>5.14:1 - PASS</div>
+            </div>
+          </div>
+          <h5 class="example-heading">Gray examples</h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray90 c-white">bg-gray90<br>17.40:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray85 c-white">bg-gray85<br>15.13:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray80 c-white">bg-gray80<br>12.63:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray75 c-white">bg-gray75<br>10.37:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray70 c-white">bg-gray70<br>8.45:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray65 c-white">bg-gray65<br>7.00:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray60 c-white">bg-gray60<br>5.74:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray55 c-white">bg-gray55<br>4.74:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray50">bg-gray50<br>5.32:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray45">bg-gray45<br>6.25:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray40">bg-gray40<br>7.37:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray35">bg-gray35<br>8.63:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray30">bg-gray30<br>9.90:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray25">bg-gray25<br>11.42:1 - PASS</div>
+            </div>
+           <div class="col-sm-3">
+              <div class="color-sample bg-gray20">bg-gray20<br>13.08:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray15">bg-gray15<br>14.88:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray10">bg-gray10<br>16.67:1 - PASS</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="color-sample bg-gray5">bg-gray5<br>18.76:1 - PASS</div>
+            </div>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="bg-primary"&gt;bg-primary&lt;/div&gt;
+&lt;div class="bg-primary90"&gt;bg-primary90&lt;/div&gt;
+&lt;div class="bg-primary85"&gt;bg-primary85&lt;/div&gt;
+&lt;div class="bg-primary80"&gt;bg-primary80&lt;/div&gt;
+&lt;div class="bg-primary75"&gt;bg-primary75&lt;/div&gt;
+&lt;div class="bg-primary70"&gt;bg-primary70&lt;/div&gt;
+&lt;div class="bg-primary65"&gt;bg-primary65&lt;/div&gt;
+&lt;div class="bg-primary60"&gt;bg-primary60&lt;/div&gt;
+&lt;div class="bg-primary55"&gt;bg-primary55&lt;/div&gt;
+&lt;div class="bg-primary50"&gt;bg-primary50&lt;/div&gt;
+&lt;div class="bg-primary45"&gt;bg-primary45&lt;/div&gt;
+&lt;div class="bg-primary40"&gt;bg-primary40&lt;/div&gt;
+
+&lt;div class="bg-secondary"&gt;bg-secondary&lt;/div&gt;
+&lt;div class="bg-secondary90"&gt;bg-secondary90&lt;/div&gt;
+&lt;div class="bg-secondary85"&gt;bg-secondary85&lt;/div&gt;
+&lt;div class="bg-secondary80"&gt;bg-secondary80&lt;/div&gt;
+&lt;div class="bg-secondary75"&gt;bg-secondary75&lt;/div&gt;
+&lt;div class="bg-secondary70"&gt;bg-secondary70&lt;/div&gt;
+&lt;div class="bg-secondary65"&gt;bg-secondary65&lt;/div&gt;
+&lt;div class="bg-secondary60"&gt;bg-secondary60&lt;/div&gt;
+&lt;div class="bg-secondary55"&gt;bg-secondary55&lt;/div&gt;
+&lt;div class="bg-secondary50"&gt;bg-secondary50&lt;/div&gt;
+&lt;div class="bg-secondary45"&gt;bg-secondary45&lt;/div&gt;
+&lt;div class="bg-secondary40"&gt;bg-secondary40&lt;/div&gt;
+
+&lt;div class="bg-black"&gt;bg-black&lt;/div&gt;
+&lt;div class="bg-white"&gt;bg-white&lt;/div&gt;
+&lt;div class="bg-red"&gt;bg-red&lt;/div&gt;
+&lt;div class="bg-green"&gt;bg-green&lt;/div&gt;
+
+&lt;div class="bg-gray95"&gt;bg-gray95&lt;/div&gt;
+&lt;div class="bg-gray90"&gt;bg-gray90&lt;/div&gt;
+&lt;div class="bg-gray85"&gt;bg-gray85&lt;/div&gt;
+&lt;div class="bg-gray80"&gt;bg-gray80&lt;/div&gt;
+&lt;div class="bg-gray75"&gt;bg-gray75&lt;/div&gt;
+&lt;div class="bg-gray70"&gt;bg-gray70&lt;/div&gt;
+&lt;div class="bg-gray65"&gt;bg-gray65&lt;/div&gt;
+&lt;div class="bg-gray60"&gt;bg-gray60&lt;/div&gt;
+&lt;div class="bg-gray55"&gt;bg-gray55&lt;/div&gt;
+&lt;div class="bg-gray50"&gt;bg-gray50&lt;/div&gt;
+&lt;div class="bg-gray45"&gt;bg-gray45&lt;/div&gt;
+&lt;div class="bg-gray40"&gt;bg-gray40&lt;/div&gt;
+&lt;div class="bg-gray35"&gt;bg-gray35&lt;/div&gt;
+&lt;div class="bg-gray30"&gt;bg-gray30&lt;/div&gt;
+&lt;div class="bg-gray25"&gt;bg-gray25&lt;/div&gt;
+&lt;div class="bg-gray20"&gt;bg-gray20&lt;/div&gt;
+&lt;div class="bg-gray15"&gt;bg-gray15&lt;/div&gt;
+&lt;div class="bg-gray10"&gt;bg-gray10&lt;/div&gt;
+&lt;div class="bg-gray5"&gt;bg-gray5&lt;/div&gt;
+</code></pre>
+          <hr>
+
+          <h5 class="example-heading">Accessibility</h5>
+          <p>Color combinations should only be used as presented to maintain color contrast ratios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

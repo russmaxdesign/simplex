@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Button - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Button module usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><a href="../utilities/index.html">Utility classes</a></li>
+        <li><b>Modules</b></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary pad-y-3">
+    <div class="container" id="content">
+      <h1 class="c-white mar-y-0">Modules</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="pad-y-3 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-sidebar">
+            <li><a href="index.html">Introduction</a></li>
+            <li><b>Button</b></li>
+            <li><a href="02-link-button.html">Link-button</a></li>
+            <li><a href="03-input.html">Input</a></li>
+            <li><a href="04-checkbox.html">Checkbox</a></li>
+            <li><a href="05-radio.html">Radio</a></li>
+            <li><a href="06-select.html">Select</a></li>
+            <li><a href="07-textarea.html">Textarea</a></li>
+            <li><a href="08-container.html">Container</a></li>
+            <li><a href="09-lists.html">List</a></li>
+            <li><a href="10-table.html">Table</a></li>
+            <li><a href="11-media.html">Media</a></li>
+            <li><a href="12-flag.html">Flag</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="mar-t-0">button</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>The <code>button</code> module represents a clickable button.</p>
+          <hr>
+
+          <h5 class="example-heading">Usage</h5>
+          <ul>
+            <li>Buttons can be with form submission or to trigger events.</li>
+            <li>The type should be set to <code>submit</code> when submitting a form.</li>
+            <li>In all other cases the type should be set to <code>button</code>.</li>
+            <li>The <code>button</code> module should not be used when the purpose is to send the user to a new URL. In these cases, use the <a href="02-link-button.html"><code>button-link</code> module</a>.</li>
+          </ul>
+          <hr>
+
+          <h5 class="example-heading">Example</h5>
+          <div class="example">
+            <div class="mar-b-1">
+              <button type="button" class="button-primary">primary-button</button>
+              <button type="submit" class="button-primary">primary-submit</button>
+              <button type="button" class="button-primary" disabled>disabled</button>
+            </div>
+            <div class="mar-b-1">
+              <button type="button" class="button-secondary">secondary-button</button>
+              <button type="submit" class="button-secondary">secondary-submit</button>
+              <button type="button" class="button-secondary" disabled>disabled</button>
+            </div>
+            <div class="mar-b-1">
+              <button type="button" class="button-success">success-button</button>
+              <button type="submit" class="button-success">success-submit</button>
+              <button type="button" class="button-success" disabled>disabled</button>
+            </div>
+            <div class="mar-b-1">
+              <button type="button" class="button-warning">warning-button</button>
+              <button type="submit" class="button-warning">warning-submit</button>
+              <button type="button" class="button-warning" disabled>disabled</button>
+            </div>
+            <div class="mar-b-1">
+              <button type="button" class="button-link">link-button</button>
+              <button type="submit" class="button-link">link-submit</button>
+              <button type="button" class="button-link" disabled>disabled</button>
+            </div>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;!-- Varieties --&gt;
+&lt;button type="button" class="button-primary"&gt;primary&lt;/button&gt;
+&lt;button type="button" class="button-secondary"&gt;secondary&lt;/button&gt;
+&lt;button type="button" class="button-success"&gt;success&lt;/button&gt;
+&lt;button type="button" class="button-warning"&gt;warning&lt;/button&gt;
+&lt;button type="button" class="button-link"&gt;link&lt;/button&gt;
+
+&lt;!-- Type --&gt;
+&lt;button type="button" class="button-primary"&gt;button&lt;/button&gt;
+&lt;button type="submit" class="button-primary"&gt;submit&lt;/button&gt;
+&lt;button type="reset" class="button-primary"&gt;reset&lt;/button&gt;
+
+&lt;!-- Disabled attribute --&gt;
+&lt;button type="button" class="button-primary" disabled&gt;disabled&lt;/button&gt;
+</code></pre>
+          <hr>
+
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>There must be sufficient contrast between background and foreground colors</li>
+            <li>The content of the button should be meaningful</li>
+            <li>The static, focus, hover and active states of the button should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

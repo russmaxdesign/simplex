@@ -1,0 +1,169 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title -->
+  <title>Float utility classes - Simplex Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Float utility classes - usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+    <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="container">
+      <ul class="list-inline-pipe mar-y-0">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><b>utility classes</b></li>
+        <li><a href="../modules/index.html">Modules</a></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary pad-y-3">
+    <div class="container" id="content">
+      <h1 class="c-white mar-y-0">Utility classes</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="pad-y-3 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-sidebar">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="01-color.html">Color</a></li>
+            <li><a href="02-background.html">Backgrounds</a></li>
+            <li><a href="03-font.html">Font</a></li>
+            <li><a href="04-hidden.html">Hidden</a></li>
+            <li><a href="05-visible.html">Visible</a></li>
+            <li><b>Float</b></li>
+            <li><a href="07-border.html">Border</a></li>
+            <li><a href="08-text-align.html">Text-align</a></li>
+            <li><a href="09-margin.html">Margin</a></li>
+            <li><a href="10-padding.html">Padding</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="mar-t-0">Float utility classes</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>Float utility classes allow authors to move elements to the left and right at specific screen sizes.</p>
+          <hr>
+
+          <h5 class="example-heading">Usage</h5>
+          <p>Float utility classes can be used to make elements sit beside other elements, and then have then sit above/below at smaller screen sizes.</p>
+          <hr>
+
+          <h5 class="example-heading">Example</h5>
+          <div class="example">
+            <h3 class="mar-t-0">All sizes</h3>
+            <div class="clear-both float-left">float-left</div>
+            <div class="clear-both float-right">float-right</div>
+            <div class="clear-both float-none">float-none</div>
+
+            <h3>xs only</h3>
+            <div class="clear-both float-left-xs">float-left-xs</div>
+            <div class="clear-both float-right-xs">float-right-xs</div>
+            <div class="clear-both float-none-xs">float-none-xs</div>
+
+            <h3>sm only</h3>
+            <div class="clear-both float-left-sm">float-left-sm</div>
+            <div class="clear-both float-right-sm">float-right-sm</div>
+            <div class="clear-both float-none-sm">float-none-sm</div>
+
+            <h3>md only</h3>
+            <div class="clear-both float-left-md">float-left-md</div>
+            <div class="clear-both float-right-md">float-right-md</div>
+            <div class="clear-both float-none-md">float-none-md</div>
+
+            <h3>lg only</h3>
+            <div class="clear-both float-left-lg">float-left-lg</div>
+            <div class="clear-both float-right-lg">float-right-lg</div>
+            <div class="clear-both float-none-lg">float-none-lg</div>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;div class="float-left"&gt;float-left&lt;/div&gt;
+&lt;div class="float-right"&gt;float-right&lt;/div&gt;
+&lt;div class="float-none"&gt;float-none&lt;/div&gt;
+&lt;div class="clear-left"&gt;clear-left&lt;/div&gt;
+&lt;div class="clear-right"&gt;clear-right&lt;/div&gt;
+&lt;div class="clear-both"&gt;clear-both&lt;/div&gt;
+
+&lt;!-- XS only --&gt;
+&lt;div class="float-left-xs"&gt;float-left-xs&lt;/div&gt;
+&lt;div class="float-right-xs"&gt;float-right-xs&lt;/div&gt;
+&lt;div class="float-none-xs"&gt;float-none-xs&lt;/div&gt;
+
+&lt;!-- SM only --&gt;
+&lt;div class="float-left-sm"&gt;float-left-sm&lt;/div&gt;
+&lt;div class="float-right-sm"&gt;float-right-sm&lt;/div&gt;
+&lt;div class="float-none-sm"&gt;float-none-sm&lt;/div&gt;
+
+&lt;!-- MD only --&gt;
+&lt;div class="float-left-md"&gt;float-left-md&lt;/div&gt;
+&lt;div class="float-right-md"&gt;float-right-md&lt;/div&gt;
+&lt;div class="float-none-md"&gt;float-none-md&lt;/div&gt;
+
+&lt;!-- LG only --&gt;
+&lt;div class="float-left-lg"&gt;float-left-lg&lt;/div&gt;
+&lt;div class="float-right-lg"&gt;float-right-lg&lt;/div&gt;
+&lt;div class="float-none-lg"&gt;float-none-lg&lt;/div&gt;
+</code></pre>
+          <hr>
+
+          <h5 class="example-heading">Accessibility</h5>
+          <p>N/A</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-color-visited;
+}
+
+a:focus {
+  outline: 2px dotted lighten($link-color-hover, 50%);
+  color: $link-color-focus;
+}
+
+a:hover {
+  outline: none;
+  color: $link-color-hover;
+}
+
+a:active {
+  outline: none;
+  color: $link-color-active;
+}

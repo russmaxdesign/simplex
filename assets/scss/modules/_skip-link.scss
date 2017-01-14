@@ -1,0 +1,18 @@
+.skip-link a {
+  position: absolute;
+  z-index: 2;
+  left: -1000px;
+  padding: .5em;
+  color: $white;
+  background: $black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link a:active,
+.skip-link a:focus,
+.skip-link a:hover {
+  top: 0;
+  left: 0;
+  display: inline;
+}

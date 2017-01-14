@@ -1,0 +1,15 @@
+.media,
+.media__body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media__feature {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.media--rev .media__feature {
+  float: right;
+  margin: 0 0 0 10px;
+}

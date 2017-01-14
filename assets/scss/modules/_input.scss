@@ -1,0 +1,48 @@
+.input {
+  margin-bottom: 1em;
+}
+
+.input__control {
+  font-size: $font16;
+}
+
+.input__content {
+  display: block;
+  padding-bottom: .1em;
+}
+
+
+// disabled, readonly
+
+.input--disabled .input__content {
+  color: $disabled-color;
+}
+
+
+// invalid
+
+.isInvalid .input__control {
+  border: 1px solid $isinvalid-color;
+  color: $isinvalid-color;
+}
+
+.isInvalid .input__content {
+  color: $isinvalid-color;
+}
+
+
+// required
+
+.input--required .input__content:after {
+  display: inline-block;
+  padding: 0 0 0 .2em;
+  content: '*';
+  color: $required-color;
+}
+
+
+// hidden
+
+.input__content--hidden {
+  @include hidden;
+}

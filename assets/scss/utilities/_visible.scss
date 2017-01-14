@@ -1,0 +1,44 @@
+// all
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .visible-xs {
+    display: block !important;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .visible-md {
+    display: block !important;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .visible-lg {
+    display: block !important;
+  }
+}

@@ -1,0 +1,36 @@
+// xs
+
+.row {
+  margin-right: -($row-margin-xs);
+  margin-left: -($row-margin-xs);
+}
+
+
+// sm
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .row {
+    margin-right: -($row-margin-sm);
+    margin-left: -($row-margin-sm);
+  }
+}
+
+
+// md
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .row {
+    margin-right: -($row-margin-md);
+    margin-left: -($row-margin-md);
+  }
+}
+
+
+// lg
+
+@media (min-width: $screen-lg-min) {
+  .row {
+    margin-right: -($row-margin-lg);
+    margin-left: -($row-margin-lg);
+  }
+}

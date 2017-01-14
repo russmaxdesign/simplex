@@ -1,0 +1,52 @@
+// ul
+
+ul,
+ol {
+  margin: 0 0 1.5em;
+  padding-left: 1.5em;
+}
+
+
+// dl
+
+dt {
+  font-weight: bold;
+}
+
+
+// xs
+
+li,
+dd {
+  line-height: $base-line-height;
+}
+
+
+// sm
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  li,
+  dd {
+    line-height: $line-height-sm;
+  }
+}
+
+
+// md
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  li,
+  dd {
+    line-height: $line-height-md;
+  }
+}
+
+
+// lg
+
+@media (min-width: $screen-lg-min) {
+  li,
+  dd {
+    line-height: $line-height-lg;
+  }
+}

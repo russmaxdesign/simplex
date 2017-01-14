@@ -1,0 +1,141 @@
+// all
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .float-left-xs {
+    float: left;
+  }
+
+  .float-right-xs {
+    float: right;
+  }
+
+  .float-none-xs {
+    float: none;
+  }
+
+  .clear-left-xs {
+    clear: left;
+  }
+
+  .clear-right-xs {
+    clear: right;
+  }
+
+  .clear-both-xs {
+    clear: both;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .float-left-sm {
+    float: left;
+  }
+
+  .float-right-sm {
+    float: right;
+  }
+
+  .float-none-sm {
+    float: none;
+  }
+
+  .clear-left-sm {
+    clear: left;
+  }
+
+  .clear-right-sm {
+    clear: right;
+  }
+
+  .clear-both-sm {
+    clear: both;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .float-left-md {
+    float: left;
+  }
+
+  .float-right-md {
+    float: right;
+  }
+
+  .float-none-md {
+    float: none;
+  }
+
+  .clear-left-md {
+    clear: left;
+  }
+
+  .clear-right-md {
+    clear: right;
+  }
+
+  .clear-both-md {
+    clear: both;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .float-left-lg {
+    float: left;
+  }
+
+  .float-right-lg {
+    float: right;
+  }
+
+  .float-none-lg {
+    float: none;
+  }
+
+  .clear-left-lg {
+    clear: left;
+  }
+
+  .clear-right-lg {
+    clear: right;
+  }
+
+  .clear-both-lg {
+    clear: both;
+  }
+}
