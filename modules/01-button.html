@@ -94,14 +94,19 @@
           <h2 class="mar-t-0">button</h2>
           <h5 class="example-heading">Purpose</h5>
           <p>The <code>button</code> module represents a clickable button.</p>
-          <hr>
-
           <h5 class="example-heading">Usage</h5>
           <ul>
             <li>Buttons can be with form submission or to trigger events.</li>
             <li>The type should be set to <code>submit</code> when submitting a form.</li>
             <li>In all other cases the type should be set to <code>button</code>.</li>
             <li>The <code>button</code> module should not be used when the purpose is to send the user to a new URL. In these cases, use the <a href="02-link-button.html"><code>button-link</code> module</a>.</li>
+          </ul>
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>There must be sufficient contrast between background and foreground colors</li>
+            <li>The content of the button should be meaningful</li>
+            <li>The static, focus, hover and active states of the button should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
           </ul>
           <hr>
 
@@ -151,15 +156,6 @@
 &lt;!-- Disabled attribute --&gt;
 &lt;button type="button" class="button-primary" disabled&gt;disabled&lt;/button&gt;
 </code></pre>
-          <hr>
-
-          <h5 class="example-heading">Accessibility</h5>
-          <ul>
-            <li>There must be sufficient contrast between background and foreground colors</li>
-            <li>The content of the button should be meaningful</li>
-            <li>The static, focus, hover and active states of the button should be defined</li>
-            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
-          </ul>
         </div>
       </div>
     </div>

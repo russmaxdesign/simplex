@@ -94,12 +94,17 @@
           <h2 class="mar-t-0">link-button</h2>
           <h5 class="example-heading">Purpose</h5>
           <p>The <code>link-button</code> module represents a clickable link.</p>
-          <hr>
-
           <h5 class="example-heading">Usage</h5>
           <ul>
             <li>The <code>link-button</code> module should only be used when the purpose is to send the user to a new URL. </li>
             <li>If the aim is to trigger a form submission or to trigger an event, the <a href="01-button.html"><code>button</code> module</a> should be used.</li>
+          </ul>
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>There must be sufficient contrast between background and foreground colors</li>
+            <li>The content of the link should be meaningful</li>
+            <li>The static, focus, hover and active states of the button should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
           </ul>
           <hr>
 
@@ -114,15 +119,6 @@
 <pre><code class="language-html">&lt;a href="#" class="link-button-primary"&gt;link-button-primary&lt;/a&gt;
 &lt;a href="#" class="link-button-secondary"&gt;link-button-secondary&lt;/a&gt;
 </code></pre>
-          <hr>
-
-          <h5 class="example-heading">Accessibility</h5>
-          <ul>
-            <li>There must be sufficient contrast between background and foreground colors</li>
-            <li>The content of the link should be meaningful</li>
-            <li>The static, focus, hover and active states of the button should be defined</li>
-            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
-          </ul>
         </div>
       </div>
     </div>

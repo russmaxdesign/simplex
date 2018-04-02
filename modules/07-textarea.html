@@ -92,11 +92,24 @@
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">textarea</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>The <code>textarea</code> module represents an <code>&lt;textarea&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The module also supports additional information and/or error messages associated with the input.</p>
           <h5 class="example-heading">Usage</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          nisi officiis necessitatibus sapiente, expedita neque nihil sunt, vel
-          debitis tempora quaerat rem, amet quas dolor. Neque earum necessitatibus
-          nihil repudiandae?</p>
+          <ul>
+            <li>Used within forms where multi-line user input required.</li>
+            <li>The <code>hidden</code> attribute can be applied to the <code>&lt;label&gt;</code> element but only in specific circumstances. See Accessibility notes.</li>
+            <li>The <code>placeholder</code> attribute can be added to the <code>&lt;input&gt;</code> element. See Accessibility notes.</li>
+            <li>The <code>input--required</code> attribute should be added to the parent container for all instances were the form control is required. In these instances, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element.</li>
+            <li>When errors occur, the <code>isInvalid</code> attribute should be injected into the parent container.</li>
+            <li>The <code>input--disabled</code> attribute can be added to the parent container if the form control needs to be disabled.</li>
+          </ul>
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
+            <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
+            <li>The static, focus and hover states of the <code>&lt;input&gt;</code> element should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
+          </ul>
           <hr>
 
           <h5 class="example-heading">Example</h5>

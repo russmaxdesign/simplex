@@ -94,8 +94,6 @@
           <h2 class="mar-t-0">input</h2>
           <h5 class="example-heading">Purpose</h5>
           <p>The <code>input</code> module represents an <code>&lt;input&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The module also supports additional information and/or error messages associated with the input.</p>
-          <hr>
-
           <h5 class="example-heading">Usage</h5>
           <ul>
             <li>Used within forms where single-line user input required.</li>
@@ -105,6 +103,13 @@
             <li>The <code>input--required</code> attribute should be added to the parent container for all instances were the form control is required. In these instances, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element.</li>
             <li>When errors occur, the <code>isInvalid</code> attribute should be injected into the parent container.</li>
             <li>The <code>input--disabled</code> attribute can be added to the parent container if the form control needs to be disabled.</li>
+          </ul>
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
+            <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
+            <li>The static, focus and hover states of the <code>&lt;input&gt;</code> element should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
           </ul>
           <hr>
 
@@ -230,15 +235,6 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-          <hr>
-
-          <h5 class="example-heading">Accessibility</h5>
-          <ul>
-            <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
-            <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
-            <li>The static, focus and hover states of the <code>&lt;input&gt;</code> element should be defined</li>
-            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
-          </ul>
         </div>
       </div>
     </div>
