@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Title -->
-  <title>Textarea - Simplex Pattern Library</title>
+  <title>Input - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Texarea module usage and examples">
+  <meta name="Description" lang="en" content="Input component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -55,7 +55,7 @@
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Modules</b></li>
+        <li><b>Components</b></li>
         <li><a href="../grid/index.html">Grid</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
@@ -65,7 +65,7 @@
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
     <div class="container" id="content">
-      <h1 class="c-white mar-y-0">Modules</h1>
+      <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
@@ -78,11 +78,11 @@
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-button.html">Button</a></li>
             <li><a href="02-link-button.html">Link-button</a></li>
-            <li><a href="03-input.html">Input</a></li>
+            <li><b>Input</b></li>
             <li><a href="04-checkbox.html">Checkbox</a></li>
             <li><a href="05-radio.html">Radio</a></li>
             <li><a href="06-select.html">Select</a></li>
-            <li><b>Textarea</b></li>
+            <li><a href="07-textarea.html">Textarea</a></li>
             <li><a href="08-container.html">Container</a></li>
             <li><a href="09-lists.html">List</a></li>
             <li><a href="10-table.html">Table</a></li>
@@ -91,12 +91,13 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">textarea</h2>
+          <h2 class="mar-t-0">input</h2>
           <h5 class="example-heading">Purpose</h5>
-          <p>The <code>textarea</code> module represents an <code>&lt;textarea&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The module also supports additional information and/or error messages associated with the input.</p>
+          <p>The <code>input</code> component represents an <code>&lt;input&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
           <h5 class="example-heading">Usage</h5>
           <ul>
-            <li>Used within forms where multi-line user input required.</li>
+            <li>Used within forms where single-line user input required.</li>
+            <li>The type can include: <code>text</code>, <code>tel</code>, <code>email</code>, <code>password</code>, <code>search</code>, <code>url</code> and other valid options.</li>
             <li>The <code>hidden</code> attribute can be applied to the <code>&lt;label&gt;</code> element but only in specific circumstances. See Accessibility notes.</li>
             <li>The <code>placeholder</code> attribute can be added to the <code>&lt;input&gt;</code> element. See Accessibility notes.</li>
             <li>The <code>input--required</code> attribute should be added to the parent container for all instances were the form control is required. In these instances, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element.</li>
@@ -114,95 +115,123 @@
 
           <h5 class="example-heading">Example</h5>
           <div class="example">
-            <div class="textarea">
-              <label class="textarea__label" for="example">
-                <span class="textarea__content">Textarea</span>
-                <textarea class="textarea__control" id="example" rows="5"></textarea>
+            <div class="input">
+              <label class="input__label" for="example1">
+                <span class="input__content">Input</span>
+                <input class="input__control" type="text" name="example1" id="example1">
               </label>
             </div>
-            <div class="textarea">
-              <label class="textarea__label" for="example1">
-                <span class="textarea__content hidden">Textarea</span>
-                <textarea class="textarea__control" id="example1" rows="5"></textarea>
+            <div class="input">
+              <label class="input__label" for="example2">
+                <span class="input__content">Input with placeholder</span>
+                <input class="input__control" type="text" id="example2" placeholder="Placeholder text">
               </label>
             </div>
-            <div class="textarea">
-              <label class="textarea__label" for="example2">
-                <span class="textarea__content">Textarea</span>
-                <textarea class="textarea__control" id="example2" rows="5"></textarea>
+            <div class="input">
+              <label class="input__label" for="example3">
+                <span class="input__content">Input with value</span>
+                <input class="input__control" type="text" id="example3" value="Input value">
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label" for="example4">
+                <span class="input__content hidden">Hidden Label</span>
+                <input class="input__control" type="text" id="example4" placeholder="Input with hidden label">
+              </label>
+            </div>
+            <div class="input">
+              <label class="input__label" for="example5">
+                <span class="input__content">Input with hint message</span>
+                <input class="input__control" type="text" id="example5">
                 <span class="message-hint">Hint Message</span>
               </label>
             </div>
-            <div class="textarea textarea--required">
-              <label class="textarea__label" for="example3">
-                <span class="textarea__content">Required textarea</span>
-                <textarea class="textarea__control" id="example3" rows="5" required></textarea>
+            <div class="input input--required">
+              <label class="input__label" for="example6">
+                <span class="input__content">Input required</span>
+                <input class="input__control" type="text" id="example6" required aria-required="true">
               </label>
             </div>
-            <div class="textarea isInvalid">
-              <label class="textarea__label" for="example4">
-                <span class="textarea__content">Invalid textarea</span>
-                <textarea class="textarea__control" id="example4" rows="5"></textarea>
+            <div class="input isInvalid">
+              <label class="input__label" for="example7">
+                <span class="input__content">Input invalid</span>
+                <input class="input__control" type="text" id="example7" required>
+                <span class="message-error">Error Message</span>
               </label>
-              <span class="message-error">Error Message</span>
             </div>
-            <div class="textarea textarea--disabled">
-              <label class="textarea__label" for="example5">
-                <span class="textarea__content">Disabled textarea</span>
-                <textarea class="textarea__control" id="example5" rows="5" disabled></textarea>
+            <div class="input input--disabled">
+              <label class="input__label" for="example8">
+                <span class="input__content">Input disabled</span>
+                <input class="input__control" type="text" id="example8" disabled aria-disabled="true">
               </label>
             </div>
           </div>
           <hr>
 
           <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- Textarea --&gt;
-&lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
+<pre><code class="language-html">&lt;!-- input --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="e1"&gt;
+    &lt;span class="input__content"&gt;Input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e1"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- Textarea with hidden label --&gt;
-&lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content hidden"&gt;Textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
+&lt;!-- input with placeholder --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="e2"&gt;
+    &lt;span class="input__content"&gt;Input with placeholder&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e2" placeholder="Add Your Name"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- Textarea with hint --&gt;
-&lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
+&lt;!-- input with value --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="e3"&gt;
+    &lt;span class="input__content"&gt;Input with value&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e3" value="Add Your Name"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with hidden label --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="e4"&gt;
+    &lt;span class="input__content hidden"&gt;Hidden input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e4"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- input with hint --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="e5"&gt;
+    &lt;span class="input__content"&gt;Input with hint message&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e5"&gt;
     &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- Required textarea --&gt;
-&lt;div class="textarea textarea--required"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Required textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5" required&gt;&lt;/textarea&gt;
+&lt;!-- input required --&gt;
+&lt;div class="input input--required"&gt;
+  &lt;label class="input__label" for="e6"&gt;
+    &lt;span class="input__content"&gt;Input required&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e6" required&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- Invalid textarea --&gt;
-&lt;div class="textarea isInvalid"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Invalid textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
-  &lt;/label&gt;
+&lt;!-- input invalid --&gt;
+&lt;div class="input isInvalid"&gt;
+  &lt;label class="input__label" for="e7"&gt;
+    &lt;span class="input__content"&gt;Input invalid&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e7" required&gt;
     &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- Disabled textarea --&gt;
-&lt;div class="textarea textarea--disabled"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Disabled textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5" disabled&gt;&lt;/textarea&gt;
+&lt;!-- input disabled --&gt;
+&lt;div class="input input--disabled"&gt;
+  &lt;label class="input__label" for="e8"&gt;
+    &lt;span class="input__content"&gt;Input disabled&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="e8" disabled&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>

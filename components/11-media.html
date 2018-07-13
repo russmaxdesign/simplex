@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Title -->
-  <title>Flag - Simplex Pattern Library</title>
+  <title>Media - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Flag module usage and examples">
+  <meta name="Description" lang="en" content="Media component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -55,7 +55,7 @@
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Modules</b></li>
+        <li><b>Components</b></li>
         <li><a href="../grid/index.html">Grid</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
@@ -65,7 +65,7 @@
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
     <div class="container" id="content">
-      <h1 class="c-white mar-y-0">Modules</h1>
+      <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
@@ -86,15 +86,15 @@
             <li><a href="08-container.html">Container</a></li>
             <li><a href="09-lists.html">List</a></li>
             <li><a href="10-table.html">Table</a></li>
-            <li><a href="11-media.html">Media</a></li>
-            <li><b>Flag</b></li>
+            <li><b>Media</b></li>
+            <li><a href="12-flag.html">Flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">flag</h2>
+          <h2 class="mar-t-0">media</h2>
           <hr>
 
-          <h3>flag</h3>
+          <h3>media</h3>
           <h5 class="example-heading">Usage</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
           nisi officiis necessitatibus sapiente, expedita neque nihil sunt, vel
@@ -102,92 +102,53 @@
           nihil repudiandae?</p>
           <h5 class="example-heading">Example</h5>
           <div class="example">
-            <div class="flag">
-              <div class="flag__feature">
+            <div class="media">
+              <a href="#" class="media__feature">
                 <img src="../assets/img/100x100.png" alt="">
-              </div>
-              <div class="flag__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy
-                nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+              </a>
+              <div class="media__body">
+                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
               </div>
             </div>
           </div>
           <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag"&gt;
-  &lt;div class="flag__feature"&gt;
+<pre><code class="language-html">&lt;div class="media"&gt;
+  &lt;a href="#" class="media__feature"&gt;
     &lt;img src="100x100.png" alt=""&gt;
-  &lt;/div&gt;
-  &lt;div class="flag__body"&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
     Lorem ipsum dolor...
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
           <hr>
 
-          <h3>flag--bottom</h3>
+          <h3>media--rev</h3>
+          <h5 class="example-heading">Usage</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
           nisi officiis necessitatibus sapiente, expedita neque nihil sunt, vel
           debitis tempora quaerat rem, amet quas dolor. Neque earum necessitatibus
           nihil repudiandae?</p>
           <h5 class="example-heading">Example</h5>
           <div class="example">
-            <div class="flag flag--bottom">
-              <div class="flag__feature">
+            <div class="media media--rev">
+              <a href="#" class="media__feature">
                 <img src="../assets/img/100x100.png" alt="">
-              </div>
-              <div class="flag__body">
+              </a>
+              <div class="media__body">
                 Lorem ipsum dolor sit amet consect etuer adipi scing elit sed
                 diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam
-                erat volut. Pellentesque habitant morbi tristique senectus et netus
-                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-                tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-                et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
-                commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-                condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-                Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus,
-                neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-                eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-                porttitor, facilisis luctus, metus.
+                erat volut.
               </div>
             </div>
           </div>
           <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag flag--bottom"&gt;
-  &lt;div class="flag__feature"&gt;
+<pre><code class="language-html">&lt;div class="media media--rev"&gt;
+  &lt;a href="#" class="media__feature"&gt;
     &lt;img src="100x100.png" alt=""&gt;
-  &lt;/div&gt;
-  &lt;div class="flag__body"&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
     Lorem ipsum dolor...
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-          <hr>
-
-          <h3>flag--rev</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          nisi officiis necessitatibus sapiente, expedita neque nihil sunt, vel
-          debitis tempora quaerat rem, amet quas dolor. Neque earum necessitatibus
-          nihil repudiandae?</p>
-          <h5 class="example-heading">Example</h5>
-          <div class="example">
-            <div class="flag flag--rev">
-              <div class="flag__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy
-                nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
-              </div>
-              <div class="flag__feature">
-                <img src="../assets/img/100x100.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag flag--rev"&gt;
-  &lt;div class="flag__body"&gt;
-    Lorem ipsum dolor...
-  &lt;/div&gt;
-  &lt;div class="flag__feature"&gt;
-    &lt;img src="100x100.png" alt=""&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
