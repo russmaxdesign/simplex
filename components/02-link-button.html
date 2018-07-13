@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Title -->
-  <title>What are modules? - Simplex Pattern Library</title>
+  <title>Link-button - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="What are Simplex modules">
+  <meta name="Description" lang="en" content="Link-button component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -55,7 +55,7 @@
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Modules</b></li>
+        <li><b>Components</b></li>
         <li><a href="../grid/index.html">Grid</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
@@ -65,7 +65,7 @@
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
     <div class="container" id="content">
-      <h1 class="c-white mar-y-0">Modules</h1>
+      <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
@@ -75,9 +75,9 @@
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
-            <li><b>Introduction</b></li>
+            <li><a href="index.html">Introduction</a></li>
             <li><a href="01-button.html">Button</a></li>
-            <li><a href="02-link-button.html">Link-button</a></li>
+            <li><b>Link-button</b></li>
             <li><a href="03-input.html">Input</a></li>
             <li><a href="04-checkbox.html">Checkbox</a></li>
             <li><a href="05-radio.html">Radio</a></li>
@@ -91,14 +91,34 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">What are modules?</h2>
-          <p>Modules consist of one or more HTML elements that have been grouped together to serve a single purpose. Modules:</p>
+          <h2 class="mar-t-0">link-button</h2>
+          <h5 class="example-heading">Purpose</h5>
+          <p>The <code>link-button</code> component represents a clickable link.</p>
+          <h5 class="example-heading">Usage</h5>
           <ul>
-            <li>should be location agnostic</li>
-            <li>should be width agnostic</li>
-            <li>should use well-formed, valid HTML</li>
-            <li>should comply with WCAG 2.0 Level AA</li>
+            <li>The <code>link-button</code> component should only be used when the purpose is to send the user to a new URL. </li>
+            <li>If the aim is to trigger a form submission or to trigger an event, the <a href="01-button.html"><code>button</code> component</a> should be used.</li>
           </ul>
+          <h5 class="example-heading">Accessibility</h5>
+          <ul>
+            <li>There must be sufficient contrast between background and foreground colors</li>
+            <li>The content of the link should be meaningful</li>
+            <li>The static, focus, hover and active states of the button should be defined</li>
+            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
+          </ul>
+          <hr>
+
+          <h5 class="example-heading">Example</h5>
+          <div class="example">
+            <a href="#" class="link-button-primary">link-button-primary</a>
+            <a href="#" class="link-button-secondary">link-button-secondary</a>
+          </div>
+          <hr>
+
+          <h5 class="example-heading">Markup</h5>
+<pre><code class="language-html">&lt;a href="#" class="link-button-primary"&gt;link-button-primary&lt;/a&gt;
+&lt;a href="#" class="link-button-secondary"&gt;link-button-secondary&lt;/a&gt;
+</code></pre>
         </div>
       </div>
     </div>

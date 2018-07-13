@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Title -->
-  <title>Radiogroup - Simplex Pattern Library</title>
+  <title>What are components? - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Radio button module usage and examples">
+  <meta name="Description" lang="en" content="What are Simplex components">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -55,7 +55,7 @@
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Modules</b></li>
+        <li><b>Components</b></li>
         <li><a href="../grid/index.html">Grid</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
@@ -65,7 +65,7 @@
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
     <div class="container" id="content">
-      <h1 class="c-white mar-y-0">Modules</h1>
+      <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
@@ -75,12 +75,12 @@
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
-            <li><a href="index.html">Introduction</a></li>
+            <li><b>Introduction</b></li>
             <li><a href="01-button.html">Button</a></li>
             <li><a href="02-link-button.html">Link-button</a></li>
             <li><a href="03-input.html">Input</a></li>
             <li><a href="04-checkbox.html">Checkbox</a></li>
-            <li><b>Radio</b></li>
+            <li><a href="05-radio.html">Radio</a></li>
             <li><a href="06-select.html">Select</a></li>
             <li><a href="07-textarea.html">Textarea</a></li>
             <li><a href="08-container.html">Container</a></li>
@@ -91,76 +91,14 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">Radiogroup</h2>
-          <h5 class="example-heading">Purpose</h5>
-          <p>The <code>radiogroup</code> module represents an <code>&lt;input&gt;</code> element with a type of <code>radio</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
-          <h5 class="example-heading">Usage</h5>
-          <p>The <code>radio</code> module can be used to present one or more selectable options to users - where only one option can be chosen.</p>
-          <h5 class="example-heading">Accessibility</h5>
+          <h2 class="mar-t-0">What are components?</h2>
+          <p>Components consist of one or more HTML elements that have been grouped together to serve a single purpose. Components:</p>
           <ul>
-            <li>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</li>
-            <li>Radio buttons should always be presented as a group within a <code>&lt;fieldset&gt;</code>.</li>
-            <li>The <code>&lt;legend&gt;</code> must be present and placed directly after the fieldset start tag.</li>
+            <li>should be location agnostic</li>
+            <li>should be width agnostic</li>
+            <li>should use well-formed, valid HTML</li>
+            <li>should comply with WCAG 2.0 Level AA</li>
           </ul>
-          <hr>
-
-          <h5 class="example-heading">Example</h5>
-          <div class="example">
-            <fieldset>
-              <legend>Legend for radio group</legend>
-              <ul class="list-unstyled mar-b-0"> 
-                <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="a">
-                      <input class="input-radio__control" type="radio" id="a" name="example2">
-                      <span class="input-radio__content">Radio button one</span>
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="b">
-                      <input class="input-radio__control" type="radio" id="b" name="example2">
-                      <span class="input-radio__content">Radio button two</span>
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="b">
-                      <input class="input-radio__control" type="radio" id="b" name="example2">
-                      <span class="input-radio__content">Radio button three</span>
-                    </label>
-                  </div>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;fieldset&gt;
-  &lt;legend&gt;Legend for radio group&lt;/legend&gt;
-  &lt;ul class="list-unstyled"&gt; 
-    &lt;li&gt;
-      &lt;div class="input-radio"&gt;
-        &lt;label class="input-radio__label" for="a"&gt;
-          &lt;input class="input-radio__control" type="radio" id="a" name="example2"&gt;
-          &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class="input-radio"&gt;
-        &lt;label class="input-radio__label" for="b"&gt;
-          &lt;input class="input-radio__control" type="radio" id="b" name="example2"&gt;
-          &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/fieldset&gt;
-</code></pre>
         </div>
       </div>
     </div>
