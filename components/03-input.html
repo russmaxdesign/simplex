@@ -91,7 +91,6 @@
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">input</h2>
-          <h5 class="example-heading">Purpose</h5>
           <p>The <code>input</code> component represents an <code>&lt;input&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
           <h5 class="example-heading">Usage</h5>
           <ul>
@@ -112,55 +111,67 @@
           </ul>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h5 class="example-heading">Basic input example</h5>
           <div class="example">
             <div class="input">
               <label class="input__label" for="example1">
-                <span class="input__content">Input</span>
+                <span class="input__content">Label for input</span>
                 <input class="input__control" type="text" name="example1" id="example1">
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Input with placeholder example</h5>
+          <div class="example">
             <div class="input">
               <label class="input__label" for="example2">
-                <span class="input__content">Input with placeholder</span>
+                <span class="input__content">Label for input</span>
                 <input class="input__control" type="text" id="example2" placeholder="Placeholder text">
               </label>
             </div>
-            <div class="input">
-              <label class="input__label" for="example3">
-                <span class="input__content">Input with value</span>
-                <input class="input__control" type="text" id="example3" value="Input value">
-              </label>
-            </div>
+          </div>
+          <h5 class="example-heading">Input with hidden label example</h5>
+          <div class="example">
             <div class="input">
               <label class="input__label" for="example4">
-                <span class="input__content hidden">Hidden Label</span>
-                <input class="input__control" type="text" id="example4" placeholder="Input with hidden label">
+                <span class="input__content hidden">Label for input</span>
+                <input class="input__control" type="text" id="example4">
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Input with hint text example</h5>
+          <div class="example">
             <div class="input">
               <label class="input__label" for="example5">
-                <span class="input__content">Input with hint message</span>
+                <span class="input__content">Label for input</span>
                 <input class="input__control" type="text" id="example5">
-                <span class="message-hint">Hint Message</span>
+                <span class="message-hint">Hint text</span>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Required input example</h5>
+          <div class="example">
             <div class="input input--required">
               <label class="input__label" for="example6">
-                <span class="input__content">Input required</span>
-                <input class="input__control" type="text" id="example6" required aria-required="true">
+                <span class="input__content">Label for input <span class="required">(Required)</span></span>
+                <input class="input__control" type="text" id="example6" required>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Invalid input example</h5>
+          <div class="example">
             <div class="input isInvalid">
               <label class="input__label" for="example7">
-                <span class="input__content">Input invalid</span>
+                <span class="input__content">Label for input <span class="required">(Required)</span></span>
                 <input class="input__control" type="text" id="example7" required>
                 <span class="message-error">Error Message</span>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Disabled input example</h5>
+          <div class="example">
             <div class="input input--disabled">
               <label class="input__label" for="example8">
-                <span class="input__content">Input disabled</span>
+                <span class="input__content">Label for input</span>
                 <input class="input__control" type="text" id="example8" disabled aria-disabled="true">
               </label>
             </div>
@@ -168,69 +179,61 @@
           <hr>
 
           <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- input --&gt;
+<pre><code class="language-html">&lt;-- Basic input example --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="e1"&gt;
-    &lt;span class="input__content"&gt;Input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e1"&gt;
+  &lt;label class="input__label" for="example1"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1" id="example1"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input with placeholder --&gt;
+&lt;-- Input with placeholder example --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="e2"&gt;
-    &lt;span class="input__content"&gt;Input with placeholder&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e2" placeholder="Add Your Name"&gt;
+  &lt;label class="input__label" for="example2"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example2" placeholder="Placeholder text"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input with value --&gt;
+&lt;-- Input with hidden label example --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="e3"&gt;
-    &lt;span class="input__content"&gt;Input with value&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e3" value="Add Your Name"&gt;
+  &lt;label class="input__label" for="example4"&gt;
+    &lt;span class="input__content hidden"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example4"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input with hidden label --&gt;
+&lt;-- Input with hint text example --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="e4"&gt;
-    &lt;span class="input__content hidden"&gt;Hidden input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e4"&gt;
+  &lt;label class="input__label" for="example5"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example5"&gt;
+    &lt;span class="message-hint"&gt;Hint text&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input with hint --&gt;
-&lt;div class="input"&gt;
-  &lt;label class="input__label" for="e5"&gt;
-    &lt;span class="input__content"&gt;Input with hint message&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e5"&gt;
-    &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- input required --&gt;
+&lt;-- Required input example --&gt;
 &lt;div class="input input--required"&gt;
-  &lt;label class="input__label" for="e6"&gt;
-    &lt;span class="input__content"&gt;Input required&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e6" required&gt;
+  &lt;label class="input__label" for="example6"&gt;
+    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example6" required&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input invalid --&gt;
+&lt;-- Invalid input example --&gt;
 &lt;div class="input isInvalid"&gt;
-  &lt;label class="input__label" for="e7"&gt;
-    &lt;span class="input__content"&gt;Input invalid&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e7" required&gt;
+  &lt;label class="input__label" for="example7"&gt;
+    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example7" required&gt;
     &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 
-&lt;!-- input disabled --&gt;
+&lt;-- Disabled input example --&gt;
 &lt;div class="input input--disabled"&gt;
-  &lt;label class="input__label" for="e8"&gt;
-    &lt;span class="input__content"&gt;Input disabled&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="e8" disabled&gt;
+  &lt;label class="input__label" for="example8"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example8" disabled aria-disabled="true"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>

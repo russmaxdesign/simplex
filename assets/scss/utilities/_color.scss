@@ -8,6 +8,12 @@
 .c-red                  { color: $red; }
 .c-green                { color: $green; }
 
+.c-link-color           { color: $link-color; }
+.c-link-color-visited   { color: $link-color-visited; }
+.c-link-color-focus     { color: $link-color-focus; }
+.c-link-color-hover     { color: $link-color-hover; }
+.c-link-color-active    { color: $link-color-active; }
+
 .c-gray90               { color: $gray90; }
 .c-gray85               { color: $gray85; }
 .c-gray80               { color: $gray80; }
@@ -15,6 +21,8 @@
 .c-gray70               { color: $gray70; }
 .c-gray65               { color: $gray65; }
 .c-gray60               { color: $gray60; }
+.c-gray55               { color: $gray55; }
+.c-gray50               { color: $gray50; }
 
 
 // background utilities
@@ -51,6 +59,12 @@
 .bg-white               { background-color: $white; }
 .bg-red                 { background-color: $red; }
 .bg-green               { background-color: $green; }
+
+.bg-link-color          { background-color: $link-color; }
+.bg-link-color-visited  { background-color: $link-color-visited; }
+.bg-link-color-focus    { background-color: $link-color-focus; }
+.bg-link-color-hover    { background-color: $link-color-hover; }
+.bg-link-color-active   { background-color: $link-color-active; }
 
 .bg-gray5               { background-color: $gray5 ; }
 .bg-gray10              { background-color: $gray10; }

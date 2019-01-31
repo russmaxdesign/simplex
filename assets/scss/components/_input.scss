@@ -26,20 +26,6 @@
   color: $isinvalid-color;
 }
 
-.isInvalid .input__content {
-  color: $isinvalid-color;
-}
-
-
-// required
-
-.input--required .input__content:after {
-  display: inline-block;
-  padding: 0 0 0 .2em;
-  content: '*';
-  color: $required-color;
-}
-
 
 // hidden
 
