@@ -91,7 +91,6 @@
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">checkbox</h2>
-          <h5 class="example-heading">Purpose</h5>
           <p>The <code>checkbox</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
           <h5 class="example-heading">Usage</h5>
           <p>The <code>checkbox</code> component can be used to present one or more selectable options to users.</p>
@@ -99,30 +98,39 @@
           <p>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</p>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h5 class="example-heading">Basic checkbox example</h5>
           <div class="example">
             <div class="input-checkbox">
               <label class="input-checkbox__label" for="example1">
                 <input class="input-checkbox__control" type="checkbox" name="example3" id="example1">
-                <span class="input-checkbox__content">Checkbox</span>
+                <span class="input-checkbox__content">Checkbox label</span>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Required checkbox example</h5>
+          <div class="example">
             <div class="input-checkbox input-checkbox--required">
               <label class="input-checkbox__label" for="example2">
                 <input class="input-checkbox__control" type="checkbox" name="example3" id="example2" required>
-                <span class="input-checkbox__content">Required checkbox</span>
+                <span class="input-checkbox__content">Checkbox label <span class="required">(Required)</span></span>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Invalid checkbox example</h5>
+          <div class="example">
             <div class="input-checkbox isInvalid">
               <label class="input-checkbox__label" for="example3">
-                <input class="input-checkbox__control" type="checkbox" name="example3" id="example3">
-                <span class="input-checkbox__content">Invalid checkbox</span>
+                <input class="input-checkbox__control" type="checkbox" name="example3" id="example3" required>
+                <span class="input-checkbox__content">Checkbox label <span class="required">(Required)</span></span>
               </label>
             </div>
+          </div>
+          <h5 class="example-heading">Example</h5>
+          <div class="example">
             <div class="input-checkbox input-checkbox--disabled">
               <label class="input-checkbox__label" for="example4">
                 <input class="input-checkbox__control" type="checkbox" name="example3" id="example4" disabled>
-                <span class="input-checkbox__content">Disabled checkbox</span>
+                <span class="input-checkbox__content">Checkbox label</span>
               </label>
             </div>
           </div>
