@@ -419,18 +419,18 @@ html {
   box-sizing: inherit; }
 
 a:link {
-  color: #005aaa; }
+  color: #005fc1; }
 
 a:visited {
-  color: #003f77; }
+  color: #0052a8; }
 
 a:focus {
-  outline: 2px dotted #807f7f;
+  outline: 2px dotted #8ec6ff;
   color: #000; }
 
 a:hover {
   outline: none;
-  color: #000; }
+  color: #00468e; }
 
 a:active {
   outline: none;
@@ -1067,16 +1067,16 @@ th {
   color: #008000; }
 
 .c-link-color {
-  color: #005aaa; }
+  color: #005fc1; }
 
 .c-link-color-visited {
-  color: #003f77; }
+  color: #0052a8; }
 
 .c-link-color-focus {
   color: #000; }
 
 .c-link-color-hover {
-  color: #000; }
+  color: #00468e; }
 
 .c-link-color-active {
   color: #8C0000; }
@@ -1199,16 +1199,16 @@ th {
   background-color: #008000; }
 
 .bg-link-color {
-  background-color: #005aaa; }
+  background-color: #005fc1; }
 
 .bg-link-color-visited {
-  background-color: #003f77; }
+  background-color: #0052a8; }
 
 .bg-link-color-focus {
   background-color: #000; }
 
 .bg-link-color-hover {
-  background-color: #000; }
+  background-color: #00468e; }
 
 .bg-link-color-active {
   background-color: #8C0000; }
@@ -3160,15 +3160,15 @@ th {
   text-decoration: none; }
 
 .button-primary {
-  border: 1px solid #005aaa;
+  border: 1px solid #005fc1;
   color: #fff;
-  background: #005aaa; }
+  background: #005fc1; }
   .button-primary:focus {
-    outline: 2px dotted #807f7f; }
+    outline: 2px dotted #8ec6ff; }
   .button-primary:focus, .button-primary:hover {
-    border-color: #000;
+    border-color: #00468e;
     color: #fff;
-    background: #000; }
+    background: #00468e; }
   .button-primary:active {
     border-color: #8C0000;
     color: #fff;
@@ -3181,14 +3181,14 @@ th {
     background-color: #e5e5e5; }
 
 .button-secondary {
-  border: 1px solid #005aaa;
-  color: #005aaa;
+  border: 1px solid #005fc1;
+  color: #005fc1;
   background: #fff; }
   .button-secondary:focus {
-    outline: 2px dotted #807f7f; }
+    outline: 2px dotted #8ec6ff; }
   .button-secondary:focus, .button-secondary:hover {
-    border-color: #000;
-    color: #000;
+    border-color: #00468e;
+    color: #00468e;
     background: #fff; }
   .button-secondary:active {
     border-color: #8C0000;
@@ -3206,7 +3206,7 @@ th {
   color: #fff;
   background: #008000; }
   .button-success:focus {
-    outline: 2px dotted #807f7f; }
+    outline: 2px dotted #8ec6ff; }
   .button-success:focus, .button-success:hover {
     border-color: #003e00;
     color: #fff;
@@ -3227,7 +3227,7 @@ th {
   color: #fff;
   background: #C80000; }
   .button-warning:focus {
-    outline: 2px dotted #807f7f; }
+    outline: 2px dotted #8ec6ff; }
   .button-warning:focus, .button-warning:hover {
     border-color: #860000;
     color: #fff;
@@ -3245,12 +3245,12 @@ th {
 
 .button-link {
   border: 1px solid transparent;
-  color: #005aaa;
+  color: #005fc1;
   background: transparent; }
   .button-link:focus {
-    outline: 2px dotted #807f7f; }
+    outline: 2px dotted #8ec6ff; }
   .button-link:focus, .button-link:hover {
-    color: #000;
+    color: #00468e;
     background: transparent; }
   .button-link:active {
     color: #8C0000;
@@ -3421,25 +3421,25 @@ a.link-button-secondary {
   text-decoration: none; }
 
 a.link-button-primary {
-  border: 1px solid #005aaa;
+  border: 1px solid #005fc1;
   color: #fff;
-  background: #005aaa; }
+  background: #005fc1; }
   a.link-button-primary:focus, a.link-button-primary:hover {
-    border-color: #000;
+    border-color: #00468e;
     color: #fff;
-    background: #000; }
+    background: #00468e; }
   a.link-button-primary:active {
     border-color: #8C0000;
     color: #fff;
     background: #8C0000; }
 
 a.link-button-secondary {
-  border: 1px solid #005aaa;
-  color: #005aaa;
+  border: 1px solid #005fc1;
+  color: #005fc1;
   background: #fff; }
   a.link-button-secondary:focus, a.link-button-secondary:hover {
-    border-color: #000;
-    color: #000;
+    border-color: #00468e;
+    color: #00468e;
     background: #fff; }
   a.link-button-secondary:active {
     border-color: #8C0000;
@@ -3683,13 +3683,13 @@ li code {
   background-color: #e5e5e5; }
 
 .c-link {
-  color: #005aaa; }
+  color: #005fc1; }
 
 .c-link-visited {
-  color: #003f77; }
+  color: #0052a8; }
 
 .c-link-hover {
-  color: #000; }
+  color: #00468e; }
 
 .c-link-active {
   color: #8C0000; }
@@ -3707,8 +3707,7 @@ li code {
 .color-sample {
   border: 2px solid #d9d9d9;
   margin: 0 0 1em;
-  padding: 1.5em 1em;
-  text-align: center; }
+  padding: 1em; }
 
 .list-sidebar {
   margin: 0;
@@ -3730,7 +3729,7 @@ li code {
 
 .list-sidebar a:link,
 .list-sidebar a:visited {
-  color: #005aaa; }
+  color: #005fc1; }
 
 .list-sidebar a:focus,
 .list-sidebar a:hover {

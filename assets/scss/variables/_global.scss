@@ -25,10 +25,10 @@ $white:                        #fff;
 $red:                          #C80000;
 $green:                        #008000;
 
-$link-color:                   #005aaa;
-$link-color-visited:           darken($link-color, 10%);
+$link-color:                   #005fc1;
+$link-color-visited:           darken($link-color, 5%);
+$link-color-hover:             darken($link-color, 10%);
 $link-color-focus:             $black;
-$link-color-hover:             $black;
 $link-color-active:            #8C0000;
 
 $gray5:                        #f2f2f2;
