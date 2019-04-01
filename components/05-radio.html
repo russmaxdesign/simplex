@@ -7,7 +7,7 @@
   <title>Radiogroup - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Radio button component usage and examples">
+  <meta name="Description" lang="en" content="Radiogroup component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,19 +83,24 @@
             <li><b>radiogroup</b></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
+
+
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">radiogroup</h2>
           <p>The <code>radiogroup</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>radio</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
-          <h5 class="example-heading">Usage</h5>
-          <p>The <code>radio</code> component can be used to present one or more selectable options to users - where only one option can be chosen.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Usage</h4>
+          <p>Used to present one or more selectable options to users - where only one option can be chosen at a time.</p>
+
+          <h4>Accessibility</h4>
           <ul>
             <li>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</li>
             <li>Radio buttons should always be presented as a group within a <code>&lt;fieldset&gt;</code>.</li>
@@ -102,61 +108,177 @@
           </ul>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h4>.radiogroup</h4>
           <div class="example">
-            <fieldset>
+            <fieldset class="radiogroup">
               <legend>Legend for radio group</legend>
               <ul class="list-unstyled mar-b-0"> 
                 <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="a">
-                      <input class="input-radio__control" type="radio" id="a" name="example2">
-                      <span class="input-radio__content">Radio button one</span>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="1a">
+                      <input class="radiogroup__control" type="radio" id="1a" name="example1">
+                      <span class="radiogroup__content">Radio button one</span>
                     </label>
                   </div>
                 </li>
                 <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="b">
-                      <input class="input-radio__control" type="radio" id="b" name="example2">
-                      <span class="input-radio__content">Radio button two</span>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="1b">
+                      <input class="radiogroup__control" type="radio" id="1b" name="example1">
+                      <span class="radiogroup__content">Radio button two</span>
                     </label>
                   </div>
                 </li>
                 <li>
-                  <div class="input-radio">
-                    <label class="input-radio__label" for="b">
-                      <input class="input-radio__control" type="radio" id="b" name="example2">
-                      <span class="input-radio__content">Radio button three</span>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="1c">
+                      <input class="radiogroup__control" type="radio" id="1c" name="example1">
+                      <span class="radiogroup__content">Radio button three</span>
                     </label>
                   </div>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;fieldset&gt;
+<pre><code class="language-html">&lt;fieldset class="radiogroup"&gt;
   &lt;legend&gt;Legend for radio group&lt;/legend&gt;
   &lt;ul class="list-unstyled"&gt; 
     &lt;li&gt;
-      &lt;div class="input-radio"&gt;
-        &lt;label class="input-radio__label" for="a"&gt;
-          &lt;input class="input-radio__control" type="radio" id="a" name="example2"&gt;
-          &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
+      &lt;div class="radiogroup__container"&gt;
+        &lt;label class="radiogroup__label" for="1a"&gt;
+          &lt;input class="radiogroup__control" type="radio" id="1a" name="example2"&gt;
+          &lt;span class="radiogroup__content"&gt;Radio button one&lt;/span&gt;
         &lt;/label&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;div class="input-radio"&gt;
-        &lt;label class="input-radio__label" for="b"&gt;
-          &lt;input class="input-radio__control" type="radio" id="b" name="example2"&gt;
-          &lt;span class="input-radio__content"&gt;Radio button&lt;/span&gt;
+      &lt;div class="radiogroup__container"&gt;
+        &lt;label class="radiogroup__label" for="1b"&gt;
+          &lt;input class="radiogroup__control" type="radio" id="1b" name="example2"&gt;
+          &lt;span class="radiogroup__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__container"&gt;
+        &lt;label class="radiogroup__label" for="1c"&gt;
+          &lt;input class="radiogroup__control" type="radio" id="1c" name="example2"&gt;
+          &lt;span class="radiogroup__content"&gt;Radio button three&lt;/span&gt;
         &lt;/label&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.radiogroup--required</h4>
+          <div class="example">
+            <fieldset class="radiogroup radiogroup--required">
+              <legend>Legend for radio group</legend>
+              <ul class="list-unstyled mar-b-0"> 
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="2a">
+                      <input class="radiogroup__control" type="radio" id="2a" name="example2">
+                      <span class="radiogroup__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="2b">
+                      <input class="radiogroup__control" type="radio" id="2b" name="example2">
+                      <span class="radiogroup__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="2c">
+                      <input class="radiogroup__control" type="radio" id="2c" name="example2">
+                      <span class="radiogroup__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radiogroup radiogroup--required"&gt;
+  ...
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.isInvalid</h4>
+          <div class="example">
+            <fieldset class="radiogroup isInvalid">
+              <legend>Legend for radio group</legend>
+              <ul class="list-unstyled mar-b-0"> 
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="3a">
+                      <input class="radiogroup__control" type="radio" id="3a" name="example3">
+                      <span class="radiogroup__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="3b">
+                      <input class="radiogroup__control" type="radio" id="3b" name="example3">
+                      <span class="radiogroup__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="3c">
+                      <input class="radiogroup__control" type="radio" id="3c" name="example3">
+                      <span class="radiogroup__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radiogroup isInvalid"&gt;
+  ...
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.radiogroup--disabled</h4>
+          <div class="example">
+            <fieldset class="radiogroup radiogroup--disabled">
+              <legend>Legend for radio group</legend>
+              <ul class="list-unstyled mar-b-0"> 
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="4a">
+                      <input class="radiogroup__control" type="radio" id="4a" name="example4" disabled>
+                      <span class="radiogroup__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="4b">
+                      <input class="radiogroup__control" type="radio" id="4b" name="example4" disabled>
+                      <span class="radiogroup__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radiogroup__container">
+                    <label class="radiogroup__label" for="4c">
+                      <input class="radiogroup__control" type="radio" id="4c" name="example4" disabled>
+                      <span class="radiogroup__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radiogroup radiogroup--disabled"&gt;
+  ...
 &lt;/fieldset&gt;
 </code></pre>
         </div>

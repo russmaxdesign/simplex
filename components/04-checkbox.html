@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,23 +83,28 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
+
+
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">checkbox</h2>
           <p>The <code>checkbox</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
-          <h5 class="example-heading">Usage</h5>
-          <p>The <code>checkbox</code> component can be used to present one or more selectable options to users.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Usage</h4>
+          <p>Used to present one or more single or multiple choice options to users.</p>
+
+          <h4>Accessibility</h4>
           <p>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</p>
           <hr>
 
-          <h5 class="example-heading">Basic checkbox example</h5>
+          <h4>Basic checkbox</h4>
           <div class="example">
             <div class="input-checkbox">
               <label class="input-checkbox__label" for="example1">
@@ -107,7 +113,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Required checkbox example</h5>
+<pre><code class="language-html">&lt;div class="input-checkbox"&gt;
+  &lt;label class="input-checkbox__label" for="example1"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example1"&gt;
+    &lt;span class="input-checkbox__content"&gt;Checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Required checkbox</h4>
           <div class="example">
             <div class="input-checkbox input-checkbox--required">
               <label class="input-checkbox__label" for="example2">
@@ -116,7 +130,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Invalid checkbox example</h5>
+<pre><code class="language-html">&lt;div class="input-checkbox input-checkbox--required"&gt;
+  &lt;label class="input-checkbox__label" for="example2"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example2" required&gt;
+    &lt;span class="input-checkbox__content"&gt;Required checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Invalid checkbox</h4>
           <div class="example">
             <div class="input-checkbox isInvalid">
               <label class="input-checkbox__label" for="example3">
@@ -125,7 +147,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Example</h5>
+<pre><code class="language-html">&lt;div class="input-checkbox isInvalid"&gt;
+  &lt;label class="input-checkbox__label" for="example3"&gt;
+    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3"&gt;
+    &lt;span class="input-checkbox__content"&gt;Invalid checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Disabled checkbox</h4>
           <div class="example">
             <div class="input-checkbox input-checkbox--disabled">
               <label class="input-checkbox__label" for="example4">
@@ -134,34 +164,7 @@
               </label>
             </div>
           </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- Checkbox --&gt;
-&lt;div class="input-checkbox"&gt;
-  &lt;label class="input-checkbox__label" for="example1"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example1"&gt;
-    &lt;span class="input-checkbox__content"&gt;Checkbox&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- Required checkbox --&gt;
-&lt;div class="input-checkbox input-checkbox--required"&gt;
-  &lt;label class="input-checkbox__label" for="example2"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example2" required&gt;
-    &lt;span class="input-checkbox__content"&gt;Required checkbox&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- Invalid checkbox --&gt;
-&lt;div class="input-checkbox isInvalid"&gt;
-  &lt;label class="input-checkbox__label" for="example3"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3"&gt;
-    &lt;span class="input-checkbox__content"&gt;Invalid checkbox&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- Disabled checkbox --&gt;
+<pre><code class="language-html">
 &lt;div class="input-checkbox input-checkbox--disabled"&gt;
   &lt;label class="input-checkbox__label" for="example4"&gt;
     &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example4" disabled&gt;

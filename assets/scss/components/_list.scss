@@ -5,6 +5,7 @@
 .list-inline-pipe,
 .list-bullet,
 .list-contents {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -39,9 +40,7 @@
   content: '|';
 }
 
-.list-inline-slash .active,
-.list-inline-greater .active,
-.list-inline-pipe .active {
+.list-item-active {
   color: $gray45;
 }
 
@@ -74,6 +73,7 @@
   text-decoration: none;
 }
 
-.list-pagination .active a {
-  background-color: $gray15;
+.list-pagination .list-item-active a {
+  background-color: $gray10;
+  color: $gray60;
 }

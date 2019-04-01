@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>S elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all S elements">
+  <meta name="Description" lang="en" content="S elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,66 +102,57 @@
           <h2 class="mar-t-0">S elements</h2>
           <hr>
 
-          <h3>s (strike)</h3>
+          <h4>s (strike)</h4>
           <p>This element represents a container for base text and ruby text — small annotations
           used for phonetic readings in languages such as Japanese and Chinese.
           Examples include furigana and zhùyin fúhào (bopomofo).</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <s>STRIKE element</s> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;s&gt;STRIKE element&lt;/s&gt;
 </code></pre>
           <hr>
 
-          <h3>samp</h3>
+          <h4>samp</h4>
           <p>This element represents (sample) output from a program or computing
           system.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">This is the &lt;samp&gt;SAMPLE element&lt;/samp&gt; in a sentence.
 </code></pre>
           <hr>
 
-          <h3>script</h3>
+          <h4>script</h4>
           <p>The script element allows authors to include dynamic script and data
           blocks in their documents. The element does not represent content for the
           user.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;script src="../assets/js/prism.js"&gt;&lt;/script&gt;
 </code></pre>
           <hr>
 
-          <h3>section</h3>
+          <h4>section</h4>
           <p>This element represents a generic document or application section.
           Ideally, it should be used if there is a natural heading associated with
           it. This element is not a generic container element. When an element is
           needed for styling purposes or as a convenience for scripting, authors
           are encouraged to use the div element instead.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <section class="class-name" id="section-id-name">
               <h5>This is a SECTION element</h5>
             </section>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;section class="class-name" id="section-id-name"&gt;
   &lt;h5&gt;This is a SECTION element&lt;/h5&gt;
 &lt;/section&gt;
 </code></pre>
           <hr>
 
-          <h3>select</h3>
+          <h4>select</h4>
           <p>This element represents a control for selecting amongst a set of options.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name" id="select-id-name">
               <label for="color">Color</label>
@@ -172,7 +164,6 @@
               </select>
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="class-name" id="select-id-name"&gt;
   &lt;label for="color"&gt;Color&lt;/label&gt;
   &lt;select name="color" id="color"&gt;
@@ -185,106 +176,90 @@
 </code></pre>
           <hr>
 
-          <h3>small</h3>
+          <h4>small</h4>
           <p>This elements represents side comments such as small print. It is not
           intended to be presentational. The small element should not be used for
           extended spans of text such as multiple paragraphs, lists, or sections of
           text. It is only intended for short runs of text.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <small>&copy; copyright Sitename</small>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;small&gt;&copy; copyright Sitename&lt;/small&gt;
 </code></pre>
           <hr>
 
-          <h3>source</h3>
+          <h4>source</h4>
           <p>This element allows authors to specify multiple alternative media
           resources for media elements. It does not represent anything on its own.
           The src attribute gives the address of the media resource. The value must
           be a valid non-empty URL potentially surrounded by spaces. This attribute
           must be present.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;source src="test.webm" type="video/webm"&gt;
 </code></pre>
           <hr>
 
-          <h3>span</h3>
+          <h4>span</h4>
           <p>This element represents an inline generic container.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <span class="class-name" id="span-id-name">SPAN element</span> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;span class="class-name" id="span-id-name"&gt;SPAN element&lt;/span&gt;
 </code></pre>
           <hr>
 
-          <h3>strong</h3>
+          <h4>strong</h4>
           <p>This element strong importance for its contents.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <strong>STRONG element</strong> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;strong&gt;STRONG element&lt;/strong&gt;
 </code></pre>
           <hr>
 
-          <h3>style</h3>
+          <h4>style</h4>
           <p>This element allows authors to embed style information in their
           documents. The style element is one of several inputs to the styling
           processing model. The element does not represent content for the user.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;style&gt;
   p { color: red; }
 &lt;/style&gt;
 </code></pre>
           <hr>
 
-          <h3>sub</h3>
+          <h4>sub</h4>
           <p>This element can be used inside a var element, for variables that have
           subscripts.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <sub>SUB element</sub> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;sub&gt;SUB element&lt;/sub&gt;
 </code></pre>
           <hr>
 
-          <h3>summary</h3>
+          <h4>summary</h4>
           <p>This element represents a summary, caption, or legend for the rest of
           the contents of the summary element's parent details element, if any.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;details&gt;
   &lt;summary&gt;This is the SUMMARY element&lt;/summary&gt;
 &lt;/details&gt;
 </code></pre>
           <hr>
 
-          <h3>sup</h3>
+          <h4>sup</h4>
           <p>This element represents a superscript and the sub element represents a
           subscript.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <sup>SUP element</sup> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;sup&gt;SUP element&lt;/sub&gt;
 </code></pre>
         </div>

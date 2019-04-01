@@ -12,7 +12,7 @@
 
 @media (max-width: $screen-xs-max) {
   .visible-xs {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 
@@ -21,7 +21,7 @@
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .visible-sm {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 
@@ -30,7 +30,7 @@
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
   .visible-md {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 
@@ -39,6 +39,6 @@
 
 @media (min-width: $screen-lg-min) {
   .visible-lg {
-    display: block !important;
+    display: inline-block !important;
   }
 }

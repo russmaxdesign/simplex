@@ -24,10 +24,17 @@ li code {
   padding: 1em;
 }
 
-.example-heading {
-  color: $base-text-color;
-  font-size: $font16;
-  text-transform: uppercase;
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  margin: 2em 0 3em;
+  background: $gray5;
+}
+
+.simplex-nav .current {
+  font-weight: bold;
+  color: $black;
 }
 
 

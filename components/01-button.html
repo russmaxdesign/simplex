@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,24 +83,27 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">button</h2>
           <p>The <code>button</code> component represents a clickable button.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <ul>
-            <li>Buttons can be with form submission or to trigger events.</li>
-            <li>The type should be set to <code>submit</code> when submitting a form.</li>
+            <li>Used to trigger form submission or events (such as open/close, fired modals etc).</li>
+            <li>Must not be used when the purpose is to send the user to a new URL. In these cases, use the <a href="02-link-button.html"><code>button-link</code> component</a>.</li>
+            <li>The type must be set to <code>submit</code> when submitting a form.</li>
             <li>In all other cases the type should be set to <code>button</code>.</li>
-            <li>The <code>button</code> component should not be used when the purpose is to send the user to a new URL. In these cases, use the <a href="02-link-button.html"><code>button-link</code> component</a>.</li>
           </ul>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <ul>
             <li>There must be sufficient contrast between background and foreground colors</li>
             <li>The content of the button should be meaningful</li>
@@ -108,58 +112,49 @@
           </ul>
           <hr>
 
-          <h5 class="example-heading">Primary button example</h5>
+          <h4>.button-primary</h4>
           <div class="example">
-            <div class="mar-b-1">
-              <button type="button" class="button-primary">button-primary</button>
-              <button type="button" class="button-primary" disabled>disabled</button>
-            </div>
+            <button type="button" class="button-primary">button-primary</button>
+            <button type="button" class="button-primary" disabled>button-primary</button>
           </div>
-          <h5 class="example-heading">Secondary button example</h5>
-          <div class="example">
-            <div class="mar-b-1">
-              <button type="button" class="button-secondary">button-secondary</button>
-              <button type="button" class="button-secondary" disabled>disabled</button>
-            </div>
-          </div>
-          <h5 class="example-heading">Success button example</h5>
-          <div class="example">
-            <div class="mar-b-1">
-              <button type="button" class="button-success">button-success</button>
-              <button type="button" class="button-success" disabled>disabled</button>
-            </div>
-          </div>
-          <h5 class="example-heading">Warning button example</h5>
-          <div class="example">
-            <div class="mar-b-1">
-              <button type="button" class="button-warning">button-warning</button>
-              <button type="button" class="button-warning" disabled>disabled</button>
-            </div>
-          </div>
-          <h5 class="example-heading">Link button example</h5>
-          <div class="example">
-            <div class="mar-b-1">
-              <button type="button" class="button-link">button-link</button>
-              <button type="button" class="button-link" disabled>disabled</button>
-            </div>
-          </div>
-          <hr>
+<pre><code class="language-html">&lt;button type="button" class="button-primary"&gt;button-primary&lt;/button&gt;
+&lt;button type="button" class="button-primary" disabled&gt;button-primary&lt;/button&gt;
+</code></pre>
 
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- Varieties --&gt;
-&lt;button type="button" class="button-primary"&gt;primary&lt;/button&gt;
-&lt;button type="button" class="button-secondary"&gt;secondary&lt;/button&gt;
-&lt;button type="button" class="button-success"&gt;success&lt;/button&gt;
-&lt;button type="button" class="button-warning"&gt;warning&lt;/button&gt;
-&lt;button type="button" class="button-link"&gt;link&lt;/button&gt;
+          <h4>.button-secondary</h4>
+          <div class="example">
+            <button type="button" class="button-secondary">button-secondary</button>
+            <button type="button" class="button-secondary" disabled>button-secondary</button>
+          </div>
+<pre><code class="language-html">&lt;button type="button" class="button-secondary"&gt;button-secondary&lt;/button&gt;
+&lt;button type="button" class="button-secondary" disabled&gt;button-secondary&lt;/button&gt;
+</code></pre>
 
-&lt;!-- Type --&gt;
-&lt;button type="button" class="button-primary"&gt;button&lt;/button&gt;
-&lt;button type="submit" class="button-primary"&gt;submit&lt;/button&gt;
-&lt;button type="reset" class="button-primary"&gt;reset&lt;/button&gt;
+          <h4>.button-success</h4>
+          <div class="example">
+            <button type="button" class="button-success">button-success</button>
+            <button type="button" class="button-success" disabled>button-success</button>
+          </div>
+<pre><code class="language-html">&lt;button type="button" class="button-success"&gt;button-success&lt;/button&gt;
+&lt;button type="button" class="button-success" disabled&gt;button-success&lt;/button&gt;
+</code></pre>
 
-&lt;!-- Disabled attribute --&gt;
-&lt;button type="button" class="button-primary" disabled&gt;disabled&lt;/button&gt;
+          <h4>.button-warning</h4>
+          <div class="example">
+            <button type="button" class="button-warning">button-warning</button>
+            <button type="button" class="button-warning" disabled>button-warning</button>
+          </div>
+<pre><code class="language-html">&lt;button type="button" class="button-warning"&gt;button-warning&lt;/button&gt;
+&lt;button type="button" class="button-warning" disabled&gt;button-warning&lt;/button&gt;
+</code></pre>
+
+          <h4>.button-link</h4>
+          <div class="example">
+            <button type="button" class="button-link">button-link</button>
+            <button type="button" class="button-link" disabled>button-link</button>
+          </div>
+<pre><code class="language-html">&lt;button type="button" class="button-link"&gt;button-link&lt;/button&gt;
+&lt;button type="button" class="button-link" disabled&gt;button-link&lt;/button&gt;
 </code></pre>
         </div>
       </div>

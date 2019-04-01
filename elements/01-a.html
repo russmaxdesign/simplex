@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>A elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all A elements">
+  <meta name="Description" lang="en" content="A elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,62 +102,54 @@
           <h2 class="mar-t-0">A elements</h2>
           <hr>
 
-          <h3>a (link)</h3>
+          <h4>a (link)</h4>
           <p>This element represents an anchor element. If this element has an
           <code>href</code> attribute, then it represents a hyperlink. If the element
           has no <code>href</code> attribute, then the element represents a
           placeholder for where a link might otherwise have been placed, if it had
           been relevant.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <a class="class-name" href="#">A element</a> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;a class="class-name" href="#"&gt;A element&lt;/a&gt;
 </code></pre>
           <hr>
 
-          <h3>abbr</h3>
+          <h4>abbr</h4>
           <p>This element represents an abbreviation or acronym. The optional title
           attribute may be used to provide an expansion of the abbreviation. If
           specified, the title attribute must contain an expansion of the
           abbreviation and nothing else.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <abbr class="class-name" title="Extended content">ABBR element</abbr> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;abbr class="class-name" title="Extended content"&gt;ABBR element&lt;/abbr&gt;
 </code></pre>
           <hr>
 
-          <h3>address</h3>
+          <h4>address</h4>
           <p>This element is not appropriate for all postal and e-mail addresses; it
           should be reserved for providing such information about the contact people
           for the document.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <address class="class-name" id="address-id-name">
               This is the ADDRESS element
             </address>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;address class="class-name" id="address-id-name"&gt;
   This is the ADDRESS element
 &lt;/address&gt;
 </code></pre>
           <hr>
 
-          <h3>area</h3>
+          <h4>area</h4>
           <p>This element represents either a hyperlink with some text and a
           corresponding area on an image map, or a dead area on an image map. If the
           area element has no href attribute, then the area represented by the
           element cannot be selected, and the alt attribute must be omitted.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;img src="image-name.png" usemap="#map-name" alt="ALT"&gt;
 &lt;map name="map-name"&gt;
   &lt;area shape="rect" coords="0,0,100,100" href="url1.html" alt="ALT1"&gt;
@@ -165,48 +158,42 @@
 </code></pre>
           <hr>
 
-          <h3>article</h3>
+          <h4>article</h4>
           <p>This element represents a component of a page that could be reused or
           distributable (ie via syndication). This could be a forum post, a magazine
           or newspaper article, a blog entry, a user-submitted comment, an
           interactive widget or gadget, or any other independent item of content.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <article class="class-name" id="article-id-name" role="article">
-              <h4>This is a ARTICLE element</h4>
+              <h5>This is a ARTICLE element</h5>
             </article>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;article class="class-name" id="article-id-name" role="article"&gt;
-  &lt;h4&gt;This is a ARTICLE element&lt;/h4&gt;
+  &lt;h5&gt;This is a ARTICLE element&lt;/h5&gt;
 &lt;/article&gt;
 </code></pre>
           <hr>
 
-          <h3>aside</h3>
+          <h4>aside</h4>
           <p>This element represents a section of a page consisting of content that
           is tangentially related to the content around the aside element, and which
           could be considered separate from that content.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <aside class="class-name" id="aside-id-name" role="complementary">
               This is a ASIDE element
             </aside>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;aside class="class-name" id="aside-id-name" role="complementary"&gt;
   This is a ASIDE element
 &lt;/aside&gt;
 </code></pre>
           <hr>
 
-          <h3>audio</h3>
+          <h4>audio</h4>
           <p>This element represents a sound or audio stream.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;audio controls class="class-name" id="audio-id-name"&gt;
   &lt;source src="test-mp3.mp3" type="audio/mpeg"&gt;
   &lt;source src="test-wav.wav" type="audio/wav"&gt;

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>B elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all B elements">
+  <meta name="Description" lang="en" content="B elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,33 +102,29 @@
           <h2 class="mar-t-0">B elements</h2>
           <hr>
 
-          <h3>b (bold)</h3>
+          <h4>b (bold)</h4>
           <p>This element represents a span of text to be stylistically offset from
           the normal prose without conveying any extra importance. Examples are key
           words in a document abstract, product names in a review, or other spans of
           text whose typical typographic presentation is bold. This element should be
           used as a last resort when no other element is more appropriate.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <b>BOLD element</b> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;b&gt;BOLD element&lt;/b&gt;
 </code></pre>
           <hr>
 
-          <h3>base</h3>
+          <h4>base</h4>
           <p>This element allows authors to specify the document base URL for the
           purposes of resolving relative URLs, and the name of the default browsing
           context for the purposes of following hyperlinks. The element does not
           represent any content beyond this information. There must be no more than
           one base element per document. A base element must have either an href
           attribute, a target attribute, or both.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;head&gt;
   &lt;title&gt;The Company&lt;/title&gt;
   &lt;base href="http://www.sample.com/"&gt;
@@ -135,85 +132,73 @@
 </code></pre>
           <hr>
 
-          <h3>bdi</h3>
+          <h4>bdi</h4>
           <p>This element represents a span of text that is to be isolated from its
           surroundings for the purposes of bidirectional text formatting.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <bdi>BDI element</bdi> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;bdi&gt;BDI element&lt;/bdi&gt;
 </code></pre>
           <hr>
 
-          <h3>bdo</h3>
+          <h4>bdo</h4>
           <p>This element represents explicit text directionality formatting
           control for its children. It allows authors to override the Unicode
           bidirectional algorithm by explicitly specifying a direction override.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <bdo dir="ltr">BDO element</bdo> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;bdo dir="ltr"&gt;BDO element&lt;/bdo&gt;
 </code></pre>
           <hr>
 
-          <h3>blockquote</h3>
+          <h4>blockquote</h4>
           <p>This element represents a section that is quoted from another source.
           Content inside a blockquote must be quoted from another source, whose
           address, if it has one, may be cited in the cite attribute.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <blockquote class="class-name" id="blockquote-id-name">
               This is a BLOCKQUOTE element
             </blockquote>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;blockquote class="class-name" id="blockquote-id-name"&gt;
   This is a BLOCKQUOTE element
 &lt;/blockquote&gt;
 </code></pre>
           <hr>
 
-          <h3>body</h3>
+          <h4>body</h4>
           <p>This element represents the main content of the document.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;body&gt;
   This is the BODY element
 &lt;/body&gt;
 </code></pre>
           <hr>
 
-          <h3>br</h3>
+          <h4>br</h4>
           <p>This element represents a line break. br elements must be used only for
           line breaks that are actually part of the content, as in poems or
           addresses.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             Some text<br>
             Some more text
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">Some text&lt;br&gt;
 Some more text
 </code></pre>
           <hr>
 
-          <h3>button</h3>
+          <h4>button</h4>
           <p>This element represents a button. If the element is not disabled, then
           the user agent should allow the user to activate the button.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <button type="button">BUTTON type=button</button>
             <button type="submit">BUTTON type=submit</button>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;button type="button"&gt;BUTTON type=button&lt;/button&gt;
 &lt;button type="submit"&gt;BUTTON type=submit&lt;/button&gt;
 </code></pre>

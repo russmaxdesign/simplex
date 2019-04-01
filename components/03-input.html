@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,17 +83,19 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">input</h2>
           <p>The <code>input</code> component represents an <code>&lt;input&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <ul>
             <li>Used within forms where single-line user input required.</li>
             <li>The type can include: <code>text</code>, <code>tel</code>, <code>email</code>, <code>password</code>, <code>search</code>, <code>url</code> and other valid options.</li>
@@ -102,7 +105,8 @@
             <li>When errors occur, the <code>isInvalid</code> attribute should be injected into the parent container.</li>
             <li>The <code>input--disabled</code> attribute can be added to the parent container if the form control needs to be disabled.</li>
           </ul>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <ul>
             <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
             <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
@@ -111,7 +115,7 @@
           </ul>
           <hr>
 
-          <h5 class="example-heading">Basic input example</h5>
+          <h4>Basic input</h4>
           <div class="example">
             <div class="input">
               <label class="input__label" for="example1">
@@ -120,7 +124,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Input with placeholder example</h5>
+<pre><code class="language-html">&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example1"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" name="example1" id="example1"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Input with placeholder</h4>
           <div class="example">
             <div class="input">
               <label class="input__label" for="example2">
@@ -129,7 +141,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Input with hidden label example</h5>
+<pre><code class="language-html">&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example2"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example2" placeholder="Placeholder text"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Input with hidden label</h4>
           <div class="example">
             <div class="input">
               <label class="input__label" for="example4">
@@ -138,7 +158,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Input with hint text example</h5>
+<pre><code class="language-html">&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example4"&gt;
+    &lt;span class="input__content hidden"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example4"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Input with hint text</h4>
           <div class="example">
             <div class="input">
               <label class="input__label" for="example5">
@@ -148,7 +176,16 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Required input example</h5>
+<pre><code class="language-html">&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example5"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example5"&gt;
+    &lt;span class="message-hint"&gt;Hint text&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Required input</h4>
           <div class="example">
             <div class="input input--required">
               <label class="input__label" for="example6">
@@ -157,7 +194,15 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Invalid input example</h5>
+<pre><code class="language-html">&lt;div class="input input--required"&gt;
+  &lt;label class="input__label" for="example6"&gt;
+    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example6" required&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Invalid input</h4>
           <div class="example">
             <div class="input isInvalid">
               <label class="input__label" for="example7">
@@ -167,70 +212,25 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Disabled input example</h5>
-          <div class="example">
-            <div class="input input--disabled">
-              <label class="input__label" for="example8">
-                <span class="input__content">Label for input</span>
-                <input class="input__control" type="text" id="example8" disabled aria-disabled="true">
-              </label>
-            </div>
-          </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;-- Basic input example --&gt;
-&lt;div class="input"&gt;
-  &lt;label class="input__label" for="example1"&gt;
-    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" name="example1" id="example1"&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;-- Input with placeholder example --&gt;
-&lt;div class="input"&gt;
-  &lt;label class="input__label" for="example2"&gt;
-    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example2" placeholder="Placeholder text"&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;-- Input with hidden label example --&gt;
-&lt;div class="input"&gt;
-  &lt;label class="input__label" for="example4"&gt;
-    &lt;span class="input__content hidden"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example4"&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;-- Input with hint text example --&gt;
-&lt;div class="input"&gt;
-  &lt;label class="input__label" for="example5"&gt;
-    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example5"&gt;
-    &lt;span class="message-hint"&gt;Hint text&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;-- Required input example --&gt;
-&lt;div class="input input--required"&gt;
-  &lt;label class="input__label" for="example6"&gt;
-    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example6" required&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;-- Invalid input example --&gt;
-&lt;div class="input isInvalid"&gt;
+<pre><code class="language-html">&lt;div class="input isInvalid"&gt;
   &lt;label class="input__label" for="example7"&gt;
     &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example7" required&gt;
     &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
+</code></pre>
 
-&lt;-- Disabled input example --&gt;
-&lt;div class="input input--disabled"&gt;
+          <h4>Disabled input</h4>
+          <div class="example">
+            <div class="input input--disabled">
+              <label class="input__label" for="example8">
+                <span class="input__content">Label for input</span>
+                <input class="input__control" type="text" id="example8" disabled>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="input input--disabled"&gt;
   &lt;label class="input__label" for="example8"&gt;
     &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example8" disabled aria-disabled="true"&gt;

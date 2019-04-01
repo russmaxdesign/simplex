@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
-        <li><b>utility classes</b></li>
+        <li><a class="current" href="index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -85,100 +86,54 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
+            <li><a href="12-message.html">Message</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">Border utility classes</h2>
           <p>Border utility classes allow authors to add borders in a range of predefined colors to any element.</p>
-          <h5 class="example-heading">Usage</h5>
-          <p>Used to apply specific border to any element or component.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Usage</h4>
+          <p>Used to apply specific border properties to any element or component.</p>
+
+          <h4>Accessibility</h4>
           <p>N/A</p>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h4>No border</h4>
           <div class="example">
-            <h3 class="mar-t-0">No border</h3>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-0">bor-0</div>
-
-            <h3 class="mar-t-0">border on all sides</h3>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-primary">bor-a-primary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-secondary">bor-a-secondary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-red">bor-a-red</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-green">bor-a-green</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray90">bor-a-gray90</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray85">bor-a-gray85</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray80">bor-a-gray80</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray75">bor-a-gray75</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray70">bor-a-gray70</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray65">bor-a-gray65</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray60">bor-a-gray60</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray55">bor-a-gray55</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray50">bor-a-gray50</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray45">bor-a-gray45</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray40">bor-a-gray40</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray35">bor-a-gray35</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray30">bor-a-gray30</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray25">bor-a-gray25</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray20">bor-a-gray20</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray15">bor-a-gray15</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray10">bor-a-gray10</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-a-gray5">bor-a-gray5</div>
-
-            <h3 class="mar-t-0">border-top only</h3>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-primary">bor-t-primary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-secondary">bor-t-secondary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-red">bor-t-red</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-green">bor-t-green</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray90">bor-t-gray90</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray85">bor-t-gray85</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray80">bor-t-gray80</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray75">bor-t-gray75</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray70">bor-t-gray70</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray65">bor-t-gray65</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray60">bor-t-gray60</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray55">bor-t-gray55</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray50">bor-t-gray50</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray45">bor-t-gray45</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray40">bor-t-gray40</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray35">bor-t-gray35</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray30">bor-t-gray30</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray25">bor-t-gray25</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray20">bor-t-gray20</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray15">bor-t-gray15</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray10">bor-t-gray10</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-t-gray5">bor-t-gray5</div>
-
-            <h3 class="mar-t-0">border-bottom only</h3>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-primary">bor-b-primary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-secondary">bor-b-secondary</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-red">bor-b-red</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-green">bor-b-green</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray90">bor-b-gray90</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray85">bor-b-gray85</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray80">bor-b-gray80</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray75">bor-b-gray75</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray70">bor-b-gray70</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray65">bor-b-gray65</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray60">bor-b-gray60</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray55">bor-b-gray55</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray50">bor-b-gray50</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray45">bor-b-gray45</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray40">bor-b-gray40</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray35">bor-b-gray35</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray30">bor-b-gray30</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray25">bor-b-gray25</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray20">bor-b-gray20</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray15">bor-b-gray15</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray10">bor-b-gray10</div>
-            <div class="mar-b-1 pad-x-1 pad-y-1 bor-b-gray5">bor-b-gray5</div>
+            <div class="pad-x-1 pad-y-1 bor-0 bg-gray5">bor-0</div>
           </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="bor-0"&gt;&lt;/div&gt;
+</code></pre>
 
-&lt;div class="bor-a-primary"&gt;&lt;/div&gt;
+          <h4>Border on all sides</h4>
+          <div class="example">
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-primary">bor-a-primary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-secondary">bor-a-secondary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-red">bor-a-red</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-green">bor-a-green</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray90">bor-a-gray90</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray85">bor-a-gray85</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray80">bor-a-gray80</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray75">bor-a-gray75</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray70">bor-a-gray70</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray65">bor-a-gray65</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray60">bor-a-gray60</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray55">bor-a-gray55</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray50">bor-a-gray50</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray45">bor-a-gray45</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray40">bor-a-gray40</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray35">bor-a-gray35</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray30">bor-a-gray30</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray25">bor-a-gray25</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray20">bor-a-gray20</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray15">bor-a-gray15</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-a-gray10">bor-a-gray10</div>
+            <div class="pad-x-1 pad-y-1 bor-a-gray5">bor-a-gray5</div>
+          </div>
+<pre><code class="language-html">&lt;div class="bor-a-primary"&gt;&lt;/div&gt;
 &lt;div class="bor-a-secondary"&gt;&lt;/div&gt;
 &lt;div class="bor-a-red"&gt;&lt;/div&gt;
 &lt;div class="bor-a-green"&gt;&lt;/div&gt;
@@ -200,7 +155,34 @@
 &lt;div class="bor-a-gray15"&gt;&lt;/div&gt;
 &lt;div class="bor-a-gray10"&gt;&lt;/div&gt;
 &lt;div class="bor-a-gray5"&gt;&lt;/div&gt;
+</code></pre>
 
+          <h4>Border-top only</h4>
+          <div class="example">
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-primary">bor-t-primary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-secondary">bor-t-secondary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-red">bor-t-red</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-green">bor-t-green</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray90">bor-t-gray90</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray85">bor-t-gray85</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray80">bor-t-gray80</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray75">bor-t-gray75</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray70">bor-t-gray70</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray65">bor-t-gray65</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray60">bor-t-gray60</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray55">bor-t-gray55</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray50">bor-t-gray50</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray45">bor-t-gray45</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray40">bor-t-gray40</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray35">bor-t-gray35</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray30">bor-t-gray30</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray25">bor-t-gray25</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray20">bor-t-gray20</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray15">bor-t-gray15</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-t-gray10">bor-t-gray10</div>
+            <div class="pad-x-1 pad-y-1 bor-t-gray5">bor-t-gray5</div>
+          </div>
+<pre><code class="language-html">
 &lt;div class="bor-t-primary"&gt;&lt;/div&gt;
 &lt;div class="bor-t-secondary"&gt;&lt;/div&gt;
 &lt;div class="bor-t-red"&gt;&lt;/div&gt;
@@ -223,8 +205,34 @@
 &lt;div class="bor-t-gray15"&gt;&lt;/div&gt;
 &lt;div class="bor-t-gray10"&gt;&lt;/div&gt;
 &lt;div class="bor-t-gray5"&gt;&lt;/div&gt;
+</code></pre>
 
-&lt;div class="bor-b-primary"&gt;&lt;/div&gt;
+          <h4>Border-bottom only</h4>
+          <div class="example">
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-primary">bor-b-primary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-secondary">bor-b-secondary</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-red">bor-b-red</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-green">bor-b-green</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray90">bor-b-gray90</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray85">bor-b-gray85</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray80">bor-b-gray80</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray75">bor-b-gray75</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray70">bor-b-gray70</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray65">bor-b-gray65</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray60">bor-b-gray60</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray55">bor-b-gray55</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray50">bor-b-gray50</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray45">bor-b-gray45</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray40">bor-b-gray40</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray35">bor-b-gray35</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray30">bor-b-gray30</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray25">bor-b-gray25</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray20">bor-b-gray20</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray15">bor-b-gray15</div>
+            <div class="mar-b-1 bg-gray5 pad-x-1 pad-y-1 bor-b-gray10">bor-b-gray10</div>
+            <div class="pad-x-1 pad-y-1 bor-b-gray5">bor-b-gray5</div>
+          </div>
+<pre><code class="language-html">&lt;div class="bor-b-primary"&gt;&lt;/div&gt;
 &lt;div class="bor-b-secondary"&gt;&lt;/div&gt;
 &lt;div class="bor-b-red"&gt;&lt;/div&gt;
 &lt;div class="bor-b-green"&gt;&lt;/div&gt;

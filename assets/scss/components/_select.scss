@@ -1,21 +1,18 @@
-.select {
-  margin-bottom: 1em;
-}
-
 .select__control {
-  /* background-image: url(../img/icon-select.svg), linear-gradient(to bottom, $white 50%, $gray5);
+  -webkit-border-radius: $base-border-radius;
+  -webkit-appearance: none;
+
+  background-color: $white;
+  background-image: url(../img/icon-select.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - (5px)) 50%, 0 0;
-  background-size: 16px 16px, 100% 100%; */
+  background-size: 16px 16px, 100% 100%;
   font-size: $font16;
-
-  /* -webkit-border-radius: $base-border-radius;
-  -webkit-appearance: none; */
 }
 
 .select__content {
   display: block;
-  padding-bottom: .1em;
+  padding-bottom: $label-space;
 }
 
 

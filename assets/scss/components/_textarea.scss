@@ -1,14 +1,10 @@
-.textarea {
-  margin-bottom: 1em;
-}
-
 .textarea__control {
   font-size: $font16;
 }
 
 .textarea__content {
   display: block;
-  padding-bottom: .1em;
+  padding-bottom: $label-space;
 }
 
 

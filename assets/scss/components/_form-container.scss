@@ -1,0 +1,33 @@
+// all
+
+.form-container {
+  margin-bottom: $form-container-xs;
+  @include clearfix;
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .form-container {
+    margin-bottom: $form-container-sm;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .form-container {
+    margin-bottom: $form-container-md;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .form-container {
+    margin-bottom: $form-container-lg;
+  }
+}

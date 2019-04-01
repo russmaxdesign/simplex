@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
-        <li><b>utility classes</b></li>
+        <li><a class="current" href="index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -85,18 +86,22 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
+            <li><a href="12-message.html">Message</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">Background-color utility classes</h2>
           <p>Background-color utility classes allow authors to apply colors to any element, including extending components.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <p>Used to apply pre-determined background colors to any element or component.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <p>Color combinations should only be used as presented to maintain color contrast ratios.</p>
           <hr>
 
-          <h5 class="example-heading">Examples: Primary</h5>
+          <h4>Primary</h4>
           <div class="color-sample bg-primary c-white">bg-primary<br>5.54:1 = PASS</div>
           <div class="color-sample bg-primary90">bg-primary90:<br>6.19:1 - PASS</div>
           <div class="color-sample bg-primary85">bg-primary85:<br>7.69:1 - PASS</div>
@@ -109,8 +114,21 @@
           <div class="color-sample bg-primary50">bg-primary50<br>14.83:1 - PASS</div>
           <div class="color-sample bg-primary45">bg-primary45<br>16.18:1 - PASS</div>
           <div class="color-sample bg-primary40">bg-primary40<br>17.65:1 - PASS</div>
+<pre><code class="language-html">&lt;div class="bg-primary"&gt;bg-primary&lt;/div&gt;
+&lt;div class="bg-primary90"&gt;bg-primary90&lt;/div&gt;
+&lt;div class="bg-primary85"&gt;bg-primary85&lt;/div&gt;
+&lt;div class="bg-primary80"&gt;bg-primary80&lt;/div&gt;
+&lt;div class="bg-primary75"&gt;bg-primary75&lt;/div&gt;
+&lt;div class="bg-primary70"&gt;bg-primary70&lt;/div&gt;
+&lt;div class="bg-primary65"&gt;bg-primary65&lt;/div&gt;
+&lt;div class="bg-primary60"&gt;bg-primary60&lt;/div&gt;
+&lt;div class="bg-primary55"&gt;bg-primary55&lt;/div&gt;
+&lt;div class="bg-primary50"&gt;bg-primary50&lt;/div&gt;
+&lt;div class="bg-primary45"&gt;bg-primary45&lt;/div&gt;
+&lt;div class="bg-primary40"&gt;bg-primary40&lt;/div&gt;
+</code></pre>
 
-          <h5 class="example-heading">Examples: Secondary</h5>
+          <h4>Secondary</h4>
           <div class="color-sample bg-secondary c-white">bg-secondary<br>5.62:1 - PASS</div>
           <div class="color-sample bg-secondary90">bg-secondary90<br>5.53:1 - PASS</div>
           <div class="color-sample bg-secondary85">bg-secondary85<br>5.78:1 - PASS</div>
@@ -123,14 +141,32 @@
           <div class="color-sample bg-secondary50">bg-secondary50<br>14.93:1 - PASS</div>
           <div class="color-sample bg-secondary45">bg-secondary45<br>17.74:1 - PASS</div>
           <div class="color-sample bg-secondary40">bg-secondary40<br>20.87:1 - PASS</div>
+<pre><code class="language-html">&lt;div class="bg-secondary"&gt;bg-secondary&lt;/div&gt;
+&lt;div class="bg-secondary90"&gt;bg-secondary90&lt;/div&gt;
+&lt;div class="bg-secondary85"&gt;bg-secondary85&lt;/div&gt;
+&lt;div class="bg-secondary80"&gt;bg-secondary80&lt;/div&gt;
+&lt;div class="bg-secondary75"&gt;bg-secondary75&lt;/div&gt;
+&lt;div class="bg-secondary70"&gt;bg-secondary70&lt;/div&gt;
+&lt;div class="bg-secondary65"&gt;bg-secondary65&lt;/div&gt;
+&lt;div class="bg-secondary60"&gt;bg-secondary60&lt;/div&gt;
+&lt;div class="bg-secondary55"&gt;bg-secondary55&lt;/div&gt;
+&lt;div class="bg-secondary50"&gt;bg-secondary50&lt;/div&gt;
+&lt;div class="bg-secondary45"&gt;bg-secondary45&lt;/div&gt;
+&lt;div class="bg-secondary40"&gt;bg-secondary40&lt;/div&gt;
+</code></pre>
 
-          <h5 class="example-heading">Examples: General</h5>
+          <h4>General</h4>
           <div class="color-sample bg-black c-white">bg-black<br>21.00:1 - PASS</div>
           <div class="color-sample bg-white">bg-white<br>21.00:1 - PASS</div>
           <div class="color-sample bg-red c-white">bg-red<br>6.08:1 - PASS</div>
           <div class="color-sample bg-green c-white">bg-green<br>5.14:1 - PASS</div>
+<pre><code class="language-html">&lt;div class="bg-black"&gt;bg-black&lt;/div&gt;
+&lt;div class="bg-white"&gt;bg-white&lt;/div&gt;
+&lt;div class="bg-red"&gt;bg-red&lt;/div&gt;
+&lt;div class="bg-green"&gt;bg-green&lt;/div&gt;
+</code></pre>
 
-          <h5 class="example-heading">Examples: Grays</h5>
+          <h4>Grays</h4>
           <div class="color-sample bg-gray90 c-white">bg-gray90<br>17.40:1 - PASS</div>
           <div class="color-sample bg-gray85 c-white">bg-gray85<br>15.13:1 - PASS</div>
           <div class="color-sample bg-gray80 c-white">bg-gray80<br>12.63:1 - PASS</div>
@@ -149,41 +185,7 @@
           <div class="color-sample bg-gray15">bg-gray15<br>14.88:1 - PASS</div>
           <div class="color-sample bg-gray10">bg-gray10<br>16.67:1 - PASS</div>
           <div class="color-sample bg-gray5">bg-gray5<br>18.76:1 - PASS</div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="bg-primary"&gt;bg-primary&lt;/div&gt;
-&lt;div class="bg-primary90"&gt;bg-primary90&lt;/div&gt;
-&lt;div class="bg-primary85"&gt;bg-primary85&lt;/div&gt;
-&lt;div class="bg-primary80"&gt;bg-primary80&lt;/div&gt;
-&lt;div class="bg-primary75"&gt;bg-primary75&lt;/div&gt;
-&lt;div class="bg-primary70"&gt;bg-primary70&lt;/div&gt;
-&lt;div class="bg-primary65"&gt;bg-primary65&lt;/div&gt;
-&lt;div class="bg-primary60"&gt;bg-primary60&lt;/div&gt;
-&lt;div class="bg-primary55"&gt;bg-primary55&lt;/div&gt;
-&lt;div class="bg-primary50"&gt;bg-primary50&lt;/div&gt;
-&lt;div class="bg-primary45"&gt;bg-primary45&lt;/div&gt;
-&lt;div class="bg-primary40"&gt;bg-primary40&lt;/div&gt;
-
-&lt;div class="bg-secondary"&gt;bg-secondary&lt;/div&gt;
-&lt;div class="bg-secondary90"&gt;bg-secondary90&lt;/div&gt;
-&lt;div class="bg-secondary85"&gt;bg-secondary85&lt;/div&gt;
-&lt;div class="bg-secondary80"&gt;bg-secondary80&lt;/div&gt;
-&lt;div class="bg-secondary75"&gt;bg-secondary75&lt;/div&gt;
-&lt;div class="bg-secondary70"&gt;bg-secondary70&lt;/div&gt;
-&lt;div class="bg-secondary65"&gt;bg-secondary65&lt;/div&gt;
-&lt;div class="bg-secondary60"&gt;bg-secondary60&lt;/div&gt;
-&lt;div class="bg-secondary55"&gt;bg-secondary55&lt;/div&gt;
-&lt;div class="bg-secondary50"&gt;bg-secondary50&lt;/div&gt;
-&lt;div class="bg-secondary45"&gt;bg-secondary45&lt;/div&gt;
-&lt;div class="bg-secondary40"&gt;bg-secondary40&lt;/div&gt;
-
-&lt;div class="bg-black"&gt;bg-black&lt;/div&gt;
-&lt;div class="bg-white"&gt;bg-white&lt;/div&gt;
-&lt;div class="bg-red"&gt;bg-red&lt;/div&gt;
-&lt;div class="bg-green"&gt;bg-green&lt;/div&gt;
-
-&lt;div class="bg-gray95"&gt;bg-gray95&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="bg-gray95"&gt;bg-gray95&lt;/div&gt;
 &lt;div class="bg-gray90"&gt;bg-gray90&lt;/div&gt;
 &lt;div class="bg-gray85"&gt;bg-gray85&lt;/div&gt;
 &lt;div class="bg-gray80"&gt;bg-gray80&lt;/div&gt;

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>M elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all M elements">
+  <meta name="Description" lang="en" content="M elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,30 +102,26 @@
           <h2 class="mar-t-0">M elements</h2>
           <hr>
 
-          <h3>main</h3>
+          <h4>main</h4>
           <p>This element represents the main content area of the body of a document
           or application.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <main class="class-name" id="main-id-name" role="main">
               This is a MAIN element
             </main>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;main class="class-name" id="main-id-name" role="main"&gt;
   This is a MAIN element
 &lt;/main&gt;
 </code></pre>
           <hr>
 
-          <h3>map</h3>
+          <h4>map</h4>
           <p>This element, in conjunction with any area element descendants,
           defines an image map. The element represents its children.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;img src="image-name.png" usemap="#map-name" alt="ALT"&gt;
 &lt;map name="map-name"&gt;
   &lt;area shape="rect" coords="0,0,100,100" href="url1.html" alt="ALT1"&gt;
@@ -133,10 +130,9 @@
 </code></pre>
           <hr>
 
-          <h3>mark</h3>
+          <h4>mark</h4>
           <p>This element represents a run of text in one document marked or highlighted because
           of its relevance in another context.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
@@ -144,53 +140,45 @@
 </code></pre>
           <hr>
 
-          <h3>menu</h3>
+          <h4>menu</h4>
           <p>This element represents a list of commands.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;menu type="toolbar"&gt;
   This is the MENU element
 &lt;/menu&gt;
 </code></pre>
           <hr>
 
-          <h3>menuitem</h3>
+          <h4>menuitem</h4>
           <p>This element defines a command/menu item that the user can invoke from a
           popup menu.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;menuitem&gt;
   This is the MENUITEM element
 &lt;/menuitem&gt;
 </code></pre>
           <hr>
 
-          <h3>meta</h3>
+          <h4>meta</h4>
           <p>This element represents various kinds of metadata that cannot be
           expressed using the title, base, link, style, and script elements.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
 </code></pre>
           <hr>
 
-          <h3>meter</h3>
+          <h4>meter</h4>
           <p>This element defines a scalar measurement within a known range, or a
           fractional value. This is also known as a gauge.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;meter value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;
 </code></pre>
         </div>

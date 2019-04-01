@@ -55,7 +55,6 @@ $gray90:                       #1a1a1a;
 
 $base-text-color:              $gray75;
 $base-background-color:        $white;
-$heading-color:                $secondary-color;
 
 
 // disabled / isinvalid
@@ -68,6 +67,11 @@ $required-color:               $red;
 
 // forms
 
+$form-container-xs:            1em;
+$form-container-sm:            1em;
+$form-container-md:            1.5em;
+$form-container-lg:            2em;
+$label-space:                  .3em;
 $input-border-color:           $gray25;
 $input-padding:                0 .5em;
 $input-color:                  $gray60;
@@ -87,25 +91,19 @@ $base-border-radius:           .2em;
 $form-border-radius:           $base-border-radius;
 
 
-// headings
+// content-container
 
-$heading-font-weight:          800;
-$heading-line-height:          1.1;
-
-
-// container
-
-$container-width:              60em; // 960px
-$container-width-medium:       50em; // 800px
-$container-width-narrow:       36em; // 576px
+$content-container-width:              60em; // 960px
+$content-container-width-medium:       40em; // 640px
+$content-container-width-narrow:       30em; // 480px
 
 
 //  grids
 
-$col-gutter-xs:                1em;
-$col-gutter-sm:                1.25em;
-$col-gutter-md:                1.625em;
-$col-gutter-lg:                2em;
+$col-gutter-xs:                1em; // 16px
+$col-gutter-sm:                1.25em; // 20px
+$col-gutter-md:                1.625em; // 26px
+$col-gutter-lg:                2em; // 32px
 
 
 // row padding

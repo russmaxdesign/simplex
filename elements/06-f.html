@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>F elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all F elements">
+  <meta name="Description" lang="en" content="F elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,16 +102,14 @@
           <h2 class="mar-t-0">F elements</h2>
           <hr>
 
-          <h3>fieldset</h3>
+          <h4>fieldset</h4>
           <p>This element is expected to establish a new block formatting context. If
           the FIELDSET element has a child that matches the conditions in the list
           below, then the first such child is the FIELDSET element's rendered
           legend.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;form action="#"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;This is the LEGEND element&lt;/legend&gt;
@@ -120,30 +119,26 @@
 </code></pre>
           <hr>
 
-          <h3>figcaption</h3>
+          <h4>figcaption</h4>
           <p>This element represents a caption or legend for the rest of the contents
           of the FIGCAPTION element's parent FIGURE element, if any.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;figcaption&gt;This is the FIGCAPTION element&lt;/figcaption&gt;
 </code></pre>
           <hr>
 
-          <h3>figure</h3>
+          <h4>figure</h4>
           <p>This element represents some flow content, optionally with a
           caption, that is self-contained and is typically referenced as a single
           unit from the main flow of the document.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <figure class="class-name" id="figure-id-name">
               <img class="img-responsive" src="../assets/img/100x100.png" alt="">
               <figcaption>This is the FIGCAPTION element</figcaption>
             </figure>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;figure class="class-name" id="figure-id-name"&gt;
     &lt;img class="img-responsive" src="../assets/img/100x100.png" alt=""&gt;
     &lt;figcaption&gt;This is the FIGCAPTION element&lt;/figcaption&gt;
@@ -151,36 +146,32 @@
   </code></pre>
           <hr>
 
-          <h3>footer</h3>
+          <h4>footer</h4>
           <p>This element represents the "footer" of a document or section of a
           document. The footer element typically contains metadata about its
           enclosing section, such as who wrote it, links to related documents,
           copyright data, etc. Contact information for the section given in a footer
           should be marked up using the address element.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <footer class="class-name" id="footer-id-name" role="contentinfo">
               This is a FOOTER element
             </footer>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;footer class="class-name" id="footer-id-name" role="contentinfo"&gt;
   This is a FOOTER element
 &lt;/footer&gt;
 </code></pre>
           <hr>
 
-          <h3>form</h3>
+          <h4>form</h4>
           <p>This element represents a collection of form-associated elements, some
           of which can represent editable values that can be submitted to a server
           for processing.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <form class="class-name" id="form-id-name" action="#">
               This is the FORM element
             </form>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;form class="class-name" id="form-id-name" action="#"&gt;
   This is the FORM element
 &lt;/form&gt;

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>U elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all U elements">
+  <meta name="Description" lang="en" content="U elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,24 +102,21 @@
           <h2 class="mar-t-0">U elements</h2>
           <hr>
 
-          <h3>u (underline)</h3>
+          <h4>u (underline)</h4>
           <p>This element represents a span of text with an unarticulated, though
           explicitly rendered, non-textual annotation (when you are annotating
           something, but not explicitly saying what it is).</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <u>U element</u> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;u&gt;U element&lt;/u&gt;
 </code></pre>
           <hr>
 
-          <h3>ul</h3>
+          <h4>ul</h4>
           <p>This element represents a list of items, where the order of the items is
           not important — that is, where changing the order would not materially
           change the meaning of the list.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <ul class="class-name" id="unordered-list-id-name">
               <li>List item 1</li>
@@ -126,7 +124,6 @@
               <li>List item 3</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="class-name" id="unordered-list-id-name"&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2 which is much longer and should go over two lines&lt;/li&gt;

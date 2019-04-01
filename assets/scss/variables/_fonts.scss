@@ -25,6 +25,10 @@ $font10:                  $base-font-size * .625;
 
 // headings
 
+$heading-font-weight:     800;
+$heading-line-height:     1.1;
+$heading-color:           $gray70;
+
 $heading1-margin:         0 0 .5em;
 $heading2-margin:         1em 0 .5em;
 $heading3-margin:         1.5em 0 .5em;
@@ -32,30 +36,30 @@ $heading4-margin:         1.5em 0 .5em;
 $heading5-margin:         1.5em 0 .5em;
 $heading6-margin:         1.5em 0 .5em;
 
-$heading1-size:           $font26;
-$heading2-size:           $font20;
-$heading3-size:           $font16;
+$heading1-size:           $font28;
+$heading2-size:           $font22;
+$heading3-size:           $font18;
 $heading4-size:           $font16;
-$heading5-size:           $font12;
-$heading6-size:           $font10;
+$heading5-size:           $font14;
+$heading6-size:           $font12;
 
 $heading1-size-sm:        $font30;
-$heading2-size-sm:        $font22;
-$heading3-size-sm:        $font18;
-$heading4-size-sm:        $font14;
-$heading5-size-sm:        $font12;
-$heading6-size-sm:        $font10;
+$heading2-size-sm:        $font24;
+$heading3-size-sm:        $font20;
+$heading4-size-sm:        $font16;
+$heading5-size-sm:        $font14;
+$heading6-size-sm:        $font12;
 
-$heading1-size-md:        $font34;
-$heading2-size-md:        $font24;
-$heading3-size-md:        $font20;
-$heading4-size-md:        $font16;
-$heading5-size-md:        $font12;
-$heading6-size-md:        $font10;
+$heading1-size-md:        $font32;
+$heading2-size-md:        $font26;
+$heading3-size-md:        $font22;
+$heading4-size-md:        $font18;
+$heading5-size-md:        $font14;
+$heading6-size-md:        $font12;
 
-$heading1-size-lg:        $font36;
-$heading2-size-lg:        $font26;
-$heading3-size-lg:        $font22;
-$heading4-size-lg:        $font18;
+$heading1-size-lg:        $font34;
+$heading2-size-lg:        $font28;
+$heading3-size-lg:        $font24;
+$heading4-size-lg:        $font20;
 $heading5-size-lg:        $font14;
 $heading6-size-lg:        $font12;

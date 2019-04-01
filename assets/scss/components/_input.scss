@@ -1,14 +1,10 @@
-.input {
-  margin-bottom: 1em;
-}
-
 .input__control {
   font-size: $font16;
 }
 
 .input__content {
   display: block;
-  padding-bottom: .1em;
+  padding-bottom: $label-space;
 }
 
 

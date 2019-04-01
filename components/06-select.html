@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,19 +83,22 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><b>select</b></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">select</h2>
           <p>The <code>select</code> component represents an <code>&lt;select&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
-          <h5 class="example-heading">Usage</h5>
-          <p>The <code>select</code> component should be used in forms when users need to be presented with multiple options in a dropdown menu.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Usage</h4>
+          <p>Used to present a series of options presented as a dropdown menu.</p>
+
+          <h4>Accessibility</h4>
           <ul>
             <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
             <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
@@ -103,156 +107,167 @@
           </ul>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h4>Basic select</h4>
           <div class="example">
             <div class="select">
               <label class="select__label" for="example1">
                 <span class="select__content">Select</span>
                 <select class="select__control" id="example1" name="example1">
-                    <option value="">Choose an option</option>
-                    <option value="one">one</option>
-                    <option value="two">two</option>
-                    <option value="three">three</option>
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
                 </select>
               </label>
             </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example1"&gt;
+    &lt;span class="select__content"&gt;Select&lt;/span&gt;
+    &lt;select class="select__control" id="example1" name="example1"&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Select with hidden label</h4>
+          <div class="example">
             <div class="select">
               <label class="select__label" for="example2">
                 <span class="select__content hidden">Hidden select</span>
                 <select class="select__control" id="example2" name="example2">
-                    <option value="">Choose an option</option>
-                    <option value="one">one</option>
-                    <option value="two">two</option>
-                    <option value="three">three</option>
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
                 </select>
               </label>
             </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example2"&gt;
+    &lt;span class="select__content hidden"&gt;Hidden select&lt;/span&gt;
+    &lt;select class="select__control" id="example2" name="example2"&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>Select with hint text</h4>
+          <div class="example">
             <div class="select">
               <label class="select__label" for="example3">
                 <span class="select__content">Select with hint message</span>
                 <select class="select__control" id="example3" name="example3">
-                    <option value="">Choose an option</option>
-                    <option value="one">one</option>
-                    <option value="two">two</option>
-                    <option value="three">three</option>
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
                 </select>
                 <span class="message-hint">Hint Message</span>
-            </label>
-        </div>
-        <div class="select select--required">
-          <label class="select__label" for="example4">
-            <span class="select__content">Required select</span>
-            <select class="select__control" id="example4" name="example4" required>
-                <option value="">Choose an option</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-            </select>
-          </label>
-        </div>
-        <div class="select isInvalid">
-          <label class="select__label" for="example5">
-            <span class="select__content">Invalid select</span>
-            <select class="select__control" id="example5" name="example5">
-                <option value="">Choose an option</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-            </select>
-            <span class="message-error">Error Message</span>
-          </label>
-        </div>
-        <div class="select select--disabled">
-          <label class="select__label" for="example6">
-            <span class="select__content">Disabled select</span>
-            <select class="select__control" id="example6" name="example6" disabled>
-                <option value="">Choose an option</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-            </select>
-          </label>
-        </div>
-      </div>
-      <hr>
-
-      <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- Select --&gt;
-&lt;div class="select"&gt;
-  &lt;label class="select__label" for="example1"&gt;
-    &lt;span class="select__content"&gt;Select&lt;/span&gt;
-    &lt;select class="select__control" id="example1" name="example1"&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- Hidden select --&gt;
-&lt;div class="select"&gt;
-  &lt;label class="select__label" for="example2"&gt;
-    &lt;span class="select__content hidden"&gt;Hidden select&lt;/span&gt;
-    &lt;select class="select__control" id="example2" name="example2"&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;!-- Select with hint --&gt;
-&lt;div class="select"&gt;
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example3"&gt;
     &lt;span class="select__content"&gt;Select with hint message&lt;/span&gt;
     &lt;select class="select__control" id="example3" name="example3"&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
     &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
+</code></pre>
 
-&lt;!-- Required select --&gt;
-&lt;div class="select select--required"&gt;
+          <h4>Required select</h4>
+          <div class="example">
+            <div class="select select--required">
+              <label class="select__label" for="example4">
+                <span class="select__content">Required select</span>
+                <select class="select__control" id="example4" name="example4" required>
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select select--required"&gt;
   &lt;label class="select__label" for="example4"&gt;
     &lt;span class="select__content"&gt;Required select&lt;/span&gt;
     &lt;select class="select__control" id="example4" name="example4" required&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
   &lt;/label&gt;
 &lt;/div&gt;
+</code></pre>
 
-&lt;!-- Invalid select --&gt;
-&lt;div class="select isInvalid"&gt;
+          <h4>Invalid select</h4>
+          <div class="example">
+            <div class="select isInvalid">
+              <label class="select__label" for="example5">
+                <span class="select__content">Invalid select</span>
+                <select class="select__control" id="example5" name="example5">
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+                <span class="message-error">Error Message</span>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select isInvalid"&gt;
   &lt;label class="select__label" for="example5"&gt;
     &lt;span class="select__content"&gt;Inalid select&lt;/span&gt;
     &lt;select class="select__control" id="example5" name="example5"&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
     &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
+</code></pre>
 
-&lt;!-- Disabled select --&gt;
-&lt;div class="select select--disabled"&gt;
+          <h4>Disabled select</h4>
+          <div class="example">
+            <div class="select select--disabled">
+              <label class="select__label" for="example6">
+                <span class="select__content">Disabled select</span>
+                <select class="select__control" id="example6" name="example6" disabled>
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select select--disabled"&gt;
   &lt;label class="select__label" for="example6"&gt;
     &lt;span class="select__content"&gt;Disabled select&lt;/span&gt;
     &lt;select class="select__control" id="example6" name="example6" disabled&gt;
-        &lt;option value=""&gt;Choose an option&lt;/option&gt;
-        &lt;option value="one"&gt;one&lt;/option&gt;
-        &lt;option value="two"&gt;two&lt;/option&gt;
-        &lt;option value="three"&gt;three&lt;/option&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
   &lt;/label&gt;
 &lt;/div&gt;

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>I elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all I elements">
+  <meta name="Description" lang="en" content="I elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,51 +102,44 @@
           <h2 class="mar-t-0">I elements</h2>
           <hr>
 
-          <h3>i (italic)</h3>
+          <h4>i (italic)</h4>
           <p>This element represents a span of text in an alternate voice or mood, or
           otherwise offset from the normal prose, such as a taxonomic designation, a
           technical term, an idiomatic phrase from another language, a thought, a
           ship name, or some other prose whose typical typographic presentation is
           italicized.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <i>ITALIC element</i> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;i&gt;ITALIC element&lt;/i&gt;
 </code></pre>
           <hr>
 
-          <h3>iframe</h3>
+          <h4>iframe</h4>
           <p>This element represents a nested browsing context.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;iframe class="class-name" id="iframe-id-name" src="#" name="iframe-name"&gt;
   This is the IFRAME element
 &lt;/iframe&gt;
 </code></pre>
           <hr>
 
-          <h3>img</h3>
+          <h4>img</h4>
           <p>An img element represents an image. The image given by the src attribute
           is the embedded content, and the value of the alt attribute is the img
           element's fallback content.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <img class="class-name" src="../assets/img/100x100.png" alt="">
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;img class="class-name" src="../assets/img/100x100.png" alt=""&gt;
 </code></pre>
           <hr>
 
-          <h3>img with srcset</h3>
+          <h4>img with srcset</h4>
           <p>Allows for multiple device pixel ratios for an individual image using
           the srcset attribute.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <img
               srcset="../assets/img/image-1x.jpg 1x,
@@ -155,7 +149,6 @@
               src="../assets/img/image-1x.jpg"
               alt="ALT TEXT">
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;img
   srcset="../assets/img/image-1x.jpg 1x,
           assets/img/image-15x.jpg 1.5x,
@@ -166,10 +159,9 @@
 </code></pre>
           <hr>
 
-          <h3>input</h3>
+          <h4>input</h4>
           <p>This element represents a typed data field, usually with a form control
           to allow the user to edit the data.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name mar-b-1" id="label-text-id-name">
               <label for="text-id-name">text</label>
@@ -241,7 +233,6 @@
               <input type="datetime-local" class="class-name" id="datetime-id-name" name="datetime-id-name">
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;input type="text" class="class-name" id="text-id-name" name="text"&gt;
 &lt;input type="password" class="form-password" id="password-id-name" name="password-id-name"&gt;
 &lt;input type="file" class="class-name" id="file-id-name" name="file-id-name"&gt;
@@ -259,13 +250,11 @@
 </code></pre>
           <hr>
 
-          <h3>ins</h3>
+          <h4>ins</h4>
           <p>This element represents an addition to the document. The ins elements should not cross implied paragraph boundaries.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <ins>INS element</ins> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ins datetime="2010-10-11T01:25-07:01"&gt;INS element&lt;/ins&gt;
 </code></pre>
         </div>

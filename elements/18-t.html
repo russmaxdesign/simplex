@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>T elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all T elements">
+  <meta name="Description" lang="en" content="T elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,9 +102,8 @@
           <h2 class="mar-t-0">T elements</h2>
           <hr>
 
-          <h3>table</h3>
+          <h4>table</h4>
           <p>This element represents data with more than one dimension, in the form of a table. Tables must not be used as layout aids.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <table class="class-name" id="table-id-name">
               <caption>Caption for TABLE element</caption>
@@ -128,7 +128,6 @@
               </tbody>
             </table>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;table class="class-name" id="table-id-name"&gt;
   &lt;caption&gt;Caption for TABLE element&lt;/caption&gt;
   &lt;thead&gt;
@@ -154,43 +153,37 @@
 </code></pre>
           <hr>
 
-          <h3>tbody</h3>
+          <h4>tbody</h4>
           <p>This element represents a block of rows that consist of a body of data
           for the parent table element, if the tbody element has a parent and it is a
           table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;tbody&gt;
   This is the TBODY element
 &lt;/tbody&gt;
 </code></pre>
           <hr>
 
-          <h3>td</h3>
+          <h4>td</h4>
           <p>This element represents a data cell in a table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;td&gt;
   This is the TD element
 &lt;/td&gt;
 </code></pre>
           <hr>
 
-          <h3>template</h3>
+          <h4>template</h4>
           <p>This element is a mechanism for holding client-side content that is not
           to be rendered when a page is loaded but may subsequently be instantiated
           during runtime using JavaScript.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;template id="productrow"&gt;
   &lt;tr&gt;
     &lt;td class="record"&gt;&lt;/td&gt;
@@ -200,18 +193,16 @@
 </code></pre>
           <hr>
 
-          <h3>textarea</h3>
+          <h4>textarea</h4>
           <p>The textarea element represents a multiline plain text edit control for
           the element's raw value. The contents of the control represent the
           control's default value.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name" id="label-textarea-id-name">
               <label for="textarea-id-name">textarea</label>
               <textarea class="class-name" id="textarea-id-name" rows="3"></textarea>
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="class-name" id="label-textarea-id-name"&gt;
   &lt;label for="textarea-id-name"&gt;textarea&lt;/label&gt;
   &lt;textarea class="class-name" id="textarea-id-name" rows="3"&gt;&lt;/textarea&gt;
@@ -219,72 +210,62 @@
 </code></pre>
           <hr>
 
-          <h3>tfoot</h3>
+          <h4>tfoot</h4>
           <p>This element represents the block of rows that consist of the column summaries (footers) for the parent table element, if the tfoot element has a parent and it is a table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;tfoot&gt;
   This is the TFOOT element
 &lt;/tfoot&gt;
 </code></pre>
           <hr>
 
-          <h3>th</h3>
+          <h4>th</h4>
           <p>This element represents a header cell in a table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;th&gt;
   This is the TH element
 &lt;/th&gt;
 </code></pre>
           <hr>
 
-          <h3>thead</h3>
+          <h4>thead</h4>
           <p>This element represents the block of rows that consist of the column
           labels (headers) for the parent table element, if the thead element has a
           parent and it is a table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;thead&gt;
   This is the THEAD element
 &lt;/thead&gt;
 </code></pre>
           <hr>
 
-          <h3>time</h3>
+          <h4>time</h4>
           <p>This element represents a precise date and/or time in the proleptic
           Gregorian calendar. The time element encodes modern dates and times in a
           machine-readable way, so that, for example, user agents could offer to add
           an event to the user's calendar.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <time datetime="2014-03-29T23:38+10:00">
               TIME element
             </time>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;time datetime="2014-03-29T23:38+10:00"&gt;
   TIME element
 &lt;/time&gt;
 </code></pre>
           <hr>
 
-          <h3>title</h3>
+          <h4>title</h4>
           <p>This element represents the document's title or name.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -294,27 +275,23 @@
 </code></pre>
           <hr>
 
-          <h3>tr</h3>
+          <h4>tr</h4>
           <p>This element represents a row of cells in a table.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;tr&gt;
   This is the TR element
 &lt;/tr&gt;
 </code></pre>
           <hr>
 
-          <h3>track</h3>
+          <h4>track</h4>
           <p>This element allows authors to specify explicit external timed text
           tracks for media elements. It does not represent anything on its own.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;video controls poster="../assets/img/poster.png"&gt;
   &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;
 &lt;/video&gt;

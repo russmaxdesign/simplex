@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>L elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all L elements">
+  <meta name="Description" lang="en" content="L elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,19 +102,17 @@
           <h2 class="mar-t-0">L elements</h2>
           <hr>
 
-          <h3>label</h3>
+          <h4>label</h4>
           <p>This element represents a caption in a user interface. The caption can
           be associated with a specific form control, known as the label element's
           labeled control, either using for attribute, or by putting the form control
           inside the label element itself.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name" id="container-label-id-name">
               <label for="label-id-name">This is the LABEL element</label>
               <input type="text" id="label-id-name">
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="class-name" id="label-id-name"&gt;
   &lt;label for="label-id-name"&gt;This is the LABEL element&lt;/label&gt;
   &lt;input type="text" id="label-id-name"&gt;
@@ -121,14 +120,12 @@
 </code></pre>
           <hr>
 
-          <h3>legend</h3>
+          <h4>legend</h4>
           <p>This element represents a caption for the rest of the contents of the
           legend element's parent fieldset element, if any.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;This is the LEGEND element&lt;/legend&gt;
@@ -137,29 +134,25 @@
 </code></pre>
           <hr>
 
-          <h3>li</h3>
+          <h4>li</h4>
           <p>This element represents a list item. If its parent element is an ol, ul,
           or menu element, then the element is an item of the parent element's list,
           as defined for those elements. Otherwise, the list item has no defined
           list-related relationship to any other li element.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;li&gt;This is the LI element&lt;/li&gt;
 </code></pre>
           <hr>
 
-          <h3>link</h3>
+          <h4>link</h4>
           <p class="mar-b-0"><b>Type</b>: header</p>
           <p>This element allows authors to link their document to other
           resources.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;link rel="stylesheet" href="../assets/css/styles.css"&gt;
 </code></pre>
         </div>

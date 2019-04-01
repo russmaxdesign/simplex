@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
-        <li><b>utility classes</b></li>
+        <li><a class="current" href="index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -85,146 +86,50 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
+            <li><a href="12-message.html">Message</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">Font-size utility classes</h2>
           <p>Font-size utility classes allow authors to apply a specific font-size to any element and at different screen sizes.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <p>Used to apply specific font sizes to any element or component.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <p>The smallest font-sizes (<code>.font10</code>, <code>.font12</code>) should be avoided except for specific circumstances as they are hard to read for many audiences.</p>
           <hr>
 
-          <h5 class="example-heading">Examples</h5>
+          <h4>All sizes</h4>
           <div class="example">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3 class="mar-t-0">All sizes</h3>
-                <div class="font50">font50</div>
-                <div class="font48">font48</div>
-                <div class="font46">font46</div>
-                <div class="font44">font44</div>
-                <div class="font42">font42</div>
-                <div class="font40">font40</div>
-                <div class="font38">font38</div>
-                <div class="font36">font36</div>
-                <div class="font34">font34</div>
-                <div class="font32">font32</div>
-                <div class="font30">font30</div>
-                <div class="font28">font28</div>
-                <div class="font26">font26</div>
-                <div class="font24">font24</div>
-                <div class="font22">font22</div>
-                <div class="font20">font20</div>
-                <div class="font18">font18</div>
-                <div class="font16">font16</div>
-                <div class="font14">font14</div>
-                <div class="font12">font12</div>
-                <div class="font10">font10</div>
-              </div>
-              <div class="col-sm-6 visible-xs">
-                <h3 class="mar-t-0">xs only</h3>
-                <div class="font50-xs">font50-xs</div>
-                <div class="font48-xs">font48-xs</div>
-                <div class="font46-xs">font46-xs</div>
-                <div class="font44-xs">font44-xs</div>
-                <div class="font42-xs">font42-xs</div>
-                <div class="font40-xs">font40-xs</div>
-                <div class="font38-xs">font38-xs</div>
-                <div class="font36-xs">font36-xs</div>
-                <div class="font34-xs">font34-xs</div>
-                <div class="font32-xs">font32-xs</div>
-                <div class="font30-xs">font30-xs</div>
-                <div class="font28-xs">font28-xs</div>
-                <div class="font26-xs">font26-xs</div>
-                <div class="font24-xs">font24-xs</div>
-                <div class="font22-xs">font22-xs</div>
-                <div class="font20-xs">font20-xs</div>
-                <div class="font18-xs">font18-xs</div>
-                <div class="font16-xs">font16-xs</div>
-                <div class="font14-xs">font14-xs</div>
-                <div class="font12-xs">font12-xs</div>
-                <div class="font10-xs">font10-xs</div>
-              </div>
-              <div class="col-sm-6 visible-sm">
-                <h3 class="mar-t-0">sm only</h3>
-                <div class="font50-sm">font50-sm</div>
-                <div class="font48-sm">font48-sm</div>
-                <div class="font46-sm">font46-sm</div>
-                <div class="font44-sm">font44-sm</div>
-                <div class="font42-sm">font42-sm</div>
-                <div class="font40-sm">font40-sm</div>
-                <div class="font38-sm">font38-sm</div>
-                <div class="font36-sm">font36-sm</div>
-                <div class="font34-sm">font34-sm</div>
-                <div class="font32-sm">font32-sm</div>
-                <div class="font30-sm">font30-sm</div>
-                <div class="font28-sm">font28-sm</div>
-                <div class="font26-sm">font26-sm</div>
-                <div class="font24-sm">font24-sm</div>
-                <div class="font22-sm">font22-sm</div>
-                <div class="font20-sm">font20-sm</div>
-                <div class="font18-sm">font18-sm</div>
-                <div class="font16-sm">font16-sm</div>
-                <div class="font14-sm">font14-sm</div>
-                <div class="font12-sm">font12-sm</div>
-                <div class="font10-sm">font10-sm</div>
-              </div>
-              <div class="col-sm-6 visible-md">
-                <h3 class="mar-t-0">md only</h3>
-                <div class="font50-md">font50-md</div>
-                <div class="font48-md">font48-md</div>
-                <div class="font46-md">font46-md</div>
-                <div class="font44-md">font44-md</div>
-                <div class="font42-md">font42-md</div>
-                <div class="font40-md">font40-md</div>
-                <div class="font38-md">font38-md</div>
-                <div class="font36-md">font36-md</div>
-                <div class="font34-md">font34-md</div>
-                <div class="font32-md">font32-md</div>
-                <div class="font30-md">font30-md</div>
-                <div class="font28-md">font28-md</div>
-                <div class="font26-md">font26-md</div>
-                <div class="font24-md">font24-md</div>
-                <div class="font22-md">font22-md</div>
-                <div class="font20-md">font20-md</div>
-                <div class="font18-md">font18-md</div>
-                <div class="font16-md">font16-md</div>
-                <div class="font14-md">font14-md</div>
-                <div class="font12-md">font12-md</div>
-                <div class="font10-md">font10-md</div>
-              </div>
-              <div class="col-sm-6 visible-lg">
-                <h3 class="mar-t-0">lg only</h3>
-                <div class="font50-lg">font50-lg</div>
-                <div class="font48-lg">font48-lg</div>
-                <div class="font46-lg">font46-lg</div>
-                <div class="font44-lg">font44-lg</div>
-                <div class="font42-lg">font42-lg</div>
-                <div class="font40-lg">font40-lg</div>
-                <div class="font38-lg">font38-lg</div>
-                <div class="font36-lg">font36-lg</div>
-                <div class="font34-lg">font34-lg</div>
-                <div class="font32-lg">font32-lg</div>
-                <div class="font30-lg">font30-lg</div>
-                <div class="font28-lg">font28-lg</div>
-                <div class="font26-lg">font26-lg</div>
-                <div class="font24-lg">font24-lg</div>
-                <div class="font22-lg">font22-lg</div>
-                <div class="font20-lg">font20-lg</div>
-                <div class="font18-lg">font18-lg</div>
-                <div class="font16-lg">font16-lg</div>
-                <div class="font14-lg">font14-lg</div>
-                <div class="font12-lg">font12-lg</div>
-                <div class="font10-lg">font10-lg</div>
-              </div>
-            </div>
+            <div class="font50">font50</div>
+            <div class="font48">font48</div>
+            <div class="font46">font46</div>
+            <div class="font44">font44</div>
+            <div class="font42">font42</div>
+            <div class="font40">font40</div>
+            <div class="font38">font38</div>
+            <div class="font36">font36</div>
+            <div class="font34">font34</div>
+            <div class="font32">font32</div>
+            <div class="font30">font30</div>
+            <div class="font28">font28</div>
+            <div class="font26">font26</div>
+            <div class="font24">font24</div>
+            <div class="font22">font22</div>
+            <div class="font20">font20</div>
+            <div class="font18">font18</div>
+            <div class="font16">font16</div>
+            <div class="font14">font14</div>
+            <div class="font12">font12</div>
+            <div class="font10">font10</div>
           </div>
-          <hr>
-
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;!-- all sizes --&gt;
+<pre><code class="language-html">&lt;div class="font50"&gt;font50&lt;/div&gt;
+&lt;div class="font48"&gt;font48&lt;/div&gt;
+&lt;div class="font46"&gt;font46&lt;/div&gt;
+&lt;div class="font44"&gt;font44&lt;/div&gt;
+&lt;div class="font42"&gt;font42&lt;/div&gt;
 &lt;div class="font40"&gt;font40&lt;/div&gt;
 &lt;div class="font38"&gt;font38&lt;/div&gt;
 &lt;div class="font36"&gt;font36&lt;/div&gt;
@@ -241,8 +146,37 @@
 &lt;div class="font14"&gt;font14&lt;/div&gt;
 &lt;div class="font12"&gt;font12&lt;/div&gt;
 &lt;div class="font10"&gt;font10&lt;/div&gt;
+</code></pre>
 
-&lt;!-- XS only --&gt;
+          <h4>xs only</h4>
+          <div class="example">
+            <div class="font50-xs">font50-xs</div>
+            <div class="font48-xs">font48-xs</div>
+            <div class="font46-xs">font46-xs</div>
+            <div class="font44-xs">font44-xs</div>
+            <div class="font42-xs">font42-xs</div>
+            <div class="font40-xs">font40-xs</div>
+            <div class="font38-xs">font38-xs</div>
+            <div class="font36-xs">font36-xs</div>
+            <div class="font34-xs">font34-xs</div>
+            <div class="font32-xs">font32-xs</div>
+            <div class="font30-xs">font30-xs</div>
+            <div class="font28-xs">font28-xs</div>
+            <div class="font26-xs">font26-xs</div>
+            <div class="font24-xs">font24-xs</div>
+            <div class="font22-xs">font22-xs</div>
+            <div class="font20-xs">font20-xs</div>
+            <div class="font18-xs">font18-xs</div>
+            <div class="font16-xs">font16-xs</div>
+            <div class="font14-xs">font14-xs</div>
+            <div class="font12-xs">font12-xs</div>
+            <div class="font10-xs">font10-xs</div>
+          </div>
+<pre><code class="language-html">&lt;div class="font50-xs"&gt;font50-xs&lt;/div&gt;
+&lt;div class="font48-xs"&gt;font48-xs&lt;/div&gt;
+&lt;div class="font46-xs"&gt;font46-xs&lt;/div&gt;
+&lt;div class="font44-xs"&gt;font44-xs&lt;/div&gt;
+&lt;div class="font42-xs"&gt;font42-xs&lt;/div&gt;
 &lt;div class="font40-xs"&gt;font40-xs&lt;/div&gt;
 &lt;div class="font38-xs"&gt;font38-xs&lt;/div&gt;
 &lt;div class="font36-xs"&gt;font36-xs&lt;/div&gt;
@@ -259,8 +193,37 @@
 &lt;div class="font14-xs"&gt;font14-xs&lt;/div&gt;
 &lt;div class="font12-xs"&gt;font12-xs&lt;/div&gt;
 &lt;div class="font10-xs"&gt;font10-xs&lt;/div&gt;
+</code></pre>
 
-&lt;!-- SM only --&gt;
+          <h4>sm only</h4>
+          <div class="example">
+            <div class="font50-sm">font50-sm</div>
+            <div class="font48-sm">font48-sm</div>
+            <div class="font46-sm">font46-sm</div>
+            <div class="font44-sm">font44-sm</div>
+            <div class="font42-sm">font42-sm</div>
+            <div class="font40-sm">font40-sm</div>
+            <div class="font38-sm">font38-sm</div>
+            <div class="font36-sm">font36-sm</div>
+            <div class="font34-sm">font34-sm</div>
+            <div class="font32-sm">font32-sm</div>
+            <div class="font30-sm">font30-sm</div>
+            <div class="font28-sm">font28-sm</div>
+            <div class="font26-sm">font26-sm</div>
+            <div class="font24-sm">font24-sm</div>
+            <div class="font22-sm">font22-sm</div>
+            <div class="font20-sm">font20-sm</div>
+            <div class="font18-sm">font18-sm</div>
+            <div class="font16-sm">font16-sm</div>
+            <div class="font14-sm">font14-sm</div>
+            <div class="font12-sm">font12-sm</div>
+            <div class="font10-sm">font10-sm</div>
+          </div>
+<pre><code class="language-html">&lt;div class="font50-sm"&gt;font50-sm&lt;/div&gt;
+&lt;div class="font48-sm"&gt;font48-sm&lt;/div&gt;
+&lt;div class="font46-sm"&gt;font46-sm&lt;/div&gt;
+&lt;div class="font44-sm"&gt;font44-sm&lt;/div&gt;
+&lt;div class="font42-sm"&gt;font42-sm&lt;/div&gt;
 &lt;div class="font40-sm"&gt;font40-sm&lt;/div&gt;
 &lt;div class="font38-sm"&gt;font38-sm&lt;/div&gt;
 &lt;div class="font36-sm"&gt;font36-sm&lt;/div&gt;
@@ -277,8 +240,37 @@
 &lt;div class="font14-sm"&gt;font14-sm&lt;/div&gt;
 &lt;div class="font12-sm"&gt;font12-sm&lt;/div&gt;
 &lt;div class="font10-sm"&gt;font10-sm&lt;/div&gt;
+</code></pre>
 
-&lt;!-- MD only --&gt;
+          <h4>md only</h4>
+          <div class="example">
+            <div class="font50-md">font50-md</div>
+            <div class="font48-md">font48-md</div>
+            <div class="font46-md">font46-md</div>
+            <div class="font44-md">font44-md</div>
+            <div class="font42-md">font42-md</div>
+            <div class="font40-md">font40-md</div>
+            <div class="font38-md">font38-md</div>
+            <div class="font36-md">font36-md</div>
+            <div class="font34-md">font34-md</div>
+            <div class="font32-md">font32-md</div>
+            <div class="font30-md">font30-md</div>
+            <div class="font28-md">font28-md</div>
+            <div class="font26-md">font26-md</div>
+            <div class="font24-md">font24-md</div>
+            <div class="font22-md">font22-md</div>
+            <div class="font20-md">font20-md</div>
+            <div class="font18-md">font18-md</div>
+            <div class="font16-md">font16-md</div>
+            <div class="font14-md">font14-md</div>
+            <div class="font12-md">font12-md</div>
+            <div class="font10-md">font10-md</div>
+          </div>
+<pre><code class="language-html">&lt;div class="font50-md"&gt;font50-md&lt;/div&gt;
+&lt;div class="font48-md"&gt;font48-md&lt;/div&gt;
+&lt;div class="font46-md"&gt;font46-md&lt;/div&gt;
+&lt;div class="font44-md"&gt;font44-md&lt;/div&gt;
+&lt;div class="font42-md"&gt;font42-md&lt;/div&gt;
 &lt;div class="font40-md"&gt;font40-md&lt;/div&gt;
 &lt;div class="font38-md"&gt;font38-md&lt;/div&gt;
 &lt;div class="font36-md"&gt;font36-md&lt;/div&gt;
@@ -295,8 +287,37 @@
 &lt;div class="font14-md"&gt;font14-md&lt;/div&gt;
 &lt;div class="font12-md"&gt;font12-md&lt;/div&gt;
 &lt;div class="font10-md"&gt;font10-md&lt;/div&gt;
+</code></pre>
 
-&lt;!-- LG only --&gt;
+          <h4>lg only</h4>
+          <div class="example">
+            <div class="font50-lg">font50-lg</div>
+            <div class="font48-lg">font48-lg</div>
+            <div class="font46-lg">font46-lg</div>
+            <div class="font44-lg">font44-lg</div>
+            <div class="font42-lg">font42-lg</div>
+            <div class="font40-lg">font40-lg</div>
+            <div class="font38-lg">font38-lg</div>
+            <div class="font36-lg">font36-lg</div>
+            <div class="font34-lg">font34-lg</div>
+            <div class="font32-lg">font32-lg</div>
+            <div class="font30-lg">font30-lg</div>
+            <div class="font28-lg">font28-lg</div>
+            <div class="font26-lg">font26-lg</div>
+            <div class="font24-lg">font24-lg</div>
+            <div class="font22-lg">font22-lg</div>
+            <div class="font20-lg">font20-lg</div>
+            <div class="font18-lg">font18-lg</div>
+            <div class="font16-lg">font16-lg</div>
+            <div class="font14-lg">font14-lg</div>
+            <div class="font12-lg">font12-lg</div>
+            <div class="font10-lg">font10-lg</div>
+          </div>
+<pre><code class="language-html">&lt;div class="font50-lg"&gt;font50-lg&lt;/div&gt;
+&lt;div class="font48-lg"&gt;font48-lg&lt;/div&gt;
+&lt;div class="font46-lg"&gt;font46-lg&lt;/div&gt;
+&lt;div class="font44-lg"&gt;font44-lg&lt;/div&gt;
+&lt;div class="font42-lg"&gt;font42-lg&lt;/div&gt;
 &lt;div class="font40-lg"&gt;font40-lg&lt;/div&gt;
 &lt;div class="font38-lg"&gt;font38-lg&lt;/div&gt;
 &lt;div class="font36-lg"&gt;font36-lg&lt;/div&gt;

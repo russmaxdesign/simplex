@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
-        <li><b>utility classes</b></li>
+        <li><a class="current" href="index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -85,31 +86,47 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
+            <li><a href="12-message.html">Message</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">Visible utility classes</h2>
           <p>Visible utility classes allow authors to show content at specific screen sizes.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <p>Used in conjuntion with <code>hidden</code> classes to hide/show content at specific screen sizes.</p>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <p>Hiding content can present issues for assistive technologies so these utility classes should be used carefully. Meaningful content should never be completely removed.</p>
           <hr>
 
-          <h5 class="example-heading">Example</h5>
+          <h4>Visible at xs only</h4>
           <div class="example">
-            <div class="visible-xs">visible at xs only</div>
-            <div class="visible-sm">visible at sm only</div>
-            <div class="visible-md">visible at md only</div>
-            <div class="visible-lg">visible at lg only</div>
+            The following text: <span class="visible-xs">visible at xs only</span>
           </div>
-          <hr>
+<pre><code class="language-html">&lt;span class="visible-xs"&gt;visible at xs only&lt;/span&gt;
+</code></pre>
 
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="visible-xs"&gt;visible at xs only&lt;/div&gt;
-&lt;div class="visible-sm"&gt;visible at sm only&lt;/div&gt;
-&lt;div class="visible-md"&gt;visible at md only&lt;/div&gt;
-&lt;div class="visible-lg"&gt;visible at lg only&lt;/div&gt;
+          <h4>Visible at sm only</h4>
+          <div class="example">
+            The following text: <span class="visible-sm">visible at sm only</span>
+          </div>
+<pre><code class="language-html">&lt;span class="visible-sm"&gt;visible at sm only&lt;/span&gt;
+</code></pre>
+
+          <h4>Visible at md only</h4>
+          <div class="example">
+            The following text: <span class="visible-md">visible at md only</span>
+          </div>
+<pre><code class="language-html">&lt;span class="visible-md"&gt;visible at md only&lt;/span&gt;
+</code></pre>
+
+          <h4>Visible at lg only</h4>
+          <div class="example">
+            The following text: <span class="visible-lg">visible at lg only</span>
+          </div>
+<pre><code class="language-html">&lt;span class="visible-lg"&gt;visible at lg only&lt;/span&gt;
 </code></pre>
         </div>
       </div>

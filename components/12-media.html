@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Flag - Simplex Component Library</title>
+  <title>Media - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Flag component usage and examples">
+  <meta name="Description" lang="en" content="Media component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,103 +83,68 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
-            <li><a href="09-lists.html">list</a></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><b>flag</b></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><b>media</b></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">flag</h2>
-          <p>The <code>flag</code> component, like the <code>media</code> component, represents a highly-flexible container, that allows authors to add special information to the left or right of other content. The container has no set width or height. Unlike the <code>media</code> component, this allows authors to determine the vertical alignment of other content in relation to the special content.</p>
+          <h2 class="mar-t-0">media</h2>
+          <p>The <code>media</code> component represents a highly-flexible container, that allows authors to add special information to the left or right of other content. The container has no set width or height.</p>
+
+          <h4>Usage</h4>
+          <ul>
+            <li><code>.media</code> can be used where special content needs to be placed to the left of ohter content.</li>
+            <li><code>.media--rev</code> can be used where special content needs to be placed to the right of other content.</li>
+          </ul>
+
+          <h4>Accessibility</h4>
+          <p>N/A</p>
           <hr>
 
-          <h3>flag</h3>
-          <h5 class="example-heading">Usage</h5>
-          <p>Used to vertically align content to the center.</p>
-          <h5 class="example-heading">Example</h5>
+          <h4>.media</h4>
           <div class="example">
-            <div class="flag">
-              <div class="flag__feature">
+            <div class="media">
+              <a href="#" class="media__feature">
                 <img src="../assets/img/100x100.png" alt="">
-              </div>
-              <div class="flag__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy
-                nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+              </a>
+              <div class="media__body">
+                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
               </div>
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag"&gt;
-  &lt;div class="flag__feature"&gt;
+<pre><code class="language-html">&lt;div class="media"&gt;
+  &lt;a href="#" class="media__feature"&gt;
     &lt;img src="100x100.png" alt=""&gt;
-  &lt;/div&gt;
-  &lt;div class="flag__body"&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
     Lorem ipsum dolor...
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-          <hr>
 
-          <h3>flag--bottom</h3>
-          <p>Used to vertically align content to the bottom.</p>
-          <h5 class="example-heading">Example</h5>
+          <h4>.media--rev</h4>
           <div class="example">
-            <div class="flag flag--bottom">
-              <div class="flag__feature">
+            <div class="media media--rev">
+              <a href="#" class="media__feature">
                 <img src="../assets/img/100x100.png" alt="">
-              </div>
-              <div class="flag__body">
+              </a>
+              <div class="media__body">
                 Lorem ipsum dolor sit amet consect etuer adipi scing elit sed
                 diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam
-                erat volut. Pellentesque habitant morbi tristique senectus et netus
-                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-                tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-                et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
-                commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-                condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-                Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus,
-                neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-                eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-                porttitor, facilisis luctus, metus.
+                erat volut.
               </div>
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag flag--bottom"&gt;
-  &lt;div class="flag__feature"&gt;
+<pre><code class="language-html">&lt;div class="media media--rev"&gt;
+  &lt;a href="#" class="media__feature"&gt;
     &lt;img src="100x100.png" alt=""&gt;
-  &lt;/div&gt;
-  &lt;div class="flag__body"&gt;
+  &lt;/a&gt;
+  &lt;div class="media__body"&gt;
     Lorem ipsum dolor...
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-          <hr>
-
-          <h3>flag--rev</h3>
-          <p>Used to vertically align content to the center, with the special content at the right.</p>
-          <h5 class="example-heading">Example</h5>
-          <div class="example">
-            <div class="flag flag--rev">
-              <div class="flag__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy
-                nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
-              </div>
-              <div class="flag__feature">
-                <img src="../assets/img/100x100.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h5 class="example-heading">Markup</h5>
-<pre><code class="language-html">&lt;div class="flag flag--rev"&gt;
-  &lt;div class="flag__body"&gt;
-    Lorem ipsum dolor...
-  &lt;/div&gt;
-  &lt;div class="flag__feature"&gt;
-    &lt;img src="100x100.png" alt=""&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>

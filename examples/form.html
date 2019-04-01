@@ -1,0 +1,153 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Title -->
+  <title>Form example - Simplex Component Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Form example using the Simplex Component Library">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="pad-y-1 bg-gray10">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
+        <li><a href="../index.html">Simplex</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
+        <li><a href="../utilities/index.html">Utility classes</a></li>
+        <li><a href="../components/index.html">Components</a></li>
+        <li><a href="../grid/index.html">Grid</a></li>
+        <li><a class="current" href="index.html">Examples</a></li>
+        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div>
+    <div class="content-container--narrow">
+      <h2>Basic form</h2>
+      <p><a href="index.html">Back to examples</a></p>
+      <form action="#">
+        <div class="form-container">
+          <div class="input">
+            <label class="input__label" for="basic-form1">
+              <span class="input__content">Label for input</span>
+              <input class="input__control" type="text" name="basic-form1" id="basic-form1">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="select">
+            <label class="select__label" for="basic-form2">
+              <span class="select__content">Select</span>
+              <select class="select__control" id="basic-form2" name="basic-form2">
+                <option value="">Choose an option</option>
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="textarea">
+            <label class="textarea__label" for="basic-form3">
+              <span class="textarea__content">Textarea</span>
+              <textarea class="textarea__control" id="basic-form3" rows="5"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <fieldset class="radiogroup">
+            <legend>Legend for radio group</legend>
+            <ul class="list-unstyled"> 
+              <li>
+                <div class="radiogroup__container">
+                  <label class="radiogroup__label" for="basic-form4-a">
+                    <input class="radiogroup__control" type="radio" id="basic-form4-a" name="basic-form4">
+                    <span class="radiogroup__content">Radio button one</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="radiogroup__container">
+                  <label class="radiogroup__label" for="basic-form4-b">
+                    <input class="radiogroup__control" type="radio" id="basic-form4-b" name="basic-form4">
+                    <span class="radiogroup__content">Radio button two</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="radiogroup__container">
+                  <label class="radiogroup__label" for="basic-form4-c">
+                    <input class="radiogroup__control" type="radio" id="basic-form4-c" name="basic-form4">
+                    <span class="radiogroup__content">Radio button three</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="form-container">
+          <div class="input-checkbox">
+            <label class="input-checkbox__label" for="example1">
+              <input class="input-checkbox__control" type="checkbox" name="example3" id="example1">
+              <span class="input-checkbox__content">Checkbox</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <button type="submit" class="button-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+</body>
+</html>

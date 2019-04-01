@@ -1,13 +1,13 @@
-.input-radio {
+.radiogroup__container {
   margin-bottom: .25em;
 }
 
-.input-radio__control {
+.radiogroup__control {
   margin: 4px 0 0;
   line-height: normal;
 }
 
-.input-radio__content {
+.radiogroup__content {
   position: relative;
   top: 2px;
   left: 3px;
@@ -17,7 +17,7 @@
 
 // disabled
 
-.input-radio--disabled .input-radio__content {
+.radiogroup--disabled .radiogroup__content {
   cursor: not-allowed;
   color: $disabled-color;
 }
@@ -25,14 +25,14 @@
 
 // invalid
 
-.isInvalid .input-radio__content {
+.isInvalid .radiogroup__content {
   color: $isinvalid-color;
 }
 
 
 // required
 
-.input-radio--required .input-radio__content:after {
+.radiogroup--required .radiogroup__content:after {
   display: inline-block;
   padding: 0 0 0 .2em;
   content: '*';
@@ -42,6 +42,6 @@
 
 // hidden
 
-.input-radio__content--hidden {
+.radiogroup__content--hidden {
   @include hidden;
 }

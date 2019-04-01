@@ -49,13 +49,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
         <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><b>Components</b></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -63,14 +64,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -82,17 +83,19 @@
             <li><a href="05-radio.html">radiogroup</a></li>
             <li><a href="06-select.html">select</a></li>
             <li><a href="07-textarea.html">textarea</a></li>
-            <li><a href="08-container.html">container</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><a href="09-form-container.html">form-container</a></li>
             <li><b>list</b></li>
-            <li><a href="10-table.html">table</a></li>
-            <li><a href="11-media.html">media</a></li>
-            <li><a href="12-flag.html">flag</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2 class="mar-t-0">lists</h2>
           <p>The <code>list</code> component represents variations on the unordered list.</p>
-          <h5 class="example-heading">Usage</h5>
+
+          <h4>Usage</h4>
           <ul>
             <li>The <code>list-unstyled</code> variation can be used when a list requires no bullets</li>
             <li>The <code>list-inline</code> variation can be used where a list is required to be inline</li>
@@ -101,12 +104,46 @@
             <li>The <code>list-inline-slash</code> variation can be used where an inline list requires a "slash" symbol</li>
             <li>The <code>list-pagination</code> variation can be used for pagination</li>
           </ul>
-          <h5 class="example-heading">Accessibility</h5>
+
+          <h4>Accessibility</h4>
           <p>N/A</p>
           <hr>
 
-          <h3>list-unstyled</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>Basic unordered list</h4>
+          <div class="example">
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+            </ul>
+          </div>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+          <h4>Basic ordered list</h4>
+          <div class="example">
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+            </ol>
+          </div>
+<pre><code class="language-html">&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+          <h4>.list-unstyled</h4>
           <div class="example">
             <ul class="list-unstyled">
               <li>List item 1</li>
@@ -115,7 +152,6 @@
               <li>List item 4</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-unstyled"&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
@@ -123,10 +159,8 @@
   &lt;li&gt;List item 4&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          <hr>
 
-          <h3>list-inline</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>.list-inline</h4>
           <div class="example">
             <ul class="list-inline">
               <li>List item 1</li>
@@ -135,7 +169,6 @@
               <li>List item 4</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-inline"&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
@@ -143,68 +176,57 @@
   &lt;li&gt;List item 4&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          <hr>
 
-          <h3>list-inline-greater</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>.list-inline-greater</h4>
           <div class="example">
             <ul class="list-inline-greater">
               <li><a href="#">Home</a></li>
               <li><a href="#">Events</a></li>
-              <li class="active">Event 1</li>
+              <li class="list-item-active">Event 1</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-inline-greater"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          <hr>
 
-          <h3>list-inline-pipe</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>.list-inline-pipe</h4>
           <div class="example">
             <ul class="list-inline-pipe">
               <li><a href="#">Home</a></li>
               <li><a href="#">Event</a></li>
-              <li class="active">Event 1</li>
+              <li class="list-item-active">Event 1</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-inline-pipe"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          <hr>
 
-          <h3>list-inline-slash</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>.list-inline-slash</h4>
           <div class="example">
             <ul class="list-inline-slash">
               <li><a href="#">Home</a></li>
               <li><a href="#">Events</a></li>
-              <li class="active">Event 1</li>
+              <li class="list-item-active">Event 1</li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-inline-slash"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="active"&gt;Event 1&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          <hr>
 
-          <h3>list-pagination</h3>
-          <h5 class="example-heading">Example</h5>
+          <h4>.list-pagination</h4>
           <div class="example">
             <ul class="list-pagination">
               <li><a href="#">«</a></li>
-              <li class="active"><a href="#">1</a></li>
+              <li class="list-item-active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">4</a></li>
@@ -212,10 +234,9 @@
               <li><a href="#">»</a></li>
             </ul>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;ul class="list-pagination"&gt;
   &lt;li&gt;&lt;a href="#"&gt;«&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;

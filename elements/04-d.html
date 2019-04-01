@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>D elements - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="A list of all D elements">
+  <meta name="Description" lang="en" content="D elements within the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -48,13 +48,14 @@
 
   <!-- header row -->
   <div class="pad-y-1 bg-gray10">
-    <div class="container">
-      <ul class="list-inline-pipe mar-y-0">
+    <div class="content-container">
+      <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><b>Elements</b></li>
+        <li><a class="current" href="index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
         <li><a href="../components/index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
+        <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
       </ul>
     </div>
@@ -62,14 +63,14 @@
 
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
-    <div class="container" id="content">
+    <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
   <div class="pad-y-3 bg-white">
-    <div class="container">
+    <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
           <ul class="list-sidebar">
@@ -101,14 +102,13 @@
           <h2 class="mar-t-0">D elements</h2>
           <hr>
 
-          <h3>datalist</h3>
+          <h4>datalist</h4>
           <p>This element represents a set of option elements that represent
           predefined options for other controls. The contents of the element
           represents fallback content for legacy user agents, intermixed with option
           elements that represent the predefined options. In the rendering, the
           datalist element represents nothing and it, along with its children,
           should be hidden.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name" id="datalist-id-name">
               <label>Your favourite fruit:
@@ -122,7 +122,6 @@
               </label>
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="class-name" id="datalist-id-name"&gt;
   &lt;label&gt;Your favourite fruit:
   &lt;input type="text" name="fruit" list="fruits"&gt;
@@ -137,42 +136,36 @@
 </code></pre>
           <hr>
 
-          <h3>dd</h3>
+          <h4>dd</h4>
           <p>This element represents the description, definition, or value, part of
           a term-description group in a description list (dl element).</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;dd&gt;DD element - definition description&lt;/dd&gt;
 </code></pre>
           <hr>
 
-          <h3>del</h3>
+          <h4>del</h4>
           <p>This element represents a removal from the document. Thedel elements
           should not cross implied paragraph boundaries</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             This is the <del datetime="2001-05-15T19:00">DEL element</del> in a sentence.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;del datetime="2016-12-17T01:25-07:00"&gt;DEL element&lt;/del&gt;
 </code></pre>
           <hr>
 
-          <h3>details</h3>
+          <h4>details</h4>
           <p>This element represents a disclosure widget from which the user can
           obtain additional information or controls. However, the details element is
           not appropriate for footnotes.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
     <details class="class-name" id="details-id-name">
       <summary>This is the SUMMARY element</summary>
       <p>This is some DETAILS element content</p>
     </details>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;details class="class-name" id="details-id-name"&gt;
   &lt;summary&gt;This is the SUMMARY element&lt;/summary&gt;
   &lt;p&gt;This is some DETAILS element content&lt;/p&gt;
@@ -180,40 +173,36 @@
 </code></pre>
           <hr>
 
-          <h3>dfn</h3>
+          <h4>dfn</h4>
           <p>This element represents the defining instance of a term. The paragraph,
           description list group, or section that is the nearest ancestor of the dfn
           element must also contain the definition(s) for the term given by the dfn
           element.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             While they're essential reading material for our job, the
             <dfn><abbr title="World Wide Web Consortium">W3C</abbr></dfn>
             specifications are not exactly George R. R. Martin-level reading material.
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;dfn&gt;&lt;abbr title="World Wide Web Consortium"&gt;W3C&lt;/abbr&gt;&lt;/dfn&gt;
 </code></pre>
           <hr>
 
-          <h3>div</h3>
+          <h4>div</h4>
           <p>This element has no special meaning at all. It represents its children.
           It can be used with the class, lang, and title attributes to mark up
           semantics common to a group of consecutive elements.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             <div class="class-name" id="div-id-name">
               This is a DIV element
             </div>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;div class="class-name" id="div-id-name"&gt;
   This is a DIV element
 &lt;/div&gt;
 </code></pre>
           <hr>
 
-          <h3>dl</h3>
+          <h4>dl</h4>
           <p>This elements represents a description list consisting of zero or more
           name-value groups. Each group must consist of one or more names (dt
           elements) each followed by one or more values (dd elements). Name-value
@@ -221,14 +210,12 @@
           other groups of name-value data. The values within a group are alternatives;
           multiple paragraphs forming part of the same value must all be given
           within the same dd element.</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
           <dl class="class-name" id="dl-id-name">
             <dt>DT element - definition term</dt>
             <dd>DD element - definition description</dd>
           </dl>
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;dl class="class-name" id="dl-id-name"&gt;
   &lt;dt&gt;DT element - definition term&lt;/dt&gt;
   &lt;dd&gt;DD element - definition description&lt;/dd&gt;
@@ -236,14 +223,12 @@
 </code></pre>
           <hr>
 
-          <h3>dt</h3>
+          <h4>dt</h4>
           <p>This element represents the term, or name, part of a term-description
           group in a description list (dl element).</p>
-          <h5 class="example-heading">Example</h5>
           <div class="example">
             N/A
           </div>
-          <h5 class="example-heading">Markup</h5>
 <pre><code class="language-html">&lt;dt&gt;DT element - definition term&lt;/dt&gt;
 </code></pre>
         </div>

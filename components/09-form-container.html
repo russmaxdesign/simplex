@@ -4,9 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>W elements - Simplex Component Library</title>
+  <title>Form-container - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="W elements within the Simplex Component Library">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Form-container component usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -42,7 +43,7 @@
 <body>
 
   <!-- skip to content link -->
-    <div class="skip-link">
+  <div class="skip-link">
     <a href="#content">Skip to content (Press enter)</a>
   </div>
 
@@ -51,9 +52,9 @@
     <div class="content-container">
       <ul class="list-inline-pipe simplex-nav">
         <li><a href="../index.html">Simplex</a></li>
-        <li><a class="current" href="index.html">Elements</a></li>
+        <li><a href="../elements/index.html">Elements</a></li>
         <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
+        <li><a class="current" href="index.html">Components</a></li>
         <li><a href="../grid/index.html">Grid</a></li>
         <li><a href="../examples/index.html">Examples</a></li>
         <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
@@ -64,7 +65,7 @@
   <!-- intro row -->
   <div class="bg-primary pad-y-3">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">HTML elements</h1>
+      <h1 class="c-white mar-y-0">Components</h1>
     </div>
   </div>
 
@@ -75,40 +76,53 @@
         <div class="col-sm-3">
           <ul class="list-sidebar">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="01-a.html">A elements</a></li>
-            <li><a href="02-b.html">B elements</a></li>
-            <li><a href="03-c.html">C elements</a></li>
-            <li><a href="04-d.html">D elements</a></li>
-            <li><a href="05-e.html">E elements</a></li>
-            <li><a href="06-f.html">F elements</a></li>
-            <li><a href="07-h.html">H elements</a></li>
-            <li><a href="08-i.html">I elements</a></li>
-            <li><a href="09-k.html">K elements</a></li>
-            <li><a href="10-l.html">L elements</a></li>
-            <li><a href="11-m.html">M elements</a></li>
-            <li><a href="12-n.html">N elements</a></li>
-            <li><a href="13-o.html">O elements</a></li>
-            <li><a href="14-p.html">P elements</a></li>
-            <li><a href="15-q.html">Q elements</a></li>
-            <li><a href="16-r.html">R elements</a></li>
-            <li><a href="17-s.html">S elements</a></li>
-            <li><a href="18-t.html">T elements</a></li>
-            <li><a href="19-u.html">U elements</a></li>
-            <li><a href="20-v.html">V elements</a></li>
-            <li><b>W elements</b></li>
+            <li><a href="01-button.html">button</a></li>
+            <li><a href="02-link-button.html">link-button</a></li>
+            <li><a href="03-input.html">Input</a></li>
+            <li><a href="04-checkbox.html">checkbox</a></li>
+            <li><a href="05-radio.html">radiogroup</a></li>
+            <li><a href="06-select.html">select</a></li>
+            <li><a href="07-textarea.html">textarea</a></li>
+            <li><a href="08-content-container.html">content-container</a></li>
+            <li><b>form-container</b></li>
+            <li><a href="10-lists.html">list</a></li>
+            <li><a href="11-table.html">table</a></li>
+            <li><a href="12-media.html">media</a></li>
+            <li><a href="13-flag.html">flag</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">W elements</h2>
+          <h2 class="mar-t-0">form-container</h2>
+          <p>The <code>form-container</code> component is used to define a specific amount of spacing below each form control. The amount of spacing is defined as a global variable.</p>
+
+          <h4>Usage</h4>
+          <p>Used as a container for all form controls - allowing authors to control the space below each form control.</p>
+
+          <h4>Accessibility</h4>
+          <p>N/A</p>
           <hr>
 
-          <h4>wbr</h4>
-          <p>This element represents a line break opportunity. Any content inside wbr
-          elements must not be considered part of the surrounding text.</p>
+          <h4>.form-container</h4>
           <div class="example">
-            N/A
+            <div class="form-container">
+              <div class="bg-gray25">
+                form control
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="bg-gray25">
+                form control
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="bg-gray25">
+                form control
+              </div>
+            </div>
           </div>
-<pre><code class="language-html">http://this&lt;wbr&gt;.is&lt;wbr&gt;.a&lt;wbr&gt;.really&lt;wbr&gt;.long&lt;wbr&gt;.example&lt;wbr&gt;.com/With&lt;wbr&gt;/deeper&lt;wbr&gt;/level&lt;wbr&gt;/pages&lt;wbr&gt;/deeper&lt;wbr&gt;/level&lt;wbr&gt;/pages&lt;wbr&gt;/deeper&lt;wbr&gt;/level&lt;wbr&gt;/pages&lt;wbr&gt;/deeper&lt;wbr&gt;/level&lt;wbr&gt;/pages&lt;wbr&gt;/deeper&lt;wbr&gt;/level&lt;wbr&gt;/pages
+<pre><code class="language-html">&lt;div class="form-container"&gt;
+  ...
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>
