@@ -29,7 +29,7 @@
   background: $button-primary-background;
 
   &:focus {
-    outline: 2px dotted lighten($link-color-hover, 50%);
+    outline: $link-focus-outline;
   }
 
   &:focus,
@@ -65,7 +65,7 @@
   background: $button-secondary-background;
 
   &:focus {
-    outline: 2px dotted lighten($link-color-hover, 50%);
+    outline: $link-focus-outline;
   }
 
   &:focus,
@@ -101,7 +101,7 @@
   background: $button-success-background;
 
   &:focus {
-    outline: 2px dotted lighten($link-color-hover, 50%);
+    outline: $link-focus-outline;
   }
 
   &:focus,
@@ -137,7 +137,7 @@
   background: $button-warning-background;
 
   &:focus {
-    outline: 2px dotted lighten($link-color-hover, 50%);
+    outline: $link-focus-outline;
   }
 
   &:focus,
@@ -173,7 +173,7 @@
   background: $button-link-background;
 
   &:focus {
-    outline: 2px dotted lighten($link-color-hover, 50%);
+    outline: $link-focus-outline;
   }
 
   &:focus,

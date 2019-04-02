@@ -10,6 +10,13 @@
   font-size: $font16;
 }
 
+.select__control:focus {
+  outline: $link-focus-outline;
+}
+
+
+// content
+
 .select__content {
   display: block;
   padding-bottom: $label-space;

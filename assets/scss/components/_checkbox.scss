@@ -27,6 +27,14 @@
   border-radius: .2em;
 }
 
+.input-checkbox__control:focus {
+  outline: none;
+}
+
+.input-checkbox__control:focus::after {
+  outline: $link-focus-outline;
+}
+
 .input-checkbox__control:checked::after {
   background-color: $primary-color;
   background-image: url(../img/icon-tick-white.svg);

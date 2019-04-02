@@ -2,6 +2,13 @@
   font-size: $font16;
 }
 
+.input__control:focus {
+  outline: $link-focus-outline;
+}
+
+
+// content
+
 .input__content {
   display: block;
   padding-bottom: $label-space;

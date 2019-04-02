@@ -7,7 +7,7 @@ a:visited {
 }
 
 a:focus {
-  outline: 2px dotted lighten($link-color-hover, 50%);
+  outline: $link-focus-outline;
   color: $link-color-focus;
 }
 

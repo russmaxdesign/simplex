@@ -425,7 +425,7 @@ a:visited {
   color: #0052a8; }
 
 a:focus {
-  outline: 2px dotted #8ec6ff;
+  outline: 2px dotted #000;
   color: #000; }
 
 a:hover {
@@ -3513,7 +3513,7 @@ th {
   color: #fff;
   background: #005fc1; }
   .button-primary:focus {
-    outline: 2px dotted #8ec6ff; }
+    outline: 2px dotted #000; }
   .button-primary:focus, .button-primary:hover {
     border-color: #00468e;
     color: #fff;
@@ -3534,7 +3534,7 @@ th {
   color: #005fc1;
   background: #fff; }
   .button-secondary:focus {
-    outline: 2px dotted #8ec6ff; }
+    outline: 2px dotted #000; }
   .button-secondary:focus, .button-secondary:hover {
     border-color: #00468e;
     color: #00468e;
@@ -3555,7 +3555,7 @@ th {
   color: #fff;
   background: #008000; }
   .button-success:focus {
-    outline: 2px dotted #8ec6ff; }
+    outline: 2px dotted #000; }
   .button-success:focus, .button-success:hover {
     border-color: #003e00;
     color: #fff;
@@ -3576,7 +3576,7 @@ th {
   color: #fff;
   background: #C80000; }
   .button-warning:focus {
-    outline: 2px dotted #8ec6ff; }
+    outline: 2px dotted #000; }
   .button-warning:focus, .button-warning:hover {
     border-color: #860000;
     color: #fff;
@@ -3597,7 +3597,7 @@ th {
   color: #005fc1;
   background: transparent; }
   .button-link:focus {
-    outline: 2px dotted #8ec6ff; }
+    outline: 2px dotted #000; }
   .button-link:focus, .button-link:hover {
     color: #00468e;
     background: transparent; }
@@ -3628,6 +3628,12 @@ th {
   z-index: 1;
   border: 2px solid #bfbfbf;
   border-radius: .2em; }
+
+.input-checkbox__control:focus {
+  outline: none; }
+
+.input-checkbox__control:focus::after {
+  outline: 2px dotted #000; }
 
 .input-checkbox__control:checked::after {
   background-color: #00709B;
@@ -3748,6 +3754,9 @@ th {
 
 .input__control {
   font-size: 1em; }
+
+.input__control:focus {
+  outline: 2px dotted #000; }
 
 .input__content {
   display: block;
@@ -3934,6 +3943,9 @@ a.link-button-secondary {
   background-size: 16px 16px, 100% 100%;
   font-size: 1em; }
 
+.select__control:focus {
+  outline: 2px dotted #000; }
+
 .select__content {
   display: block;
   padding-bottom: 0.3em; }
@@ -3967,6 +3979,9 @@ a.link-button-secondary {
 
 .textarea__control {
   font-size: 1em; }
+
+.textarea__control:focus {
+  outline: 2px dotted #000; }
 
 .textarea__content {
   display: block;
@@ -4101,5 +4116,3 @@ body:before {
   body:before {
     content: 'LG';
     background: black; } }
-
-/*# sourceMappingURL=styles.css.map */
