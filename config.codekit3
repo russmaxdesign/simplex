@@ -1484,12 +1484,12 @@
 		"oAP": "/components/04-checkbox.html",
 		"oF": 0
 		},
-	"/components/05-radio.html": {
+	"/components/05-radiogroup.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/05-radio.html",
+		"oAP": "/components/05-radiogroup.html",
 		"oF": 0
 		},
 	"/components/06-select.html": {
@@ -1554,6 +1554,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/components/13-flag.html",
+		"oF": 0
+		},
+	"/components/14-skip-link.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/14-skip-link.html",
 		"oF": 0
 		},
 	"/components/index.html": {
