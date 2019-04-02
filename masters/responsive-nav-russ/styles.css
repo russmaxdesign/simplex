@@ -1,0 +1,161 @@
+/* ------------------------------------------
+  BASE DEMO STYLES
+--------------------------------------------- */
+
+body {
+  min-height: 5000px;
+  margin: 0;
+  padding: 0;
+  color: #37302a;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+h1 {
+  margin: 0 0 1em;
+}
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: silver;
+}
+
+.nav-collapse li {
+  display: inline;
+}
+
+.nav-collapse a {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    float: left;
+    width: auto;
+  }
+}
+
+.nav-collapse a {
+  float: left;
+  border-bottom: 1px solid white;
+  padding: .7em 1em;
+  color: #fff;
+  background: #f4421a;
+  text-decoration: none;
+}
+
+.nav-collapse a:focus {
+  outline: 2px solid lime;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    float: left;
+    border-right: 1px solid white;
+    border-bottom: 0;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+.nav-collapse ul ul a {
+  padding-left: 2em;
+  background: #ca3716;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+@font-face {
+  font-family: 'responsivenav';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('icons/responsivenav.eot');
+  src: url('icons/responsivenav.eot?#iefix') format('embedded-opentype'),
+  url('icons/responsivenav.ttf') format('truetype'),
+  url('icons/responsivenav.woff') format('woff'),
+  url('icons/responsivenav.svg#responsivenav') format('svg');
+}
+
+.nav-toggle {
+  position: fixed;
+  position: relative;
+  float: right;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+}
+
+.nav-toggle:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: '≡';
+  color: #f4421a; /* Edit this to change the icon color */
+  font-family: 'responsivenav', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 55px;
+  text-align: center;
+  text-indent: 0;
+  text-transform: none;
+
+  speak: none;
+}
+
+.nav-toggle:focus:before {
+  color: #000;
+  outline: 2px solid #000;
+}
+
+.nav-toggle.active::before {
+  content: 'x';
+  font-size: 24px;
+}
