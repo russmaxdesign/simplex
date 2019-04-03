@@ -24,6 +24,10 @@
   clear: both;
 }
 
+.clear-fix {
+  @include clearfix;
+}
+
 
 // xs only
 

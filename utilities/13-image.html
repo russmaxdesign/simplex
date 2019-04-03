@@ -1,0 +1,182 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Title -->
+  <title>Image utility classes - Simplex Component Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Image utility classes - usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+    <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary row-padding-4 simplex-banner">
+    <div class="content-container" id="content">
+      <h1 class="c-white mar-y-0">Utility classes</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="bg-white row-padding-3">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-navigation">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="01-color.html">Color</a></li>
+            <li><a href="02-background.html">Background-color</a></li>
+            <li><a href="03-font.html">Font-size</a></li>
+            <li><a href="04-hidden.html">Hidden</a></li>
+            <li><a href="05-visible.html">Visible</a></li>
+            <li><a href="06-float.html">Float</a></li>
+            <li><a href="07-border.html">Border</a></li>
+            <li><a href="08-text-align.html">Text-align</a></li>
+            <li><a href="09-margin.html">Margin</a></li>
+            <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
+            <li><a href="12-message.html">Message</a></li>
+            <li><b>Image</b></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2>Image</h2>
+          <p>These utility classes allow authors to style images.</p>
+
+          <h4>Usage</h4>
+          <p>Used to apply positioning to images.</p>
+
+          <h4>Accessibility</h4>
+          <ul>
+            <li>The <code>alt</code> attributes must be used with all images.</li>
+            <li>The <code>alt</code> attribute must be descriptive except for decorative images, when the value can be null.</li>
+          </ul>
+          <hr class="simplex-hr">
+
+          <h4>.image</h4>
+          <div class="simplex-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="image" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+          </div>
+<pre><code class="language-html">&lt;img class="image" src="100x100" alt="Alt text"&gt;
+</code></pre>
+
+          <h4>.image__left</h4>
+          <div class="simplex-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="image__left" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+          </div>
+<pre><code class="language-html">&lt;img class="image__left" src="100x100" alt="Alt text"&gt;
+</code></pre>
+
+          <h4>.image__right</h4>
+          <div class="simplex-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="image__right" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus vitae rerum id, enim aut magnam, placeat et dignissimos consequatur praesentium voluptatibus odit? Quas doloribus iste libero sunt! Maiores, omnis.</p>
+          </div>
+<pre><code class="language-html">&lt;img class="image__right" src="100x100" alt="Alt text"&gt;
+</code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
+</body>
+</html>

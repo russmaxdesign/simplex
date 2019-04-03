@@ -1,0 +1,37 @@
+.summary {
+  @include clearfix;
+
+  border-bottom: 1px solid $gray15;
+  margin: 0 0 1.5em;
+  padding: 0 0 1.5em;
+}
+
+.summary__body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.summary__feature {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+.summary__heading {
+  margin: 0 0 .5em;
+}
+
+.summary__details {
+  margin: 0 0 .5em;
+  color: $gray55;
+  font-size: $font14;
+  font-style: italic;
+}
+
+.summery__divider {
+  margin: 0 .3em;
+  color: $gray20;
+}
+
+.summary__content {
+  margin: 0;
+}

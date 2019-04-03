@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Margin classes - Simplex Component Library</title>
+  <title>Margin utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
   <meta name="Description" lang="en" content="Margin utility classes - usage and examples">
@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -48,37 +49,41 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a href="../01-elements.html">Elements</a></li>
-        <li><a class="current" href="index.html">Utility classes</a></li>
-        <li><a href="../03-components.html">Components</a></li>
-        <li><a href="../04-grid.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-color.html">Color</a></li>
-            <li><a href="02-background.html">Backgrounds</a></li>
-            <li><a href="03-font.html">Font</a></li>
+            <li><a href="02-background.html">Background-color</a></li>
+            <li><a href="03-font.html">Font-size</a></li>
             <li><a href="04-hidden.html">Hidden</a></li>
             <li><a href="05-visible.html">Visible</a></li>
             <li><a href="06-float.html">Float</a></li>
@@ -88,10 +93,11 @@
             <li><a href="10-padding.html">Padding</a></li>
             <li><a href="11-row-padding.html">Row-padding</a></li>
             <li><a href="12-message.html">Message</a></li>
+            <li><a href="13-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">Margin</h2>
+          <h2>Margin</h2>
           <p>Margin utility classes allow authors to apply margins to any element at specific screen sizes.</p>
 
           <h4>Usage</h4>
@@ -99,10 +105,10 @@
 
           <h4>Accessibility</h4>
           <p>N/A</p>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>margin-top: all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-t-0 bg-gray10">mar-t-0</div>
             <div class="mar-t-h bg-gray10">mar-t-h</div>
             <div class="mar-t-1 bg-gray10">mar-t-1</div>
@@ -121,7 +127,7 @@
 </code></pre>
 
           <h4>margin-top: xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-t-0-xs bg-gray10">mar-t-0-xs</div>
             <div class="mar-t-h-xs bg-gray10">mar-t-h-xs</div>
             <div class="mar-t-1-xs bg-gray10">mar-t-1-xs</div>
@@ -140,7 +146,7 @@
 </code></pre>
 
           <h4>margin-top: sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-t-0-sm bg-gray10">mar-t-0-sm</div>
             <div class="mar-t-h-sm bg-gray10">mar-t-h-sm</div>
             <div class="mar-t-1-sm bg-gray10">mar-t-1-sm</div>
@@ -159,7 +165,7 @@
 </code></pre>
 
           <h4>margin-top: md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-t-0-md bg-gray10">mar-t-0-md</div>
             <div class="mar-t-h-md bg-gray10">mar-t-h-md</div>
             <div class="mar-t-1-md bg-gray10">mar-t-1-md</div>
@@ -178,7 +184,7 @@
 </code></pre>
 
           <h4>margin-top: lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-t-0-lg bg-gray10">mar-t-0-lg</div>
             <div class="mar-t-h-lg bg-gray10">mar-t-h-lg</div>
             <div class="mar-t-1-lg bg-gray10">mar-t-1-lg</div>
@@ -197,7 +203,7 @@
 </code></pre>
 
           <h4>margin-right: all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-r-0 bg-gray10">mar-r-0</div>
             <div class="mar-r-h bg-gray10">mar-r-h</div>
             <div class="mar-r-1 bg-gray10">mar-r-1</div>
@@ -216,7 +222,7 @@
 </code></pre>
 
           <h4>margin-right: xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-r-0-xs bg-gray10">mar-r-0-xs</div>
             <div class="mar-r-h-xs bg-gray10">mar-r-h-xs</div>
             <div class="mar-r-1-xs bg-gray10">mar-r-1-xs</div>
@@ -235,7 +241,7 @@
 </code></pre>
 
           <h4>margin-right: sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-r-0-sm bg-gray10">mar-r-0-sm</div>
             <div class="mar-r-h-sm bg-gray10">mar-r-h-sm</div>
             <div class="mar-r-1-sm bg-gray10">mar-r-1-sm</div>
@@ -254,7 +260,7 @@
 </code></pre>
 
           <h4>margin-right: md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-r-0-md bg-gray10">mar-r-0-md</div>
             <div class="mar-r-h-md bg-gray10">mar-r-h-md</div>
             <div class="mar-r-1-md bg-gray10">mar-r-1-md</div>
@@ -273,7 +279,7 @@
 </code></pre>
 
           <h4>margin-right: lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-r-0-lg bg-gray10">mar-r-0-lg</div>
             <div class="mar-r-h-lg bg-gray10">mar-r-h-lg</div>
             <div class="mar-r-1-lg bg-gray10">mar-r-1-lg</div>
@@ -292,7 +298,7 @@
 </code></pre>
 
           <h4>margin-bottom: all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-b-0 bg-gray10">mar-b-0</div>
             <div class="mar-b-h bg-gray10">mar-b-h</div>
             <div class="mar-b-1 bg-gray10">mar-b-1</div>
@@ -311,7 +317,7 @@
 </code></pre>
 
           <h4>margin-bottom: xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-b-0-xs bg-gray10">mar-b-0-xs</div>
             <div class="mar-b-h-xs bg-gray10">mar-b-h-xs</div>
             <div class="mar-b-1-xs bg-gray10">mar-b-1-xs</div>
@@ -330,7 +336,7 @@
 </code></pre>
 
           <h4>margin-bottom: sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-b-0-sm bg-gray10">mar-b-0-sm</div>
             <div class="mar-b-h-sm bg-gray10">mar-b-h-sm</div>
             <div class="mar-b-1-sm bg-gray10">mar-b-1-sm</div>
@@ -349,7 +355,7 @@
 </code></pre>
 
           <h4>margin-bottom: md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-b-0-md bg-gray10">mar-b-0-md</div>
             <div class="mar-b-h-md bg-gray10">mar-b-h-md</div>
             <div class="mar-b-1-md bg-gray10">mar-b-1-md</div>
@@ -368,7 +374,7 @@
 </code></pre>
 
           <h4>margin-bottom: lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-b-0-lg bg-gray10">mar-b-0-lg</div>
             <div class="mar-b-h-lg bg-gray10">mar-b-h-lg</div>
             <div class="mar-b-1-lg bg-gray10">mar-b-1-lg</div>
@@ -387,7 +393,7 @@
 </code></pre>
 
           <h4>margin-left: all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-l-0 bg-gray10">mar-l-0</div>
             <div class="mar-l-h bg-gray10">mar-l-h</div>
             <div class="mar-l-1 bg-gray10">mar-l-1</div>
@@ -406,7 +412,7 @@
 </code></pre>
 
           <h4>margin-left: xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-l-0-xs bg-gray10">mar-l-0-xs</div>
             <div class="mar-l-h-xs bg-gray10">mar-l-h-xs</div>
             <div class="mar-l-1-xs bg-gray10">mar-l-1-xs</div>
@@ -425,7 +431,7 @@
 </code></pre>
 
           <h4>margin-left: sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-l-0-sm bg-gray10">mar-l-0-sm</div>
             <div class="mar-l-h-sm bg-gray10">mar-l-h-sm</div>
             <div class="mar-l-1-sm bg-gray10">mar-l-1-sm</div>
@@ -444,7 +450,7 @@
 </code></pre>
 
           <h4>margin-left: md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-l-0-md bg-gray10">mar-l-0-md</div>
             <div class="mar-l-h-md bg-gray10">mar-l-h-md</div>
             <div class="mar-l-1-md bg-gray10">mar-l-1-md</div>
@@ -463,7 +469,7 @@
 </code></pre>
 
           <h4>margin-left: lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-l-0-lg bg-gray10">mar-l-0-lg</div>
             <div class="mar-l-h-lg bg-gray10">mar-l-h-lg</div>
             <div class="mar-l-1-lg bg-gray10">mar-l-1-lg</div>
@@ -482,7 +488,7 @@
 </code></pre>
 
           <h4>margin-x (margin-left and margin-right): all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-x-0 bg-gray10">mar-x-0</div>
             <div class="mar-x-h bg-gray10">mar-x-h</div>
             <div class="mar-x-1 bg-gray10">mar-x-1</div>
@@ -501,7 +507,7 @@
 </code></pre>
 
           <h4>margin-x (margin-left and margin-right): xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-x-0-xs bg-gray10">mar-x-0-xs</div>
             <div class="mar-x-h-xs bg-gray10">mar-x-h-xs</div>
             <div class="mar-x-1-xs bg-gray10">mar-x-1-xs</div>
@@ -520,7 +526,7 @@
 </code></pre>
 
           <h4>margin-x (margin-left and margin-right): sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-x-0-sm bg-gray10">mar-x-0-sm</div>
             <div class="mar-x-h-sm bg-gray10">mar-x-h-sm</div>
             <div class="mar-x-1-sm bg-gray10">mar-x-1-sm</div>
@@ -539,7 +545,7 @@
 </code></pre>
 
           <h4>margin-x (margin-left and margin-right): md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-x-0-md bg-gray10">mar-x-0-md</div>
             <div class="mar-x-h-md bg-gray10">mar-x-h-md</div>
             <div class="mar-x-1-md bg-gray10">mar-x-1-md</div>
@@ -558,7 +564,7 @@
 </code></pre>
 
           <h4>margin-x (margin-left and margin-right): lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-x-0-lg bg-gray10">mar-x-0-lg</div>
             <div class="mar-x-h-lg bg-gray10">mar-x-h-lg</div>
             <div class="mar-x-1-lg bg-gray10">mar-x-1-lg</div>
@@ -578,7 +584,7 @@
 </code></pre>
 
           <h4>margin-y (margin-top and margin-bottom): all sizes</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-y-0 bg-gray10">mar-y-0</div>
             <div class="mar-y-h bg-gray10">mar-y-h</div>
             <div class="mar-y-1 bg-gray10">mar-y-1</div>
@@ -597,7 +603,7 @@
 </code></pre>
 
           <h4>margin-y (margin-top and margin-bottom): xs only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-y-0-xs bg-gray10">mar-y-0-xs</div>
             <div class="mar-y-h-xs bg-gray10">mar-y-h-xs</div>
             <div class="mar-y-1-xs bg-gray10">mar-y-1-xs</div>
@@ -616,7 +622,7 @@
 </code></pre>
 
           <h4>margin-y (margin-top and margin-bottom): sm only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-y-0-sm bg-gray10">mar-y-0-sm</div>
             <div class="mar-y-h-sm bg-gray10">mar-y-h-sm</div>
             <div class="mar-y-1-sm bg-gray10">mar-y-1-sm</div>
@@ -635,7 +641,7 @@
 </code></pre>
 
           <h4>margin-y (margin-top and margin-bottom): md only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-y-0-md bg-gray10">mar-y-0-md</div>
             <div class="mar-y-h-md bg-gray10">mar-y-h-md</div>
             <div class="mar-y-1-md bg-gray10">mar-y-1-md</div>
@@ -654,7 +660,7 @@
 </code></pre>
 
           <h4>margin-y (margin-top and margin-bottom): lg only</h4>
-          <div class="example">
+          <div class="simplex-example">
             <div class="mar-y-0-lg bg-gray10">mar-y-0-lg</div>
             <div class="mar-y-h-lg bg-gray10">mar-y-h-lg</div>
             <div class="mar-y-1-lg bg-gray10">mar-y-1-lg</div>
@@ -676,6 +682,41 @@
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

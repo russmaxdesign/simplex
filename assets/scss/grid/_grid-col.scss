@@ -119,7 +119,7 @@
 // md
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-.col,
+  .col,
   .col-xs-1,
   .col-xs-2,
   .col-xs-3,
@@ -179,7 +179,7 @@
 // lg
 
 @media (min-width: $screen-lg-min) {
-.col,
+  .col,
   .col-xs-1,
   .col-xs-2,
   .col-xs-3,

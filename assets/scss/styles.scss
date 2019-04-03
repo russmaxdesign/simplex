@@ -1,5 +1,6 @@
 // variables
 
+@import "variables/colors";
 @import "variables/global";
 @import "variables/buttons";
 @import "variables/fonts";
@@ -43,6 +44,7 @@
 @import "utilities/float";
 @import "utilities/font";
 @import "utilities/hidden";
+@import "utilities/image";
 @import "utilities/text-align";
 @import "utilities/table";
 @import "utilities/visible";
@@ -59,7 +61,6 @@
 @import "utilities/padding-left";
 @import "utilities/padding-x";
 @import "utilities/padding-y";
-@import "utilities/required";
 @import "utilities/row-padding";
 
 
@@ -77,16 +78,22 @@
 // generic components
 
 @import "components/button";
+@import "components/button-group";
 @import "components/checkbox";
-@import "components/container";
+@import "components/content-container";
+@import "components/description-list";
 @import "components/flag";
+@import "components/footer";
+@import "components/header";
 @import "components/form-container";
 @import "components/input";
-@import "components/link-button";
+@import "components/link";
 @import "components/list";
 @import "components/media";
-@import "components/radiogroup";
+@import "components/radio-group";
+@import "components/segmented-control";
 @import "components/select";
+@import "components/summary";
 @import "components/table";
 @import "components/textarea";
 @import "components/skip-link";

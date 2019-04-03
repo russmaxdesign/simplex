@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -47,33 +48,37 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a class="current" href="index.html">Elements</a></li>
-        <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a  class="current" href="index.html">Elements</a></li>
+          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-a.html">A elements</a></li>
             <li><a href="02-b.html">B elements</a></li>
@@ -99,8 +104,8 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">I elements</h2>
-          <hr>
+          <h2>I elements</h2>
+          <hr class="simplex-hr">
 
           <h4>i (italic)</h4>
           <p>This element represents a span of text in an alternate voice or mood, or
@@ -108,44 +113,44 @@
           technical term, an idiomatic phrase from another language, a thought, a
           ship name, or some other prose whose typical typographic presentation is
           italicized.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <i>ITALIC element</i> in a sentence.
           </div>
 <pre><code class="language-html">&lt;i&gt;ITALIC element&lt;/i&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>iframe</h4>
           <p>This element represents a nested browsing context.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;iframe class="class-name" id="iframe-id-name" src="#" name="iframe-name"&gt;
   This is the IFRAME element
 &lt;/iframe&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>img</h4>
           <p>An img element represents an image. The image given by the src attribute
           is the embedded content, and the value of the alt attribute is the img
           element's fallback content.</p>
-          <div class="example">
+          <div class="simplex-example">
             <img class="class-name" src="../assets/img/100x100.png" alt="">
           </div>
 <pre><code class="language-html">&lt;img class="class-name" src="../assets/img/100x100.png" alt=""&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>img with srcset</h4>
           <p>Allows for multiple device pixel ratios for an individual image using
           the srcset attribute.</p>
-          <div class="example">
+          <div class="simplex-example">
             <img
               srcset="../assets/img/image-1x.jpg 1x,
-                      assets/img/image-15x.jpg 1.5x,
-                      assets/img/image-2x.jpg 2x,
-                      assets/img/image-3x.jpg 3x"
+                      ../assets/img/image-15x.jpg 1.5x,
+                      ../assets/img/image-2x.jpg 2x,
+                      ../assets/img/image-3x.jpg 3x"
               src="../assets/img/image-1x.jpg"
               alt="ALT TEXT">
           </div>
@@ -157,12 +162,12 @@
   src="../assets/img/image-1x.jpg"
   alt="ALT TEXT"&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>input</h4>
           <p>This element represents a typed data field, usually with a form control
           to allow the user to edit the data.</p>
-          <div class="example">
+          <div class="simplex-example">
             <div class="class-name mar-b-1" id="label-text-id-name">
               <label for="text-id-name">text</label>
               <input type="text" class="class-name" id="text-id-name" name="text">
@@ -248,11 +253,11 @@
 &lt;input type="time" class="class-name" id="time-id-name" name="time-id-name"&gt;
 &lt;input type="datetime-local" class="class-name" id="datetime-id-name" name="datetime-id-name"&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>ins</h4>
           <p>This element represents an addition to the document. The ins elements should not cross implied paragraph boundaries.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <ins>INS element</ins> in a sentence.
           </div>
 <pre><code class="language-html">&lt;ins datetime="2010-10-11T01:25-07:01"&gt;INS element&lt;/ins&gt;
@@ -262,6 +267,41 @@
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

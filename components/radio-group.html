@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Title -->
+  <title>Radio-group - Simplex Component Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="Description" lang="en" content="Radio-group component usage and examples">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- CSS links -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.min.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <div class="skip-link">
+    <a href="#content">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- header row -->
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a class="current" href="index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- intro row -->
+  <div class="bg-primary row-padding-4 simplex-banner">
+    <div class="content-container" id="content">
+      <h1 class="c-white mar-y-0">Components</h1>
+    </div>
+  </div>
+
+  <!-- content row -->
+  <div class="bg-white row-padding-3">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="list-navigation">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="link.html">Link</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="description-list.html">Description-list</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="select.html">Select</a></li>
+            <li><a href="textarea.html">Textarea</a></li>
+            <li><a href="checkbox.html">Checkbox</a></li>
+            <li><b>Radio-group</b></li>
+            <li><a href="segmented-control.html">Segmented-control</a></li>
+            <li><a href="content-container.html">Content-container</a></li>
+            <li><a href="form-container.html">Form-container</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="flag.html">Flag</a></li>
+            <li><a href="summary.html">Summary</a></li>
+            <li><a href="skip-link.html">Skip-link</a></li>
+            <li><a href="header.html">Header</a></li>
+            <li><a href="footer.html">Footer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h2>Radio-group</h2>
+          <p>The <code>radio-group</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>radio</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+
+          <h4>Usage</h4>
+          <p>Used to present one or more selectable options to users - where only one option can be chosen at a time.</p>
+
+          <h4>Accessibility</h4>
+          <ul>
+            <li>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</li>
+            <li>Radio buttons should always be presented as a group within a <code>&lt;fieldset&gt;</code>.</li>
+            <li>The <code>&lt;legend&gt;</code> must be present and placed directly after the fieldset start tag.</li>
+          </ul>
+          <hr class="simplex-hr">
+
+          <h4>.radio-group</h4>
+          <div class="simplex-example">
+            <fieldset class="radio-group">
+              <legend>Legend for radio group</legend>
+              <ul> 
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="1a">
+                      <input class="radio-group__control" type="radio" id="1a" name="example1">
+                      <span class="radio-group__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="1b">
+                      <input class="radio-group__control" type="radio" id="1b" name="example1">
+                      <span class="radio-group__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="1c">
+                      <input class="radio-group__control" type="radio" id="1c" name="example1">
+                      <span class="radio-group__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radio-group"&gt;
+  &lt;legend&gt;Legend for radio group&lt;/legend&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="1a"&gt;
+          &lt;input class="radio-group__control" type="radio" id="1a" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button one&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="1b"&gt;
+          &lt;input class="radio-group__control" type="radio" id="1b" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="1c"&gt;
+          &lt;input class="radio-group__control" type="radio" id="1c" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button three&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.radio-group with hint text</h4>
+          <div class="simplex-example">
+            <fieldset class="radio-group" aria-describedby="e2">
+              <legend>Legend for radio group</legend>
+              <ul> 
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="2a">
+                      <input class="radio-group__control" type="radio" id="2a" name="example2">
+                      <span class="radio-group__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="2b">
+                      <input class="radio-group__control" type="radio" id="2b" name="example2">
+                      <span class="radio-group__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="2c">
+                      <input class="radio-group__control" type="radio" id="2c" name="example2">
+                      <span class="radio-group__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <p class="message-hint--radio-group" id="e2">Hint text</p>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radio-group" aria-describedby="e2"&gt;
+  &lt;legend&gt;Legend for radio group&lt;/legend&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="2a"&gt;
+          &lt;input class="radio-group__control" type="radio" id="2a" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button one&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="2b"&gt;
+          &lt;input class="radio-group__control" type="radio" id="2b" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="2c"&gt;
+          &lt;input class="radio-group__control" type="radio" id="2c" name="example2"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button three&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="message-hint--radio-group" id="e2"&gt;Hint text&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+
+
+          <h4>.radio-group--required</h4>
+          <div class="simplex-example">
+            <fieldset class="radio-group radio-group--required">
+              <legend>
+                Legend for radio group
+                <span class="message-required">(Required)</span>
+              </legend>
+              <ul> 
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="3a">
+                      <input class="radio-group__control" type="radio" id="3a" name="example3">
+                      <span class="radio-group__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="3b">
+                      <input class="radio-group__control" type="radio" id="3b" name="example3">
+                      <span class="radio-group__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="3c">
+                      <input class="radio-group__control" type="radio" id="3c" name="example3">
+                      <span class="radio-group__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radio-group radio-group--required"&gt;
+  &lt;legend&gt;
+    Legend for radio group
+    &lt;span class="required"&gt;(Required)&lt;/span&gt;
+  &lt;/legend&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="3a"&gt;
+          &lt;input class="radio-group__control" type="radio" id="3a" name="example3"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button one&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="3b"&gt;
+          &lt;input class="radio-group__control" type="radio" id="3b" name="example3"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="3c"&gt;
+          &lt;input class="radio-group__control" type="radio" id="3c" name="example3"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button three&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.isInvalid</h4>
+          <div class="simplex-example">
+            <fieldset class="radio-group isInvalid" aria-describedby="e4">
+              <legend>
+                Legend for radio group
+                <span class="message-required">(Required)</span>
+              </legend>
+              <ul> 
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="4a">
+                      <input class="radio-group__control" type="radio" id="4a" name="example4">
+                      <span class="radio-group__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="4b">
+                      <input class="radio-group__control" type="radio" id="4b" name="example4">
+                      <span class="radio-group__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="4c">
+                      <input class="radio-group__control" type="radio" id="4c" name="example4">
+                      <span class="radio-group__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <p class="message-error--radio-group" id="e4">Error Message</p>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radio-group isInvalid" aria-describedby="e4"&gt;
+  &lt;legend&gt;
+    Legend for radio group
+    &lt;span class="required"&gt;(Required)&lt;/span&gt;
+  &lt;/legend&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="4a"&gt;
+          &lt;input class="radio-group__control" type="radio" id="4a" name="example4"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button one&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="4b"&gt;
+          &lt;input class="radio-group__control" type="radio" id="4b" name="example4"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="4c"&gt;
+          &lt;input class="radio-group__control" type="radio" id="4c" name="example4"&gt;
+          &lt;span class="radio-group__content"&gt;Radio button three&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="message-error--radio-group" id="e4"&gt;Error Message&lt;/p&gt;
+&lt;/fieldset&gt;
+</code></pre>
+
+          <h4>.radio-group--disabled</h4>
+          <div class="simplex-example">
+            <fieldset class="radio-group radio-group--disabled">
+              <legend>Legend for radio group</legend>
+              <ul> 
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="5a">
+                      <input class="radio-group__control" type="radio" id="5a" name="example5" disabled>
+                      <span class="radio-group__content">Radio button one</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="5b">
+                      <input class="radio-group__control" type="radio" id="5b" name="example5" disabled>
+                      <span class="radio-group__content">Radio button two</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio-group__container">
+                    <label class="radio-group__label" for="5c">
+                      <input class="radio-group__control" type="radio" id="5c" name="example5" disabled>
+                      <span class="radio-group__content">Radio button three</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<pre><code class="language-html">&lt;fieldset class="radio-group radio-group--disabled"&gt;
+  &lt;legend&gt;Legend for radio group&lt;/legend&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="5a"&gt;
+          &lt;input class="radio-group__control" type="radio" id="5a" name="example5" disabled&gt;
+          &lt;span class="radio-group__content"&gt;Radio button one&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="5b"&gt;
+          &lt;input class="radio-group__control" type="radio" id="5b" name="example5" disabled&gt;
+          &lt;span class="radio-group__content"&gt;Radio button two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radio-group__container"&gt;
+        &lt;label class="radio-group__label" for="5c"&gt;
+          &lt;input class="radio-group__control" type="radio" id="5c" name="example5" disabled&gt;
+          &lt;span class="radio-group__content"&gt;Radio button three&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
+</body>
+</html>

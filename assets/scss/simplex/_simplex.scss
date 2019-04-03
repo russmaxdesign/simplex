@@ -1,30 +1,25 @@
-//
+// code highlighting
 
 p code,
 li code {
-  font-size: 100%;
   color: $black;
   background-color: $gray10;
+  font-size: 100%;
 }
-
-
-// link utility classes - should not be available to authors
-
-.c-link                 { color: $link-color; }
-.c-link-visited         { color: $link-color-visited; }
-.c-link-hover           { color: $link-color-hover; }
-.c-link-active          { color: $link-color-active; }
 
 
 // example
 
-.example {
+.simplex-example {
   border: 1px solid $gray15;
   margin: .5em 0;
   padding: 1em;
 }
 
-hr {
+
+// hr
+
+.simplex-hr {
   display: block;
   height: 5px;
   border: 0;
@@ -32,55 +27,14 @@ hr {
   background: $gray5;
 }
 
-.simplex-nav .current {
-  font-weight: bold;
-  color: $black;
+
+// banner
+
+.simplex-banner {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-
-
-// color
-
-.color-sample {
-  border: 2px solid $gray15;
-  margin: 0 0 1em;
-  padding: 1em;
-}
-
-
-// sidebar
-
-.list-sidebar {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid #ddd;
-}
-
-.list-sidebar a {
-  display: block;
-  padding: .5em;
-  border-bottom: 1px solid #ddd;
-  text-decoration: none;
-}
-
-.list-sidebar b {
-  display: block;
-  padding: .5em;
-  border-bottom: 1px solid #ddd;
-  background: $gray5;
-}
-
-.list-sidebar a:link,
-.list-sidebar a:visited {
-  color: $link-color;
-}
-
-.list-sidebar a:focus,
-.list-sidebar a:hover {
-  color: $black;
-  background: $gray5;
-}
-
 
 // A visual representation of each breakpoint.
 

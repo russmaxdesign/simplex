@@ -1,0 +1,34 @@
+// colors
+
+$black:                        #000;
+$white:                        #fff;
+$red:                          #C80000;
+$green:                        #008000;
+
+$gray5:                        #f2f2f2;
+$gray10:                       #e5e5e5;
+$gray15:                       #d9d9d9;
+$gray20:                       #ccc;
+$gray25:                       #bfbfbf;
+$gray30:                       #b2b2b2;
+$gray35:                       #a6a6a6;
+$gray40:                       #999;
+$gray45:                       #8c8c8c;
+$gray50:                       #808080;
+$gray55:                       #737373;
+$gray60:                       #666;
+$gray65:                       #595959;
+$gray70:                       #4d4d4d;
+$gray75:                       #404040;
+$gray80:                       #333;
+$gray85:                       #262626;
+$gray90:                       #1a1a1a;
+
+
+// disabled / isinvalid
+
+$disabled-color:               $gray35;
+$disabled-background:          $gray10;
+$isinvalid-color:              $red;
+$required-color:               $red;
+

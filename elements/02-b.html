@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -47,33 +48,37 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a class="current" href="index.html">Elements</a></li>
-        <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a  class="current" href="index.html">Elements</a></li>
+          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-a.html">A elements</a></li>
             <li><b>B elements</b></li>
@@ -99,8 +104,8 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">B elements</h2>
-          <hr>
+          <h2>B elements</h2>
+          <hr class="simplex-hr">
 
           <h4>b (bold)</h4>
           <p>This element represents a span of text to be stylistically offset from
@@ -108,12 +113,12 @@
           words in a document abstract, product names in a review, or other spans of
           text whose typical typographic presentation is bold. This element should be
           used as a last resort when no other element is more appropriate.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <b>BOLD element</b> in a sentence.
           </div>
 <pre><code class="language-html">&lt;b&gt;BOLD element&lt;/b&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>base</h4>
           <p>This element allows authors to specify the document base URL for the
@@ -122,7 +127,7 @@
           represent any content beyond this information. There must be no more than
           one base element per document. A base element must have either an href
           attribute, a target attribute, or both.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;head&gt;
@@ -130,34 +135,34 @@
   &lt;base href="http://www.sample.com/"&gt;
 &lt;/head&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>bdi</h4>
           <p>This element represents a span of text that is to be isolated from its
           surroundings for the purposes of bidirectional text formatting.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <bdi>BDI element</bdi> in a sentence.
           </div>
 <pre><code class="language-html">&lt;bdi&gt;BDI element&lt;/bdi&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>bdo</h4>
           <p>This element represents explicit text directionality formatting
           control for its children. It allows authors to override the Unicode
           bidirectional algorithm by explicitly specifying a direction override.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <bdo dir="ltr">BDO element</bdo> in a sentence.
           </div>
 <pre><code class="language-html">&lt;bdo dir="ltr"&gt;BDO element&lt;/bdo&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>blockquote</h4>
           <p>This element represents a section that is quoted from another source.
           Content inside a blockquote must be quoted from another source, whose
           address, if it has one, may be cited in the cite attribute.</p>
-          <div class="example">
+          <div class="simplex-example">
             <blockquote class="class-name" id="blockquote-id-name">
               This is a BLOCKQUOTE element
             </blockquote>
@@ -166,36 +171,36 @@
   This is a BLOCKQUOTE element
 &lt;/blockquote&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>body</h4>
           <p>This element represents the main content of the document.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;body&gt;
   This is the BODY element
 &lt;/body&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>br</h4>
           <p>This element represents a line break. br elements must be used only for
           line breaks that are actually part of the content, as in poems or
           addresses.</p>
-          <div class="example">
+          <div class="simplex-example">
             Some text<br>
             Some more text
           </div>
 <pre><code class="language-html">Some text&lt;br&gt;
 Some more text
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>button</h4>
           <p>This element represents a button. If the element is not disabled, then
           the user agent should allow the user to activate the button.</p>
-          <div class="example">
+          <div class="simplex-example">
             <button type="button">BUTTON type=button</button>
             <button type="submit">BUTTON type=submit</button>
           </div>
@@ -207,6 +212,41 @@ Some more text
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

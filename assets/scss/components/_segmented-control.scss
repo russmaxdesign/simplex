@@ -1,0 +1,101 @@
+// segmented-control
+
+.segmented-control legend {
+  margin-bottom: .5em;
+}
+
+.segmented-control__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    border: 1px solid $link-color;
+    border-left: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  li:first-child {
+    border-left: 1px solid $link-color;
+    border-radius: $form-border-radius 0 0 $form-border-radius;
+  }
+
+  li:last-child {
+    border-radius: 0 $form-border-radius $form-border-radius 0;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  label {
+    z-index: 1;
+    display: block;
+    height: $input-height;
+    padding: 0 1em;
+    cursor: pointer;
+    color: $link-color;
+    background: #fff;
+    line-height: $input-height;
+  }
+
+  li:first-child label {
+    border-radius: $form-border-radius 0 0 $form-border-radius;
+  }
+
+  li:last-child label {
+    border-radius: 0 $form-border-radius $form-border-radius 0;
+  }
+
+  label:hover {
+    color: $white;
+    background: $link-color-hover
+  }
+
+  input:checked + label {
+    color: #fff;
+    background: $link-color;
+  }
+
+  input:checked + label:hover {
+    color: #fff;
+    background: $link-color-hover
+  }
+
+  input:focus + label {
+    outline: $link-focus-outline;
+  }
+}
+
+
+// stetched
+
+.segmented-control--stretched {
+  li {
+    flex-grow: 1;
+  }
+}
+
+
+// centered
+
+.segmented-control--centered {
+  legend {
+    text-align: center;
+  }
+
+  .segmented-control__list {
+    justify-content: center;
+  }
+}

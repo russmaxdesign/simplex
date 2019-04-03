@@ -29,14 +29,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/assets/css/styles.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/css/styles.css.map",
-		"oF": 0
-		},
 	"/assets/favicon/android-icon-144x144.png": {
 		"ft": 32768,
 		"iS": 10373,
@@ -301,53 +293,43 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/100x100.png": {
-		"ft": 32768,
-		"iS": 442,
+	"/assets/fonts/responsivenav.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/img/100x100.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"oAP": "/assets/fonts/responsivenav.eot",
+		"oF": 0
 		},
-	"/assets/img/300x250.png": {
-		"ft": 32768,
-		"iS": 1234,
-		"oA": 0,
-		"oAP": "/assets/img/300x250.png",
+	"/assets/fonts/responsivenav.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/responsivenav.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"/assets/img/300x350.png": {
-		"ft": 32768,
-		"iS": 1184,
+	"/assets/fonts/responsivenav.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/img/300x350.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"oAP": "/assets/fonts/responsivenav.ttf",
+		"oF": 0
 		},
-	"/assets/img/550x550.png": {
-		"ft": 32768,
-		"iS": 1475,
+	"/assets/fonts/responsivenav.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/img/550x550.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"oAP": "/assets/fonts/responsivenav.woff",
+		"oF": 0
 		},
 	"/assets/img/banner.jpg": {
 		"ft": 16384,
-		"iS": 784106,
+		"iS": 64672,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/img/banner.jpg",
@@ -356,51 +338,61 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/img/icon-select-disabled.svg": {
+	"/assets/img/icons/icon-circle-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/icon-select-disabled.svg",
+		"oAP": "/assets/img/icons/icon-circle-white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/img/icon-select-invalid.svg": {
+	"/assets/img/icons/icon-select-disabled.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/icon-select-invalid.svg",
+		"oAP": "/assets/img/icons/icon-select-disabled.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/img/icon-select.svg": {
+	"/assets/img/icons/icon-select-invalid.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/icon-select.svg",
+		"oAP": "/assets/img/icons/icon-select-invalid.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/img/icon-tick-white.svg": {
+	"/assets/img/icons/icon-select.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/icon-tick-white.svg",
+		"oAP": "/assets/img/icons/icon-select.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/img/icon-tick.svg": {
+	"/assets/img/icons/icon-tick-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/icon-tick.svg",
+		"oAP": "/assets/img/icons/icon-tick-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/icons/icon-tick.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/icons/icon-tick.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -516,6 +508,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/assets/js/responsive-nav.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/responsive-nav-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/scss/components/_button-group.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_button-group.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/components/_button.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -542,7 +558,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/components/_container.scss": {
+	"/assets/scss/components/_content-container.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -550,7 +566,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/assets/scss/components/_container.css",
+		"oAP": "/assets/scss/components/_content-container.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/components/_description-list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_description-list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -568,6 +597,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/components/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/components/_form-container.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -577,6 +619,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/components/_form-container.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/components/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -594,7 +649,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/components/_link-button.scss": {
+	"/assets/scss/components/_link.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -602,7 +657,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/assets/scss/components/_link-button.css",
+		"oAP": "/assets/scss/components/_link.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -633,7 +688,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/components/_radiogroup.scss": {
+	"/assets/scss/components/_radio-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -641,7 +696,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/assets/scss/components/_radiogroup.css",
+		"oAP": "/assets/scss/components/_radio-group.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/components/_segmented-control.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_segmented-control.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -668,6 +736,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/components/_skip-link.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/components/_summary.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_summary.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1098,7 +1179,7 @@
 		"oA": 0,
 		"oAP": "/assets/css/styles.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/assets/scss/utilities/_border.scss": {
@@ -1162,6 +1243,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/utilities/_hidden.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/utilities/_image.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/utilities/_image.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1335,19 +1429,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/utilities/_required.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/utilities/_required.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/utilities/_row-padding.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1413,6 +1494,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/variables/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/variables/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/variables/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1452,116 +1546,76 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/components/01-button.html": {
+	"/components/button-group.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/01-button.html",
+		"oAP": "/components/button-group.html",
 		"oF": 0
 		},
-	"/components/02-link-button.html": {
+	"/components/button.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/02-link-button.html",
+		"oAP": "/components/button.html",
 		"oF": 0
 		},
-	"/components/03-input.html": {
+	"/components/checkbox.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/03-input.html",
+		"oAP": "/components/checkbox.html",
 		"oF": 0
 		},
-	"/components/04-checkbox.html": {
+	"/components/content-container.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/04-checkbox.html",
+		"oAP": "/components/content-container.html",
 		"oF": 0
 		},
-	"/components/05-radiogroup.html": {
+	"/components/description-list.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/05-radiogroup.html",
+		"oAP": "/components/description-list.html",
 		"oF": 0
 		},
-	"/components/06-select.html": {
+	"/components/flag.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/06-select.html",
+		"oAP": "/components/flag.html",
 		"oF": 0
 		},
-	"/components/07-textarea.html": {
+	"/components/footer.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/07-textarea.html",
+		"oAP": "/components/footer.html",
 		"oF": 0
 		},
-	"/components/08-content-container.html": {
+	"/components/form-container.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/08-content-container.html",
+		"oAP": "/components/form-container.html",
 		"oF": 0
 		},
-	"/components/09-form-container.html": {
+	"/components/header.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/components/09-form-container.html",
-		"oF": 0
-		},
-	"/components/10-lists.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/components/10-lists.html",
-		"oF": 0
-		},
-	"/components/11-table.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/components/11-table.html",
-		"oF": 0
-		},
-	"/components/12-media.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/components/12-media.html",
-		"oF": 0
-		},
-	"/components/13-flag.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/components/13-flag.html",
-		"oF": 0
-		},
-	"/components/14-skip-link.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/components/14-skip-link.html",
+		"oAP": "/components/header.html",
 		"oF": 0
 		},
 	"/components/index.html": {
@@ -1570,6 +1624,94 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/components/index.html",
+		"oF": 0
+		},
+	"/components/input.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/input.html",
+		"oF": 0
+		},
+	"/components/link.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/link.html",
+		"oF": 0
+		},
+	"/components/list.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/list.html",
+		"oF": 0
+		},
+	"/components/media.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/media.html",
+		"oF": 0
+		},
+	"/components/radio-group.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/radio-group.html",
+		"oF": 0
+		},
+	"/components/segmented-control.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/segmented-control.html",
+		"oF": 0
+		},
+	"/components/select.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/select.html",
+		"oF": 0
+		},
+	"/components/skip-link.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/skip-link.html",
+		"oF": 0
+		},
+	"/components/summary.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/summary.html",
+		"oF": 0
+		},
+	"/components/table.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/table.html",
+		"oF": 0
+		},
+	"/components/textarea.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/textarea.html",
 		"oF": 0
 		},
 	"/elements/01-a.html": {
@@ -1748,12 +1890,36 @@
 		"oAP": "/elements/index.html",
 		"oF": 0
 		},
-	"/examples/form.html": {
+	"/examples/01-home.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/form.html",
+		"oAP": "/examples/01-home.html",
+		"oF": 0
+		},
+	"/examples/02-inner-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/examples/02-inner-page.html",
+		"oF": 0
+		},
+	"/examples/03-blog-post.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/examples/03-blog-post.html",
+		"oF": 0
+		},
+	"/examples/04-blog-archive.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/examples/04-blog-archive.html",
 		"oF": 0
 		},
 	"/examples/index.html": {
@@ -1762,14 +1928,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/examples/index.html",
-		"oF": 0
-		},
-	"/examples/layout.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/examples/layout.html",
 		"oF": 0
 		},
 	"/favicon.ico": {
@@ -1860,6 +2018,14 @@
 		"oAP": "/masters/favicon/favicon.ai",
 		"oF": 0
 		},
+	"/masters/psd/banner.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/masters/psd/banner.psd",
+		"oF": 0
+		},
 	"/masters/spreadsheet/units.numbers": {
 		"cB": 0,
 		"ft": 8192,
@@ -1886,6 +2052,22 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/simplex.sublime-project": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/simplex.sublime-project",
+		"oF": 0
+		},
+	"/simplex.sublime-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/simplex.sublime-workspace",
+		"oF": 0
 		},
 	"/utilities/01-color.html": {
 		"cB": 0,
@@ -1983,6 +2165,14 @@
 		"oAP": "/utilities/12-message.html",
 		"oF": 0
 		},
+	"/utilities/13-image.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/13-image.html",
+		"oF": 0
+		},
 	"/utilities/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1999,7 +2189,7 @@
 "projectAttributes": {
 	"creationDate": 544015982,
 	"displayValue": "simplex",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-punDog",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 544015997
@@ -2484,7 +2674,7 @@
 			},
 		"camelcase": {
 			"active": 0,
-			"optionString": "{'properties': 'always'}"
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
 			},
 		"capitalized-comments": {
 			"active": 0,
@@ -2560,11 +2750,11 @@
 			},
 		"func-name-matching": {
 			"active": 0,
-			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			"optionString": "'always', {'considerPropertyDescriptor': false, 'includeCommonJSModuleExports': false}"
 			},
 		"func-names": {
 			"active": 0,
-			"optionString": "'always'"
+			"optionString": "'always', {'generators': 'always'}"
 			},
 		"func-style": {
 			"active": 0,
@@ -2604,7 +2794,7 @@
 			},
 		"id-match": {
 			"active": 0,
-			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true, 'ignoreDestructuring': false}"
 			},
 		"implicit-arrow-linebreak": {
 			"active": 0,
@@ -3076,7 +3266,7 @@
 			},
 		"no-self-assign": {
 			"active": 1,
-			"optionString": "{'props': false}"
+			"optionString": "{'props': true}"
 			},
 		"no-self-compare": {
 			"active": 0,
@@ -3104,7 +3294,7 @@
 			},
 		"no-tabs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
 			"active": 0,
@@ -3240,7 +3430,7 @@
 			},
 		"object-curly-newline": {
 			"active": 0,
-			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			"optionString": "{'ObjectExpression': {'multiline': true, 'consistent': true}, 'ObjectPattern': {'multiline': true, 'consistent': true}}"
 			},
 		"object-curly-spacing": {
 			"active": 0,
@@ -3910,7 +4100,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
+		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -4129,7 +4319,7 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"directives": {
@@ -4161,7 +4351,7 @@
 			"flagValue": -1
 			},
 		"hoist_funs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_props": {
@@ -4205,7 +4395,7 @@
 			"flagValue": -1
 			},
 		"keep_fargs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_fnames": {
@@ -4333,7 +4523,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"warnings": {
@@ -4350,7 +4540,7 @@
 			}
 		},
 	"uglifyMangleNames": 1,
-	"uglifyReservedNamesString": "$",
+	"uglifyReservedNamesString": "$,exports,require",
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"

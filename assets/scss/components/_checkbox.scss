@@ -17,14 +17,14 @@
 
 .input-checkbox__control::after {
   position: relative;
-  content: "";
+  z-index: 1;
   display: block;
   width: 1.2em;
   height: 1.2em;
-  background: $white;
-  z-index: 1;
   border: 2px solid $input-border-color;
   border-radius: .2em;
+  content: '';
+  background: $white;
 }
 
 .input-checkbox__control:focus {
@@ -36,11 +36,11 @@
 }
 
 .input-checkbox__control:checked::after {
-  background-color: $link-color;
-  background-image: url(../img/icon-tick-white.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
   border: 2px solid $link-color;
+  background-color: $link-color;
+  background-image: url(../img/icons/icon-tick-white.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .isInvalid .input-checkbox__control::after {
@@ -53,6 +53,7 @@
 
 .input-checkbox--disabled .input-checkbox__control::after {
   border-color: $gray15;
+  background: $gray10;
   cursor: not-allowed;
 }
 
@@ -64,11 +65,4 @@
   top: .2em;
   left: .4em;
   display: inline-block;
-}
-
-
-// hidden
-
-.input-checkbox__content--hidden {
-  @include hidden;
 }

@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -48,37 +49,41 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a href="../elements/index.html">Elements</a></li>
-        <li><a class="current" href="index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><b>Color</b></li>
-            <li><a href="02-background.html">Backgrounds</a></li>
-            <li><a href="03-font.html">Font</a></li>
+            <li><a href="02-background.html">Background-color</a></li>
+            <li><a href="03-font.html">Font-size</a></li>
             <li><a href="04-hidden.html">Hidden</a></li>
             <li><a href="05-visible.html">Visible</a></li>
             <li><a href="06-float.html">Float</a></li>
@@ -88,31 +93,32 @@
             <li><a href="10-padding.html">Padding</a></li>
             <li><a href="11-row-padding.html">Row-padding</a></li>
             <li><a href="12-message.html">Message</a></li>
+            <li><a href="13-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">Color</h2>
+          <h2>Color</h2>
           <p>Primary and secondary colors can be used for special headings and feature fonts. The red and green colors can be used for warning and success. The gray color utility classes allow authors to soften colors slightly, while still maintaining acceptable color contrast levels.</p>
 
           <h4>Usage</h4>
           <p>Used to apply pre-determined colors to any element or component.</p>
 
           <h4>Accessibility</h4>
-          <p>Color combinations should only be used as presented to maintain color contrast ratios.</p>
-          <hr>
+          <p>Color combinations should only be used as presented to maintain color contrast ratios. Grays should not be uaed below <code>c-gray55</code>.</p>
+          <hr class="simplex-hr">
 
           <h4>Primary and secondary</h4>
-          <div class="color-sample c-primary">c-primary<br>5.54:1 - PASS</div>
-          <div class="color-sample c-secondary">c-secondary<br>5.62:1 - PASS</div>
+          <div class="simplex-example c-primary">c-primary<br>5.54:1 - PASS</div>
+          <div class="simplex-example c-secondary">c-secondary<br>5.62:1 - PASS</div>
 <pre><code class="language-html">&lt;div class="c-primary"&gt;c-primary&lt;/div&gt;
 &lt;div class="c-secondary"&gt;c-secondary&lt;/div&gt;
 </code></pre>
 
           <h4>General</h4>
-          <div class="color-sample c-black">c-black<br>21.00:1 - PASS</div>
-          <div class="color-sample c-white bg-black">c-white<br>21.00:1 - PASS</div>
-          <div class="color-sample c-red">c-red<br>6.08:1 - PASS</div>
-          <div class="color-sample c-green">c-green<br>5.14:1 - PASS</div>
+          <div class="simplex-example c-black">c-black<br>21.00:1 - PASS</div>
+          <div class="simplex-example c-white bg-black">c-white<br>21.00:1 - PASS</div>
+          <div class="simplex-example c-red">c-red<br>6.08:1 - PASS</div>
+          <div class="simplex-example c-green">c-green<br>5.14:1 - PASS</div>
 <pre><code class="language-html">&lt;div class="c-black"&gt;c-black&lt;/div&gt;
 &lt;div class="c-white"&gt;c-white&lt;/div&gt;
 &lt;div class="c-red"&gt;c-red&lt;/div&gt;
@@ -120,11 +126,11 @@
 </code></pre>
 
           <h4>Links</h4>
-          <div class="color-sample c-link-color">c-link-color<br>6.16:1 - PASS</div>
-          <div class="color-sample c-link-color-visited">c-link-color-visited<br>7.57:1 - PASS</div>
-          <div class="color-sample c-link-color-hover">c-link-color-hover<br>9.26:1 - PASS</div>
-          <div class="color-sample c-link-color-focus">c-link-color-focus<br>21.00:1 - PASS</div>
-          <div class="color-sample c-link-color-active">c-link-color-visited<br>9.93:1 - PASS</div>
+          <div class="simplex-example c-link-color">c-link-color<br>6.16:1 - PASS</div>
+          <div class="simplex-example c-link-color-visited">c-link-color-visited<br>7.57:1 - PASS</div>
+          <div class="simplex-example c-link-color-hover">c-link-color-hover<br>9.26:1 - PASS</div>
+          <div class="simplex-example c-link-color-focus">c-link-color-focus<br>21.00:1 - PASS</div>
+          <div class="simplex-example c-link-color-active">c-link-color-active<br>9.93:1 - PASS</div>
 <pre><code class="language-html">&lt;div class="c-link"&gt;c-link&lt;/div&gt;
 &lt;div class="c-link-visited"&gt;c-link-visited&lt;/div&gt;
 &lt;div class="c-link-hover"&gt;c-link-hover&lt;/div&gt;
@@ -133,14 +139,25 @@
 </code></pre>
 
           <h4>Grays</h4>
-          <div class="color-sample c-gray90">c-gray90<br>17.40:1 - PASS</div>
-          <div class="color-sample c-gray85">c-gray85<br>15.13:1 - PASS</div>
-          <div class="color-sample c-gray80">c-gray80<br>12.63:1 - PASS</div>
-          <div class="color-sample c-gray75">c-gray75<br>10.37:1 - PASS</div>
-          <div class="color-sample c-gray70">c-gray70<br>8.45:1 - PASS</div>
-          <div class="color-sample c-gray70">c-gray65<br>7.00:1 - PASS</div>
-          <div class="color-sample c-gray65">c-gray60<br>5.74:1 - PASS</div>
-          <div class="color-sample c-gray60">c-gray55<br>4.74:1 - PASS</div>
+          <div class="simplex-example c-gray90">c-gray90<br>17.40:1 - PASS</div>
+          <div class="simplex-example c-gray85">c-gray85<br>15.13:1 - PASS</div>
+          <div class="simplex-example c-gray80">c-gray80<br>12.63:1 - PASS</div>
+          <div class="simplex-example c-gray75">c-gray75<br>10.37:1 - PASS</div>
+          <div class="simplex-example c-gray70">c-gray70<br>8.45:1 - PASS</div>
+          <div class="simplex-example c-gray65">c-gray65<br>7.00:1 - PASS</div>
+          <div class="simplex-example c-gray60">c-gray60<br>5.74:1 - PASS</div>
+          <div class="simplex-example c-gray55">c-gray55<br>4.74:1 - PASS</div>
+          <div class="simplex-example c-gray50">c-gray50</div>
+          <div class="simplex-example c-gray45">c-gray45</div>
+          <div class="simplex-example c-gray40">c-gray40</div>
+          <div class="simplex-example c-gray35">c-gray35</div>
+          <div class="simplex-example c-gray30">c-gray30</div>
+          <div class="simplex-example c-gray25">c-gray25</div>
+          <div class="simplex-example c-gray20">c-gray20</div>
+          <div class="simplex-example c-gray15">c-gray15</div>
+          <div class="simplex-example c-gray10">c-gray10</div>
+          <div class="simplex-example c-gray5">c-gray5</div>
+
 <pre><code class="language-html">&lt;div class="c-gray90"&gt;c-gray90&lt;/div&gt;
 &lt;div class="c-gray85"&gt;c-gray85&lt;/div&gt;
 &lt;div class="c-gray80"&gt;c-gray80&lt;/div&gt;
@@ -148,12 +165,58 @@
 &lt;div class="c-gray70"&gt;c-gray70&lt;/div&gt;
 &lt;div class="c-gray65"&gt;c-gray65&lt;/div&gt;
 &lt;div class="c-gray60"&gt;c-gray60&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray55&lt;/div&gt;
+&lt;div class="c-gray50"&gt;c-gray50&lt;/div&gt;
+&lt;div class="c-gray45"&gt;c-gray45&lt;/div&gt;
+&lt;div class="c-gray40"&gt;c-gray40&lt;/div&gt;
+&lt;div class="c-gray35"&gt;c-gray35&lt;/div&gt;
+&lt;div class="c-gray30"&gt;c-gray30&lt;/div&gt;
+&lt;div class="c-gray25"&gt;c-gray25&lt;/div&gt;
+&lt;div class="c-gray20"&gt;c-gray20&lt;/div&gt;
+&lt;div class="c-gray15"&gt;c-gray15&lt;/div&gt;
+&lt;div class="c-gray10"&gt;c-gray10&lt;/div&gt;
+&lt;div class="c-gray5"&gt;c-gray5&lt;/div&gt;
 </code></pre>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

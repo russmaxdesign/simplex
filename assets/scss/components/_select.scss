@@ -1,13 +1,13 @@
 .select__control {
-  -webkit-border-radius: $base-border-radius;
-  -webkit-appearance: none;
-
   background-color: $white;
-  background-image: url(../img/icon-select.svg);
+  background-image: url(../img/icons/icon-select.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - (5px)) 50%, 0 0;
   background-size: 16px 16px, 100% 100%;
   font-size: $font16;
+
+  -webkit-border-radius: $base-border-radius;
+  -webkit-appearance: none;
 }
 
 .select__control:focus {
@@ -32,18 +32,8 @@
 
 // invalid
 
-.isInvalid .select__content {
-  color: $isinvalid-color;
-}
-
-
-// required
-
-.select--required .select__content:after {
-  display: inline-block;
-  padding: 0 0 0 .2em;
-  content: '*';
-  color: $required-color;
+.isInvalid .select__control {
+  border-color: $isinvalid-color;
 }
 
 

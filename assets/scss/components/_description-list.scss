@@ -1,0 +1,50 @@
+.description-list__inline,
+.description-list__border,
+.description-list__aligned {
+  margin: 1em 0 1.5em;
+
+  dt {
+    float: left;
+    width: 12em;
+    font-weight: normal;
+  }
+
+  dd {
+    padding: 0 0 0 13em;
+  }
+
+  dd:after {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    content: '';
+  }
+}
+
+.description-list__border,
+.description-list__aligned {
+  border-top: 1px solid $gray10;
+  padding-top: .5em;
+
+  dd {
+    border-bottom: 1px solid $gray10;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+  }
+}
+
+.description-list__aligned {
+  border-top: 1px dotted $gray20;
+
+  dt {
+    float: left;
+    width: 20em;
+    font-weight: normal;
+  }
+
+  dd {
+    border-bottom: 1px dotted $gray20;
+    text-align: right;
+  }
+}

@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -47,33 +48,37 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a class="current" href="index.html">Elements</a></li>
-        <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a  class="current" href="index.html">Elements</a></li>
+          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-a.html">A elements</a></li>
             <li><a href="02-b.html">B elements</a></li>
@@ -99,26 +104,26 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">C elements</h2>
-          <hr>
+          <h2>C elements</h2>
+          <hr class="simplex-hr">
 
           <h3>canvas</h3>
           <p>This element represents a resolution-dependent bitmap canvas, which can
           be used for rendering graphs, game graphics, or other visual
           information.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;canvas class="class-name" id="canvas-id-name"&gt;
   ...
 &lt;/canvas&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>caption</h3>
           <p>The caption element represents the title of the table that is its
           parent, if it has a parent and that is a table element.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;table&gt;
@@ -126,7 +131,7 @@
   ...
 &lt;/table&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>cite</h3>
           <p>This element represents the title of a work (e.g. a book, a paper, an
@@ -135,28 +140,28 @@
           an exhibition, a legal case report, etc). This can be a work that is being
           quoted or referenced in detail (i.e. a citation), or it can just be a work
           that is mentioned in passing.</p>
-          <div class="example">
+          <div class="simplex-example">
             The poem <cite><a href="https://www.poetryfoundation.org/poems-and-poets/poems/detail/48985">Phenomenal Woman</a></cite> was written by Maya Angelou.
           </div>
 <pre><code class="language-html">&lt;cite&gt;&lt;a href="#"&gt;Phenomenal Woman&lt;/a&gt;&lt;/cite&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>code</h3>
           <p>This element represents a fragment of computer code. This could be an
           XML element name, a filename, a computer program, or any other string that
           a computer would recognize.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <code>CODE element</code> in a sentence.
           </div>
 <pre><code class="language-html">&lt;code&gt;CODE element&lt;/code&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>col</h3>
           <p>This element represents one or more columns in the column group
           represented by that colgroup.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;table&gt;
@@ -166,12 +171,12 @@
   ...
 &lt;/table&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>colgroup</h3>
           <p>This element represents a group of one or more columns in the table that
           is its parent, if it has a parent and that is a table element.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;table&gt;
@@ -185,13 +190,13 @@
   ...
 &lt;/table&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h3>command</h3>
           <p>This element represents a command that the user can invoke. A command
           can be part of a context menu or toolbar, using the menu element, or can
           be put anywhere else in the page, to define a keyboard shortcut.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;menu&gt;
@@ -203,6 +208,41 @@
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

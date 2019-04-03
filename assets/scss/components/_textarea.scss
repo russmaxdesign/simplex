@@ -27,17 +27,3 @@
 .isInvalid .textarea__control {
   border: 1px solid $isinvalid-color;
 }
-
-.isInvalid .textarea__content {
-  color: $isinvalid-color;
-}
-
-
-// required
-
-.textarea--required .textarea__content:after {
-  display: inline-block;
-  padding: 0 0 0 .2em;
-  content: '*';
-  color: $required-color;
-}

@@ -33,6 +33,10 @@ h2,
   font-size: $heading2-size;
 }
 
+h2:first-child {
+  margin: 0 0 1em;
+}
+
 h3,
 .h3 {
   margin: $heading3-margin;

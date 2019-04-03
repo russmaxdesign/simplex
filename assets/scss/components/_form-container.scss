@@ -1,8 +1,9 @@
 // all
 
 .form-container {
-  margin-bottom: $form-container-xs;
   @include clearfix;
+
+  margin-bottom: $form-container-xs;
 }
 
 

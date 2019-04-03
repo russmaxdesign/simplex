@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -48,37 +49,41 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a href="../elements/index.html">Elements</a></li>
-        <li><a class="current" href="index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white pad-y-0">Utility classes</h1>
+      <h1 class="c-white mar-y-0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-color.html">Color</a></li>
-            <li><a href="02-background.html">Backgrounds</a></li>
-            <li><a href="03-font.html">Font</a></li>
+            <li><a href="02-background.html">Background-color</a></li>
+            <li><a href="03-font.html">Font-size</a></li>
             <li><a href="04-hidden.html">Hidden</a></li>
             <li><a href="05-visible.html">Visible</a></li>
             <li><a href="06-float.html">Float</a></li>
@@ -86,39 +91,86 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="10-padding.html">Padding</a></li>
             <li><a href="11=row-padding.html">Row-padding</a></li>
             <li><b>Messages</b></li>
+            <li><a href="13-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">Message</h2>
+          <h2>Message</h2>
           <p>These utility classes allow authors to style hint and error messages.</p>
 
           <h4>Usage</h4>
-          <p>Used to apply error or hint classes to messages relating to form controls.</p>
+          <ul>
+            <li><code>.message-required</code> used to notify users of required fields.</li>
+            <li><code>.message-error</code> used to apply an error message below form controls.</li>
+            <li><code>.message-hint</code> used to apply hint information below form controls.</li>
+          </ul>
 
           <h4>Accessibility</h4>
           <p>These messages must be programatically associated with their relevant form control.</p>
-          <hr>
+          <hr class="simplex-hr">
+
+          <h4>.message-required</h4>
+          <div class="simplex-example">
+            <span class="message-required">(Required)</span>
+          </div>
+<pre><code class="language-html">&lt;span class="message-required"&gt;(Required)&lt;/span&gt;
+</code></pre>
 
           <h4>.message-error</h4>
-          <div class="example">
+          <div class="simplex-example">
             <span class="message-error">message-error</span>
           </div>
 <pre><code class="language-html">&lt;span class="message-error"&gt;message-error&lt;/span&gt;
 </code></pre>
 
           <h4>.message-hint</h4>
-          <div class="example">
+          <div class="simplex-example">
             <span class="message-hint">message-hint</span>
           </div>
 <pre><code class="language-html">&lt;span class="message-hint"&gt;message-hint&lt;/span&gt;
 </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

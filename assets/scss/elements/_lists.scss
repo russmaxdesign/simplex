@@ -9,10 +9,19 @@ ol {
 
 // dl
 
-dt {
-  font-weight: bold;
+dl {
+  margin: 1em 0 1.5em;
 }
 
+dt {
+  clear: left;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+dd {
+  margin: 0 0 1em;
+}
 
 // xs
 

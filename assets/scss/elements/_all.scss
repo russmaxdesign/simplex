@@ -1,10 +1,10 @@
 html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  min-height: 100%;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  overflow-y: scroll;
-  min-height: 100%;
-  box-sizing: border-box;
 }
 
 /**
@@ -13,6 +13,8 @@ html {
  *
  */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }

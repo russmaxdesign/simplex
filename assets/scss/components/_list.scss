@@ -1,4 +1,5 @@
 .list-unstyled,
+.list-navigation,
 .list-inline,
 .list-inline-slash,
 .list-inline-greater,
@@ -10,6 +11,42 @@
   list-style: none;
 }
 
+
+// navigation
+
+.list-navigation {
+  border-top: 1px solid #ddd;
+  margin-bottom: 2em;
+}
+
+.list-navigation a {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.list-navigation b {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: .5em;
+  background: $gray5;
+}
+
+.list-navigation a:link,
+.list-navigation a:visited {
+  color: $link-color;
+}
+
+.list-navigation a:focus,
+.list-navigation a:hover {
+  color: $black;
+  background: $gray5;
+}
+
+
+// inline
+
 .list-inline li,
 .list-inline-slash li,
 .list-inline-greater li,
@@ -20,6 +57,9 @@
 .list-inline li {
   margin: 0 1em 0 0;
 }
+
+
+// slash, greater, pipe
 
 .list-inline-slash li:before,
 .list-inline-greater li:before,
@@ -55,7 +95,8 @@
 // list-pagination
 
 .list-pagination {
-  overflow: hidden;
+  @include clearfix;
+
   padding: 0;
   list-style: none;
 }
@@ -74,6 +115,6 @@
 }
 
 .list-pagination .list-item-active a {
-  background-color: $gray10;
   color: $gray60;
+  background-color: $gray10;
 }

@@ -1,0 +1,57 @@
+// footer
+
+.footer {
+  color: $white;
+  background: $black;
+}
+
+
+// footer links
+
+.footer a:link,
+.footer a:visited {
+  color: $white;
+}
+
+.footer a:hover {
+  color: $gray10;
+}
+
+.footer a:focus {
+  outline: $link-focus-outline-reverse;
+  color: $white;
+}
+
+.footer a:active {
+  color: $gray15;
+}
+
+
+// footer content
+
+.footer__content {
+  font-size: $font14;
+}
+
+.footer__content-right {
+  font-size: $font14;
+  text-align: right;
+}
+
+
+// footer content xsmall
+
+@media (max-width: $screen-xs-max) {
+  .footer__content-right {
+    text-align: left;
+  }
+}
+
+
+// footer divider
+
+.footer__divider {
+  display: inline-block;
+  margin: 0 .5em;
+  color: $gray50;
+}

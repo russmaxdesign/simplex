@@ -4,7 +4,6 @@ $base-font-size:               1em;
 $base-font-family:             'Helvetica Neue', Helvetica, Arial, 'Microsoft Sans Serif', 'DejaVu Sans', 'URW Gothic L', sans-serif;
 $feature-font-family:          Lato, Helvetica, Arial, 'Microsoft Sans Serif', 'DejaVu Sans', 'URW Gothic L', sans-serif;
 $heading-font-family:          $feature-font-family;
-$button-font-family:           $base-font-family;
 
 
 // line-height
@@ -18,38 +17,7 @@ $line-height-lg:               1.5;
 // colors
 
 $primary-color:                #00709B;
-$secondary-color:              #CB0067;
-
-$black:                        #000;
-$white:                        #fff;
-$red:                          #C80000;
-$green:                        #008000;
-
-$link-color:                   #005fc1;
-$link-color-visited:           darken($link-color, 5%);
-$link-color-hover:             darken($link-color, 10%);
-$link-color-focus:             $black;
-$link-color-active:            #8C0000;
-$link-focus-outline:           2px dotted $black;
-
-$gray5:                        #f2f2f2;
-$gray10:                       #e5e5e5;
-$gray15:                       #d9d9d9;
-$gray20:                       #ccc;
-$gray25:                       #bfbfbf;
-$gray30:                       #b2b2b2;
-$gray35:                       #a6a6a6;
-$gray40:                       #999;
-$gray45:                       #8c8c8c;
-$gray50:                       #808080;
-$gray55:                       #737373;
-$gray60:                       #666;
-$gray65:                       #595959;
-$gray70:                       #4d4d4d;
-$gray75:                       #404040;
-$gray80:                       #333;
-$gray85:                       #262626;
-$gray90:                       #1a1a1a;
+$secondary-color:              #b2005a;
 
 
 // base colors
@@ -58,12 +26,15 @@ $base-text-color:              $gray75;
 $base-background-color:        $white;
 
 
-// disabled / isinvalid
+// link colors
 
-$disabled-color:               $gray35;
-$disabled-background:          $gray10;
-$isinvalid-color:              $red;
-$required-color:               $red;
+$link-color:                   $primary-color;
+$link-color-visited:           darken($link-color, 5%);
+$link-color-hover:             darken($link-color, 10%);
+$link-color-focus:             $black;
+$link-color-active:            #8C0000;
+$link-focus-outline:           2px dotted $black;
+$link-focus-outline-reverse:   2px dotted $white;
 
 
 // forms
@@ -76,27 +47,24 @@ $label-space:                  .3em;
 $input-border-color:           $gray25;
 $input-padding:                0 .5em;
 $input-color:                  $gray60;
-$input-height:                 2em;
+$input-height:                 2em; // sets height and line-height
+$base-border-radius:           .2em;
+$form-border-radius:           $base-border-radius;
 
 
 // buttons
 
+$button-font-family:           $base-font-family;
 $button-border-width:          1px;
 $button-padding:               .375em .9375em .5em;
 $button-height:                2em;
 
 
-// border-radius
-
-$base-border-radius:           .2em;
-$form-border-radius:           $base-border-radius;
-
-
 // content-container
 
 $content-container-width:              60em; // 960px
-$content-container-width-medium:       40em; // 640px
-$content-container-width-narrow:       30em; // 480px
+$content-container-width-medium:       45em; // 720px
+$content-container-width-narrow:       32em; // 512px
 
 
 //  grids

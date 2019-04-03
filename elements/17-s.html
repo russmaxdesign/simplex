@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <!-- Header Javascript links -->
+  <script src="../assets/js/responsive-nav.js"></script>
   <!--[if lt IE 9]>
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
@@ -47,33 +48,37 @@
   </div>
 
   <!-- header row -->
-  <div class="pad-y-1 bg-gray10">
-    <div class="content-container">
-      <ul class="list-inline-pipe simplex-nav">
-        <li><a href="../index.html">Simplex</a></li>
-        <li><a class="current" href="index.html">Elements</a></li>
-        <li><a href="../utilities/index.html">Utility classes</a></li>
-        <li><a href="../components/index.html">Components</a></li>
-        <li><a href="../grid/index.html">Grid</a></li>
-        <li><a href="../examples/index.html">Examples</a></li>
-        <li><a href="https://github.com/russmaxdesign/simplex">Github</a></li>
-      </ul>
+  <div class="header">
+    <div class="header__container">
+      <div class="header__title">
+        Simplex
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a  class="current" href="index.html">Elements</a></li>
+          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../examples/index.html">Examples</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary pad-y-3">
+  <div class="bg-primary row-padding-4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white mar-y-0">HTML elements</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="pad-y-3 bg-white">
+  <div class="bg-white row-padding-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-sidebar">
+          <ul class="list-navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-a.html">A elements</a></li>
             <li><a href="02-b.html">B elements</a></li>
@@ -99,40 +104,40 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="mar-t-0">S elements</h2>
-          <hr>
+          <h2>S elements</h2>
+          <hr class="simplex-hr">
 
           <h4>s (strike)</h4>
           <p>This element represents a container for base text and ruby text — small annotations
           used for phonetic readings in languages such as Japanese and Chinese.
           Examples include furigana and zhùyin fúhào (bopomofo).</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <s>STRIKE element</s> in a sentence.
           </div>
 <pre><code class="language-html">&lt;s&gt;STRIKE element&lt;/s&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>samp</h4>
           <p>This element represents (sample) output from a program or computing
           system.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">This is the &lt;samp&gt;SAMPLE element&lt;/samp&gt; in a sentence.
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>script</h4>
           <p>The script element allows authors to include dynamic script and data
           blocks in their documents. The element does not represent content for the
           user.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;script src="../assets/js/prism.js"&gt;&lt;/script&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>section</h4>
           <p>This element represents a generic document or application section.
@@ -140,7 +145,7 @@
           it. This element is not a generic container element. When an element is
           needed for styling purposes or as a convenience for scripting, authors
           are encouraged to use the div element instead.</p>
-          <div class="example">
+          <div class="simplex-example">
             <section class="class-name" id="section-id-name">
               <h5>This is a SECTION element</h5>
             </section>
@@ -149,11 +154,11 @@
   &lt;h5&gt;This is a SECTION element&lt;/h5&gt;
 &lt;/section&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>select</h4>
           <p>This element represents a control for selecting amongst a set of options.</p>
-          <div class="example">
+          <div class="simplex-example">
             <div class="class-name" id="select-id-name">
               <label for="color">Color</label>
               <select name="color" id="color">
@@ -174,19 +179,19 @@
   &lt;/select&gt;
 &lt;/div&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>small</h4>
           <p>This elements represents side comments such as small print. It is not
           intended to be presentational. The small element should not be used for
           extended spans of text such as multiple paragraphs, lists, or sections of
           text. It is only intended for short runs of text.</p>
-          <div class="example">
+          <div class="simplex-example">
             <small>&copy; copyright Sitename</small>
           </div>
 <pre><code class="language-html">&lt;small&gt;&copy; copyright Sitename&lt;/small&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>source</h4>
           <p>This element allows authors to specify multiple alternative media
@@ -194,70 +199,70 @@
           The src attribute gives the address of the media resource. The value must
           be a valid non-empty URL potentially surrounded by spaces. This attribute
           must be present.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;source src="test.webm" type="video/webm"&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>span</h4>
           <p>This element represents an inline generic container.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <span class="class-name" id="span-id-name">SPAN element</span> in a sentence.
           </div>
 <pre><code class="language-html">&lt;span class="class-name" id="span-id-name"&gt;SPAN element&lt;/span&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>strong</h4>
           <p>This element strong importance for its contents.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <strong>STRONG element</strong> in a sentence.
           </div>
 <pre><code class="language-html">&lt;strong&gt;STRONG element&lt;/strong&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>style</h4>
           <p>This element allows authors to embed style information in their
           documents. The style element is one of several inputs to the styling
           processing model. The element does not represent content for the user.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;style&gt;
   p { color: red; }
 &lt;/style&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>sub</h4>
           <p>This element can be used inside a var element, for variables that have
           subscripts.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <sub>SUB element</sub> in a sentence.
           </div>
 <pre><code class="language-html">&lt;sub&gt;SUB element&lt;/sub&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>summary</h4>
           <p>This element represents a summary, caption, or legend for the rest of
           the contents of the summary element's parent details element, if any.</p>
-          <div class="example">
+          <div class="simplex-example">
             N/A
           </div>
 <pre><code class="language-html">&lt;details&gt;
   &lt;summary&gt;This is the SUMMARY element&lt;/summary&gt;
 &lt;/details&gt;
 </code></pre>
-          <hr>
+          <hr class="simplex-hr">
 
           <h4>sup</h4>
           <p>This element represents a superscript and the sub element represents a
           subscript.</p>
-          <div class="example">
+          <div class="simplex-example">
             This is the <sup>SUP element</sup> in a sentence.
           </div>
 <pre><code class="language-html">&lt;sup&gt;SUP element&lt;/sub&gt;
@@ -267,6 +272,41 @@
     </div>
   </div>
 
+  <!-- footer row -->
+  <div class="footer row-padding-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/js/prism.js"></script>
+  <script>
+    var navigation = responsiveNav(".header__nav", {
+      animate: true,                    // Boolean: Use CSS3 transitions, true or false
+      transition: 284,                  // Integer: Speed of the transition, in milliseconds
+      label: "Menu",                    // String: Label for the navigation toggle
+      insert: "before",                  // String: Insert the toggle before or after the navigation
+      customToggle: "",                 // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative",              // String: Position of the opened nav, relative or static
+      navClass: "header__nav",         // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+      jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+      init: function(){},               // Function: Init callback
+      open: function(){},               // Function: Open callback
+      close: function(){}               // Function: Close callback
+    });
+  </script>
 </body>
 </html>

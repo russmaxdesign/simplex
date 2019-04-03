@@ -1,0 +1,85 @@
+// button
+
+a.link-primary,
+a.link-secondary,
+a.link {
+  display: inline-block;
+  border-radius: $base-border-radius;
+  margin: 0;
+  padding: $button-padding;
+  cursor: pointer;
+  background-image: none;
+  font-family: $button-font-family;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+// primary
+
+a.link-primary {
+  border: $button-border-width solid $button-primary-border;
+  color: $button-primary-color;
+  background: $button-primary-background;
+
+  &:focus,
+  &:hover {
+    border-color: $button-primary-hover-border;
+    color: $button-primary-hover-color;
+    background: $button-primary-hover-background;
+  }
+
+  &:active {
+    border-color: $button-primary-active-border;
+    color: $button-primary-active-color;
+    background: $button-primary-active-background;
+  }
+}
+
+
+// secondary
+
+a.link-secondary {
+  border: $button-border-width solid $button-secondary-border;
+  color: $button-secondary-color;
+  background: $button-secondary-background;
+
+  &:focus,
+  &:hover {
+    border-color: $button-secondary-hover-border;
+    color: $button-secondary-hover-color;
+    background: $button-secondary-hover-background;
+  }
+
+  &:active {
+    border-color: $button-secondary-active-border;
+    color: $button-secondary-active-color;
+    background: $button-secondary-active-background;
+  }
+}
+
+// link
+
+a.link {
+  border: $button-border-width solid $button-link-border;
+  color: $button-link-color;
+  background: $button-link-background;
+
+  &:focus {
+    outline: $link-focus-outline;
+  }
+
+  &:focus,
+  &:hover {
+    color: $button-link-hover-color;
+    background: $button-link-hover-background;
+  }
+
+  &:active {
+    color: $button-link-active-color;
+    background: $button-link-active-background;
+  }
+}
+
