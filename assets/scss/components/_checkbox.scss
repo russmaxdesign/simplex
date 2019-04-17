@@ -1,9 +1,16 @@
 // parent
 
 .input-checkbox {
-  margin-bottom: .25em;
+  display: inline-block;
+  clear: left;
+  margin-bottom: 0;
+  padding: .2em 1em .35em .25em;
+  cursor: pointer;
 }
 
+.input-checkbox:hover {
+  background: $gray5;
+}
 
 // disabled
 
@@ -53,8 +60,8 @@
 
 .input-checkbox--disabled .input-checkbox__control::after {
   border-color: $gray15;
-  background: $gray10;
   cursor: not-allowed;
+  background: $gray10;
 }
 
 
@@ -65,4 +72,5 @@
   top: .2em;
   left: .4em;
   display: inline-block;
+  cursor: pointer;
 }
