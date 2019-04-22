@@ -1,7 +1,9 @@
 // code highlighting
 
 p code,
-li code {
+li code,
+dt code,
+dd code {
   color: $black;
   background-color: $gray10;
   font-size: 100%;
@@ -14,6 +16,10 @@ li code {
   border: 1px solid $gray15;
   margin: .5em 0;
   padding: 1em;
+}
+
+.simplex-example p:last-of-type {
+  margin-bottom: 0; 
 }
 
 

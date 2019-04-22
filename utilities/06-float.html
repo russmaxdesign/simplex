@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Float utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Float utility classes - usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -36,7 +37,7 @@
 <body>
 
   <!-- skip to content link -->
-    <div class="skip-link">
+  <div class="skip-link">
     <a href="#content">Skip to content (Press enter)</a>
   </div>
 
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Utility classes</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-color.html">Color</a></li>
             <li><a href="02-background.html">Background-color</a></li>
@@ -83,14 +84,14 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><a href="12-message.html">Message</a></li>
-            <li><a href="13-image.html">Image</a></li>
+            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><a href="12-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2>Float</h2>
-          <p>Float utility classes allow authors to move elements to the left and right at specific screen sizes.</p>
+          <p>Float utility classes allow authors to move elements to the left
+          and right at specific screen sizes.</p>
 
           <h4>Usage</h4>
           <p>Used to display element to the left or right within a container.</p>
@@ -101,69 +102,69 @@
 
           <h4>Floats at all sizes</h4>
           <div class="simplex-example">
-            <div class="clear-both float-left">float-left</div>
-            <div class="clear-both float-right">float-right</div>
-            <div class="clear-both float-none">float-none</div>
+            <div class="u-clear-both u-float-left">u-float-left</div>
+            <div class="u-clear-both u-float-right">u-float-right</div>
+            <div class="u-clear-both u-float-none">u-float-none</div>
           </div>
-<pre><code class="language-html">&lt;div class="float-left"&gt;float-left&lt;/div&gt;
-&lt;div class="float-right"&gt;float-right&lt;/div&gt;
-&lt;div class="float-none"&gt;float-none&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-float-left"&gt;u-float-left&lt;/div&gt;
+&lt;div class="u-float-right"&gt;u-float-right&lt;/div&gt;
+&lt;div class="u-float-none"&gt;u-float-none&lt;/div&gt;
 </code></pre>
 
           <h4>Clears at all sizes</h4>
           <div class="simplex-example">
-            <div class="clear-left">clear-left</div>
-            <div class="clear-right">clear-right</div>
-            <div class="clear-both">clear-both</div>
+            <div class="u-clear-left">u-clear-left</div>
+            <div class="u-clear-right">u-clear-right</div>
+            <div class="u-clear-both">u-clear-both</div>
             <div class="clear-fix">clear-fix</div>
           </div>
-<pre><code class="language-html">&lt;div class="clear-left"&gt;clear-left&lt;/div&gt;
-&lt;div class="clear-right"&gt;clear-right&lt;/div&gt;
-&lt;div class="clear-both"&gt;clear-both&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-clear-left"&gt;u-clear-left&lt;/div&gt;
+&lt;div class="u-clear-right"&gt;u-clear-right&lt;/div&gt;
+&lt;div class="u-clear-both"&gt;u-clear-both&lt;/div&gt;
 &lt;div class="clear-fix"&gt;clear-fix&lt;/div&gt;
 </code></pre>
 
           <h4>xs only</h4>
           <div class="simplex-example">
-            <div class="clear-both float-left-xs">float-left-xs</div>
-            <div class="clear-both float-right-xs">float-right-xs</div>
-            <div class="clear-both float-none-xs">float-none-xs</div>
+            <div class="u-clear-both u-float-left--xs">u-float-left--xs</div>
+            <div class="u-clear-both u-float-right--xs">u-float-right--xs</div>
+            <div class="u-clear-both u-float-none--xs">u-float-none--xs</div>
           </div>
-<pre><code class="language-html">&lt;div class="float-left-xs"&gt;float-left-xs&lt;/div&gt;
-&lt;div class="float-right-xs"&gt;float-right-xs&lt;/div&gt;
-&lt;div class="float-none-xs"&gt;float-none-xs&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-float-left--xs"&gt;u-float-left--xs&lt;/div&gt;
+&lt;div class="u-float-right--xs"&gt;u-float-right--xs&lt;/div&gt;
+&lt;div class="u-float-none--xs"&gt;u-float-none--xs&lt;/div&gt;
 </code></pre>
 
           <h4>sm only</h4>
           <div class="simplex-example">
-            <div class="clear-both float-left-sm">float-left-sm</div>
-            <div class="clear-both float-right-sm">float-right-sm</div>
-            <div class="clear-both float-none-sm">float-none-sm</div>
+            <div class="u-clear-both u-float-left--sm">u-float-left--sm</div>
+            <div class="u-clear-both u-float-right--sm">u-float-right--sm</div>
+            <div class="u-clear-both u-float-none--sm">u-float-none--sm</div>
           </div>
-<pre><code class="language-html">&lt;div class="float-left-sm"&gt;float-left-sm&lt;/div&gt;
-&lt;div class="float-right-sm"&gt;float-right-sm&lt;/div&gt;
-&lt;div class="float-none-sm"&gt;float-none-sm&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-float-left--sm"&gt;u-float-left--sm&lt;/div&gt;
+&lt;div class="u-float-right--sm"&gt;u-float-right--sm&lt;/div&gt;
+&lt;div class="u-float-none--sm"&gt;u-float-none--sm&lt;/div&gt;
 </code></pre>
 
           <h4>md only</h4>
           <div class="simplex-example">
-            <div class="clear-both float-left-md">float-left-md</div>
-            <div class="clear-both float-right-md">float-right-md</div>
-            <div class="clear-both float-none-md">float-none-md</div>
+            <div class="u-clear-both u-float-left--md">u-float-left--md</div>
+            <div class="u-clear-both u-float-right--md">u-float-right--md</div>
+            <div class="u-clear-both u-float-none--md">u-float-none--md</div>
           </div>
-<pre><code class="language-html">&lt;div class="float-left-md"&gt;float-left-md&lt;/div&gt;
-&lt;div class="float-right-md"&gt;float-right-md&lt;/div&gt;
-&lt;div class="float-none-md"&gt;float-none-md&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-float-left--md"&gt;u-float-left--md&lt;/div&gt;
+&lt;div class="u-float-right--md"&gt;u-float-right--md&lt;/div&gt;
+&lt;div class="u-float-none--md"&gt;u-float-none--md&lt;/div&gt;
 </code></pre>
           <h4>lg only</h4>
           <div class="simplex-example">
-            <div class="clear-both float-left-lg">float-left-lg</div>
-            <div class="clear-both float-right-lg">float-right-lg</div>
-            <div class="clear-both float-none-lg">float-none-lg</div>
+            <div class="u-clear-both u-float-left--lg">u-float-left--lg</div>
+            <div class="u-clear-both u-float-right--lg">u-float-right--lg</div>
+            <div class="u-clear-both u-float-none--lg">u-float-none--lg</div>
           </div>
-<pre><code class="language-html">&lt;div class="float-left-lg"&gt;float-left-lg&lt;/div&gt;
-&lt;div class="float-right-lg"&gt;float-right-lg&lt;/div&gt;
-&lt;div class="float-none-lg"&gt;float-none-lg&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-float-left--lg"&gt;u-float-left--lg&lt;/div&gt;
+&lt;div class="u-float-right--lg"&gt;u-float-right--lg&lt;/div&gt;
+&lt;div class="u-float-none--lg"&gt;u-float-none--lg&lt;/div&gt;
 </code></pre>
         </div>
       </div>
@@ -171,7 +172,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

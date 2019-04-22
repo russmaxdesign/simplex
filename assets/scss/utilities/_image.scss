@@ -1,11 +1,11 @@
-.image {
+.u-image {
   display: block;
   max-width: 100%;
   height: auto;
   margin-bottom: .5em;
 }
 
-.image__left {
+.u-image--left {
   float: left;
   max-width: 100%;
   height: auto;
@@ -13,7 +13,7 @@
   margin-bottom: .5em;
 }
 
-.image__right {
+.u-image--right {
   float: right;
   max-width: 100%;
   height: auto;

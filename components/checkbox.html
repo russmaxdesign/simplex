@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Checkbox - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Checkbox component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,79 +99,86 @@
         </div>
         <div class="col-sm-9">
           <h2>Checkbox</h2>
-          <p>The <code>checkbox</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+          <p>The <code>checkbox</code> component represents an
+          <code>&lt;input&gt;</code> element with a type of
+          <code>checkbox</code> and its explicitly associated
+          <code>&lt;label&gt;</code> element.</p>
 
           <h4>Usage</h4>
-          <p>Used to present one or more single or multiple choice options to users.</p>
+          <p>Used to present one or more single or multiple choice options to
+          users.</p>
 
           <h4>Accessibility</h4>
-          <p>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</p>
+          <p>The <code>&lt;input&gt;</code> element needs an explicitly
+          associated <code>&lt;label&gt;</code>. The contents of the
+          <code>&lt;label&gt;</code> must come after the
+          <code>&lt;input&gt;</code> element.</p>
           <hr class="simplex-hr">
 
           <h4>Basic checkbox</h4>
           <div class="simplex-example">
-            <div class="input-checkbox">
-              <label class="input-checkbox__label" for="example1">
-                <input class="input-checkbox__control" type="checkbox" name="example3" id="example1">
-                <span class="input-checkbox__content">Checkbox label</span>
+            <div class="checkbox">
+              <label class="checkbox__label" for="example1">
+                <input class="checkbox__control" type="checkbox" name="example3" id="example1">
+                <span class="checkbox__content">Checkbox label</span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input-checkbox"&gt;
-  &lt;label class="input-checkbox__label" for="example1"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example1"&gt;
-    &lt;span class="input-checkbox__content"&gt;Checkbox&lt;/span&gt;
+<pre><code class="language-html">&lt;div class="checkbox"&gt;
+  &lt;label class="checkbox__label" for="example1"&gt;
+    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example1"&gt;
+    &lt;span class="checkbox__content"&gt;Checkbox&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>Required checkbox</h4>
           <div class="simplex-example">
-            <div class="input-checkbox input-checkbox--required">
-              <label class="input-checkbox__label" for="example2">
-                <input class="input-checkbox__control" type="checkbox" name="example3" id="example2" required>
-                <span class="input-checkbox__content">Checkbox label <span class="message-required">(Required)</span></span>
+            <div class="checkbox">
+              <label class="checkbox__label" for="example2">
+                <input class="checkbox__control" type="checkbox" name="example3" id="example2" required>
+                <span class="checkbox__content">Checkbox label <span class="message--required">(Required)</span></span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input-checkbox input-checkbox--required"&gt;
-  &lt;label class="input-checkbox__label" for="example2"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example2" required&gt;
-    &lt;span class="input-checkbox__content"&gt;Checkbox label &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+<pre><code class="language-html">&lt;div class="checkbox"&gt;
+  &lt;label class="checkbox__label" for="example2"&gt;
+    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example2" required&gt;
+    &lt;span class="checkbox__content"&gt;Checkbox label &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>Invalid checkbox</h4>
           <div class="simplex-example">
-            <div class="input-checkbox isInvalid">
-              <label class="input-checkbox__label" for="example3">
-                <input class="input-checkbox__control" type="checkbox" name="example3" id="example3" required>
-                <span class="input-checkbox__content">Checkbox label <span class="message-required">(Required)</span></span>
+            <div class="checkbox checkbox--invalid">
+              <label class="checkbox__label" for="example3">
+                <input class="checkbox__control" type="checkbox" name="example3" id="example3" required>
+                <span class="checkbox__content">Checkbox label <span class="message--required">(Required)</span></span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input-checkbox isInvalid"&gt;
-  &lt;label class="input-checkbox__label" for="example3"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example3" required&gt;
-    &lt;span class="input-checkbox__content"&gt;Checkbox label &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+<pre><code class="language-html">&lt;div class="checkbox checkbox--invalid"&gt;
+  &lt;label class="checkbox__label" for="example3"&gt;
+    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example3" required&gt;
+    &lt;span class="checkbox__content"&gt;Checkbox label &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>Disabled checkbox</h4>
           <div class="simplex-example">
-            <div class="input-checkbox input-checkbox--disabled">
-              <label class="input-checkbox__label" for="example4">
-                <input class="input-checkbox__control" type="checkbox" name="example3" id="example4" disabled>
-                <span class="input-checkbox__content">Checkbox label</span>
+            <div class="checkbox checkbox--disabled">
+              <label class="checkbox__label" for="example4">
+                <input class="checkbox__control" type="checkbox" name="example3" id="example4" disabled>
+                <span class="checkbox__content">Checkbox label</span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input-checkbox input-checkbox--disabled"&gt;
-  &lt;label class="input-checkbox__label" for="example4"&gt;
-    &lt;input class="input-checkbox__control" type="checkbox" name="example3" id="example4" disabled&gt;
-    &lt;span class="input-checkbox__content"&gt;Checkbox label&lt;/span&gt;
+<pre><code class="language-html">&lt;div class="checkbox checkbox--disabled"&gt;
+  &lt;label class="checkbox__label" for="example4"&gt;
+    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example4" disabled&gt;
+    &lt;span class="checkbox__content"&gt;Checkbox label&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
@@ -179,7 +188,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

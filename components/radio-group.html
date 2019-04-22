@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Radio-group - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Radio-group component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,16 +99,24 @@
         </div>
         <div class="col-sm-9">
           <h2>Radio-group</h2>
-          <p>The <code>radio-group</code> component represents an <code>&lt;input&gt;</code> element with a type of <code>radio</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+          <p>The <code>radio-group</code> component represents an
+          <code>&lt;input&gt;</code> element with a type of <code>radio</code>
+          and its explicitly associated <code>&lt;label&gt;</code> element.</p>
 
           <h4>Usage</h4>
-          <p>Used to present one or more selectable options to users - where only one option can be chosen at a time.</p>
+          <p>Used to present one or more selectable options to users - where
+          only one option can be chosen at a time.</p>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>The <code>&lt;input&gt;</code> element needs an explicitly associated <code>&lt;label&gt;</code>. The contents of the <code>&lt;label&gt;</code> must come after the <code>&lt;input&gt;</code> element.</li>
-            <li>Radio buttons should always be presented as a group within a <code>&lt;fieldset&gt;</code>.</li>
-            <li>The <code>&lt;legend&gt;</code> must be present and placed directly after the fieldset start tag.</li>
+            <li>The <code>&lt;input&gt;</code> element needs an explicitly
+            associated <code>&lt;label&gt;</code>. The contents of the
+            <code>&lt;label&gt;</code> must come after the
+            <code>&lt;input&gt;</code> element.</li>
+            <li>Radio buttons should always be presented as a group within a
+            <code>&lt;fieldset&gt;</code>.</li>
+            <li>The <code>&lt;legend&gt;</code> must be present and placed
+            directly after the fieldset start tag.</li>
           </ul>
           <hr class="simplex-hr">
 
@@ -177,6 +187,7 @@
           <div class="simplex-example">
             <fieldset class="radio-group" aria-describedby="e2">
               <legend>Legend for radio group</legend>
+              <p class="message--hint--radio-group" id="e2">Hint text</p>
               <ul> 
                 <li>
                   <div class="radio-group__container">
@@ -203,11 +214,11 @@
                   </div>
                 </li>
               </ul>
-              <p class="message-hint--radio-group" id="e2">Hint text</p>
             </fieldset>
           </div>
 <pre><code class="language-html">&lt;fieldset class="radio-group" aria-describedby="e2"&gt;
   &lt;legend&gt;Legend for radio group&lt;/legend&gt;
+  &lt;p class="message--hint--radio-group" id="e2"&gt;Hint text&lt;/p&gt;
   &lt;ul&gt; 
     &lt;li&gt;
       &lt;div class="radio-group__container"&gt;
@@ -234,7 +245,6 @@
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;p class="message-hint--radio-group" id="e2"&gt;Hint text&lt;/p&gt;
 &lt;/fieldset&gt;
 &lt;/fieldset&gt;
 </code></pre>
@@ -243,10 +253,10 @@
 
           <h4>.radio-group--required</h4>
           <div class="simplex-example">
-            <fieldset class="radio-group radio-group--required">
+            <fieldset class="radio-group">
               <legend>
                 Legend for radio group
-                <span class="message-required">(Required)</span>
+                <span class="message--required">(Required)</span>
               </legend>
               <ul> 
                 <li>
@@ -276,10 +286,10 @@
               </ul>
             </fieldset>
           </div>
-<pre><code class="language-html">&lt;fieldset class="radio-group radio-group--required"&gt;
+<pre><code class="language-html">&lt;fieldset class="radio-group"&gt;
   &lt;legend&gt;
     Legend for radio group
-    &lt;span class="required"&gt;(Required)&lt;/span&gt;
+    &lt;span class="message--required"&gt;(Required)&lt;/span&gt;
   &lt;/legend&gt;
   &lt;ul&gt; 
     &lt;li&gt;
@@ -312,10 +322,10 @@
 
           <h4>.isInvalid</h4>
           <div class="simplex-example">
-            <fieldset class="radio-group isInvalid" aria-describedby="e4">
+            <fieldset class="radio-group radio-group--invalid" aria-describedby="e4">
               <legend>
                 Legend for radio group
-                <span class="message-required">(Required)</span>
+                <span class="message--required">(Required)</span>
               </legend>
               <ul> 
                 <li>
@@ -343,13 +353,13 @@
                   </div>
                 </li>
               </ul>
-              <p class="message-error--radio-group" id="e4">Error Message</p>
+              <p class="message--error--radio-group" id="e4">Error Message</p>
             </fieldset>
           </div>
-<pre><code class="language-html">&lt;fieldset class="radio-group isInvalid" aria-describedby="e4"&gt;
+<pre><code class="language-html">&lt;fieldset class="radio-group radio-group--invalid" aria-describedby="e4"&gt;
   &lt;legend&gt;
     Legend for radio group
-    &lt;span class="required"&gt;(Required)&lt;/span&gt;
+    &lt;span class="message--required"&gt;(Required)&lt;/span&gt;
   &lt;/legend&gt;
   &lt;ul&gt; 
     &lt;li&gt;
@@ -377,7 +387,7 @@
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;p class="message-error--radio-group" id="e4"&gt;Error Message&lt;/p&gt;
+  &lt;p class="message--error--radio-group" id="e4"&gt;Error Message&lt;/p&gt;
 &lt;/fieldset&gt;
 </code></pre>
 
@@ -449,7 +459,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

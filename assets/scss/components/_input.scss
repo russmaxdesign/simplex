@@ -2,8 +2,8 @@
   font-size: $font16;
 }
 
-.input__control:focus {
-  outline: $link-focus-outline;
+.input__control:hover {
+  background: $gray5;
 }
 
 
@@ -15,23 +15,30 @@
 }
 
 
-// disabled, readonly
+// invalid
 
-.input--disabled .input__content {
-  color: $disabled-color;
+.input--invalid .input__control {
+  border-color: $isinvalid-color;
 }
 
 
-// invalid
+// focus
 
-.isInvalid .input__control {
-  border: 1px solid $isinvalid-color;
-  color: $isinvalid-color;
+.input__control:focus {
+  border: 3px solid $black;
+  outline: 0;
 }
 
 
 // hidden
 
-.input__content--hidden {
+.input--hidden .input__content {
   @include hidden;
+}
+
+
+// disabled
+
+.input--disabled .input__content {
+  color: $disabled-color;
 }

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Select - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Select component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><b>Select</b></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,17 +99,27 @@
         </div>
         <div class="col-sm-9">
           <h2>Select</h2>
-          <p>The <code>select</code> component represents an <code>&lt;select&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
+          <p>The <code>select</code> component represents an
+          <code>&lt;select&gt;</code> element with an explicitly associated
+          <code>&lt;label&gt;</code> element. The component also supports
+          additional information and/or error messages associated with the
+          input.</p>
 
           <h4>Usage</h4>
           <p>Used to present a series of options presented as a dropdown menu.</p>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
-            <li>For required fields, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
-            <li>The static, focus and hover states of the <code>&lt;input&gt;</code> element should be defined</li>
-            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
+            <li>The <code>&lt;label&gt;</code> element should only be hidden in
+            cases where there is no other choices available, and only when the
+            form is extremely simple and its purpose is clear to sighted users.</li>
+            <li>For required fields, the <code>required</code> and
+            <code>aria-required="true"</code> attributes must also be applied to
+            the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
+            <li>The static, focus and hover states of the
+            <code>&lt;input&gt;</code> element should be defined</li>
+            <li>There must be a clearly visible focus state, and the method
+            should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
 
@@ -116,7 +128,7 @@
             <div class="select">
               <label class="select__label" for="example1">
                 <span class="select__content">Label for select</span>
-                <select class="select__control" id="example1" name="example1">
+                <select class="select__control" id="example1">
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
@@ -128,7 +140,7 @@
 <pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example1"&gt;
     &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
-    &lt;select class="select__control" id="example1" name="example1"&gt;
+    &lt;select class="select__control" id="example1"&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
@@ -140,10 +152,10 @@
 
           <h4>Select with hidden label</h4>
           <div class="simplex-example">
-            <div class="select">
+            <div class="select select--hidden">
               <label class="select__label" for="example2">
-                <span class="select__content hidden">Label for select</span>
-                <select class="select__control" id="example2" name="example2">
+                <span class="select__content">Label for select</span>
+                <select class="select__control" id="example2">
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
@@ -154,8 +166,8 @@
           </div>
 <pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example2"&gt;
-    &lt;span class="select__content hidden"&gt;Label for select&lt;/span&gt;
-    &lt;select class="select__control" id="example2" name="example2"&gt;
+    &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
+    &lt;select class="select__control" id="example2"&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
@@ -170,36 +182,36 @@
             <div class="select">
               <label class="select__label" for="example3">
                 <span class="select__content">Label for select</span>
-                <select class="select__control" id="example3" name="example3">
+                <span class="message--hint">Hint Message</span>
+                <select class="select__control" id="example3">
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
                   <option value="three">three</option>
                 </select>
-                <span class="message-hint">Hint Message</span>
               </label>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example3"&gt;
     &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
-    &lt;select class="select__control" id="example3" name="example3"&gt;
+    &lt;span class="message--hint"&gt;Hint Message&lt;/span&gt;
+    &lt;select class="select__control" id="example3"&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
       &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
-    &lt;span class="message-hint"&gt;Hint Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>Required select</h4>
           <div class="simplex-example">
-            <div class="select select--required">
+            <div class="select">
               <label class="select__label" for="example4">
-                <span class="select__content">Label for select <span class="message-required">(Required)</span></span>
-                <select class="select__control" id="example4" name="example4" required>
+                <span class="select__content">Label for select <span class="message--required">(Required)</span></span>
+                <select class="select__control" id="example4" required>
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
@@ -208,10 +220,10 @@
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="select select--required"&gt;
+<pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example4"&gt;
-    &lt;span class="select__content"&gt;Label for select &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
-    &lt;select class="select__control" id="example4" name="example4" required&gt;
+    &lt;span class="select__content"&gt;Label for select &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;select class="select__control" id="example4" required&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
@@ -223,29 +235,29 @@
 
           <h4>Invalid select</h4>
           <div class="simplex-example">
-            <div class="select isInvalid">
+            <div class="select select--invalid">
               <label class="select__label" for="example5">
-                <span class="select__content">Label for select <span class="message-required">(Required)</span></span>
-                <select class="select__control" id="example5" name="example5">
+                <span class="select__content">Label for select <span class="message--required">(Required)</span></span>
+                <select class="select__control" id="example5">
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
                   <option value="three">three</option>
                 </select>
-                <span class="message-error">Error Message</span>
+                <span class="message--error">Error Message</span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="select isInvalid"&gt;
+<pre><code class="language-html">&lt;div class="select select--invalid"&gt;
   &lt;label class="select__label" for="example5"&gt;
-    &lt;span class="select__content"&gt;Label for select &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
-    &lt;select class="select__control" id="example5" name="example5"&gt;
+    &lt;span class="select__content"&gt;Label for select &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;select class="select__control" id="example5"&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
       &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
-    &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+    &lt;span class="message--error"&gt;Error Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
@@ -255,7 +267,7 @@
             <div class="select select--disabled">
               <label class="select__label" for="example6">
                 <span class="select__content">Label for select</span>
-                <select class="select__control" id="example6" name="example6" disabled>
+                <select class="select__control" id="example6" disabled>
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
                   <option value="two">two</option>
@@ -267,8 +279,7 @@
 <pre><code class="language-html">&lt;div class="select select--disabled"&gt;
   &lt;label class="select__label" for="example6"&gt;
     &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
-    &lt;select class="select__control" id="example6" name="example6" disabled&gt;
-      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;select class="select__control" id="example6" disabled&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
       &lt;option value="two"&gt;two&lt;/option&gt;
       &lt;option value="three"&gt;three&lt;/option&gt;
@@ -282,7 +293,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

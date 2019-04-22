@@ -1,16 +1,16 @@
-.table-striped {
+.table--striped {
   tbody > tr:nth-of-type(odd) {
     background: $gray5;
   }
 }
 
-.table-hover {
+.table--hover {
   tbody > tr:hover {
     background: $gray5;
   }
 }
 
-.table-border {
+.table--border {
   th,
   td {
     border: 1px solid $gray15;

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Button - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Button component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><b>Button</b></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -101,45 +103,53 @@
 
           <h4>Usage</h4>
           <ul>
-            <li>Used to trigger form submission or events (such as open/close, fired modals etc).</li>
-            <li>Must not be used when the purpose is to send the user to a new URL. In these cases, use the <a href="link.html"><code>button-link</code> component</a>.</li>
-            <li>The type must be set to <code>submit</code> when submitting a form.</li>
-            <li>In all other cases the type should be set to <code>button</code>.</li>
+            <li>Used to trigger form submission or events (such as open/close,
+            fired modals etc).</li>
+            <li>Must not be used when the purpose is to send the user to a new
+            URL. In these cases, the <a href="link.html"><code>button--link</code> component</a>
+            must be used.</li>
+            <li>The type must be set to <code>submit</code> when submitting a
+            form.</li>
+            <li>In all other cases the type should be set to
+            <code>button</code>.</li>
           </ul>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>The content of the button should be meaningful. The purpose of the button can be determined from the button text alone.</li>
-            <li>The static, focus, hover and active states of the button should be defined</li>
-            <li>There must be a clearly visible focus state, and the focus method should be consistent across all focusable elements.</li>
+            <li>The content of the button should be meaningful. The purpose of
+            the button can be determined from the button text alone.</li>
+            <li>The static, focus, hover and active states of the button should
+            be defined</li>
+            <li>There must be a clearly visible focus state, and the focus
+            method should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
 
-          <h4>.button-primary</h4>
+          <h4>.button--primary</h4>
           <div class="simplex-example">
-            <button type="button" class="button-primary">button-primary</button>
-            <button type="button" class="button-primary" disabled>button-primary</button>
+            <button type="button" class="button--primary">button--primary</button>
+            <button type="button" class="button--primary" disabled>button--primary</button>
           </div>
-<pre><code class="language-html">&lt;button type="button" class="button-primary"&gt;button-primary&lt;/button&gt;
-&lt;button type="button" class="button-primary" disabled&gt;button-primary&lt;/button&gt;
+<pre><code class="language-html">&lt;button type="button" class="button--primary"&gt;button--primary&lt;/button&gt;
+&lt;button type="button" class="button--primary" disabled&gt;button--primary&lt;/button&gt;
 </code></pre>
 
-          <h4>.button-secondary</h4>
+          <h4>.button--secondary</h4>
           <div class="simplex-example">
-            <button type="button" class="button-secondary">button-secondary</button>
-            <button type="button" class="button-secondary" disabled>button-secondary</button>
+            <button type="button" class="button--secondary">button--secondary</button>
+            <button type="button" class="button--secondary" disabled>button--secondary</button>
           </div>
-<pre><code class="language-html">&lt;button type="button" class="button-secondary"&gt;button-secondary&lt;/button&gt;
-&lt;button type="button" class="button-secondary" disabled&gt;button-secondary&lt;/button&gt;
+<pre><code class="language-html">&lt;button type="button" class="button--secondary"&gt;button--secondary&lt;/button&gt;
+&lt;button type="button" class="button--secondary" disabled&gt;button--secondary&lt;/button&gt;
 </code></pre>
 
-          <h4>.button-link</h4>
+          <h4>.button--link</h4>
           <div class="simplex-example">
-            <button type="button" class="button-link">button-link</button>
-            <button type="button" class="button-link" disabled>button-link</button>
+            <button type="button" class="button--link">button--link</button>
+            <button type="button" class="button--link" disabled>button--link</button>
           </div>
-<pre><code class="language-html">&lt;button type="button" class="button-link"&gt;button-link&lt;/button&gt;
-&lt;button type="button" class="button-link" disabled&gt;button-link&lt;/button&gt;
+<pre><code class="language-html">&lt;button type="button" class="button--link"&gt;button--link&lt;/button&gt;
+&lt;button type="button" class="button--link" disabled&gt;button--link&lt;/button&gt;
 </code></pre>
         </div>
       </div>
@@ -147,7 +157,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

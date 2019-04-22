@@ -1,40 +1,40 @@
 // all
 
-.row-padding-1 { padding-top: 1em; padding-bottom: 1em; }
-.row-padding-2 { padding-top: 1em; padding-bottom: 1em; }
-.row-padding-3 { padding-top: 1em; padding-bottom: 1em; }
-.row-padding-4 { padding-top: 2em; padding-bottom: 2em; }
-.row-padding-5 { padding-top: 2em; padding-bottom: 2em; }
+.u-row-pad-1 { padding-top: 1em; padding-bottom: 1em; }
+.u-row-pad-2 { padding-top: 1em; padding-bottom: 1em; }
+.u-row-pad-3 { padding-top: 1em; padding-bottom: 1em; }
+.u-row-pad-4 { padding-top: 2em; padding-bottom: 2em; }
+.u-row-pad-5 { padding-top: 2em; padding-bottom: 2em; }
 
 
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .row-padding-1 { padding-top: 1em; padding-bottom: 1em; }
-  .row-padding-2 { padding-top: 1em; padding-bottom: 1em; }
-  .row-padding-3 { padding-top: 1.5em; padding-bottom: 1.5em; }
-  .row-padding-4 { padding-top: 2.5em; padding-bottom: 2.5em; }
-  .row-padding-5 { padding-top: 3em; padding-bottom: 3em; }
+  .u-row-pad-1 { padding-top: 1em; padding-bottom: 1em; }
+  .u-row-pad-2 { padding-top: 1em; padding-bottom: 1em; }
+  .u-row-pad-3 { padding-top: 1.5em; padding-bottom: 1.5em; }
+  .u-row-pad-4 { padding-top: 2.5em; padding-bottom: 2.5em; }
+  .u-row-pad-5 { padding-top: 3em; padding-bottom: 3em; }
 }
 
 
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .row-padding-1 { padding-top: 1em; padding-bottom: 1em; }
-  .row-padding-2 { padding-top: 1.5em; padding-bottom: 1.5em; }
-  .row-padding-3 { padding-top: 2em; padding-bottom: 2em; }
-  .row-padding-4 { padding-top: 3em; padding-bottom: 3em; }
-  .row-padding-5 { padding-top: 4em; padding-bottom: 4em; }
+  .u-row-pad-1 { padding-top: 1em; padding-bottom: 1em; }
+  .u-row-pad-2 { padding-top: 1.5em; padding-bottom: 1.5em; }
+  .u-row-pad-3 { padding-top: 2em; padding-bottom: 2em; }
+  .u-row-pad-4 { padding-top: 3em; padding-bottom: 3em; }
+  .u-row-pad-5 { padding-top: 4em; padding-bottom: 4em; }
 }
 
 
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .row-padding-1 { padding-top: 1em; padding-bottom: 1em; }
-  .row-padding-2 { padding-top: 2em; padding-bottom: 2em; }
-  .row-padding-3 { padding-top: 3em; padding-bottom: 3em; }
-  .row-padding-4 { padding-top: 4em; padding-bottom: 4em; }
-  .row-padding-5 { padding-top: 5em; padding-bottom: 5em; }
+  .u-row-pad-1 { padding-top: 1em; padding-bottom: 1em; }
+  .u-row-pad-2 { padding-top: 2em; padding-bottom: 2em; }
+  .u-row-pad-3 { padding-top: 3em; padding-bottom: 3em; }
+  .u-row-pad-4 { padding-top: 4em; padding-bottom: 4em; }
+  .u-row-pad-5 { padding-top: 5em; padding-bottom: 5em; }
 }

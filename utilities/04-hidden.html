@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Hidden utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Hidden utility classes - usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -36,7 +37,7 @@
 <body>
 
   <!-- skip to content link -->
-    <div class="skip-link">
+  <div class="skip-link">
     <a href="#content">Skip to content (Press enter)</a>
   </div>
 
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Utility classes</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-color.html">Color</a></li>
             <li><a href="02-background.html">Background-color</a></li>
@@ -83,55 +84,58 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><a href="12-message.html">Message</a></li>
-            <li><a href="13-image.html">Image</a></li>
+            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><a href="12-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2>Hidden</h2>
-          <p>Hidden utility classes can be used to shorten instructions or button texts at smaller screen sizes where there is less screen space.</p>
+          <p>Hidden utility classes can be used to shorten instructions or
+          button texts at smaller screen sizes where there is less screen space.</p>
 
           <h4>Usage</h4>
-          <p>Used in conjuntion with <code>visible</code> classes to hide/show content at specific screen sizes.</p>
+          <p>Used in conjuntion with <code>visible</code> classes to hide/show
+          content at specific screen sizes.</p>
 
           <h4>Accessibility</h4>
-          <p>Hiding content can present issues for assistive technologies so these utility classes should be used carefully. Meaningful content should never be completely removed.</p>
+          <p>Hiding content can present issues for assistive technologies so
+          these utility classes should be used carefully. Meaningful content
+          should never be completely removed.</p>
           <hr class="simplex-hr">
 
           <h4>Hidden at all sizes</h4>
           <div class="simplex-example">
-            The following text: <span class="hidden">Hidden at all sizes</span>
+            The following text: <span class="u-hidden">Hidden at all sizes</span>
           </div>
-<pre><code class="language-html">&lt;span class="hidden"&gt;Hidden at all sizes&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-hidden"&gt;Hidden at all sizes&lt;/span&gt;
 </code></pre>
 
           <h4>Hidden at xs only</h4>
           <div class="simplex-example">
-            The following text: <span class="hidden-xs">Hidden at xs only</span>
+            The following text: <span class="u-hidden--xs">Hidden at xs only</span>
           </div>
-<pre><code class="language-html">&lt;span class="hidden-xs"&gt;Hidden at xs only&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-hidden--xs"&gt;Hidden at xs only&lt;/span&gt;
 </code></pre>
 
           <h4>Hidden at sm only</h4>
           <div class="simplex-example">
-            The following text: <span class="hidden-sm">Hidden at sm only</span>
+            The following text: <span class="u-hidden--sm">Hidden at sm only</span>
           </div>
-<pre><code class="language-html">&lt;span class="hidden-sm"&gt;Hidden at sm only&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-hidden--sm"&gt;Hidden at sm only&lt;/span&gt;
 </code></pre>
 
           <h4>Hidden at md only</h4>
           <div class="simplex-example">
-            The following text: <span class="hidden-md">Hidden at md only</span>
+            The following text: <span class="u-hidden--md">Hidden at md only</span>
           </div>
-<pre><code class="language-html">&lt;span class="hidden-md"&gt;Hidden at md only&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-hidden--md"&gt;Hidden at md only&lt;/span&gt;
 </code></pre>
 
           <h4>Hidden at lg only</h4>
           <div class="simplex-example">
-            The following text: <span class="hidden-lg">Hidden at lg only</span>
+            The following text: <span class="u-hidden--lg">Hidden at lg only</span>
           </div>
-<pre><code class="language-html">&lt;span class="hidden-lg"&gt;Hidden at lg only&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-hidden--lg"&gt;Hidden at lg only&lt;/span&gt;
 </code></pre>
         </div>
       </div>
@@ -139,7 +143,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

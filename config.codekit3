@@ -688,6 +688,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/components/_message.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/components/_message.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/components/_radio-group.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1169,16 +1182,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/scss/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/assets/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1189,7 +1192,7 @@
 		"oA": 0,
 		"oAP": "/assets/css/styles.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/assets/scss/utilities/_border.scss": {
@@ -1344,19 +1347,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/utilities/_margin-y.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/assets/scss/utilities/_message.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/utilities/_message.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1668,6 +1658,14 @@
 		"oAP": "/components/media.html",
 		"oF": 0
 		},
+	"/components/message.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/message.html",
+		"oF": 0
+		},
 	"/components/radio-group.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1908,12 +1906,12 @@
 		"oAP": "/examples/01-home.html",
 		"oF": 0
 		},
-	"/examples/02-inner-page.html": {
+	"/examples/02-general-page.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/02-inner-page.html",
+		"oAP": "/examples/02-general-page.html",
 		"oF": 0
 		},
 	"/examples/03-blog-post.html": {
@@ -1938,6 +1936,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/examples/05-form.html",
+		"oF": 0
+		},
+	"/examples/06-focus.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/examples/06-focus.html",
 		"oF": 0
 		},
 	"/examples/index.html": {
@@ -2043,402 +2049,6 @@
 		"oA": 0,
 		"oAP": "/masters/psd/banner.psd",
 		"oF": 0
-		},
-	"/masters/screenshots/01-link.png": {
-		"ft": 32768,
-		"iS": 21284,
-		"oA": 0,
-		"oAP": "/masters/screenshots/01-link.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/02-list.png": {
-		"ft": 32768,
-		"iS": 44670,
-		"oA": 0,
-		"oAP": "/masters/screenshots/02-list.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/03-description-a.png": {
-		"ft": 32768,
-		"iS": 46731,
-		"oA": 0,
-		"oAP": "/masters/screenshots/03-description-a.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/03-description-b.png": {
-		"ft": 32768,
-		"iS": 43638,
-		"oA": 0,
-		"oAP": "/masters/screenshots/03-description-b.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/03-description-c.png": {
-		"ft": 32768,
-		"iS": 46375,
-		"oA": 0,
-		"oAP": "/masters/screenshots/03-description-c.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/03-description-d.png": {
-		"ft": 32768,
-		"iS": 34116,
-		"oA": 0,
-		"oAP": "/masters/screenshots/03-description-d.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/04-table-a.png": {
-		"ft": 32768,
-		"iS": 21097,
-		"oA": 0,
-		"oAP": "/masters/screenshots/04-table-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/04-table-b.png": {
-		"ft": 32768,
-		"iS": 28604,
-		"oA": 0,
-		"oAP": "/masters/screenshots/04-table-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/04-table-c.png": {
-		"ft": 32768,
-		"iS": 27586,
-		"oA": 0,
-		"oAP": "/masters/screenshots/04-table-c.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/04-table-d.png": {
-		"ft": 32768,
-		"iS": 33722,
-		"oA": 0,
-		"oAP": "/masters/screenshots/04-table-d.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/05-button.png": {
-		"ft": 32768,
-		"iS": 89502,
-		"oA": 0,
-		"oAP": "/masters/screenshots/05-button.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/06-button-group.png": {
-		"ft": 32768,
-		"iS": 60575,
-		"oA": 0,
-		"oAP": "/masters/screenshots/06-button-group.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/06-input-a.png": {
-		"ft": 32768,
-		"iS": 67838,
-		"oA": 0,
-		"oAP": "/masters/screenshots/06-input-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/06-input-b.png": {
-		"ft": 32768,
-		"iS": 62030,
-		"oA": 0,
-		"oAP": "/masters/screenshots/06-input-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/06-input-c.png": {
-		"ft": 32768,
-		"iS": 68386,
-		"oA": 0,
-		"oAP": "/masters/screenshots/06-input-c.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/06-input-d.png": {
-		"ft": 32768,
-		"iS": 11803,
-		"oA": 0,
-		"oAP": "/masters/screenshots/06-input-d.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/07-select-a.png": {
-		"ft": 32768,
-		"iS": 96065,
-		"oA": 0,
-		"oAP": "/masters/screenshots/07-select-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/07-select-b.png": {
-		"ft": 32768,
-		"iS": 111556,
-		"oA": 0,
-		"oAP": "/masters/screenshots/07-select-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/07-select-c.png": {
-		"ft": 32768,
-		"iS": 115784,
-		"oA": 0,
-		"oAP": "/masters/screenshots/07-select-c.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/08-textarea-a.png": {
-		"ft": 32768,
-		"iS": 64479,
-		"oA": 0,
-		"oAP": "/masters/screenshots/08-textarea-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/08-textarea-b.png": {
-		"ft": 32768,
-		"iS": 86386,
-		"oA": 0,
-		"oAP": "/masters/screenshots/08-textarea-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/08-textarea-c.png": {
-		"ft": 32768,
-		"iS": 86468,
-		"oA": 0,
-		"oAP": "/masters/screenshots/08-textarea-c.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/09-checkbox-a.png": {
-		"ft": 32768,
-		"iS": 73224,
-		"oA": 0,
-		"oAP": "/masters/screenshots/09-checkbox-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/09-checkbox-b.png": {
-		"ft": 32768,
-		"iS": 78820,
-		"oA": 0,
-		"oAP": "/masters/screenshots/09-checkbox-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/10-radio-group-a.png": {
-		"ft": 32768,
-		"iS": 29444,
-		"oA": 0,
-		"oAP": "/masters/screenshots/10-radio-group-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/10-radio-group-b.png": {
-		"ft": 32768,
-		"iS": 38157,
-		"oA": 0,
-		"oAP": "/masters/screenshots/10-radio-group-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/10-radio-group-c.png": {
-		"ft": 32768,
-		"iS": 38985,
-		"oA": 0,
-		"oAP": "/masters/screenshots/10-radio-group-c.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/10-radio-group-d.png": {
-		"ft": 32768,
-		"iS": 38949,
-		"oA": 0,
-		"oAP": "/masters/screenshots/10-radio-group-d.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/10-radio-group-e.png": {
-		"ft": 32768,
-		"iS": 44051,
-		"oA": 0,
-		"oAP": "/masters/screenshots/10-radio-group-e.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/11-segment-a.png": {
-		"ft": 32768,
-		"iS": 105914,
-		"oA": 0,
-		"oAP": "/masters/screenshots/11-segment-a.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/11-segment-b.png": {
-		"ft": 32768,
-		"iS": 27517,
-		"oA": 0,
-		"oAP": "/masters/screenshots/11-segment-b.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/14-media.png": {
-		"ft": 32768,
-		"iS": 83520,
-		"oA": 0,
-		"oAP": "/masters/screenshots/14-media.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/15-flag.png": {
-		"ft": 32768,
-		"iS": 155405,
-		"oA": 0,
-		"oAP": "/masters/screenshots/15-flag.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/16-summary.png": {
-		"ft": 32768,
-		"iS": 33033,
-		"oA": 0,
-		"oAP": "/masters/screenshots/16-summary.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/18-header.png": {
-		"ft": 32768,
-		"iS": 60429,
-		"oA": 0,
-		"oAP": "/masters/screenshots/18-header.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/masters/screenshots/19-footer.png": {
-		"ft": 32768,
-		"iS": 15732,
-		"oA": 0,
-		"oAP": "/masters/screenshots/19-footer.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/masters/spreadsheet/units.numbers": {
 		"cB": 0,
@@ -2555,20 +2165,12 @@
 		"oAP": "/utilities/11-row-padding.html",
 		"oF": 0
 		},
-	"/utilities/12-message.html": {
+	"/utilities/12-image.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/12-message.html",
-		"oF": 0
-		},
-	"/utilities/13-image.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/utilities/13-image.html",
+		"oAP": "/utilities/12-image.html",
 		"oF": 0
 		},
 	"/utilities/index.html": {

@@ -1,4 +1,5 @@
 .select__control {
+  -webkit-border-radius: $base-border-radius;
   background-color: $white;
   background-image: url(../img/icons/icon-select.svg);
   background-repeat: no-repeat;
@@ -6,12 +7,11 @@
   background-size: 16px 16px, 100% 100%;
   font-size: $font16;
 
-  -webkit-border-radius: $base-border-radius;
   -webkit-appearance: none;
 }
 
-.select__control:focus {
-  outline: $link-focus-outline;
+.select__control:hover {
+  background: $gray5;
 }
 
 
@@ -23,6 +23,21 @@
 }
 
 
+// invalid
+
+.select--invalid .select__control {
+  border-color: $isinvalid-color;
+}
+
+
+// focus
+
+.select__control:focus {
+  border: 3px solid $black;
+  outline: 0;
+}
+
+
 // disabled
 
 .select--disabled .select__content {
@@ -30,16 +45,9 @@
 }
 
 
-// invalid
-
-.isInvalid .select__control {
-  border-color: $isinvalid-color;
-}
-
-
 // hidden
 
-.select__content--hidden {
+.select--hidden .select__content {
   @include hidden;
 }
 

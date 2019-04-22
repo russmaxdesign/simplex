@@ -2,8 +2,8 @@
   font-size: $font16;
 }
 
-.textarea__control:focus {
-  outline: $link-focus-outline;
+.textarea__control:hover {
+  background: $gray5;
 }
 
 
@@ -15,6 +15,20 @@
 }
 
 
+// invalid
+
+.textarea--invalid .textarea__control {
+  border-color: $isinvalid-color;
+}
+
+// focus
+
+.textarea__control:focus {
+  border: 3px solid $black;
+  outline: 0;
+}
+
+
 // disabled
 
 .textarea--disabled .textarea__content {
@@ -22,8 +36,9 @@
 }
 
 
-// invalid
+// hidden
 
-.isInvalid .textarea__control {
-  border: 1px solid $isinvalid-color;
+.textarea--hidden .textarea__content {
+  @include hidden;
 }
+

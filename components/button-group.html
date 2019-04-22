@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Button-group - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Button-group component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -97,57 +98,71 @@
         </div>
         <div class="col-sm-9">
           <h2>Button-group</h2>
-          <p>The <code>button-group</code> component represents a set of <code>button</code> or <code>link</code> components that are aligned to the left and right edges of the container.</p>
+          <p>The <code>button-group</code> component represents a set of
+          <code>button</code> or <code>link</code> components that are aligned
+          to the left and right edges of the container.</p>
 
           <h4>Usage</h4>
           <ul>
-            <li>Used to provide navigation forward and backwards to different URLs or different steps within a form.</li>
+            <li>Used to provide navigation forward and backwards to different
+            URLs or different steps within a form.</li>
           </ul>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>Within the <code>button-group</code>, use <code>link</code> components when sending users to a new URL and <code>button</code> components when allowing users to submit data or to trigger an event.</li>
+            <li>Within the <code>button-group</code>, use <code>link</code>
+            components when sending users to a new URL and <code>button</code>
+            components when allowing users to submit data or to trigger an
+            event.</li>
           </ul>
           <hr class="simplex-hr">
 
           <h4>.button-group using link components</h4>
           <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
             <div class="button-group">
-              <div class="float-left">
-                <a href="#" class="link-primary">Previous</a>
+              <div class="u-float-left">
+                <a href="#" class="link--primary">Previous</a>
               </div>
-              <div class="float-right">
-                <a href="#" class="link-primary">Next</a>
+              <div class="u-float-right">
+                <a href="#" class="link--primary">Next</a>
               </div>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="button-group"&gt;
-  &lt;div class="float-left"&gt;
-    &lt;a href="#" class="link-primary"&gt;Previous&lt;/a&gt;
+  &lt;div class="u-float-left"&gt;
+    &lt;a href="#" class="link--primary"&gt;Previous&lt;/a&gt;
   &lt;/div&gt;
-  &lt;div class="float-right"&gt;
-    &lt;a href="#" class="link-primary"&gt;Next&lt;/a&gt;
+  &lt;div class="u-float-right"&gt;
+    &lt;a href="#" class="link--primary"&gt;Next&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>.button-group using button components</h4>
           <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
             <div class="button-group">
-              <div class="float-left">
-                <button type="submit" class="button-secondary">Back</button>
+              <div class="u-float-left">
+                <button type="submit" class="button--secondary">Back</button>
               </div>
-              <div class="float-right">
-                <button type="submit" class="button-primary">Next</button>
+              <div class="u-float-right">
+                <button type="submit" class="button--primary">Next</button>
               </div>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="button-group"&gt;
-  &lt;div class="float-left"&gt;
-    &lt;button type="submit" class="button-secondary"&gt;Back&lt;/button&gt;
+  &lt;div class="u-float-left"&gt;
+    &lt;button type="submit" class="button--secondary"&gt;Back&lt;/button&gt;
   &lt;/div&gt;
-  &lt;div class="float-right"&gt;
-    &lt;button type="submit" class="button-primary"&gt;Next&lt;/button&gt;
+  &lt;div class="u-float-right"&gt;
+    &lt;button type="submit" class="button--primary"&gt;Next&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -158,7 +173,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

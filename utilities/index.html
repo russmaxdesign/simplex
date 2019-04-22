@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Utility classes allow authors to apply styles directly to HTML elements">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -36,7 +37,7 @@
 <body>
 
   <!-- skip to content link -->
-    <div class="skip-link">
+  <div class="skip-link">
     <a href="#content">Skip to content (Press enter)</a>
   </div>
 
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Utility classes</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li class="current"><b>Introduction</b></li>
             <li><a href="01-color.html">Color</a></li>
             <li><a href="02-background.html">Background-color</a></li>
@@ -83,21 +84,31 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><a href="12-message.html">Message</a></li>
-            <li><a href="13-image.html">Image</a></li>
+            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><a href="12-image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
           <h2>Utility classes</h2>
-          <p>Simplex provides a series of utility classes that make it easy to construct complex user interfaces. Utility classes apply styles directly to HTML elements without having to write additional CSS.</p>
+          <p>Simplex provides a series of utility classes that make it easy to
+          construct complex user interfaces. Utility classes apply styles
+          directly to HTML elements without having to write additional CSS.</p>
+          <p>Utility classes have the following prefixes:</p>
+          <dl class="description-list--inline-narrow">
+            <dt><code>.c-</code></dt>
+            <dd>Color utility classes</dd>
+            <dt><code>.bg-</code></dt>
+            <dd>Background-color utility classes</dd>
+            <dt><code>.u-</code></dt>
+            <dd>All other utility classes</dd>
+          </dl>
         </div>
       </div>
     </div>
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Description-list - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Description-list component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,7 +99,8 @@
         </div>
         <div class="col-sm-9">
           <h2>Description-list</h2>
-          <p>The <code>description-list</code> component represents variations on the description list.</p>
+          <p>The <code>description-list</code> component represents variations
+          on the description list.</p>
 
           <h4>Usage</h4>
           <p>Used for sets of name/value pairs.</p>
@@ -108,75 +111,152 @@
 
           <h4>Basic description list</h4>
           <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
             <dl>
-              <dt>Lorem ipsum consectetur</dt>
-              <dd>Sit amet, consectetur adipisicing elit</dd>
-              <dt>Provident officiis</dt>
-              <dd>Consectetur adipisicing elit</dd>
-              <dt>Dolor maiores illo</dt>
-              <dd>Voluptatem dolorem minima, doloremque tempora laboriosam vel
-              ducimus reprehenderit error, illo optio perferendis numquam sit,
-              sint rem veniam fugit.</dd>
+              <dt>Straw Man</dt>
+              <dd>In the straw man fallacy, someone attacks a position the
+              opponent doesn’t really hold. </dd>
+              <dt>Ad Hominem Fallacy</dt>
+              <dd>Instead of advancing good sound reasoning, ad hominems replace
+              logical argumentation with attack-language unrelated to the truth
+              of the matter.</dd>
+              <dt>Appeal to Ignorance (argumentum ad ignorantiam)</dt>
+              <dd>Any time ignorance is used as a major premise in support of an
+              argument, it’s liable to be a fallacious appeal to ignorance.</dd>
+              <dt>False Dilemma or False Dichotomy</dt>
+              <dd>This line of reasoning fails by limiting the options to two
+              when there are in fact more options to choose from.</dd>
             </dl>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl&gt;
-  &lt;dt&gt;Lorem...&lt;/dt&gt;
-  &lt;dd&gt;Sit...&lt;/dd&gt;
+  &lt;dt&gt;Straw...&lt;/dt&gt;
+  &lt;dd&gt;In the straw...&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre>
 
-          <h4>.description-list__inline</h4>
+          <h4>.description-list--inline-wide</h4>
           <div class="simplex-example">
-            <dl class="description-list__inline">
-              <dt>Lorem ipsum consectetur</dt>
-              <dd>Sit amet, consectetur adipisicing elit</dd>
-              <dt>Provident officiis</dt>
-              <dd>Consectetur adipisicing elit</dd>
-              <dt>Dolor maiores illo</dt>
-              <dd>Voluptatem dolorem minima, doloremque tempora laboriosam vel
-              ducimus reprehenderit error, illo optio perferendis numquam sit,
-              sint rem veniam fugit.</dd>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+            <dl class="description-list--inline-wide">
+              <dt>Straw Man</dt>
+              <dd>In the straw man fallacy, someone attacks a position the
+              opponent doesn’t really hold. </dd>
+              <dt>Ad Hominem Fallacy</dt>
+              <dd>Instead of advancing good sound reasoning, ad hominems replace
+              logical argumentation with attack-language unrelated to the truth
+              of the matter.</dd>
+              <dt>Appeal to Ignorance (argumentum ad ignorantiam)</dt>
+              <dd>Any time ignorance is used as a major premise in support of an
+              argument, it’s liable to be a fallacious appeal to ignorance.</dd>
+              <dt>False Dilemma or False Dichotomy</dt>
+              <dd>This line of reasoning fails by limiting the options to two
+              when there are in fact more options to choose from.</dd>
            </dl>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
          </div>
-<pre><code class="language-html">&lt;dl class="description-list__inline"&gt;
-  &lt;dt&gt;Lorem...&lt;/dt&gt;
-  &lt;dd&gt;Sit...&lt;/dd&gt;
+<pre><code class="language-html">&lt;dl class="description-list--inline-wide"&gt;
+  &lt;dt&gt;Straw...&lt;/dt&gt;
+  &lt;dd&gt;In the straw...&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre>
 
-          <h4>.description-list__border</h4>
+          <h4>.description-list--inline-medium</h4>
           <div class="simplex-example">
-            <dl class="description-list__border">
-              <dt>Lorem ipsum consectetur</dt>
-              <dd>Sit amet, consectetur adipisicing elit</dd>
-              <dt>Provident officiis</dt>
-              <dd>Consectetur adipisicing elit</dd>
-              <dt>Dolor maiores illo</dt>
-              <dd>Voluptatem dolorem minima, doloremque tempora laboriosam vel
-              ducimus reprehenderit error, illo optio perferendis numquam sit,
-              sint rem veniam fugit.</dd>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+            <dl class="description-list--inline-medium">
+              <dt>Straw Man</dt>
+              <dd>In the straw man fallacy, someone attacks a position the
+              opponent doesn’t really hold. </dd>
+              <dt>Ad Hominem Fallacy</dt>
+              <dd>Instead of advancing good sound reasoning, ad hominems replace
+              logical argumentation with attack-language unrelated to the truth
+              of the matter.</dd>
+              <dt>Appeal to Ignorance (argumentum ad ignorantiam)</dt>
+              <dd>Any time ignorance is used as a major premise in support of an
+              argument, it’s liable to be a fallacious appeal to ignorance.</dd>
+              <dt>False Dilemma or False Dichotomy</dt>
+              <dd>This line of reasoning fails by limiting the options to two
+              when there are in fact more options to choose from.</dd>
            </dl>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
          </div>
-<pre><code class="language-html">&lt;dl class="description-list__border"&gt;
-  &lt;dt&gt;Lorem...&lt;/dt&gt;
-  &lt;dd&gt;Sit...&lt;/dd&gt;
+<pre><code class="language-html">&lt;dl class="description-list--inline-medium"&gt;
+  &lt;dt&gt;Straw...&lt;/dt&gt;
+  &lt;dd&gt;In the straw...&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre>
 
-          <h4>.description-list__aligned</h4>
+          <h4>.description-list--inline-narrow</h4>
           <div class="simplex-example">
-            <dl class="description-list__aligned">
-              <dt>Lorem ipsum consectetur</dt>
-              <dd>$5.00</dd>
-              <dt>Provident officiis</dt>
-              <dd>$12:50</dd>
-              <dt>Dolor maiores illo</dt>
-              <dd>$37.16</dd>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+            <dl class="description-list--inline-narrow">
+              <dt>Cat</dt>
+              <dd>The cat is a small carnivorous mammal. It is the only
+              domesticated species in the family <i>Felidae</i> and often
+              referred to as the domestic cat.</dd>
+              <dt>Dog</dt>
+              <dd>The domestic dog is a member of the genus <i>Canis</i>, which
+              forms part of the wolf-like <i>canids</i>, and is the most widely
+              abundant terrestrial carnivore.</dd>
+              <dt>Rabbit</dt>
+              <dd>Rabbits are small mammals in the family <i>Leporidae</i> of
+              the order <i>Lagomorpha</i>.</dd>
            </dl>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
          </div>
-<pre><code class="language-html">&lt;dl class="description-list__aligned"&gt;
-  &lt;dt&gt;Lorem...&lt;/dt&gt;
-  &lt;dd&gt;$5.00&lt;/dd&gt;
+<pre><code class="language-html">&lt;dl class="description-list--inline-narrow"&gt;
+  &lt;dt&gt;Cat...&lt;/dt&gt;
+  &lt;dd&gt;The cat...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+          <h4>.description-list--aligned</h4>
+          <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+            <dl class="description-list--aligned">
+              <dt>Tracker FG Mens Hiking Boot</dt>
+              <dd>$399.99</dd>
+              <dt>Magna Trail Mens Hiking Boot</dt>
+              <dd>$289.95</dd>
+              <dt>Gobi Swimrun Mens Cross Train Shoe</dt>
+              <dd>$249.95</dd>
+           </dl>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+         </div>
+<pre><code class="language-html">&lt;dl class="description-list--aligned"&gt;
+  &lt;dt&gt;Tracker FG...&lt;/dt&gt;
+  &lt;dd&gt;$399.99&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre>
         </div>
@@ -185,7 +265,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

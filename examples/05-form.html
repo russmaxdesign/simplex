@@ -4,9 +4,9 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Page with left column - Simplex Component Library</title>
+  <title>Form example - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Page with left column using the Simplex Component Library">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,109 +61,134 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-2">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Section heading</h1>
+      <h1 class="c-white u-mar-y--0">Examples</h1>
     </div>
   </div>
 
-  <!-- row -->
-  <main class="row row-padding-4 bg-white">
+  <!-- content row -->
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-home.html">Home page</a></li>
-            <li><b>Inner page</b></li>
+            <li><a href="02-general-page.html">General page</a></li>
             <li><a href="03-blog-post.html">Blog post</a></li>
             <li><a href="04-blog-archive.html">Blog archive</a></li>
-            <li><a href="05-form.html">Form</a></li>
+            <li><b>Form</b></li>
+            <li><a href="06-focus.html">Focus</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-9">
-              <h2>form</h2>
-              <form action="#">
-                <div class="form-container">
-                  <div class="input">
-                    <label class="input__label" for="basic-form1">
-                      <span class="input__content">Name</span>
-                      <input class="input__control" type="text" name="basic-form1" id="basic-form1">
-                    </label>
-                  </div>
-                </div>
-                <div class="form-container">
-                  <div class="select">
-                    <label class="select__label" for="basic-form2">
-                      <span class="select__content">Label for select</span>
-                      <select class="select__control" id="basic-form2" name="basic-form2">
-                        <option value="">Choose an option</option>
-                        <option value="one">one</option>
-                        <option value="two">two</option>
-                        <option value="three">three</option>
-                      </select>
-                    </label>
-                  </div>
-                </div>
-                <div class="form-container">
-                  <div class="textarea">
-                    <label class="textarea__label" for="basic-form3">
-                      <span class="textarea__content">Message</span>
-                      <textarea class="textarea__control" id="basic-form3" rows="5"></textarea>
-                    </label>
-                  </div>
-                </div>
-                <div class="form-container">
-                  <fieldset class="radio-group">
-                    <legend>Legend for radio group</legend>
-                    <ul> 
-                      <li>
-                        <div class="radio-group__container">
-                          <label class="radio-group__label" for="1a">
-                            <input class="radio-group__control" type="radio" id="1a" name="basic-form4">
-                            <span class="radio-group__content">Radio button one</span>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio-group__container">
-                          <label class="radio-group__label" for="1b">
-                            <input class="radio-group__control" type="radio" id="1b" name="basic-form4">
-                            <span class="radio-group__content">Radio button two</span>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio-group__container">
-                          <label class="radio-group__label" for="1c">
-                            <input class="radio-group__control" type="radio" id="1c" name="basic-form4">
-                            <span class="radio-group__content">Radio button three</span>
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-                <div class="form-container">
-                  <div class="input-checkbox">
-                    <label class="input-checkbox__label" for="basic-form5">
-                      <input class="input-checkbox__control" type="checkbox" name="example3" id="basic-form5">
-                      <span class="input-checkbox__content">Checkbox label</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="form-container text-right">
-                  <button type="submit" class="button-primary">Submit</button>
-                </div>
-              </form>
+          <h2>Example form</h2>
+          <form action="#">
+            <div class="form-container">
+              <div class="input">
+                <label class="input__label" for="basic-form1">
+                  <span class="input__content">Name</span>
+                  <input class="input__control" type="text" name="basic-form1" id="basic-form1">
+                </label>
+              </div>
             </div>
+            <div class="form-container">
+              <div class="select">
+                <label class="select__label" for="basic-form2">
+                  <span class="select__content">Subscription model</span>
+                  <select class="select__control" id="basic-form2" name="basic-form2">
+                    <option value="">Choose an option</option>
+                    <option value="Yearly">Yearly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Weekly">Weekly</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="textarea">
+                <label class="textarea__label" for="basic-form3">
+                  <span class="textarea__content">Message</span>
+                  <textarea class="textarea__control" id="basic-form3" rows="5"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="form-container">
+              <fieldset class="radio-group">
+                <legend>Would you recommend our services</legend>
+                <ul> 
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1a">
+                        <input class="radio-group__control" type="radio" id="1a" name="basic-form4">
+                        <span class="radio-group__content">No</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1b">
+                        <input class="radio-group__control" type="radio" id="1b" name="basic-form4">
+                        <span class="radio-group__content">I might</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1c">
+                        <input class="radio-group__control" type="radio" id="1c" name="basic-form4">
+                        <span class="radio-group__content">Yes</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1d">
+                        <input class="radio-group__control" type="radio" id="1d" name="basic-form4">
+                        <span class="radio-group__content">Definitely</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-container">
+              <div class="checkbox">
+                <label class="checkbox__label" for="basic-form5">
+                  <input class="checkbox__control" type="checkbox" name="example3" id="basic-form5">
+                  <span class="checkbox__content">Subscribe to newsletter</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-container">
+              <button type="submit" class="button--primary">Submit</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer row -->
+  <div class="footer u-row-pad-2">
+    <div class="content-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="footer__content">
+            Copyright &copy; 2019 Max Design
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer__content-right">
+            <a href="https://github.com/russmaxdesign/simplex">Github</a>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
 
   <script src="../assets/js/prism.js"></script>
   <script>

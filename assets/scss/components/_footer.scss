@@ -18,8 +18,9 @@
 }
 
 .footer a:focus {
-  outline: $link-focus-outline-reverse;
-  color: $white;
+  outline: 0;
+  color: $black;
+  background: $white;
 }
 
 .footer a:active {

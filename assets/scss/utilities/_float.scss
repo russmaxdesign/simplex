@@ -1,26 +1,26 @@
 // all
 
-.float-left {
+.u-float-left {
   float: left;
 }
 
-.float-right {
+.u-float-right {
   float: right;
 }
 
-.float-none {
+.u-float-none {
   float: none;
 }
 
-.clear-left {
+.u-clear-left {
   clear: left;
 }
 
-.clear-right {
+.u-clear-right {
   clear: right;
 }
 
-.clear-both {
+.u-clear-both {
   clear: both;
 }
 
@@ -32,27 +32,27 @@
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .float-left-xs {
+  .u-float-left--xs {
     float: left;
   }
 
-  .float-right-xs {
+  .u-float-right--xs {
     float: right;
   }
 
-  .float-none-xs {
+  .u-float-none--xs {
     float: none;
   }
 
-  .clear-left-xs {
+  .u-clear-left-xs {
     clear: left;
   }
 
-  .clear-right-xs {
+  .u-clear-right-xs {
     clear: right;
   }
 
-  .clear-both-xs {
+  .u-clear-both-xs {
     clear: both;
   }
 }
@@ -61,27 +61,27 @@
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .float-left-sm {
+  .u-float-left--sm {
     float: left;
   }
 
-  .float-right-sm {
+  .u-float-right--sm {
     float: right;
   }
 
-  .float-none-sm {
+  .u-float-none--sm {
     float: none;
   }
 
-  .clear-left-sm {
+  .u-clear-left-sm {
     clear: left;
   }
 
-  .clear-right-sm {
+  .u-clear-right-sm {
     clear: right;
   }
 
-  .clear-both-sm {
+  .u-clear-both-sm {
     clear: both;
   }
 }
@@ -90,27 +90,27 @@
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .float-left-md {
+  .u-float-left--md {
     float: left;
   }
 
-  .float-right-md {
+  .u-float-right--md {
     float: right;
   }
 
-  .float-none-md {
+  .u-float-none--md {
     float: none;
   }
 
-  .clear-left-md {
+  .u-clear-left-md {
     clear: left;
   }
 
-  .clear-right-md {
+  .u-clear-right-md {
     clear: right;
   }
 
-  .clear-both-md {
+  .u-clear-both-md {
     clear: both;
   }
 }
@@ -119,27 +119,27 @@
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .float-left-lg {
+  .u-float-left--lg {
     float: left;
   }
 
-  .float-right-lg {
+  .u-float-right--lg {
     float: right;
   }
 
-  .float-none-lg {
+  .u-float-none--lg {
     float: none;
   }
 
-  .clear-left-lg {
+  .u-clear-left-lg {
     clear: left;
   }
 
-  .clear-right-lg {
+  .u-clear-right-lg {
     clear: right;
   }
 
-  .clear-both-lg {
+  .u-clear-both-lg {
     clear: both;
   }
 }

@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>List - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="List component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><b>List</b></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,17 +99,25 @@
         </div>
         <div class="col-sm-9">
           <h2>List</h2>
-          <p>The <code>list</code> component represents variations on the unordered list.</p>
+          <p>The <code>list</code> component represents variations on the
+          unordered list.</p>
 
           <h4>Usage</h4>
           <ul>
-            <li>The <code>list-unstyled</code> variation can be used when a list requires no bullets</li>
-            <li>The <code>list-inline</code> variation can be used where a list is required to be inline</li>
-            <li>The <code>list-inline-greater</code> variation can be used where an inline list requires a "greater-than" symbol</li>
-            <li>The <code>list-inline-pipe</code> variation can be used where an inline list requires a "pipe" symbol</li>
-            <li>The <code>list-inline-slash</code> variation can be used where an inline list requires a "slash" symbol</li>
-            <li>The <code>list-pagination</code> variation can be used for pagination</li>
-            <li>The <code>list-navigation</code> variation can be used for page navigation</li>
+            <li>The <code>list--unstyled</code> variation can be used when a
+            list requires no bullets</li>
+            <li>The <code>list--inline</code> variation can be used where a
+            list is required to be inline</li>
+            <li>The <code>list--inline-greater</code> variation can be used
+            where an inline list requires a "greater-than" symbol</li>
+            <li>The <code>list--inline-pipe</code> variation can be used where
+            an inline list requires a "pipe" symbol</li>
+            <li>The <code>list--inline-slash</code> variation can be used where
+            an inline list requires a "slash" symbol</li>
+            <li>The <code>list--pagination</code> variation can be used for
+            pagination</li>
+            <li>The <code>list--navigation</code> variation can be used for page
+            navigation</li>
           </ul>
 
           <h4>Accessibility</h4>
@@ -116,12 +126,20 @@
 
           <h4>Basic unordered list</h4>
           <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
             <ul>
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ul>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;ul&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
@@ -133,12 +151,20 @@
 
           <h4>Basic ordered list</h4>
           <div class="simplex-example">
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
             <ol>
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ol>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;ol&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
@@ -148,16 +174,16 @@
 &lt;/ol&gt;
 </code></pre>
 
-          <h4>.list-unstyled</h4>
+          <h4>.list--unstyled</h4>
           <div class="simplex-example">
-            <ul class="list-unstyled">
+            <ul class="list--unstyled">
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-unstyled"&gt;
+<pre><code class="language-html">&lt;ul class="list--unstyled"&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
   &lt;li&gt;List item 3&lt;/li&gt;
@@ -165,16 +191,16 @@
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-inline</h4>
+          <h4>.list--inline</h4>
           <div class="simplex-example">
-            <ul class="list-inline">
+            <ul class="list--inline">
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-inline"&gt;
+<pre><code class="language-html">&lt;ul class="list--inline"&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
   &lt;li&gt;List item 2&lt;/li&gt;
   &lt;li&gt;List item 3&lt;/li&gt;
@@ -182,88 +208,119 @@
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-inline-greater</h4>
+          <h4>.list--inline-greater</h4>
           <div class="simplex-example">
-            <ul class="list-inline-greater">
+            <ul class="list--inline-greater">
               <li><a href="#">Home</a></li>
               <li><a href="#">Events</a></li>
-              <li class="list-item-active">Event 1</li>
+              <li class="list-item-active"><span>Event 1</span></li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-inline-greater"&gt;
+<pre><code class="language-html">&lt;ul class="list--inline-greater"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
   &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-inline-pipe</h4>
+          <h4>.list--inline-pipe</h4>
           <div class="simplex-example">
-            <ul class="list-inline-pipe">
+            <ul class="list--inline-pipe">
               <li><a href="#">Home</a></li>
               <li><a href="#">Event</a></li>
-              <li class="list-item-active">Event 1</li>
+              <li class="list-item-active"><span>Event 1</span></li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-inline-pipe"&gt;
+<pre><code class="language-html">&lt;ul class="list--inline-pipe"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
   &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-inline-slash</h4>
+          <h4>.list--inline-slash</h4>
           <div class="simplex-example">
-            <ul class="list-inline-slash">
+            <ul class="list--inline-slash">
               <li><a href="#">Home</a></li>
               <li><a href="#">Events</a></li>
-              <li class="list-item-active">Event 1</li>
+              <li class="list-item-active"><span>Event 1</span></li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-inline-slash"&gt;
+<pre><code class="language-html">&lt;ul class="list--inline-slash"&gt;
   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
   &lt;li class="list-item-active"&gt;Event 1&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-pagination</h4>
+          <h4>.list--pagination</h4>
           <div class="simplex-example">
-            <ul class="list-pagination">
-              <li><a href="#">«</a></li>
-              <li class="list-item-active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">»</a></li>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
+            <ul class="list--pagination">
+              <li><a href="#"><span class="fas fa-chevron-left" aria-hidden="true"></span><span class="u-hidden"> Go to previous page</span></a></li>
+              <li class="list-item-active"><a href="#"><span class="u-hidden">Currently on page </span>1</a></li>
+              <li><a href="#"><span class="u-hidden">Go to page</span>2</a></li>
+              <li><a href="#"><span class="u-hidden">Go to page</span>3</a></li>
+              <li><a href="#"><span class="u-hidden">Go to page</span>4</a></li>
+              <li><a href="#"><span class="u-hidden">Go to page</span>5</a></li>
+              <li><a href="#"><span class="fas fa-chevron-right" aria-hidden="true"></span><span class="u-hidden"> Go to next page</span></a></li>
             </ul>
+            <p class="c-gray--40">Talking improve produce in limited offices
+            fifteen an. Wicket branch to answer do we. Place are decay men hours
+            tiled. If throwing friendly required. Marianne interest in exertion
+            as. Offering my branched confined on dashwood. </p>
           </div>
-<pre><code class="language-html">&lt;ul class="list-pagination"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;«&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="list-item-active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;»&lt;/a&gt;&lt;/li&gt;
+<pre><code class="language-html">&lt;ul class="list--pagination"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="u-hidden"&gt; Go to previous page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;&lt;a href="#"&gt;&lt;span class="u-hidden"&gt;Currently on page &lt;/span&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="u-hidden"&gt;Go to page&lt;/span&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="u-hidden"&gt;Go to page&lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="u-hidden"&gt;Go to page&lt;/span&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="u-hidden"&gt;Go to page&lt;/span&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="u-hidden"&gt; Go to next page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list-navigation</h4>
+          <h4>.list--navigation</h4>
           <div class="simplex-example">
-            <ul class="list-navigation">
+            <ul class="list--navigation">
               <li><a href="#">List item 1</a></li>
-              <li><b>List item 2</b></li>
+              <li class="list-item-active"><b>List item 2</b></li>
               <li><a href="#">List item 3</a></li>
               <li><a href="#">List item 4</a></li>
             </ul>
           </div>
-<pre><code class="language-html">&lt;ul class="list-navigation"&gt;
+<pre><code class="language-html">&lt;ul class="list--navigation"&gt;
   &lt;li&gt;&lt;a href="#"&gt;List item 1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;b&gt;List item 2&lt;/b&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;List item 3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;List item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+          <h4>.list--navigation with icons</h4>
+          <div class="simplex-example">
+            <ul class="list--navigation">
+              <li><a href="#"><span class="fas fa-home c-gray--40" aria-hidden="true"></span>List item 1</a></li>
+              <li class="list-item-active"><b><span class="fas fa-envelope" aria-hidden="true"></span>List item 2</b></li>
+              <li><a href="#"><span class="fas fa-file c-primary" aria-hidden="true"></span>List item 3</a></li>
+              <li><a href="#"><span class="fas fa-chevron-right c-secondary" aria-hidden="true"></span>List item 4</a></li>
+              <li><a href="#"><span class="fas fa-chevron-right c-black" aria-hidden="true"></span>List item 5</a></li>
+              <li><a href="#"><span class="fas fa-chevron-right c-red" aria-hidden="true"></span>List item 6</a></li>
+              <li><a href="#"><span class="fas fa-chevron-right c-green" aria-hidden="true"></span>List item 7</a></li>
+            </ul>
+          </div>
+<pre><code class="language-html">&lt;ul class="list--navigation"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-home c-gray--40" aria-hidden="true"&gt;&lt;/span&gt;List item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="list-item-active"&gt;&lt;b&gt;&lt;span class="fas fa-envelope" aria-hidden="true"&gt;&lt;/span&gt;List item 2&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-file c-primary" aria-hidden="true"&gt;&lt;/span&gt;List item 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-right c-secondary" aria-hidden="true"&gt;&lt;/span&gt;List item 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-right c-black" aria-hidden="true"&gt;&lt;/span&gt;List item 5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-right c-red" aria-hidden="true"&gt;&lt;/span&gt;List item 6&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-right c-green" aria-hidden="true"&gt;&lt;/span&gt;List item 7&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
@@ -273,7 +330,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

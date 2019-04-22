@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Message utility classes - Simplex Component Library</title>
+  <title>Image utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="Description" lang="en" content="Message utility classes - usage and examples">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <meta name="Description" lang="en" content="Image utility classes - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -36,7 +37,7 @@
 <body>
 
   <!-- skip to content link -->
-    <div class="skip-link">
+  <div class="skip-link">
     <a href="#content">Skip to content (Press enter)</a>
   </div>
 
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Utility classes</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="01-color.html">Color</a></li>
             <li><a href="02-background.html">Background-color</a></li>
@@ -83,53 +84,79 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11=row-padding.html">Row-padding</a></li>
-            <li><b>Messages</b></li>
-            <li><a href="13-image.html">Image</a></li>
+            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><b>Image</b></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2>Message</h2>
-          <p>These utility classes allow authors to style hint and error messages.</p>
+          <h2>Image</h2>
+          <p>These utility classes allow authors to style images. The
+          <code>.u-image--left</code> class floats the image to the left. The
+          <code>.u-image--right</code> class floats the image to the right.</p>
 
           <h4>Usage</h4>
-          <ul>
-            <li><code>.message-required</code> used to notify users of required fields.</li>
-            <li><code>.message-error</code> used to apply an error message below form controls.</li>
-            <li><code>.message-hint</code> used to apply hint information below form controls.</li>
-          </ul>
+          <p>Used to apply positioning to images.</p>
 
           <h4>Accessibility</h4>
-          <p>These messages must be programatically associated with their relevant form control.</p>
+          <ul>
+            <li>The <code>alt</code> attributes must be used with all images.</li>
+            <li>The <code>alt</code> attribute must be descriptive except for
+            decorative images, when the value can be null.</li>
+          </ul>
           <hr class="simplex-hr">
 
-          <h4>.message-required</h4>
+          <h4>.u-image</h4>
           <div class="simplex-example">
-            <span class="message-required">(Required)</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
           </div>
-<pre><code class="language-html">&lt;span class="message-required"&gt;(Required)&lt;/span&gt;
+<pre><code class="language-html">&lt;img class="u-image" src="100x100" alt="Alt text"&gt;
 </code></pre>
 
-          <h4>.message-error</h4>
+          <h4>.u-image--left</h4>
           <div class="simplex-example">
-            <span class="message-error">message-error</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image--left" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
           </div>
-<pre><code class="language-html">&lt;span class="message-error"&gt;message-error&lt;/span&gt;
+<pre><code class="language-html">&lt;img class="u-image--left" src="100x100" alt="Alt text"&gt;
 </code></pre>
 
-          <h4>.message-hint</h4>
+          <h4>.u-image--right</h4>
           <div class="simplex-example">
-            <span class="message-hint">message-hint</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image--right" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
           </div>
-<pre><code class="language-html">&lt;span class="message-hint"&gt;message-hint&lt;/span&gt;
+<pre><code class="language-html">&lt;img class="u-image--right" src="100x100" alt="Alt text"&gt;
 </code></pre>
+
         </div>
       </div>
     </div>
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

@@ -1,20 +1,20 @@
 // parent
 
-.input-checkbox {
+.checkbox {
   display: inline-block;
   clear: left;
   margin-bottom: 0;
-  padding: .2em 1em .35em .25em;
+  padding: .2em 1em .5em .3em;
   cursor: pointer;
 }
 
-.input-checkbox:hover {
+.checkbox:hover {
   background: $gray5;
 }
 
 // disabled
 
-.input-checkbox--disabled {
+.checkbox--disabled {
   cursor: not-allowed;
   color: $disabled-color;
 }
@@ -22,7 +22,7 @@
 
 // control
 
-.input-checkbox__control::after {
+.checkbox__control::after {
   position: relative;
   z-index: 1;
   display: block;
@@ -34,15 +34,7 @@
   background: $white;
 }
 
-.input-checkbox__control:focus {
-  outline: none;
-}
-
-.input-checkbox__control:focus::after {
-  outline: $link-focus-outline;
-}
-
-.input-checkbox__control:checked::after {
+.checkbox__control:checked::after {
   border: 2px solid $link-color;
   background-color: $link-color;
   background-image: url(../img/icons/icon-tick-white.svg);
@@ -50,24 +42,53 @@
   background-position: center center;
 }
 
-.isInvalid .input-checkbox__control::after {
-  border-color: $red;
+// invalid
+
+.checkbox--invalid .checkbox__control::after {
+  border: 2px solid $isinvalid-color;
 }
 
-.isInvalid .input-checkbox__control:checked::after {
+.checkbox--invalid .checkbox__control:checked::after {
   border: 2px solid $link-color !important;
 }
 
-.input-checkbox--disabled .input-checkbox__control::after {
-  border-color: $gray15;
+
+// focus
+
+.checkbox__control:focus {
+  outline: none;
+}
+
+.checkbox__control:focus::after {
+  border: 4px solid $black;
+  outline: 0;
+}
+
+
+// disabled
+
+.checkbox--disabled .checkbox__control::after {
+  border-color: $disabled-border;
   cursor: not-allowed;
-  background: $gray10;
+  background: $disabled-background;
+}
+
+.checkbox--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox--disabled:hover {
+  background: none;
+}
+
+.checkbox--disabled .checkbox__content {
+  cursor: not-allowed;
 }
 
 
 // content
 
-.input-checkbox__content {
+.checkbox__content {
   position: relative;
   top: .2em;
   left: .4em;

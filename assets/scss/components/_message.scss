@@ -1,15 +1,15 @@
 // error
 
-.message-error {
+.message--error {
   display: block;
   margin: .25em 0 0;
   color: $red;
   font-size: $font14;
 }
 
-.message-error--radio-group {
+.message--error--radio-group {
   display: block;
-  margin: 1em 0 0;
+  margin: .5em 0 0;
   color: $red;
   font-size: $font14;
 }
@@ -17,16 +17,16 @@
 
 // hint
 
-.message-hint {
+.message--hint {
   display: block;
-  margin: .25em 0 0;
+  margin: 0 0 .5em;
   color: $gray60;
   font-size: $font14;
 }
 
-.message-hint--radio-group {
+.message--hint--radio-group {
   display: block;
-  margin: 1em 0 0;
+  margin: .2em 0 .3em;
   color: $gray60;
   font-size: $font14;
 }
@@ -34,7 +34,7 @@
 
 // required
 
-.message-required {
+.message--required {
   display: inline-block;
   margin-left: .3em;
   color: $red;

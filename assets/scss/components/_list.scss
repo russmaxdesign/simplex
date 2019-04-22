@@ -1,9 +1,9 @@
-.list-unstyled,
-.list-navigation,
-.list-inline,
-.list-inline-slash,
-.list-inline-greater,
-.list-inline-pipe,
+.list--unstyled,
+.list--navigation,
+.list--inline,
+.list--inline-slash,
+.list--inline-greater,
+.list--inline-pipe,
 .list-bullet,
 .list-contents {
   margin: 0;
@@ -14,107 +14,169 @@
 
 // navigation
 
-.list-navigation {
+.list--navigation {
   border-top: 1px solid #ddd;
   margin-bottom: 2em;
 }
 
-.list-navigation a {
+.list--navigation a {
   display: block;
   border-bottom: 1px solid #ddd;
   padding: .5em;
   text-decoration: none;
 }
 
-.list-navigation b {
+.list--navigation b {
   display: block;
   border-bottom: 1px solid #ddd;
   padding: .5em;
   background: $gray5;
 }
 
-.list-navigation a:link,
-.list-navigation a:visited {
+.list--navigation a:link,
+.list--navigation a:visited {
   color: $link-color;
 }
 
-.list-navigation a:focus,
-.list-navigation a:hover {
-  color: $black;
+.list--navigation a:focus {
+  outline: 0;
+  color: $white;
+  background: $black;
+}
+
+.list--navigation a:hover {
+  color: $link-color;
   background: $gray5;
+}
+
+.list--navigation a:active {
+  color: $white;
+  background: $link-color-active;
+}
+
+.list--navigation span {
+  width: 1.2em;
+  margin-right: .5em;
+  text-align: center;
 }
 
 
 // inline
 
-.list-inline li,
-.list-inline-slash li,
-.list-inline-greater li,
-.list-inline-pipe li {
+.list--inline li,
+.list--inline-slash li,
+.list--inline-greater li,
+.list--inline-pipe li {
   display: inline-block;
 }
 
-.list-inline li {
+.list--inline li {
   margin: 0 1em 0 0;
 }
 
 
 // slash, greater, pipe
 
-.list-inline-slash li:before,
-.list-inline-greater li:before,
-.list-inline-pipe li:before {
-  padding: 0 10px 0 5px;
+.list--inline-slash li:before,
+.list--inline-greater li:before,
+.list--inline-pipe li:before {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0;
   color: $gray25;
+  text-align: center;
 }
 
-.list-inline-slash li:before {
+.list--inline-slash li:before {
   content: '/';
 }
 
-.list-inline-greater li:before {
+.list--inline-greater li:before {
   content: '>';
 }
 
-.list-inline-pipe li:before {
+.list--inline-pipe li:before {
   content: '|';
 }
 
-.list-item-active {
+.list--inline-slash .list-item-active,
+.list--inline-greater .list-item-active,
+.list--inline-pipe .list-item-active {
   color: $gray45;
 }
 
-.list-inline-slash li:first-child:before,
-.list-inline-greater li:first-child:before,
-.list-inline-pipe li:first-child:before {
-  padding: 0;
+.list--inline-slash li:first-child:before,
+.list--inline-greater li:first-child:before,
+.list--inline-pipe li:first-child:before {
+  display: none;
   content: '';
 }
 
+.list--inline-slash a,
+.list--inline-greater a,
+.list--inline-pipe a {
+  display: inline-block;
+  border-radius: $base-border-radius;
+  padding: .3em .5em;
+}
 
-// list-pagination
+.list--inline-slash a:hover,
+.list--inline-greater a:hover,
+.list--inline-pipe a:hover {
+  background: $hover-background;
+}
 
-.list-pagination {
+.list--inline-slash a:focus,
+.list--inline-greater a:focus,
+.list--inline-pipe a:focus {
+  text-decoration: none;
+}
+
+.list--inline-slash .list-item-active span,
+.list--inline-greater .list-item-active span,
+.list--inline-pipe .list-item-active span {
+  display: inline-block;
+  border-radius: $base-border-radius;
+  padding: .3em .7em;
+  color: $gray50;
+}
+
+
+// list--pagination
+
+.list--pagination {
   @include clearfix;
 
   padding: 0;
   list-style: none;
 }
 
-.list-pagination li {
+.list--pagination li {
   display: inline;
 }
 
-.list-pagination a {
+.list--pagination a,
+.list--pagination b {
   float: left;
-  border: 1px solid $gray15;
+  border: 2px solid $gray45;
   border-radius: .2em;
   margin: 0 3px 0 0;
   padding: .4em .7em .3em;
   text-decoration: none;
 }
 
-.list-pagination .list-item-active a {
-  color: $gray60;
-  background-color: $gray10;
+.list--pagination a:hover {
+  background-color: $gray5;
+}
+
+.list--pagination .list-item-active a,
+.list--pagination .list-item-active b {
+  color: $black;
+  background-color: $gray5;
+  font-weight: bold;
+}
+
+.list--pagination .list-item-active a:focus {
+  color: $white;
+  background-color: $black;
 }

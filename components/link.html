@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Link - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Link component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><b>Link</b></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,35 +99,26 @@
         </div>
         <div class="col-sm-9">
           <h2>Link</h2>
-          <p>The <code>link</code> component represents a clickable link that has been styled to look like a button.</p>
+          <p>The <code>link</code> component represents a clickable link that
+          has been styled to look like a button.</p>
 
           <h4>Usage</h4>
           <ul>
             <li>Used to send users to a new URL.</li>
-            <li>Must not be used to trigger form submission or events. In these cases, the use <a href="button.html"><code>button</code> component</a> must be used.</li>
+            <li>Must not be used to trigger form submission or events. In these
+            cases, the <a href="button.html"><code>button</code> component</a> must be used.</li>
           </ul>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>The content of the link should be meaningful. The purpose of the link can be determined from the link text alone.</li>
-            <li>The static, focus, hover and active states of the button should be defined</li>
-            <li>There must be a clearly visible focus state, and the focus method should be consistent across all focusable elements.</li>
+            <li>The content of the link should be meaningful. The purpose of the
+            link can be determined from the link text alone.</li>
+            <li>The static, focus, hover and active states of the button should
+            be defined</li>
+            <li>There must be a clearly visible focus state, and the focus
+            method should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
-
-          <h4>.link-primary</h4>
-          <div class="simplex-example">
-            <a href="#" class="link-primary">link-primary</a>
-          </div>
-<pre><code class="language-html">&lt;a href="#" class="link-primary"&gt;link-primary&lt;/a&gt;
-</code></pre>
-
-          <h4>.link-secondary</h4>
-          <div class="simplex-example">
-            <a href="#" class="link-secondary">link-secondary</a>
-          </div>
-<pre><code class="language-html">&lt;a href="#" class="link-secondary"&gt;link-secondary&lt;/a&gt;
-</code></pre>
 
           <h4>.link</h4>
           <div class="simplex-example">
@@ -133,18 +126,27 @@
           </div>
 <pre><code class="language-html">&lt;a href="#" class="link"&gt;link&lt;/a&gt;
 </code></pre>
+
+          <h4>.link--primary</h4>
+          <div class="simplex-example">
+            <a href="#" class="link--primary">link--primary</a>
           </div>
+<pre><code class="language-html">&lt;a href="#" class="link--primary"&gt;link--primary&lt;/a&gt;
+</code></pre>
+
+          <h4>.link--secondary</h4>
+          <div class="simplex-example">
+            <a href="#" class="link--secondary">link--secondary</a>
+          </div>
+<pre><code class="language-html">&lt;a href="#" class="link--secondary"&gt;link--secondary&lt;/a&gt;
+</code></pre>
         </div>
       </div>
     </div>
   </div>
 
-      </div>
-    </div>
-  </div>
-
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

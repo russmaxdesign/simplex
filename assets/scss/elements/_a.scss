@@ -7,16 +7,19 @@ a:visited {
 }
 
 a:focus {
-  outline: $link-focus-outline;
-  color: $link-color-focus;
+  outline: 0;
+  color: $white;
+  background: $black;
 }
 
 a:hover {
   outline: none;
   color: $link-color-hover;
+  background: none;
 }
 
 a:active {
   outline: none;
-  color: $link-color-active;
+  color: $white;
+  background: $link-color-active;
 }

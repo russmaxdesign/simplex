@@ -89,11 +89,15 @@
   background: $primary-color;
 }
 
-
 .header__nav a:focus {
   outline: 0;
   color: $white;
   background: $black;
+}
+
+.header__nav a:active {
+  color: $white;
+  background: $link-color-active;
 }
 
 

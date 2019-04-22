@@ -6,7 +6,7 @@
   <!-- Title -->
   <title>Input - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
   <meta name="Description" lang="en" content="Input component usage and examples">
 
   <!-- Favicons -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Header Javascript links -->
   <script src="../assets/js/responsive-nav.js"></script>
@@ -60,18 +61,18 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary row-padding-4 simplex-banner">
+  <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white mar-y-0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Components</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white row-padding-3">
+  <div class="bg-white u-row-pad-3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
-          <ul class="list-navigation">
+          <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
             <li><a href="link.html">Link</a></li>
             <li><a href="list.html">List</a></li>
@@ -79,6 +80,7 @@
             <li><a href="table.html">Table</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="button-group.html">Button-group</a></li>
+            <li><a href="message.html">Message</a></li>
             <li><b>Input</b></li>
             <li><a href="select.html">Select</a></li>
             <li><a href="textarea.html">Textarea</a></li>
@@ -97,26 +99,48 @@
         </div>
         <div class="col-sm-9">
           <h2>Input</h2>
-          <p>The <code>input</code> component represents an <code>&lt;input&gt;</code> element with an explicitly associated <code>&lt;label&gt;</code> element. The component also supports additional information and/or error messages associated with the input.</p>
+          <p>The <code>input</code> component represents an
+          <code>&lt;input&gt;</code> element with an explicitly associated
+          <code>&lt;label&gt;</code> element. The component also supports
+          additional information and/or error messages associated with the
+          input.</p>
 
           <h4>Usage</h4>
           <ul>
             <li>Used within forms where single-line user input required.</li>
-            <li>The type can include: <code>text</code>, <code>tel</code>, <code>email</code>, <code>password</code>, <code>search</code>, <code>url</code> and other valid options.</li>
-            <li>The <code>hidden</code> attribute can be applied to the <code>&lt;label&gt;</code> element but only in specific circumstances.</li>
-            <li>The <code>placeholder</code> attribute can be added to the <code>&lt;input&gt;</code> element but should never be used as a replacement for the <code>&lt;label&gt;</code> element.</li>
-            <li>The <code>input--required</code> attribute should be added to the parent container for all instances were the form control is required. In these instances, the <code>required</code> and <code>aria-required="true"</code> attributes must also be applied to the <code>&lt;input&gt;</code> element.</li>
-            <li>When errors occur, the <code>isInvalid</code> attribute should be injected into the parent container.</li>
-            <li>The <code>input--disabled</code> attribute can be added to the parent container if the form control needs to be disabled.</li>
+            <li>The type can include: <code>text</code>, <code>tel</code>,
+            <code>email</code>, <code>password</code>, <code>search</code>,
+            <code>url</code> and other valid options.</li>
+            <li>The <code>hidden</code> attribute can be applied to the
+            <code>&lt;label&gt;</code> element but only in specific
+            circumstances.</li>
+            <li>The <code>placeholder</code> attribute can be added to the
+            <code>&lt;input&gt;</code> element but should never be used as a
+            replacement for the <code>&lt;label&gt;</code> element.</li>
+            <li>The <code>input--required</code> attribute should be added to
+            the parent container for all instances were the form control is
+            required. In these instances, the <code>required</code> and
+            <code>aria-required="true"</code> attributes must also be applied
+            to the <code>&lt;input&gt;</code> element.</li>
+            <li>When errors occur, the <code>isInvalid</code> attribute should
+            be injected into the parent container.</li>
+            <li>The <code>input--disabled</code> attribute can be added to the
+            parent container if the form control needs to be disabled.</li>
           </ul>
 
           <h4>Accessibility</h4>
           <ul>
-            <li>The <code>&lt;label&gt;</code> must be prgrammatically associated with the <code>&lt;input&gt;</code> element.</li>
-            <li>The <code>&lt;label&gt;</code> element should only be hidden in cases where there is no other choices available, and only when the form is extremely simple and its purpose is clear to sighted users.</li>
-            <li>For required fields, the <code>required</code> attribute must also be applied to the <code>&lt;input&gt;</code> element.</li>
-            <li>The static, focus and hover states of the <code>&lt;input&gt;</code> element should be defined</li>
-            <li>There must be a clearly visible focus state, and the method should be consistent across all focusable elements.</li>
+            <li>The <code>&lt;label&gt;</code> must be prgrammatically
+            associated with the <code>&lt;input&gt;</code> element.</li>
+            <li>The <code>&lt;label&gt;</code> element should only be hidden in
+            cases where there is no other choices available, and only when the
+            form is extremely simple and its purpose is clear to sighted users.</li>
+            <li>For required fields, the <code>required</code> attribute must
+            also be applied to the <code>&lt;input&gt;</code> element.</li>
+            <li>The static, focus and hover states of the
+            <code>&lt;input&gt;</code> element should be defined</li>
+            <li>There must be a clearly visible focus state, and the method
+            should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
 
@@ -137,35 +161,18 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Input with placeholder</h4>
-          <div class="simplex-example">
-            <div class="input">
-              <label class="input__label" for="example2">
-                <span class="input__content">Label for input</span>
-                <input class="input__control" type="text" id="example2" placeholder="Placeholder text">
-              </label>
-            </div>
-          </div>
-<pre><code class="language-html">&lt;div class="input"&gt;
-  &lt;label class="input__label" for="example2"&gt;
-    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example2" placeholder="Placeholder text"&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
           <h4>Input with hidden label</h4>
           <div class="simplex-example">
-            <div class="input">
+            <div class="input input--hidden">
               <label class="input__label" for="example4">
-                <span class="input__content hidden">Label for input</span>
+                <span class="input__content">Label for input</span>
                 <input class="input__control" type="text" id="example4">
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input"&gt;
+<pre><code class="language-html">&lt;div class="input input--hidden"&gt;
   &lt;label class="input__label" for="example4"&gt;
-    &lt;span class="input__content hidden"&gt;Label for input&lt;/span&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example4"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
@@ -176,32 +183,32 @@
             <div class="input">
               <label class="input__label" for="example5">
                 <span class="input__content">Label for input</span>
+                <span class="message--hint">Hint text</span>
                 <input class="input__control" type="text" id="example5">
-                <span class="message-hint">Hint text</span>
               </label>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="input"&gt;
   &lt;label class="input__label" for="example5"&gt;
     &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;span class="message--hint"&gt;Hint text&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example5"&gt;
-    &lt;span class="message-hint"&gt;Hint text&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h4>Required input</h4>
           <div class="simplex-example">
-            <div class="input input--required">
+            <div class="input">
               <label class="input__label" for="example6">
-                <span class="input__content">Label for input <span class="message-required">(Required)</span></span>
+                <span class="input__content">Label for input <span class="message--required">(Required)</span></span>
                 <input class="input__control" type="text" id="example6" required>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input input--required"&gt;
+<pre><code class="language-html">&lt;div class="input"&gt;
   &lt;label class="input__label" for="example6"&gt;
-    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="input__content"&gt;Label for input &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example6" required&gt;
   &lt;/label&gt;
 &lt;/div&gt;
@@ -209,19 +216,19 @@
 
           <h4>Invalid input</h4>
           <div class="simplex-example">
-            <div class="input isInvalid">
+            <div class="input input--invalid">
               <label class="input__label" for="example7">
-                <span class="input__content">Label for input <span class="message-required">(Required)</span></span>
+                <span class="input__content">Label for input <span class="message--required">(Required)</span></span>
                 <input class="input__control" type="text" id="example7" required>
-                <span class="message-error">Error Message</span>
+                <span class="message--error">Error Message</span>
               </label>
             </div>
           </div>
-<pre><code class="language-html">&lt;div class="input isInvalid"&gt;
+<pre><code class="language-html">&lt;div class="input input--invalid"&gt;
   &lt;label class="input__label" for="example7"&gt;
-    &lt;span class="input__content"&gt;Label for input &lt;span class="required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="input__content"&gt;Label for input &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example7" required&gt;
-    &lt;span class="message-error"&gt;Error Message&lt;/span&gt;
+    &lt;span class="message--error"&gt;Error Message&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
@@ -238,7 +245,7 @@
 <pre><code class="language-html">&lt;div class="input input--disabled"&gt;
   &lt;label class="input__label" for="example8"&gt;
     &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example8" disabled aria-disabled="true"&gt;
+    &lt;input class="input__control" type="text" id="example8" disabled&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
@@ -248,7 +255,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer row-padding-2">
+  <div class="footer u-row-pad-2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">
