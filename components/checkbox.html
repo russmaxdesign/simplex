@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -104,18 +104,23 @@
           <code>checkbox</code> and its explicitly associated
           <code>&lt;label&gt;</code> element.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <p>Used to present one or more single or multiple choice options to
           users.</p>
 
           <h4>Accessibility</h4>
-          <p>The <code>&lt;input&gt;</code> element needs an explicitly
-          associated <code>&lt;label&gt;</code>. The contents of the
-          <code>&lt;label&gt;</code> must come after the
-          <code>&lt;input&gt;</code> element.</p>
+          <ul>
+            <li>The <code>&lt;input&gt;</code> element needs an explicitly
+            associated <code>&lt;label&gt;</code>.</li>
+            <li>The contents of the <code>&lt;label&gt;</code> must come after
+            the <code>&lt;input&gt;</code> element.</li>
+          </ul>
           <hr class="simplex-hr">
 
-          <h4>Basic checkbox</h4>
+          <h4>.checkbox</h4>
+          <p>Used to display an <code>&lt;input&gt;</code> form control with the
+          type of <code>checkbox</code>, and an explicitly associated
+          <code>&lt;label&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox">
               <label class="checkbox__label" for="example1">
@@ -132,7 +137,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Required checkbox</h4>
+          <p>A required flag can be placed inside the
+          <code>&lt;label&gt;</code> element using the <code>message--required</code>
+          class. The <code>required</code> boolean attribute must be added to
+          the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox">
               <label class="checkbox__label" for="example2">
@@ -149,7 +157,9 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Invalid checkbox</h4>
+          <h4>.checkbox--invalid</h4>
+          <p>Used to inform the user that the form control has not been filled-in
+          correctly.</p>
           <div class="simplex-example">
             <div class="checkbox checkbox--invalid">
               <label class="checkbox__label" for="example3">
@@ -166,7 +176,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Disabled checkbox</h4>
+          <h4>.checkbox--disabled</h4>
+          <p>Used to present a disabled <code>&lt;input&gt;</code> element and
+          label. The <code>disabled</code> boolean attribute must be added to
+          the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox checkbox--disabled">
               <label class="checkbox__label" for="example4">

@@ -14,17 +14,19 @@
 }
 
 .footer a:hover {
-  color: $gray10;
+  color: $black;
+  background: $hover-background;
 }
 
 .footer a:focus {
   outline: 0;
-  color: $black;
-  background: $white;
+  color: $focus-background;
+  background: $focus-color;
 }
 
 .footer a:active {
-  color: $gray15;
+  color: $active-background;
+  background: $active-color;
 }
 
 

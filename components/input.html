@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -105,25 +105,19 @@
           additional information and/or error messages associated with the
           input.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <ul>
             <li>Used within forms where single-line user input required.</li>
             <li>The type can include: <code>text</code>, <code>tel</code>,
             <code>email</code>, <code>password</code>, <code>search</code>,
             <code>url</code> and other valid options.</li>
-            <li>The <code>hidden</code> attribute can be applied to the
-            <code>&lt;label&gt;</code> element but only in specific
-            circumstances.</li>
             <li>The <code>placeholder</code> attribute can be added to the
             <code>&lt;input&gt;</code> element but should never be used as a
             replacement for the <code>&lt;label&gt;</code> element.</li>
-            <li>The <code>input--required</code> attribute should be added to
-            the parent container for all instances were the form control is
-            required. In these instances, the <code>required</code> and
-            <code>aria-required="true"</code> attributes must also be applied
-            to the <code>&lt;input&gt;</code> element.</li>
-            <li>When errors occur, the <code>isInvalid</code> attribute should
-            be injected into the parent container.</li>
+            <li>For required fields, the boolean <code>required</code> attribute
+            must also be applied to the <code>&lt;input&gt;</code> element.</li>
+            <li>When errors occur, the <code>input--invalid</code> attribute
+            should be injected into the parent container.</li>
             <li>The <code>input--disabled</code> attribute can be added to the
             parent container if the form control needs to be disabled.</li>
           </ul>
@@ -144,7 +138,9 @@
           </ul>
           <hr class="simplex-hr">
 
-          <h4>Basic input</h4>
+          <h4>.input</h4>
+          <p>Used to display an <code>&lt;input&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>.</p>
           <div class="simplex-example">
             <div class="input">
               <label class="input__label" for="example1">
@@ -161,29 +157,14 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Input with hidden label</h4>
-          <div class="simplex-example">
-            <div class="input input--hidden">
-              <label class="input__label" for="example4">
-                <span class="input__content">Label for input</span>
-                <input class="input__control" type="text" id="example4">
-              </label>
-            </div>
-          </div>
-<pre><code class="language-html">&lt;div class="input input--hidden"&gt;
-  &lt;label class="input__label" for="example4"&gt;
-    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;input class="input__control" type="text" id="example4"&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-          <h4>Input with hint text</h4>
+          <p>A help mesage can be placed directly after the
+          <code>&lt;label&gt;</code> element using the <code>message--help</code>
+          class.</p>
           <div class="simplex-example">
             <div class="input">
               <label class="input__label" for="example5">
                 <span class="input__content">Label for input</span>
-                <span class="message--hint">Hint text</span>
+                <span class="message--help">Help message</span>
                 <input class="input__control" type="text" id="example5">
               </label>
             </div>
@@ -191,13 +172,16 @@
 <pre><code class="language-html">&lt;div class="input"&gt;
   &lt;label class="input__label" for="example5"&gt;
     &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
-    &lt;span class="message--hint"&gt;Hint text&lt;/span&gt;
+    &lt;span class="message--help"&gt;Help message&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example5"&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Required input</h4>
+          <p>A required flag can be placed inside the
+          <code>&lt;label&gt;</code> element using the <code>message--required</code>
+          class. The <code>required</code> boolean attribute must be added to
+          the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="input">
               <label class="input__label" for="example6">
@@ -214,7 +198,31 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Invalid input</h4>
+
+          <h4>.input--hidden</h4>
+          <p>Used to display an <code>&lt;input&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>. The
+          <code>&lt;label&gt;</code> is not displayed on-screen, but is still
+          available to assistive technologies.</p>
+          <div class="simplex-example">
+            <div class="input input--hidden">
+              <label class="input__label" for="example4">
+                <span class="input__content">Label for input</span>
+                <input class="input__control" type="text" id="example4">
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="input input--hidden"&gt;
+  &lt;label class="input__label" for="example4"&gt;
+    &lt;span class="input__content"&gt;Label for input&lt;/span&gt;
+    &lt;input class="input__control" type="text" id="example4"&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>.input--invalid</h4>
+          <p>Used to inform the user that the form control has not been filled-in
+          correctly.</p>
           <div class="simplex-example">
             <div class="input input--invalid">
               <label class="input__label" for="example7">
@@ -233,7 +241,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Disabled input</h4>
+          <h4>.input--disabled</h4>
+          <p>Used to present a disabled <code>&lt;input&gt;</code> element and
+          label. The <code>disabled</code> boolean attribute must be added to
+          the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="input input--disabled">
               <label class="input__label" for="example8">

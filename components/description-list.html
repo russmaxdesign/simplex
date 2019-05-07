@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -100,21 +100,18 @@
         <div class="col-sm-9">
           <h2>Description-list</h2>
           <p>The <code>description-list</code> component represents variations
-          on the description list.</p>
+          on the <code>&lt;dl&gt;</code> element.</p>
 
-          <h4>Usage</h4>
-          <p>Used for sets of name/value pairs.</p>
+          <h4>Overall usage</h4>
+          <p>Used for sets of term/value pairs.</p>
 
           <h4>Accessibility</h4>
           <p>N/A</p>
           <hr class="simplex-hr">
 
           <h4>Basic description list</h4>
+          <p>Used to display terms and values in a vertically stacked form.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <dl>
               <dt>Straw Man</dt>
               <dd>In the straw man fallacy, someone attacks a position the
@@ -130,10 +127,6 @@
               <dd>This line of reasoning fails by limiting the options to two
               when there are in fact more options to choose from.</dd>
             </dl>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl&gt;
   &lt;dt&gt;Straw...&lt;/dt&gt;
@@ -142,11 +135,9 @@
 </code></pre>
 
           <h4>.description-list--inline-wide</h4>
+          <p>Used to display terms and values side-by-side. The "wide" variation
+          displays the term to a wide width.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <dl class="description-list--inline-wide">
               <dt>Straw Man</dt>
               <dd>In the straw man fallacy, someone attacks a position the
@@ -162,10 +153,6 @@
               <dd>This line of reasoning fails by limiting the options to two
               when there are in fact more options to choose from.</dd>
            </dl>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl class="description-list--inline-wide"&gt;
   &lt;dt&gt;Straw...&lt;/dt&gt;
@@ -174,11 +161,9 @@
 </code></pre>
 
           <h4>.description-list--inline-medium</h4>
+          <p>Used to display terms and values side-by-side. The "medium" variation
+          displays the term to a medium width.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <dl class="description-list--inline-medium">
               <dt>Straw Man</dt>
               <dd>In the straw man fallacy, someone attacks a position the
@@ -194,10 +179,6 @@
               <dd>This line of reasoning fails by limiting the options to two
               when there are in fact more options to choose from.</dd>
            </dl>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl class="description-list--inline-medium"&gt;
   &lt;dt&gt;Straw...&lt;/dt&gt;
@@ -206,11 +187,9 @@
 </code></pre>
 
           <h4>.description-list--inline-narrow</h4>
+          <p>Used to display terms and values side-by-side. The "narrow" variation
+          displays the term to a narrow width.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <dl class="description-list--inline-narrow">
               <dt>Cat</dt>
               <dd>The cat is a small carnivorous mammal. It is the only
@@ -224,10 +203,6 @@
               <dd>Rabbits are small mammals in the family <i>Leporidae</i> of
               the order <i>Lagomorpha</i>.</dd>
            </dl>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl class="description-list--inline-narrow"&gt;
   &lt;dt&gt;Cat...&lt;/dt&gt;
@@ -236,11 +211,8 @@
 </code></pre>
 
           <h4>.description-list--aligned</h4>
+          <p>Used to right-align the value.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <dl class="description-list--aligned">
               <dt>Tracker FG Mens Hiking Boot</dt>
               <dd>$399.99</dd>
@@ -249,10 +221,6 @@
               <dt>Gobi Swimrun Mens Cross Train Shoe</dt>
               <dd>$249.95</dd>
            </dl>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
          </div>
 <pre><code class="language-html">&lt;dl class="description-list--aligned"&gt;
   &lt;dt&gt;Tracker FG...&lt;/dt&gt;

@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -103,9 +103,9 @@
           <code>&lt;select&gt;</code> element with an explicitly associated
           <code>&lt;label&gt;</code> element. The component also supports
           additional information and/or error messages associated with the
-          input.</p>
+          form control.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <p>Used to present a series of options presented as a dropdown menu.</p>
 
           <h4>Accessibility</h4>
@@ -115,15 +115,17 @@
             form is extremely simple and its purpose is clear to sighted users.</li>
             <li>For required fields, the <code>required</code> and
             <code>aria-required="true"</code> attributes must also be applied to
-            the <code>&lt;input&gt;</code> element to inform Assistive Technologies.</li>
+            the <code>&lt;select&gt;</code> element to inform Assistive Technologies.</li>
             <li>The static, focus and hover states of the
-            <code>&lt;input&gt;</code> element should be defined</li>
+            <code>&lt;select&gt;</code> element should be defined</li>
             <li>There must be a clearly visible focus state, and the method
             should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
 
-          <h4>Basic select</h4>
+          <h4>.select</h4>
+          <p>Used to display a <code>&lt;select&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>.</p>
           <div class="simplex-example">
             <div class="select">
               <label class="select__label" for="example1">
@@ -150,39 +152,14 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Select with hidden label</h4>
-          <div class="simplex-example">
-            <div class="select select--hidden">
-              <label class="select__label" for="example2">
-                <span class="select__content">Label for select</span>
-                <select class="select__control" id="example2">
-                  <option value="">Choose an option</option>
-                  <option value="one">one</option>
-                  <option value="two">two</option>
-                  <option value="three">three</option>
-                </select>
-              </label>
-            </div>
-          </div>
-<pre><code class="language-html">&lt;div class="select"&gt;
-  &lt;label class="select__label" for="example2"&gt;
-    &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
-    &lt;select class="select__control" id="example2"&gt;
-      &lt;option value=""&gt;Choose an option&lt;/option&gt;
-      &lt;option value="one"&gt;one&lt;/option&gt;
-      &lt;option value="two"&gt;two&lt;/option&gt;
-      &lt;option value="three"&gt;three&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-          <h4>Select with hint text</h4>
+          <p>A help mesage can be placed directly after the
+          <code>&lt;label&gt;</code> element using the <code>message--help</code>
+          class.</p>
           <div class="simplex-example">
             <div class="select">
               <label class="select__label" for="example3">
                 <span class="select__content">Label for select</span>
-                <span class="message--hint">Hint Message</span>
+                <span class="message--help">Help Message</span>
                 <select class="select__control" id="example3">
                   <option value="">Choose an option</option>
                   <option value="one">one</option>
@@ -195,7 +172,7 @@
 <pre><code class="language-html">&lt;div class="select"&gt;
   &lt;label class="select__label" for="example3"&gt;
     &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
-    &lt;span class="message--hint"&gt;Hint Message&lt;/span&gt;
+    &lt;span class="message--help"&gt;Help Message&lt;/span&gt;
     &lt;select class="select__control" id="example3"&gt;
       &lt;option value=""&gt;Choose an option&lt;/option&gt;
       &lt;option value="one"&gt;one&lt;/option&gt;
@@ -206,7 +183,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Required select</h4>
+          <p>A required flag can be placed inside the
+          <code>&lt;label&gt;</code> element using the <code>message--required</code>
+          class. The <code>required</code> boolean attribute must be added to
+          the <code>&lt;select&gt;</code>.</p>
           <div class="simplex-example">
             <div class="select">
               <label class="select__label" for="example4">
@@ -233,7 +213,40 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Invalid select</h4>
+          <h4>.select--hidden</h4>
+          <p>Used to display an <code>&lt;select&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>. The
+          <code>&lt;label&gt;</code> is not displayed on-screen, but is still
+          available to assistive technologies.</p>
+          <div class="simplex-example">
+            <div class="select select--hidden">
+              <label class="select__label" for="example2">
+                <span class="select__content">Label for select</span>
+                <select class="select__control" id="example2">
+                  <option value="">Choose an option</option>
+                  <option value="one">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="select select--hidden"&gt;
+  &lt;label class="select__label" for="example2"&gt;
+    &lt;span class="select__content"&gt;Label for select&lt;/span&gt;
+    &lt;select class="select__control" id="example2"&gt;
+      &lt;option value=""&gt;Choose an option&lt;/option&gt;
+      &lt;option value="one"&gt;one&lt;/option&gt;
+      &lt;option value="two"&gt;two&lt;/option&gt;
+      &lt;option value="three"&gt;three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>.select--invalid</h4>
+          <p>Used to inform the user that the form control has not been filled-in
+          correctly.</p>
           <div class="simplex-example">
             <div class="select select--invalid">
               <label class="select__label" for="example5">
@@ -262,7 +275,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Disabled select</h4>
+          <h4>.select--disabled</h4>
+          <p>Used to present a disabled <code>&lt;select&gt;</code> element and
+          label. The <code>disabled</code> boolean attribute must be added to
+          the <code>&lt;select&gt;</code>.</p>
           <div class="simplex-example">
             <div class="select select--disabled">
               <label class="select__label" for="example6">

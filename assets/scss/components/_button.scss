@@ -2,7 +2,8 @@
 
 .button--primary,
 .button--secondary,
-.button--link {
+.button--link,
+.button--small {
   display: inline-block;
   height: $button-height;
   border-radius: $base-border-radius;
@@ -126,4 +127,29 @@
     color: $disabled-color;
     background-color: $disabled-background;
   }
+}
+
+
+// small
+
+.button--small {
+  width: 2.25em;
+  text-align: center;
+  padding: $button-padding-small;
+  height: 2.25em;
+  line-height: 1;
+}
+
+
+// Font awesome icons inside buttons
+// To move the icon towards the left
+
+.button--icon-left {
+  margin: 0 .2em 0 -.5em;
+  display: inline-block;
+}
+
+.button--icon-right {
+  margin: 0 -.5em 0 .2em;
+  display: inline-block;
 }

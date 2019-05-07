@@ -5,8 +5,9 @@ li code,
 dt code,
 dd code {
   color: $black;
-  background-color: $gray10;
-  font-size: 100%;
+  color: $gray60;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
 }
 
 
@@ -19,7 +20,23 @@ dd code {
 }
 
 .simplex-example p:last-of-type {
-  margin-bottom: 0; 
+  margin-bottom: 0;
+}
+
+.simplex-example--small {
+  display: inline-block;
+  width: 2.2em;
+  border: 1px solid $gray15;
+  margin: .5em .5em 0 0;
+  padding: .5em;
+  text-align: center;
+}
+
+
+// pre blocks
+
+pre[class*='language-'] {
+  margin: .5em 0 1.5em;
 }
 
 

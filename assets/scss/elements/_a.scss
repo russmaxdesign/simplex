@@ -8,18 +8,18 @@ a:visited {
 
 a:focus {
   outline: 0;
-  color: $white;
-  background: $black;
+  color: $focus-color;
+  background: $focus-background;
 }
 
 a:hover {
   outline: none;
   color: $link-color-hover;
-  background: none;
+  background: $hover-background;
 }
 
 a:active {
   outline: none;
-  color: $white;
-  background: $link-color-active;
+  color: $active-color;
+  background: $active-background;
 }

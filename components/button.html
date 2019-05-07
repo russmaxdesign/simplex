@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -101,18 +101,17 @@
           <h2>Button</h2>
           <p>The <code>button</code> component represents a clickable button.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <ul>
             <li>Used to trigger form submission or events (such as open/close,
             fired modals etc).</li>
             <li>Must not be used when the purpose is to send the user to a new
-            URL. In these cases, the <a href="link.html"><code>button--link</code> component</a>
-            must be used.</li>
+            URL. In these cases, the <a href="link.html"><code>button--link</code>
+            component</a> must be used.</li>
             <li>The type must be set to <code>submit</code> when submitting a
-            form.</li>
-            <li>In all other cases the type should be set to
-            <code>button</code>.</li>
+            form. In all other cases the type should be set to <code>button</code>.</li>
           </ul>
+
 
           <h4>Accessibility</h4>
           <ul>
@@ -126,6 +125,7 @@
           <hr class="simplex-hr">
 
           <h4>.button--primary</h4>
+          <p>Used for the main action on a page.</p>
           <div class="simplex-example">
             <button type="button" class="button--primary">button--primary</button>
             <button type="button" class="button--primary" disabled>button--primary</button>
@@ -135,6 +135,7 @@
 </code></pre>
 
           <h4>.button--secondary</h4>
+          <p>Used for supporting actions on a page.</p>
           <div class="simplex-example">
             <button type="button" class="button--secondary">button--secondary</button>
             <button type="button" class="button--secondary" disabled>button--secondary</button>
@@ -144,12 +145,52 @@
 </code></pre>
 
           <h4>.button--link</h4>
+          <p>Used for buttons that need to appear like a link</p>
           <div class="simplex-example">
             <button type="button" class="button--link">button--link</button>
             <button type="button" class="button--link" disabled>button--link</button>
           </div>
 <pre><code class="language-html">&lt;button type="button" class="button--link"&gt;button--link&lt;/button&gt;
 &lt;button type="button" class="button--link" disabled&gt;button--link&lt;/button&gt;
+</code></pre>
+
+          <h4>.button--small</h4>
+          <p>Used for buttons that contain icons only. Must be used in
+          conjunction with one of three different button variatons, primary,
+          secondary or link. As there is no supporting text for these icons,
+          hidden text must be provided for screen readers</p>
+          <div class="simplex-example">
+            <button type="button" class="button--primary button--small">
+              <span class="fas fa-times" aria-hidden="true">
+                <span class="u-hidden">Close</span>
+              </span>
+            </button>
+            <button type="button" class="button--secondary button--small">
+              <span class="fas fa-plus" aria-hidden="true">
+                <span class="u-hidden">Open</span>
+              </span>
+            </button>
+            <button type="button" class="button--link button--small">
+              <span class="fas fa-chevron-right" aria-hidden="true">
+                <span class="u-hidden">Right</span>
+              </span>
+            </button>
+          </div>
+<pre><code class="language-html">&lt;button type="button" class="button--primary button--small"&gt;
+  &lt;span class="fas fa-times" aria-hidden="true"&gt;
+    &lt;span class="u-hidden"&gt;Close&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="button--secondary button--small"&gt;
+  &lt;span class="fas fa-plus" aria-hidden="true"&gt;
+    &lt;span class="u-hidden"&gt;Open&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="button--link button--small"&gt;
+  &lt;span class="fas fa-chevron-right" aria-hidden="true"&gt;
+    &lt;span class="u-hidden"&gt;Right&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
 </code></pre>
         </div>
       </div>

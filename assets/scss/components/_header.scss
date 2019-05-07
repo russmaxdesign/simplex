@@ -70,7 +70,7 @@
 }
 
 .header__nav a:hover {
-  background: $gray10;
+  background: $hover-background;
 }
 
 .header__nav a.current {
@@ -91,13 +91,13 @@
 
 .header__nav a:focus {
   outline: 0;
-  color: $white;
-  background: $black;
+  color: $focus-color;
+  background: $focus-background;
 }
 
 .header__nav a:active {
-  color: $white;
-  background: $link-color-active;
+  color: $active-color;
+  background: $active-background;
 }
 
 
@@ -126,7 +126,7 @@
     width: auto;
     border-bottom: 0;
     margin: 0;
-    padding: 1em;
+    padding: 1em .8em;
     line-height: 1;
     text-align: center;
   }
@@ -209,8 +209,8 @@
 .nav-toggle:focus,
 .nav-toggle:focus:before {
   outline: 0;
-  color: $white;
-  background: $black;
+  color: $focus-color;
+  background: $focus-background;
 }
 
 .nav-toggle.active::before {

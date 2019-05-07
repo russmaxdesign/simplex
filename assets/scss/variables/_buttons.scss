@@ -1,10 +1,12 @@
 // buttons
 
-$button-font-family:           $base-font-family;
-$button-border-width:          2px;
-$button-padding:               .5em 1em .5em;
-$button-height:                $input-height;
-$button-line-height:           1;
+$button-font-family:                     $base-font-family;
+$button-border-width:                    2px;
+$button-padding:                         .5em 1.5em;
+$button-padding-small:                   .4em .5em;
+$button-height:                          $input-height;
+$button-height-small:                    auto;
+$button-line-height:                     1;
 
 
 // primary button
@@ -12,15 +14,15 @@ $button-line-height:           1;
 $button--primary-color:                  $white;
 $button--primary-background:             $link-color;
 $button--primary-border:                 $link-color;
-$button--primary-focus-color:            $white;
-$button--primary-focus-background:       $black;
-$button--primary-focus-border:           $black;
+$button--primary-focus-color:            $focus-color;
+$button--primary-focus-background:       $focus-background;
+$button--primary-focus-border:           $focus-border;
 $button--primary-hover-color:            $white;
 $button--primary-hover-background:       $link-color-hover;
 $button--primary-hover-border:           $link-color-hover;
-$button--primary-active-color:           $white;
-$button--primary-active-background:      $link-color-active;
-$button--primary-active-border:          $link-color-active;
+$button--primary-active-color:           $active-color;
+$button--primary-active-background:      $active-background;
+$button--primary-active-border:          $active-border;
 
 
 // secondary button
@@ -28,47 +30,15 @@ $button--primary-active-border:          $link-color-active;
 $button--secondary-color:                $link-color;
 $button--secondary-background:           $white;
 $button--secondary-border:               $link-color;
-$button--secondary-focus-color:          $white;
-$button--secondary-focus-background:     $black;
-$button--secondary-focus-border:         $black;
+$button--secondary-focus-color:          $focus-color;
+$button--secondary-focus-background:     $focus-background;
+$button--secondary-focus-border:         $focus-border;
 $button--secondary-hover-color:          $link-color-hover;
-$button--secondary-hover-background:     $gray5;
+$button--secondary-hover-background:     $hover-background;
 $button--secondary-hover-border:         $link-color-hover;
-$button--secondary-active-color:         $white;
-$button--secondary-active-background:    $link-color-active;
-$button--secondary-active-border:        $link-color-active;
-
-
-// success button
-
-$button-success-color:                  $white;
-$button-success-background:             $green;
-$button-success-border:                 darken($button-success-background, 3%);
-$button-success-focus-color:            $white;
-$button-success-focus-background:       $black;
-$button-success-focus-border:           $black;
-$button-success-hover-color:            $white;
-$button-success-hover-background:       darken($button-success-background, 10%);
-$button-success-hover-border:           darken($button-success-background, 13%);
-$button-success-active-color:           $white;
-$button-success-active-background:      $link-color-active;
-$button-success-active-border:          $link-color-active;
-
-
-// warning button
-
-$button-warning-color:                  $white;
-$button-warning-background:             $red;
-$button-warning-border:                 darken($button-warning-background, 3%);
-$button-warning-focus-color:            $white;
-$button-warning-focus-background:       $black;
-$button-warning-focus-border:           $black;
-$button-warning-hover-color:            $white;
-$button-warning-hover-background:       darken($button-warning-background, 10%);
-$button-warning-hover-border:           darken($button-warning-background, 13%);
-$button-warning-active-color:           $white;
-$button-warning-active-background:      $link-color-active;
-$button-warning-active-border:          $link-color-active;
+$button--secondary-active-color:         $active-color;
+$button--secondary-active-background:    $active-background;
+$button--secondary-active-border:        $active-border;
 
 
 // link button
@@ -76,12 +46,12 @@ $button-warning-active-border:          $link-color-active;
 $button--link-color:                     $link-color;
 $button--link-background:                transparent;
 $button--link-border:                    transparent;
-$button--link-focus-color:               $white;
-$button--link-focus-background:          $black;
-$button--link-focus-border:              $black;
+$button--link-focus-color:               $focus-color;
+$button--link-focus-background:          $focus-background;
+$button--link-focus-border:              $focus-border;
 $button--link-hover-color:               $link-color-hover;
-$button--link-hover-background:          $gray5;
+$button--link-hover-background:          $hover-background;
 $button--link-hover-border:              transparent;
-$button--link-active-color:              $white;
-$button--link-active-background:         $link-color-active;
-$button--link-active-border:             $link-color-active;
+$button--link-active-color:              $active-color;
+$button--link-active-background:         $active-background;
+$button--link-active-border:             $active-border;

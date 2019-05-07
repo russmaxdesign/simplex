@@ -18,12 +18,6 @@
     text-decoration: none;
   }
 
-  li:first-child {
-  }
-
-  li:last-child {
-  }
-
   input {
     position: absolute;
     z-index: -1;
@@ -58,7 +52,7 @@
   }
 
   label:hover {
-    background: $gray5;
+    background: $hover-background;
   }
 
   input:checked + label {
@@ -68,20 +62,27 @@
 
   input:checked + label:hover {
     color: #fff;
-    background: $link-color-hover;
+    background: $hover-background;
   }
 
   input:focus + label {
-    border-color: $black;
+    border-color: $focus-border;
     outline: 0;
-    color: $white;
-    background: $black;
+    color: $focus-color;
+    background: $focus-background;
+  }
+
+  input:active + label {
+    border-color: $active-border;
+    color: $active-color;
+    background: $active-background;
   }
 
   input:checked + label:hover {
     color: #fff;
     background: $link-color-hover;
   }
+
 }
 
 

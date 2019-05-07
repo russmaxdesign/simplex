@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -99,11 +99,14 @@
         </div>
         <div class="col-sm-9">
           <h2>Radio-group</h2>
-          <p>The <code>radio-group</code> component represents an
-          <code>&lt;input&gt;</code> element with a type of <code>radio</code>
-          and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+          <p>The <code>radio-group</code> component represents a set of
+          <code>&lt;input&gt;</code> elements, each with a type of
+          <code>radio</code> and their explicitly associated
+          <code>&lt;label&gt;</code> element. The set is housed within a
+          <code>&lt;fieldset&gt;</code> that contains a
+          <code>&lt;legend&gt;</code> element.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <p>Used to present one or more selectable options to users - where
           only one option can be chosen at a time.</p>
 
@@ -121,6 +124,11 @@
           <hr class="simplex-hr">
 
           <h4>.radio-group</h4>
+          <p>Used to display a series of <code>&lt;input&gt;</code> form
+          controls with the type of <code>radio</code> and their explicitly
+          associated <code>&lt;label&gt;</code>, housed within a
+          <code>&lt;fieldset&gt;</code> element that contains a
+          <code>&lt;legend&gt;</code></p>
           <div class="simplex-example">
             <fieldset class="radio-group">
               <legend>Legend for radio group</legend>
@@ -183,11 +191,15 @@
 &lt;/fieldset&gt;
 </code></pre>
 
-          <h4>.radio-group with hint text</h4>
+          <p>A help mesage can be placed directly after the
+          <code>&lt;legend&gt;</code> element using the <code>message--help</code>
+          class. This message needs to be explicitly associated with the
+          <code>&lt;fieldset&gt;</code> using matching <code>aria-describedby</code>
+          and <code>id</code> values.</p>
           <div class="simplex-example">
             <fieldset class="radio-group" aria-describedby="e2">
               <legend>Legend for radio group</legend>
-              <p class="message--hint--radio-group" id="e2">Hint text</p>
+              <p class="message--help--radio-group" id="e2">Help message</p>
               <ul> 
                 <li>
                   <div class="radio-group__container">
@@ -218,7 +230,7 @@
           </div>
 <pre><code class="language-html">&lt;fieldset class="radio-group" aria-describedby="e2"&gt;
   &lt;legend&gt;Legend for radio group&lt;/legend&gt;
-  &lt;p class="message--hint--radio-group" id="e2"&gt;Hint text&lt;/p&gt;
+  &lt;p class="message--help--radio-group" id="e2"&gt;Help message&lt;/p&gt;
   &lt;ul&gt; 
     &lt;li&gt;
       &lt;div class="radio-group__container"&gt;
@@ -249,9 +261,9 @@
 &lt;/fieldset&gt;
 </code></pre>
 
-
-
-          <h4>.radio-group--required</h4>
+          <p>A required flag can be placed inside the
+          <code>&lt;legend&gt;</code> element using the <code>message--required</code>
+          class.</p>
           <div class="simplex-example">
             <fieldset class="radio-group">
               <legend>
@@ -320,7 +332,9 @@
 &lt;/fieldset&gt;
 </code></pre>
 
-          <h4>.isInvalid</h4>
+          <h4>.radio-group--invalid</h4>
+          <p>Used to inform the user that the form control has not been filled-in
+          correctly.</p>
           <div class="simplex-example">
             <fieldset class="radio-group radio-group--invalid" aria-describedby="e4">
               <legend>
@@ -392,6 +406,9 @@
 </code></pre>
 
           <h4>.radio-group--disabled</h4>
+          <p>Used to present a disabled <code>&lt;input&gt;</code> element and
+          label. The <code>disabled</code> boolean attribute must be added to
+          each <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <fieldset class="radio-group radio-group--disabled">
               <legend>Legend for radio group</legend>

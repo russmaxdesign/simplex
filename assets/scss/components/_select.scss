@@ -11,7 +11,7 @@
 }
 
 .select__control:hover {
-  background: $gray5;
+  background: $hover-background;
 }
 
 
@@ -33,7 +33,7 @@
 // focus
 
 .select__control:focus {
-  border: 3px solid $black;
+  border: 3px solid $focus-border;
   outline: 0;
 }
 

@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -99,15 +99,20 @@
         </div>
         <div class="col-sm-9">
           <h2>Table</h2>
-          <p>The <code>table</code> component is used to style specific
-          instances of tabular data. All <code>table</code> components must be
-          placed inside a container with a class of <code>.table-container</code>
-          as this provides basic responsive behaviour.</p>
+          <p>The <code>&lt;table&gt;</code> element is used to display tabular
+          data - information presented in a two-dimensional table comprised of
+          rows and columns of cells.</p>
 
-          <h4>Usage</h4>
-          <p>Used for tabular data only. This is information presented in a
-          two-dimensional table comprised of rows and columns of cells
-          containing data</p>
+          <h4>Overall usage</h4>
+          <ul>
+            <li>The <code>table</code> component is used to style specific
+            instances of the <code>&lt;table&gt;</code> element.</li>
+            <li>A <code>caption</code> should be used if the <code>table</code>
+            requires a title or brief explanation. The <code>&lt;caption&gt;</code>
+            element is only permitted immediately after the <code>&lt;table&gt;</code>
+            start tag. A <code>&lt;table&gt;</code> element may only contain one
+            <code>&lt;caption&gt;</code>  element.</p></li>
+          </ul>
 
           <h4>Accessibility</h4>
           <ul>
@@ -120,10 +125,6 @@
 
           <h4>Basic table</h4>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <div class="table-container">
               <table>
                 <thead>
@@ -157,10 +158,6 @@
                 </tbody>
               </table>
             </div>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;div class="table-container"&gt;
   &lt;table class="table"&gt;
@@ -169,14 +166,54 @@
 &lt;/div&gt;
 </code></pre>
 
+          <p>The <code>&lt;table&gt;</code> element can also include a caption.</p>
+          <div class="simplex-example">
+            <div class="table-container">
+              <table>
+                <caption>Table caption</caption>
+                <thead>
+                  <tr>
+                    <th>header one</th>
+                    <th>header two</th>
+                    <th>header three</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>col1 row1</td>
+                    <td>col1 row1</td>
+                    <td>col1 row1</td>
+                  </tr>
+                  <tr>
+                    <td>col1 row2</td>
+                    <td>col1 row2</td>
+                    <td>col1 row2</td>
+                  </tr>
+                  <tr>
+                    <td>col1 row3</td>
+                    <td>col1 row3</td>
+                    <td>col1 row3</td>
+                  </tr>
+                  <tr>
+                    <td>col1 row4</td>
+                    <td>col1 row4</td>
+                    <td>col1 row4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="table-container"&gt;
+  &lt;table class="table"&gt;
+    &lt;caption&gt;Table caption&lt;/caption&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
 
           <h4>.table--striped</h4>
           <p>Used where a clear distinction between rows is desired.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <div class="table-container">
               <table class="table--striped">
                 <thead>
@@ -210,10 +247,6 @@
                 </tbody>
               </table>
             </div>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;div class="table-container"&gt;
   &lt;table class="table--striped"&gt;
@@ -226,10 +259,6 @@
           <h4>.table--hover</h4>
           <p>Use where a hover state is desired for each row.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <div class="table-container">
               <table class="table--hover">
                 <thead>
@@ -263,10 +292,6 @@
                 </tbody>
               </table>
             </div>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;div class="table-container"&gt;
   &lt;table class="table--hover"&gt;
@@ -279,10 +304,6 @@
           <h4>.table--border</h4>
           <p>Used where borders are required all around each cell.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <div class="table-container">
               <table class="table--border">
                 <thead>
@@ -316,10 +337,6 @@
                 </tbody>
               </table>
             </div>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;div class="table-container"&gt;
   &lt;table class="table--border"&gt;

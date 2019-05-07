@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -102,44 +102,22 @@
           <p>The <code>list</code> component represents variations on the
           unordered list.</p>
 
-          <h4>Usage</h4>
-          <ul>
-            <li>The <code>list--unstyled</code> variation can be used when a
-            list requires no bullets</li>
-            <li>The <code>list--inline</code> variation can be used where a
-            list is required to be inline</li>
-            <li>The <code>list--inline-greater</code> variation can be used
-            where an inline list requires a "greater-than" symbol</li>
-            <li>The <code>list--inline-pipe</code> variation can be used where
-            an inline list requires a "pipe" symbol</li>
-            <li>The <code>list--inline-slash</code> variation can be used where
-            an inline list requires a "slash" symbol</li>
-            <li>The <code>list--pagination</code> variation can be used for
-            pagination</li>
-            <li>The <code>list--navigation</code> variation can be used for page
-            navigation</li>
-          </ul>
+          <h4>Overall usage</h4>
+          <p>Used to organise information in a logical, linear formation.</p>
 
           <h4>Accessibility</h4>
           <p>N/A</p>
           <hr class="simplex-hr">
 
           <h4>Basic unordered list</h4>
+          <p>Used to present information in an unordered linear formation.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <ul>
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ul>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;ul&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
@@ -150,21 +128,14 @@
 </code></pre>
 
           <h4>Basic ordered list</h4>
+          <p>Used to present information in a ordered linear formation.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <ol>
               <li>List item 1</li>
               <li>List item 2</li>
               <li>List item 3</li>
               <li>List item 4</li>
             </ol>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;ol&gt;
   &lt;li&gt;List item 1&lt;/li&gt;
@@ -175,6 +146,7 @@
 </code></pre>
 
           <h4>.list--unstyled</h4>
+          <p>Used to display an unordered list without bullets.</p>
           <div class="simplex-example">
             <ul class="list--unstyled">
               <li>List item 1</li>
@@ -192,6 +164,7 @@
 </code></pre>
 
           <h4>.list--inline</h4>
+          <p>Used to display an unordered list with each list item inline.</p>
           <div class="simplex-example">
             <ul class="list--inline">
               <li>List item 1</li>
@@ -209,6 +182,7 @@
 </code></pre>
 
           <h4>.list--inline-greater</h4>
+          <p>Used to display "greater-than" symbols between inline list items.</p>
           <div class="simplex-example">
             <ul class="list--inline-greater">
               <li><a href="#">Home</a></li>
@@ -224,6 +198,7 @@
 </code></pre>
 
           <h4>.list--inline-pipe</h4>
+          <p>Used to display "pipe" symbols between inline list items.</p>
           <div class="simplex-example">
             <ul class="list--inline-pipe">
               <li><a href="#">Home</a></li>
@@ -239,6 +214,7 @@
 </code></pre>
 
           <h4>.list--inline-slash</h4>
+          <p>Used to display "slash" symbols between inline list items.</p>
           <div class="simplex-example">
             <ul class="list--inline-slash">
               <li><a href="#">Home</a></li>
@@ -254,11 +230,8 @@
 </code></pre>
 
           <h4>.list--pagination</h4>
+          <p>Used to display an inline list in a form that can be used for pagination.</p>
           <div class="simplex-example">
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
             <ul class="list--pagination">
               <li><a href="#"><span class="fas fa-chevron-left" aria-hidden="true"></span><span class="u-hidden"> Go to previous page</span></a></li>
               <li class="list-item-active"><a href="#"><span class="u-hidden">Currently on page </span>1</a></li>
@@ -268,10 +241,6 @@
               <li><a href="#"><span class="u-hidden">Go to page</span>5</a></li>
               <li><a href="#"><span class="fas fa-chevron-right" aria-hidden="true"></span><span class="u-hidden"> Go to next page</span></a></li>
             </ul>
-            <p class="c-gray--40">Talking improve produce in limited offices
-            fifteen an. Wicket branch to answer do we. Place are decay men hours
-            tiled. If throwing friendly required. Marianne interest in exertion
-            as. Offering my branched confined on dashwood. </p>
           </div>
 <pre><code class="language-html">&lt;ul class="list--pagination"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fas fa-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="u-hidden"&gt; Go to previous page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -285,6 +254,7 @@
 </code></pre>
 
           <h4>.list--navigation</h4>
+          <p>Used to display a list for navigation purposes.</p>
           <div class="simplex-example">
             <ul class="list--navigation">
               <li><a href="#">List item 1</a></li>
@@ -301,7 +271,8 @@
 &lt;/ul&gt;
 </code></pre>
 
-          <h4>.list--navigation with icons</h4>
+          <p>Icons can be placed inside the list.</p>
+
           <div class="simplex-example">
             <ul class="list--navigation">
               <li><a href="#"><span class="fas fa-home c-gray--40" aria-hidden="true"></span>List item 1</a></li>

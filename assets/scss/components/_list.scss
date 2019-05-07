@@ -40,18 +40,18 @@
 
 .list--navigation a:focus {
   outline: 0;
-  color: $white;
-  background: $black;
+  color: $focus-color;
+  background: $focus-background;
 }
 
 .list--navigation a:hover {
   color: $link-color;
-  background: $gray5;
+  background: $hover-background;
 }
 
 .list--navigation a:active {
-  color: $white;
-  background: $link-color-active;
+  color: $active-color;
+  background: $active-background;
 }
 
 .list--navigation span {
@@ -132,6 +132,13 @@
   text-decoration: none;
 }
 
+.list--inline-slash a:active,
+.list--inline-greater a:active,
+.list--inline-pipe a:active {
+  background: $active-background;
+}
+
+
 .list--inline-slash .list-item-active span,
 .list--inline-greater .list-item-active span,
 .list--inline-pipe .list-item-active span {
@@ -166,7 +173,12 @@
 }
 
 .list--pagination a:hover {
-  background-color: $gray5;
+  background-color: $hover-background;
+}
+
+.list--pagination a:active {
+  color: $active-color;
+  background-color: $active-background;
 }
 
 .list--pagination .list-item-active a,
@@ -177,6 +189,6 @@
 }
 
 .list--pagination .list-item-active a:focus {
-  color: $white;
-  background-color: $black;
+  color: $focus-color;
+  background-color: $focus-background;
 }

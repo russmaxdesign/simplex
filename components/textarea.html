@@ -54,6 +54,7 @@
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a class="current" href="index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
+          <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -90,7 +91,6 @@
             <li><a href="content-container.html">Content-container</a></li>
             <li><a href="form-container.html">Form-container</a></li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="flag.html">Flag</a></li>
             <li><a href="summary.html">Summary</a></li>
             <li><a href="skip-link.html">Skip-link</a></li>
             <li><a href="header.html">Header</a></li>
@@ -102,23 +102,20 @@
           <p>The <code>textarea</code> component represents an
           <code>&lt;textarea&gt;</code> element with an explicitly associated
           <code>&lt;label&gt;</code> element. The component also supports
-          additional information and/or error messages associated with the input.</p>
+          additional information and/or error messages associated with the form
+          control.</p>
 
-          <h4>Usage</h4>
+          <h4>Overall usage</h4>
           <ul>
             <li>Used where multi-line user input is required.</li>
             <li>The <code>hidden</code> attribute can be applied to the
             <code>&lt;label&gt;</code> element but only in specific circumstances.</li>
-            <li>The <code>placeholder</code> attribute can be added to the
-            <code>&lt;input&gt;</code> element.</li>
-            <li>The <code>input--required</code> attribute should be added to
+            <li>The <code>textarea--required</code> attribute should be added to
             the parent container for all instances were the form control is
             required. In these instances, the <code>required</code> and
-            <code>aria-required="true"</code> attributes must also be applied to
-            the <code>&lt;input&gt;</code> element.</li>
-            <li>When errors occur, the <code>isInvalid</code> attribute should
-            be injected into the parent container.</li>
-            <li>The <code>input--disabled</code> attribute can be added to the
+            <li>When errors occur, the <code>textarea--invalid</code> attribute
+            should be injected into the parent container.</li>
+            <li>The <code>textarea--disabled</code> attribute can be added to the
             parent container if the form control needs to be disabled.</li>
           </ul>
 
@@ -127,18 +124,19 @@
             <li>The <code>&lt;label&gt;</code> element should only be hidden in
             cases where there is no other choices available, and only when the
             form is extremely simple and its purpose is clear to sighted users.</li>
-            <li>For required fields, the <code>required</code> and
-            <code>aria-required="true"</code> attributes must also be applied to
-            the <code>&lt;input&gt;</code> element to inform Assistive
-            Technologies.</li>
+            <li>For required fields, the <code>required</code> attributes must
+            be applied to <code>&lt;textarea&gt;</code> element to inform
+            Assistive Technologies.</li>
             <li>The static, focus and hover states of the
-            <code>&lt;input&gt;</code> element should be defined</li>
+            <code>&lt;textarea&gt;</code> element should be defined</li>
             <li>There must be a clearly visible focus state, and the method
             should be consistent across all focusable elements.</li>
           </ul>
           <hr class="simplex-hr">
 
-          <h4>Basic textarea</h4>
+          <h4>.textarea</h4>
+          <p>Used to display a <code>&lt;textarea&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>.</p>
           <div class="simplex-example">
             <div class="textarea">
               <label class="textarea__label" for="example">
@@ -155,29 +153,14 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Textarea with hidden label</h4>
-          <div class="simplex-example">
-            <div class="textarea textarea--hidden">
-              <label class="textarea__label" for="example1">
-                <span class="textarea__content">Label for textarea</span>
-                <textarea class="textarea__control" id="example1" rows="5"></textarea>
-              </label>
-            </div>
-          </div>
-<pre><code class="language-html">&lt;div class="textarea textarea--hidden"&gt;
-  &lt;label class="textarea__label" for="example"&gt;
-    &lt;span class="textarea__content"&gt;Label for textarea&lt;/span&gt;
-    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-          <h4>Textarea with hint text</h4>
+          <p>A help mesage can be placed directly after the
+          <code>&lt;label&gt;</code> element using the <code>message--help</code>
+          class.</p>
           <div class="simplex-example">
             <div class="textarea">
               <label class="textarea__label" for="example2">
                 <span class="textarea__content">Label for textarea</span>
-                <span class="message--hint">Hint Message</span>
+                <span class="message--help">Help Message</span>
                 <textarea class="textarea__control" id="example2" rows="5"></textarea>
               </label>
             </div>
@@ -185,13 +168,16 @@
 <pre><code class="language-html">&lt;div class="textarea"&gt;
   &lt;label class="textarea__label" for="example"&gt;
     &lt;span class="textarea__content"&gt;Label for textarea&lt;/span&gt;
-    &lt;span class="message--hint"&gt;Hint Message&lt;/span&gt;
+    &lt;span class="message--help"&gt;Help Message&lt;/span&gt;
     &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Required textarea</h4>
+          <p>A required flag can be placed inside the
+          <code>&lt;label&gt;</code> element using the <code>message--required</code>
+          class. The <code>required</code> boolean attribute must be added to
+          the <code>&lt;textarea&gt;</code>.</p>
           <div class="simplex-example">
             <div class="textarea">
               <label class="textarea__label" for="example3">
@@ -208,7 +194,30 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Invalid textarea</h4>
+          <h4>.textarea--hidden</h4>
+          <p>Used to display a <code>&lt;textarea&gt;</code> form control and an
+          explicitly associated <code>&lt;label&gt;</code>. The
+          <code>&lt;label&gt;</code> is not displayed on-screen, but is still
+          available to assistive technologies.</p>
+          <div class="simplex-example">
+            <div class="textarea textarea--hidden">
+              <label class="textarea__label" for="example1">
+                <span class="textarea__content">Label for textarea</span>
+                <textarea class="textarea__control" id="example1" rows="5"></textarea>
+              </label>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;div class="textarea textarea--hidden"&gt;
+  &lt;label class="textarea__label" for="example"&gt;
+    &lt;span class="textarea__content"&gt;Label for textarea&lt;/span&gt;
+    &lt;textarea class="textarea__control" id="example" rows="5"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h4>.textarea--invalid</h4>
+          <p>Used to inform the user that the form control has not been filled-in
+          correctly.</p>
           <div class="simplex-example">
             <div class="textarea textarea--invalid">
               <label class="textarea__label" for="example4">
@@ -227,7 +236,10 @@
 &lt;/div&gt;
 </code></pre>
 
-          <h4>Disabled textarea</h4>
+          <h4>.textarea--disabled</h4>
+          <p>Used to present a disabled <code>&lt;textarea&gt;</code> element and
+          label. The <code>disabled</code> boolean attribute must be added to
+          the <code>&lt;textarea&gt;</code>.</p>
           <div class="simplex-example">
             <div class="textarea textarea--disabled">
               <label class="textarea__label" for="example5">
