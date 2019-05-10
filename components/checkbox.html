@@ -156,6 +156,7 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.checkbox--invalid</h4>
           <p>Used to inform the user that the form control has not been filled-in
@@ -165,6 +166,12 @@
               <label class="checkbox__label" for="example3">
                 <input class="checkbox__control" type="checkbox" name="example3" id="example3" required>
                 <span class="checkbox__content">Checkbox label <span class="message--required">(Required)</span></span>
+                <p class="message--error--radio-group" id="e4">
+                  <span class="fas fa-times">
+                    <span class="u-hidden">Error</span>
+                  </span>
+                  Error message
+                </p>
               </label>
             </div>
           </div>
@@ -172,9 +179,17 @@
   &lt;label class="checkbox__label" for="example3"&gt;
     &lt;input class="checkbox__control" type="checkbox" name="example3" id="example3" required&gt;
     &lt;span class="checkbox__content"&gt;Checkbox label &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    &lt;!-- Error message --&gt;
+    &lt;p class="message--error--radio-group" id="e4"&gt;
+      &lt;span class="fas fa-times"&gt;
+        &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+      &lt;/span&gt;
+      Error message
+    &lt;/p&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.checkbox--disabled</h4>
           <p>Used to present a disabled <code>&lt;input&gt;</code> element and

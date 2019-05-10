@@ -103,40 +103,78 @@
           to hold help and error messages.</p>
 
           <h4>Overall usage</h4>
-          <ul>
-            <li><code>.message--required</code> used to notify users of required
-            fields.</li>
-            <li><code>.message--error</code> used to apply an error message
-            below form controls.</li>
-            <li><code>.message--help</code> used to apply help information
-            below form controls.</li>
-          </ul>
+          <p>Used to apply additional information to form controls.</p>
 
           <h4>Accessibility</h4>
           <p>These messages must be programatically associated with their
           relevant form control.</p>
           <hr class="simplex-hr">
 
+          <h4>.message--help</h4>
+          <p>Used to apply help information associaed with a form controls.</p>
+          <div class="simplex-example">
+            <span class="message--help">Help message</span>
+          </div>
+<pre><code class="language-html">&lt;span class="message--help"&gt;Help message&lt;/span&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>.message--help--radio-group</h4>
+          <p>Used to apply help information associaed with a radio-group only.</p>
+          <div class="simplex-example">
+            <p class="message--help--radio-group">Help message</p>
+          </div>
+<pre><code class="language-html">&lt;p class="message--help--radio-group"&gt;Help message&lt;/p&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>.message--error</h4>
+          <p>Used to apply an error message associated with a form control.</p>
+          <div class="simplex-example">
+            <span class="message--error">
+              <span class="fas fa-times">
+                <span class="u-hidden">Error</span>
+              </span>
+              Error message
+            </span>
+          </div>
+<pre><code class="language-html">&lt;span class="message--error"&gt;
+  &lt;span class="fas fa-times"&gt;
+    &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+  &lt;/span&gt;
+  Error message
+&lt;/span&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>.message--error--radio-group</h4>
+          <p>Used to apply an error message associaed with a radio-group only.</p>
+          <div class="simplex-example">
+            <p class="message--error--radio-group">
+              <span class="fas fa-times">
+                <span class="u-hidden">Error</span>
+              </span>
+              Error message
+            </p>
+          </div>
+<pre><code class="language-html">&lt;p class="message--error--radio-group"&gt;
+  &lt;span class="fas fa-times"&gt;
+    &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+  &lt;/span&gt;
+  Error message
+&lt;/p&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
           <h4>.message--required</h4>
+          <p>Used to notify users of required fields.</p>
           <div class="simplex-example">
             <span class="message--required">(Required)</span>
           </div>
 <pre><code class="language-html">&lt;span class="message--required"&gt;(Required)&lt;/span&gt;
 </code></pre>
 
-          <h4>.message--error</h4>
-          <div class="simplex-example">
-            <span class="message--error">message--error</span>
-          </div>
-<pre><code class="language-html">&lt;span class="message--error"&gt;message--error&lt;/span&gt;
-</code></pre>
 
-          <h4>.message--help</h4>
-          <div class="simplex-example">
-            <span class="message--help">message--help</span>
-          </div>
-<pre><code class="language-html">&lt;span class="message--help"&gt;message--help&lt;/span&gt;
-</code></pre>
         </div>
       </div>
     </div>

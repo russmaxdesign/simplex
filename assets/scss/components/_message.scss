@@ -1,34 +1,39 @@
 // error
 
-.message--error {
+.message--error,
+.message--error--radio-group {
   display: block;
-  margin: .25em 0 0;
-  color: $red;
+  border-radius: $base-border-radius;
+  padding: .5em;
+  color: darken($red, 5%);
+  background: lighten($red, 55%);
   font-size: $font14;
 }
 
+.message--error {
+  margin: .25em 0 0;
+}
+
 .message--error--radio-group {
-  display: block;
   margin: .5em 0 0;
-  color: $red;
-  font-size: $font14;
 }
 
 
 // help
 
-.message--help {
+.message--help,
+.message--help--radio-group {
   display: block;
-  margin: 0 0 .5em;
   color: $gray60;
   font-size: $font14;
 }
 
+.message--help {
+  margin: 0 0 .5em;
+}
+
 .message--help--radio-group {
-  display: block;
   margin: .2em 0 .3em;
-  color: $gray60;
-  font-size: $font14;
 }
 
 

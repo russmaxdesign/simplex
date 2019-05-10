@@ -212,6 +212,7 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.select--hidden</h4>
           <p>Used to display an <code>&lt;select&gt;</code> form control and an
@@ -243,6 +244,7 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.select--invalid</h4>
           <p>Used to inform the user that the form control has not been filled-in
@@ -257,7 +259,12 @@
                   <option value="two">two</option>
                   <option value="three">three</option>
                 </select>
-                <span class="message--error">Error Message</span>
+                <span class="message--error">
+                  <span class="fas fa-times">
+                    <span class="u-hidden">Error</span>
+                  </span>
+                  Error message
+                </span>
               </label>
             </div>
           </div>
@@ -270,10 +277,17 @@
       &lt;option value="two"&gt;two&lt;/option&gt;
       &lt;option value="three"&gt;three&lt;/option&gt;
     &lt;/select&gt;
-    &lt;span class="message--error"&gt;Error Message&lt;/span&gt;
+    &lt;!-- Error message --&gt;
+    &lt;span class="message--error"&gt;
+      &lt;span class="fas fa-times"&gt;
+        &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+      &lt;/span&gt;
+      Error message
+    &lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.select--disabled</h4>
           <p>Used to present a disabled <code>&lt;select&gt;</code> element and

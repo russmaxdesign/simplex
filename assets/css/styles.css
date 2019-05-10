@@ -3686,6 +3686,7 @@ th {
   top: .2em;
   left: .4em;
   display: inline-block;
+  margin: 0 0 .2em;
   cursor: pointer; }
 
 .content-container,
@@ -4304,29 +4305,32 @@ a.link {
   float: right;
   margin: 0 0 0 10px; }
 
-.message--error {
-  display: block;
-  margin: .25em 0 0;
-  color: #C80000;
-  font-size: 0.875em; }
-
+.message--error,
 .message--error--radio-group {
   display: block;
-  margin: .5em 0 0;
-  color: #C80000;
+  border-radius: 0.2em;
+  padding: .5em;
+  color: #af0000;
+  background: #ffe2e2;
+  font-size: 0.875em; }
+
+.message--error {
+  margin: .25em 0 0; }
+
+.message--error--radio-group {
+  margin: .5em 0 0; }
+
+.message--help,
+.message--help--radio-group {
+  display: block;
+  color: #666;
   font-size: 0.875em; }
 
 .message--help {
-  display: block;
-  margin: 0 0 .5em;
-  color: #666;
-  font-size: 0.875em; }
+  margin: 0 0 .5em; }
 
 .message--help--radio-group {
-  display: block;
-  margin: .2em 0 .3em;
-  color: #666;
-  font-size: 0.875em; }
+  margin: .2em 0 .3em; }
 
 .message--required {
   display: inline-block;
@@ -4667,5 +4671,3 @@ body:before {
   body:before {
     content: 'LG';
     background: black; } }
-
-/*# sourceMappingURL=styles.css.map */

@@ -331,6 +331,7 @@
   &lt;/ul&gt;
 &lt;/fieldset&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.radio-group--invalid</h4>
           <p>Used to inform the user that the form control has not been filled-in
@@ -367,7 +368,12 @@
                   </div>
                 </li>
               </ul>
-              <p class="message--error--radio-group" id="e4">Error Message</p>
+              <p class="message--error--radio-group" id="e4">
+                <span class="fas fa-times">
+                  <span class="u-hidden">Error</span>
+                </span>
+                Error message
+              </p>
             </fieldset>
           </div>
 <pre><code class="language-html">&lt;fieldset class="radio-group radio-group--invalid" aria-describedby="e4"&gt;
@@ -401,9 +407,16 @@
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;p class="message--error--radio-group" id="e4"&gt;Error Message&lt;/p&gt;
+  &lt;!-- Error message --&gt;
+  &lt;p class="message--error--radio-group" id="e4"&gt;
+    &lt;span class="fas fa-times"&gt;
+      &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+    &lt;/span&gt;
+    Error message
+  &lt;/p&gt;
 &lt;/fieldset&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.radio-group--disabled</h4>
           <p>Used to present a disabled <code>&lt;input&gt;</code> element and

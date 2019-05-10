@@ -197,7 +197,7 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-
+          <hr class="simplex-hr">
 
           <h4>.input--hidden</h4>
           <p>Used to display an <code>&lt;input&gt;</code> form control and an
@@ -219,6 +219,7 @@
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.input--invalid</h4>
           <p>Used to inform the user that the form control has not been filled-in
@@ -228,7 +229,12 @@
               <label class="input__label" for="example7">
                 <span class="input__content">Label for input <span class="message--required">(Required)</span></span>
                 <input class="input__control" type="text" id="example7" required>
-                <span class="message--error">Error Message</span>
+                <span class="message--error">
+                  <span class="fas fa-times">
+                    <span class="u-hidden">Error</span>
+                  </span>
+                  Error message
+                </span>
               </label>
             </div>
           </div>
@@ -236,10 +242,17 @@
   &lt;label class="input__label" for="example7"&gt;
     &lt;span class="input__content"&gt;Label for input &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
     &lt;input class="input__control" type="text" id="example7" required&gt;
-    &lt;span class="message--error"&gt;Error Message&lt;/span&gt;
+    &lt;!-- Error message --&gt;
+    &lt;span class="message--error"&gt;
+      &lt;span class="fas fa-times"&gt;
+        &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+      &lt;/span&gt;
+      Error message
+    &lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
+          <hr class="simplex-hr">
 
           <h4>.input--disabled</h4>
           <p>Used to present a disabled <code>&lt;input&gt;</code> element and
