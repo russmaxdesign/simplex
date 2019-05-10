@@ -85,7 +85,7 @@
             <li><a href="08-text-align.html">Text-align</a></li>
             <li><a href="09-margin.html">Margin</a></li>
             <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><a href="11-row-padding.html">Row-padding</a></li>
             <li><a href="12-image.html">Image</a></li>
             <li><b>Clearfix</b></li>
           </ul>
@@ -107,9 +107,20 @@
 
           <h4>.u-clearfix</h4>
           <div class="simplex-example">
-            <div class="clearfix">.u-clearfix</div>
+            <div class="bg-gray--10">
+              <img class="u-float-left" src="http://placehold.it/100x100" alt="">
+              Container without clearfix.
+            </div>
+            <div class="u-clear-both u-mar-b--1"></div>
+
+            <div class="u-clearfix bg-gray--10">
+              <img class="u-float-left" src="http://placehold.it/100x100" alt="">
+              Container with <code>.u-clearfix</code> applied.
+            </div>
           </div>
-<pre><code class="language-html">&lt;div class="u-clearfix"&gt;clear-fix&lt;/div&gt;
+<pre><code class="language-html">&lt;div class="u-clearfix"&gt;
+  ...
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>
