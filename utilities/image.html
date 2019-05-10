@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Media - Simplex Component Library</title>
+  <title>Image utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Media component usage and examples">
+  <meta name="Description" lang="en" content="Image utility classes - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -51,8 +51,8 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../elements/index.html">Elements</a></li>
-          <li><a href="../utilities/index.html">Utilities</a></li>
-          <li><a class="current" href="index.html">Components</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
+          <li><a href="../components/index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
           <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
@@ -64,7 +64,7 @@
   <!-- intro row -->
   <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white u-mar-y--0">Components</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
@@ -75,91 +75,84 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="link.html">Link</a></li>
-            <li><a href="list.html">List</a></li>
-            <li><a href="description-list.html">Description-list</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="button.html">Button</a></li>
-            <li><a href="button-group.html">Button-group</a></li>
-            <li><a href="message.html">Message</a></li>
-            <li><a href="input.html">Input</a></li>
-            <li><a href="select.html">Select</a></li>
-            <li><a href="textarea.html">Textarea</a></li>
-            <li><a href="checkbox.html">Checkbox</a></li>
-            <li><a href="radio-group.html">Radio-group</a></li>
-            <li><a href="segmented-control.html">Segmented-control</a></li>
-            <li><a href="content-container.html">Content-container</a></li>
-            <li><a href="form-container.html">Form-container</a></li>
-            <li><b>Media</b></li>
-            <li><a href="summary.html">Summary</a></li>
-            <li><a href="skip-link.html">Skip-link</a></li>
-            <li><a href="header.html">Header</a></li>
-            <li><a href="footer.html">Footer</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><a href="text-align.html">Text-align</a></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="clearfix.html">Clearfix</a></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><b>Image</b></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="simplex-page-heading">Media</h2>
-          <p>The <code>media</code> component represents a highly-flexible
-          container, that allows authors to add an object (generally
-          an image) to the left or right of other content. The container has no
-          set width or height.</p>
+          <h2 class="simplex-page-heading">Image</h2>
+          <p>These utility classes allow authors to style images. The
+          <code>.u-image--left</code> class floats the image to the left. The
+          <code>.u-image--right</code> class floats the image to the right.</p>
 
           <h4>Overall usage</h4>
-          <p>Used where there is a need to place an object to the left or right
-          of other content.</p>
+          <p>Used to apply positioning to images.</p>
 
           <h4>Accessibility</h4>
-          <p>N/A</p>
+          <ul>
+            <li>The <code>alt</code> attributes must be used with all images.</li>
+            <li>The <code>alt</code> attribute must be descriptive except for
+            decorative images, when the value can be null.</li>
+          </ul>
           <hr class="simplex-hr">
 
-          <h4>.media</h4>
-          <p>Used to place an object to the left of other content.</p>
+          <h4>.u-image</h4>
           <div class="simplex-example">
-            <div class="media">
-              <a href="#" class="media__feature">
-                <img src="http://placehold.it/100x100" alt="">
-              </a>
-              <div class="media__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed
-                diam nonummy nibh euismod tinunt ut laoreet dolore magna
-                aliquam erat volut.
-              </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
           </div>
-<pre><code class="language-html">&lt;div class="media"&gt;
-  &lt;a href="#" class="media__feature"&gt;
-    &lt;img src="100x100.png" alt=""&gt;
-  &lt;/a&gt;
-  &lt;div class="media__body"&gt;
-    Lorem ipsum dolor...
-  &lt;/div&gt;
-&lt;/div&gt;
+<pre><code class="language-html">&lt;img class="u-image" src="100x100" alt="Alt text"&gt;
 </code></pre>
-          <hr class="simplex-hr">
 
-          <h4>.media--rev</h4>
-          <p>Used to place an object to the right of other content.</p>
+          <h4>.u-image--left</h4>
           <div class="simplex-example">
-            <div class="media media--rev">
-              <a href="#" class="media__feature">
-                <img src="http://placehold.it/100x100" alt="">
-              </a>
-              <div class="media__body">
-                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed
-                diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam
-                erat volut.
-              </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image--left" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
           </div>
-<pre><code class="language-html">&lt;div class="media media--rev"&gt;
-  &lt;a href="#" class="media__feature"&gt;
-    &lt;img src="100x100.png" alt=""&gt;
-  &lt;/a&gt;
-  &lt;div class="media__body"&gt;
-    Lorem ipsum dolor...
-  &lt;/div&gt;
-&lt;/div&gt;
+<pre><code class="language-html">&lt;img class="u-image--left" src="100x100" alt="Alt text"&gt;
 </code></pre>
+
+          <h4>.u-image--right</h4>
+          <div class="simplex-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+            <img class="u-image--right" src="http://placehold.it/100x100" alt="Alt text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Delectus natus vitae rerum id, enim aut magnam, placeat et
+            dignissimos consequatur praesentium voluptatibus odit? Quas
+            doloribus iste libero sunt! Maiores, omnis.</p>
+          </div>
+<pre><code class="language-html">&lt;img class="u-image--right" src="100x100" alt="Alt text"&gt;
+</code></pre>
+
         </div>
       </div>
     </div>

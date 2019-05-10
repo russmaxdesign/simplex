@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Image utility classes - Simplex Component Library</title>
+  <title>Text-align utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Image utility classes - usage and examples">
+  <meta name="Description" lang="en" content="Text-align utility classes - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -75,83 +75,88 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="01-color.html">Color</a></li>
-            <li><a href="02-background.html">Background-color</a></li>
-            <li><a href="03-font.html">Font-size</a></li>
-            <li><a href="04-hidden.html">Hidden</a></li>
-            <li><a href="05-visible.html">Visible</a></li>
-            <li><a href="06-float.html">Float</a></li>
-            <li><a href="07-border.html">Border</a></li>
-            <li><a href="08-text-align.html">Text-align</a></li>
-            <li><a href="09-margin.html">Margin</a></li>
-            <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><b>Image</b></li>
-            <li><a href="13-clearfix.html">Clearfix</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><b>Text-align</b></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="clearfix.html">Clearfix</a></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><a href="image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2>Image</h2>
-          <p>These utility classes allow authors to style images. The
-          <code>.u-image--left</code> class floats the image to the left. The
-          <code>.u-image--right</code> class floats the image to the right.</p>
+          <h2 class="simplex-page-heading">Text-align</h2>
+          <p>Text-align utility classes allow authors to align content to the
+          left, right or center at specific screen sizes.</p>
 
           <h4>Overall usage</h4>
-          <p>Used to apply positioning to images.</p>
+          <p>Used to apply specific text-alignment to any element or component.</p>
 
           <h4>Accessibility</h4>
-          <ul>
-            <li>The <code>alt</code> attributes must be used with all images.</li>
-            <li>The <code>alt</code> attribute must be descriptive except for
-            decorative images, when the value can be null.</li>
-          </ul>
+          <p>N/A</p>
           <hr class="simplex-hr">
 
-          <h4>.u-image</h4>
+          <h4>All sizes</h4>
           <div class="simplex-example">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
-            <img class="u-image" src="http://placehold.it/100x100" alt="Alt text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
+            <div class="u-text-left">.u-text-left</div>
+            <div class="u-text-right">.u-text-right</div>
+            <div class="u-text-center">.u-text-center</div>
           </div>
-<pre><code class="language-html">&lt;img class="u-image" src="100x100" alt="Alt text"&gt;
+<pre><code class="language-html">&lt;div class="u-text-left"&gt;.u-text-left&lt;/div&gt;
+&lt;div class="u-text-right"&gt;.u-text-right&lt;/div&gt;
+&lt;div class="u-text-center"&gt;.u-text-center&lt;/div&gt;
 </code></pre>
 
-          <h4>.u-image--left</h4>
+          <h4>xs only</h4>
           <div class="simplex-example">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
-            <img class="u-image--left" src="http://placehold.it/100x100" alt="Alt text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
+            <div class="u-text-left--xs">.u-text-left--xs</div>
+            <div class="u-text-right--xs">.u-text-right--xs</div>
+            <div class="u-text-center--xs">.u-text-center--xs</div>
           </div>
-<pre><code class="language-html">&lt;img class="u-image--left" src="100x100" alt="Alt text"&gt;
+<pre><code class="language-html">&lt;div class="u-text-left--xs"&gt;.u-text-left--xs&lt;/div&gt;
+&lt;div class="u-text-right--xs"&gt;.u-text-right--xs&lt;/div&gt;
+&lt;div class="u-text-center--xs"&gt;.u-text-center--xs&lt;/div&gt;
 </code></pre>
 
-          <h4>.u-image--right</h4>
+          <h4>sm only</h4>
           <div class="simplex-example">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
-            <img class="u-image--right" src="http://placehold.it/100x100" alt="Alt text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus natus vitae rerum id, enim aut magnam, placeat et
-            dignissimos consequatur praesentium voluptatibus odit? Quas
-            doloribus iste libero sunt! Maiores, omnis.</p>
+            <div class="u-text-left--sm">.u-text-left--sm</div>
+            <div class="u-text-right--sm">.u-text-right--sm</div>
+            <div class="u-text-center--sm">.u-text-center--sm</div>
           </div>
-<pre><code class="language-html">&lt;img class="u-image--right" src="100x100" alt="Alt text"&gt;
+<pre><code class="language-html">&lt;div class="u-text-left--sm"&gt;.u-text-left--sm&lt;/div&gt;
+&lt;div class="u-text-right--sm"&gt;.u-text-right--sm&lt;/div&gt;
+&lt;div class="u-text-center--sm"&gt;.u-text-center--sm&lt;/div&gt;
 </code></pre>
 
+          <h4>md only</h4>
+          <div class="simplex-example">
+            <div class="u-text-left--md">.u-text-left--md</div>
+            <div class="u-text-right--md">.u-text-right--md</div>
+            <div class="u-text-center--md">.u-text-center--md</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-text-left--md"&gt;.u-text-left--md&lt;/div&gt;
+&lt;div class="u-text-right--md"&gt;.u-text-right--md&lt;/div&gt;
+&lt;div class="u-text-center--md"&gt;.u-text-center--md&lt;/div&gt;
+</code></pre>
+
+          <h4>lg only</h4>
+          <div class="simplex-example">
+            <div class="u-text-left--lg">.u-text-left--lg</div>
+            <div class="u-text-right--lg">.u-text-right--lg</div>
+            <div class="u-text-center--lg">.u-text-center--lg</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-text-left--lg"&gt;.u-text-left--lg&lt;/div&gt;
+&lt;div class="u-text-right--lg"&gt;.u-text-right--lg&lt;/div&gt;
+&lt;div class="u-text-center--lg"&gt;.u-text-center--lg&lt;/div&gt;
+</code></pre>
         </div>
       </div>
     </div>

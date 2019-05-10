@@ -1255,6 +1255,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/utilities/_font-family.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/utilities/_font-family.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/utilities/_font.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1975,38 +1988,6 @@
 		"oAP": "/favicon.ico",
 		"oF": 0
 		},
-	"/grid/01-xs.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/grid/01-xs.html",
-		"oF": 0
-		},
-	"/grid/02-sm.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/grid/02-sm.html",
-		"oF": 0
-		},
-	"/grid/03-md.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/grid/03-md.html",
-		"oF": 0
-		},
-	"/grid/04-lg.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/grid/04-lg.html",
-		"oF": 0
-		},
 	"/grid/breakpoints.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2021,6 +2002,38 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/grid/index.html",
+		"oF": 0
+		},
+	"/grid/lg.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/grid/lg.html",
+		"oF": 0
+		},
+	"/grid/md.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/grid/md.html",
+		"oF": 0
+		},
+	"/grid/sm.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/grid/sm.html",
+		"oF": 0
+		},
+	"/grid/xs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/grid/xs.html",
 		"oF": 0
 		},
 	"/icons/icons-buttons.html": {
@@ -2146,108 +2159,76 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/utilities/01-color.html": {
+	"/utilities/background.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/01-color.html",
+		"oAP": "/utilities/background.html",
 		"oF": 0
 		},
-	"/utilities/02-background.html": {
+	"/utilities/border.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/02-background.html",
+		"oAP": "/utilities/border.html",
 		"oF": 0
 		},
-	"/utilities/03-font.html": {
+	"/utilities/clearfix.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/03-font.html",
+		"oAP": "/utilities/clearfix.html",
 		"oF": 0
 		},
-	"/utilities/04-hidden.html": {
+	"/utilities/color.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/04-hidden.html",
+		"oAP": "/utilities/color.html",
 		"oF": 0
 		},
-	"/utilities/05-visible.html": {
+	"/utilities/float.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/05-visible.html",
+		"oAP": "/utilities/float.html",
 		"oF": 0
 		},
-	"/utilities/06-float.html": {
+	"/utilities/font-family.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/06-float.html",
+		"oAP": "/utilities/font-family.html",
 		"oF": 0
 		},
-	"/utilities/07-border.html": {
+	"/utilities/font.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/07-border.html",
+		"oAP": "/utilities/font.html",
 		"oF": 0
 		},
-	"/utilities/08-text-align.html": {
+	"/utilities/hidden.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/08-text-align.html",
+		"oAP": "/utilities/hidden.html",
 		"oF": 0
 		},
-	"/utilities/09-margin.html": {
+	"/utilities/image.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/utilities/09-margin.html",
-		"oF": 0
-		},
-	"/utilities/10-padding.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/utilities/10-padding.html",
-		"oF": 0
-		},
-	"/utilities/11-row-padding.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/utilities/11-row-padding.html",
-		"oF": 0
-		},
-	"/utilities/12-image.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/utilities/12-image.html",
-		"oF": 0
-		},
-	"/utilities/13-clearfix.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/utilities/13-clearfix.html",
+		"oAP": "/utilities/image.html",
 		"oF": 0
 		},
 	"/utilities/index.html": {
@@ -2256,6 +2237,46 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/utilities/index.html",
+		"oF": 0
+		},
+	"/utilities/margin.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/margin.html",
+		"oF": 0
+		},
+	"/utilities/padding.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/padding.html",
+		"oF": 0
+		},
+	"/utilities/row-padding.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/row-padding.html",
+		"oF": 0
+		},
+	"/utilities/text-align.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/text-align.html",
+		"oF": 0
+		},
+	"/utilities/visible.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/visible.html",
 		"oF": 0
 		}
 	},

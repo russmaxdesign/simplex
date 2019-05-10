@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Hidden utility classes - Simplex Component Library</title>
+  <title>Clearfix class - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Hidden utility classes - usage and examples">
+  <meta name="Description" lang="en" content="Clearfix class - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -75,69 +75,53 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="01-color.html">Color</a></li>
-            <li><a href="02-background.html">Background-color</a></li>
-            <li><a href="03-font.html">Font-size</a></li>
-            <li><b>Hidden</b></li>
-            <li><a href="05-visible.html">Visible</a></li>
-            <li><a href="06-float.html">Float</a></li>
-            <li><a href="07-border.html">Border</a></li>
-            <li><a href="08-text-align.html">Text-align</a></li>
-            <li><a href="09-margin.html">Margin</a></li>
-            <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><a href="12-image.html">Image</a></li>
-            <li><a href="13-clearfix.html">Clearfix</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><a href="text-align.html">Text-align</a></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><b>Clearfix</b></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><a href="image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2>Hidden</h2>
-          <p>Hidden utility classes can be used to shorten instructions or
-          button texts at smaller screen sizes where there is less screen space.</p>
+          <h2 class="simplex-page-heading">Clearfix</h2>
+          <p>The clearfix class provides a way for a parent element to
+          automatically clear its child elements, without needing to add
+          additional markup.</p>
 
           <h4>Overall usage</h4>
-          <p>Used in conjuntion with <code>visible</code> classes to hide/show
-          content at specific screen sizes.</p>
+          <p>Used in float layouts where elements are floated to be stacked
+          horizontally. The clearfix is a way to combat the zero-height
+          container problem for floated elements.</p>
 
           <h4>Accessibility</h4>
-          <p>Hiding content can present issues for assistive technologies so
-          these utility classes should be used carefully. Meaningful content
-          should never be completely removed.</p>
+          <p>N/A</p>
           <hr class="simplex-hr">
 
-          <h4>Hidden at all sizes</h4>
+          <h4>.u-clearfix</h4>
           <div class="simplex-example">
-            The following text: <span class="u-hidden">Hidden at all sizes</span>
-          </div>
-<pre><code class="language-html">&lt;span class="u-hidden"&gt;Hidden at all sizes&lt;/span&gt;
-</code></pre>
+            <div class="bg-gray--10">
+              <img class="u-float-left" src="http://placehold.it/100x100" alt="">
+              Container without clearfix.
+            </div>
+            <div class="u-clear-both u-mar-b--1"></div>
 
-          <h4>Hidden at xs only</h4>
-          <div class="simplex-example">
-            The following text: <span class="u-hidden--xs">Hidden at xs only</span>
+            <div class="u-clearfix bg-gray--10">
+              <img class="u-float-left" src="http://placehold.it/100x100" alt="">
+              Container with <code>.u-clearfix</code> applied.
+            </div>
           </div>
-<pre><code class="language-html">&lt;span class="u-hidden--xs"&gt;Hidden at xs only&lt;/span&gt;
-</code></pre>
-
-          <h4>Hidden at sm only</h4>
-          <div class="simplex-example">
-            The following text: <span class="u-hidden--sm">Hidden at sm only</span>
-          </div>
-<pre><code class="language-html">&lt;span class="u-hidden--sm"&gt;Hidden at sm only&lt;/span&gt;
-</code></pre>
-
-          <h4>Hidden at md only</h4>
-          <div class="simplex-example">
-            The following text: <span class="u-hidden--md">Hidden at md only</span>
-          </div>
-<pre><code class="language-html">&lt;span class="u-hidden--md"&gt;Hidden at md only&lt;/span&gt;
-</code></pre>
-
-          <h4>Hidden at lg only</h4>
-          <div class="simplex-example">
-            The following text: <span class="u-hidden--lg">Hidden at lg only</span>
-          </div>
-<pre><code class="language-html">&lt;span class="u-hidden--lg"&gt;Hidden at lg only&lt;/span&gt;
+<pre><code class="language-html">&lt;div class="u-clearfix"&gt;
+  ...
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>

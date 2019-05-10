@@ -693,9 +693,6 @@ h2,
   margin: 1em 0 0.5em;
   font-size: 1.375em; }
 
-h2:first-child {
-  margin: 0 0 1em; }
-
 h3,
 .h3 {
   margin: 1.5em 0 0.5em;
@@ -1593,6 +1590,12 @@ th {
     font-size: 1em; }
   .u-font14--lg {
     font-size: 0.875em; } }
+
+.u-base-font-family {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", "DejaVu Sans", "URW Gothic L", sans-serif; }
+
+.u-feature-font-family {
+  font-family: Lato, Helvetica, Arial, "Microsoft Sans Serif", "DejaVu Sans", "URW Gothic L", sans-serif; }
 
 .u-hidden {
   position: absolute;
@@ -2864,6 +2867,14 @@ th {
   padding-top: 2em;
   padding-bottom: 2em; }
 
+.u-row-pad-6 {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
+
+.u-row-pad-7 {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
 @media (min-width: 600px) and (max-width: 899px) {
   .u-row-pad-1 {
     padding-top: 1em;
@@ -2879,7 +2890,13 @@ th {
     padding-bottom: 2.5em; }
   .u-row-pad-5 {
     padding-top: 3em;
-    padding-bottom: 3em; } }
+    padding-bottom: 3em; }
+  .u-row-pad-6 {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em; }
+  .u-row-pad-7 {
+    padding-top: 4em;
+    padding-bottom: 4em; } }
 
 @media (min-width: 900px) and (max-width: 1199px) {
   .u-row-pad-1 {
@@ -2896,7 +2913,13 @@ th {
     padding-bottom: 3em; }
   .u-row-pad-5 {
     padding-top: 4em;
-    padding-bottom: 4em; } }
+    padding-bottom: 4em; }
+  .u-row-pad-6 {
+    padding-top: 4.5em;
+    padding-bottom: 4.5em; }
+  .u-row-pad-7 {
+    padding-top: 5em;
+    padding-bottom: 5em; } }
 
 @media (min-width: 1200px) {
   .u-row-pad-1 {
@@ -2913,7 +2936,13 @@ th {
     padding-bottom: 4em; }
   .u-row-pad-5 {
     padding-top: 5em;
-    padding-bottom: 5em; } }
+    padding-bottom: 5em; }
+  .u-row-pad-6 {
+    padding-top: 6em;
+    padding-bottom: 6em; }
+  .u-row-pad-7 {
+    padding-top: 7em;
+    padding-bottom: 7em; } }
 
 .clearfix,
 .clearfix:before,
@@ -4608,6 +4637,9 @@ dd code {
   color: #666;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em; }
+
+.simplex-page-heading {
+  margin: 0 0 1em; }
 
 .simplex-example {
   border: 1px solid #d9d9d9;

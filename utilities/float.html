@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Color utility classes - Simplex Component Library</title>
+  <title>Float utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Color utility classes - usage and examples">
+  <meta name="Description" lang="en" content="Float utility classes - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -75,91 +75,97 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><b>Color</b></li>
-            <li><a href="02-background.html">Background-color</a></li>
-            <li><a href="03-font.html">Font-size</a></li>
-            <li><a href="04-hidden.html">Hidden</a></li>
-            <li><a href="05-visible.html">Visible</a></li>
-            <li><a href="06-float.html">Float</a></li>
-            <li><a href="07-border.html">Border</a></li>
-            <li><a href="08-text-align.html">Text-align</a></li>
-            <li><a href="09-margin.html">Margin</a></li>
-            <li><a href="10-padding.html">Padding</a></li>
-            <li><a href="11-row-padding.html">Row-padding</a></li>
-            <li><a href="12-image.html">Image</a></li>
-            <li><a href="13-clearfix.html">Clearfix</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><a href="text-align.html">Text-align</a></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><b>Float</b></li>
+            <li><a href="clearfix.html">Clearfix</a></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><a href="image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2>Color</h2>
-          <p>Primary and secondary colors can be used for special headings and
-          feature fonts. The red and green colors can be used for warning and
-          success. The gray color utility classes allow authors to soften colors
-          slightly, while still maintaining acceptable color contrast levels.</p>
+          <h2 class="simplex-page-heading">Float</h2>
+          <p>Float utility classes allow authors to move elements to the left
+          and right at specific screen sizes.</p>
 
           <h4>Overall usage</h4>
-          <p>Used to apply pre-determined colors to any element or component.</p>
+          <p>Used to display element to the left or right within a container.</p>
 
           <h4>Accessibility</h4>
-          <p>Color combinations should only be used as presented to maintain
-          color contrast ratios. Grays should not be used below
-          <code>c-gray--55</code>.</p>
+          <p>N/A</p>
           <hr class="simplex-hr">
 
-          <h4>Primary and secondary</h4>
-          <div class="simplex-example c-primary">c-primary<br>5.54:1 - PASS</div>
-          <div class="simplex-example c-secondary">c-secondary<br>5.62:1 - PASS</div>
-<pre><code class="language-html">&lt;div class="c-primary"&gt;c-primary&lt;/div&gt;
-&lt;div class="c-secondary"&gt;c-secondary&lt;/div&gt;
+          <h4>Floats at all sizes</h4>
+          <div class="simplex-example">
+            <div class="u-clear-both u-float-left">u-float-left</div>
+            <div class="u-clear-both u-float-right">u-float-right</div>
+            <div class="u-clear-both u-float-none">u-float-none</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-float-left"&gt;u-float-left&lt;/div&gt;
+&lt;div class="u-float-right"&gt;u-float-right&lt;/div&gt;
+&lt;div class="u-float-none"&gt;u-float-none&lt;/div&gt;
 </code></pre>
 
-          <h4>General</h4>
-          <div class="simplex-example c-black">c-black<br>21.00:1 - PASS</div>
-          <div class="simplex-example c-white bg-black">c-white<br>21.00:1 - PASS</div>
-          <div class="simplex-example c-red">c-red<br>6.08:1 - PASS</div>
-          <div class="simplex-example c-green">c-green<br>5.14:1 - PASS</div>
-<pre><code class="language-html">&lt;div class="c-black"&gt;c-black&lt;/div&gt;
-&lt;div class="c-white"&gt;c-white&lt;/div&gt;
-&lt;div class="c-red"&gt;c-red&lt;/div&gt;
-&lt;div class="c-green"&gt;c-green&lt;/div&gt;
+          <h4>Clears at all sizes</h4>
+          <div class="simplex-example">
+            <div class="u-clear-left">u-clear-left</div>
+            <div class="u-clear-right">u-clear-right</div>
+            <div class="u-clear-both">u-clear-both</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clear-left"&gt;u-clear-left&lt;/div&gt;
+&lt;div class="u-clear-right"&gt;u-clear-right&lt;/div&gt;
+&lt;div class="u-clear-both"&gt;u-clear-both&lt;/div&gt;
 </code></pre>
 
-          <h4>Links</h4>
-          <div class="simplex-example c-link-color">c-link-color<br>6.16:1 - PASS</div>
-          <div class="simplex-example c-link-color-visited">c-link-color-visited<br>7.57:1 - PASS</div>
-          <div class="simplex-example c-link-color-hover">c-link-color-hover<br>9.26:1 - PASS</div>
-          <div class="simplex-example c-link-color-focus">c-link-color-focus<br>21.00:1 - PASS</div>
-          <div class="simplex-example c-link-color-active">c-link-color-active<br>9.93:1 - PASS</div>
-<pre><code class="language-html">&lt;div class="c-link"&gt;c-link&lt;/div&gt;
-&lt;div class="c-link-visited"&gt;c-link-visited&lt;/div&gt;
-&lt;div class="c-link-hover"&gt;c-link-hover&lt;/div&gt;
-&lt;div class="c-link-focus"&gt;c-link-focus&lt;/div&gt;
-&lt;div class="c-link-active"&gt;c-link-active&lt;/div&gt;
+          <h4>xs only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-both u-float-left--xs">u-float-left--xs</div>
+            <div class="u-clear-both u-float-right--xs">u-float-right--xs</div>
+            <div class="u-clear-both u-float-none--xs">u-float-none--xs</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-float-left--xs"&gt;u-float-left--xs&lt;/div&gt;
+&lt;div class="u-float-right--xs"&gt;u-float-right--xs&lt;/div&gt;
+&lt;div class="u-float-none--xs"&gt;u-float-none--xs&lt;/div&gt;
 </code></pre>
 
-          <h4>Grays</h4>
-          <div class="simplex-example c-gray--90">c-gray--90<br>17.40:1 - PASS</div>
-          <div class="simplex-example c-gray--85">c-gray--85<br>15.13:1 - PASS</div>
-          <div class="simplex-example c-gray--80">c-gray--80<br>12.63:1 - PASS</div>
-          <div class="simplex-example c-gray--75">c-gray--75<br>10.37:1 - PASS</div>
-          <div class="simplex-example c-gray--70">c-gray--70<br>8.45:1 - PASS</div>
-          <div class="simplex-example c-gray--65">c-gray--65<br>7.00:1 - PASS</div>
-          <div class="simplex-example c-gray--60">c-gray--60<br>5.74:1 - PASS</div>
-          <div class="simplex-example c-gray--55">c-gray--55<br>4.74:1 - PASS</div>
-          <div class="simplex-example c-gray--50">c-gray--50<br>3.94:1 - FAIL</div>
-          <div class="simplex-example c-gray--45">c-gray--45<br>3.36:1 - FAIL</div>
-          <div class="simplex-example c-gray--40">c-gray--40<br>2.84:1 - FAIL</div>
-<pre><code class="language-html">&lt;div class="c-gray--90"&gt;c-gray--90&lt;/div&gt;
-&lt;div class="c-gray--85"&gt;c-gray--85&lt;/div&gt;
-&lt;div class="c-gray--80"&gt;c-gray--80&lt;/div&gt;
-&lt;div class="c-gray--75"&gt;c-gray--75&lt;/div&gt;
-&lt;div class="c-gray--70"&gt;c-gray--70&lt;/div&gt;
-&lt;div class="c-gray--65"&gt;c-gray--65&lt;/div&gt;
-&lt;div class="c-gray--60"&gt;c-gray--60&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--55&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--50&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--45&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--40&lt;/div&gt;
+          <h4>sm only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-both u-float-left--sm">u-float-left--sm</div>
+            <div class="u-clear-both u-float-right--sm">u-float-right--sm</div>
+            <div class="u-clear-both u-float-none--sm">u-float-none--sm</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-float-left--sm"&gt;u-float-left--sm&lt;/div&gt;
+&lt;div class="u-float-right--sm"&gt;u-float-right--sm&lt;/div&gt;
+&lt;div class="u-float-none--sm"&gt;u-float-none--sm&lt;/div&gt;
+</code></pre>
+
+          <h4>md only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-both u-float-left--md">u-float-left--md</div>
+            <div class="u-clear-both u-float-right--md">u-float-right--md</div>
+            <div class="u-clear-both u-float-none--md">u-float-none--md</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-float-left--md"&gt;u-float-left--md&lt;/div&gt;
+&lt;div class="u-float-right--md"&gt;u-float-right--md&lt;/div&gt;
+&lt;div class="u-float-none--md"&gt;u-float-none--md&lt;/div&gt;
+</code></pre>
+          <h4>lg only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-both u-float-left--lg">u-float-left--lg</div>
+            <div class="u-clear-both u-float-right--lg">u-float-right--lg</div>
+            <div class="u-clear-both u-float-none--lg">u-float-none--lg</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-float-left--lg"&gt;u-float-left--lg&lt;/div&gt;
+&lt;div class="u-float-right--lg"&gt;u-float-right--lg&lt;/div&gt;
+&lt;div class="u-float-none--lg"&gt;u-float-none--lg&lt;/div&gt;
 </code></pre>
         </div>
       </div>
