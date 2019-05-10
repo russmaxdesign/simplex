@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Grid - Simplex Component Library</title>
+  <title>Clearfix class - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="The grid used by the Simplex Component Library">
+  <meta name="Description" lang="en" content="Clearfix class - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -51,9 +51,9 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../elements/index.html">Elements</a></li>
-          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
           <li><a href="../components/index.html">Components</a></li>
-          <li><a class="current" href="index.html">Grid</a></li>
+          <li><a href="../grid/index.html">Grid</a></li>
           <li><a href="../icons/index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
@@ -64,7 +64,7 @@
   <!-- intro row -->
   <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white u-mar-y--0">Grid</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
@@ -74,19 +74,43 @@
       <div class="row">
         <div class="col-sm-3">
           <ul class="list--navigation">
-            <li><b>Introduction</b></li>
-            <li><a href="breakpoints.html">Breakpoints</a></li>
-            <li><a href="01-xs.html">XS and up</a></li>
-            <li><a href="02-sm.html">SM and up</a></li>
-            <li><a href="03-md.html">MD and up</a></li>
-            <li><a href="04-lg.html">LG and up</a></li>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="01-color.html">Color</a></li>
+            <li><a href="02-background.html">Background-color</a></li>
+            <li><a href="03-font.html">Font-size</a></li>
+            <li><a href="04-hidden.html">Hidden</a></li>
+            <li><a href="05-visible.html">Visible</a></li>
+            <li><a href="06-float.html">Float</a></li>
+            <li><a href="07-border.html">Border</a></li>
+            <li><a href="08-text-align.html">Text-align</a></li>
+            <li><a href="09-margin.html">Margin</a></li>
+            <li><a href="10-padding.html">Padding</a></li>
+            <li><a href="11-row-padding.html">row-padding</a></li>
+            <li><a href="12-image.html">Image</a></li>
+            <li><b>Clearfix</b></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2>Grid</h2>
-          <p>A grid system allows authors to lay out web pages and applications
-          in a consistent and easily manageable fashion. Simplex uses a 12
-          column grid based on the Bootstrap 3 Grid.</p>
+          <h2>Clearfix</h2>
+          <p>The clearfix class provides a way for a parent element to
+          automatically clear its child elements, without needing to add
+          additional markup.</p>
+
+          <h4>Overall usage</h4>
+          <p>Used in float layouts where elements are floated to be stacked
+          horizontally. The clearfix is a way to combat the zero-height
+          container problem for floated elements.</p>
+
+          <h4>Accessibility</h4>
+          <p>N/A</p>
+          <hr class="simplex-hr">
+
+          <h4>.u-clearfix</h4>
+          <div class="simplex-example">
+            <div class="clearfix">.u-clearfix</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clearfix"&gt;clear-fix&lt;/div&gt;
+</code></pre>
         </div>
       </div>
     </div>

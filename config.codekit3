@@ -1216,6 +1216,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/utilities/_clearfix.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/utilities/_clearfix.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/utilities/_color.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2227,6 +2240,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/utilities/12-image.html",
+		"oF": 0
+		},
+	"/utilities/13-clearfix.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/13-clearfix.html",
 		"oF": 0
 		},
 	"/utilities/index.html": {

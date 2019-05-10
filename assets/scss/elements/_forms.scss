@@ -72,12 +72,12 @@ input[type='color'] {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
+    border-color: $disabled-border !important;
     cursor: not-allowed;
     opacity: 1;
-    border-color: $disabled-border !important;
     color: $disabled-color !important;
-    background-image: none !important;
     background-color: $disabled-background !important;
+    background-image: none !important;
   }
 }
 
