@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Non-decorative icons - Simplex Component Library</title>
+  <title>Form example - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Non-decorative icons used by the Simplex Component Library">
+  <meta name="Description" lang="en" content="Page with left column using the Simplex Component Library">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -50,12 +50,11 @@
       <nav class="header__nav">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a  href="../elements/index.html">Elements</a></li>
           <li><a href="../utilities/index.html">Utilities</a></li>
           <li><a href="../components/index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
-          <li><a class="current" href="index.html">Icons</a></li>
-          <li><a href="../examples/index.html">Examples</a></li>
+          <li><a class="current" href="index.html">Examples</a></li>
         </ul>
       </nav>
     </div>
@@ -64,7 +63,7 @@
   <!-- intro row -->
   <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white u-mar-y--0">Icons</h1>
+      <h1 class="c-white u-mar-y--0">Examples</h1>
     </div>
   </div>
 
@@ -75,55 +74,97 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="icons-decorative.html">Decorative icons</a></li>
-            <li><b>Non-decorative icons</b></li>
-            <li><a href="icons-color.html">Adding color</a></li>
-            <li><a href="icons-buttons.html">Icons inside buttons</a></li>
+            <li><a href="home-page.html">Home page</a></li>
+            <li><a href="general-page.html">General page</a></li>
+            <li><b>Form example</b></li>
+            <li><a href="focus-example.html">Focus example</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="simplex-page-heading">Non-decorative icons</h2>
-          <p>Icons that convey important information should contain a
-          description for screen readers. This is achieved using hidden
-          content.</p>
-          <div class="u-mar-b--h">
-            <div class="simplex-example--small">
-              <span class="fas fa-chevron-left">
-                <span class="u-hidden">Left</span>
-              </span>
+          <h2 class="simplex-page-heading">Example form</h2>
+          <form action="#">
+            <div class="form-container">
+              <div class="input">
+                <label class="input__label" for="basic-form1">
+                  <span class="input__content">Name</span>
+                  <input class="input__control" type="text" name="basic-form1" id="basic-form1">
+                </label>
+              </div>
             </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-chevron-right">
-                <span class="u-hidden">Right</span>
-              </span>
+            <div class="form-container">
+              <div class="select">
+                <label class="select__label" for="basic-form2">
+                  <span class="select__content">Subscription model</span>
+                  <select class="select__control" id="basic-form2" name="basic-form2">
+                    <option value="">Choose an option</option>
+                    <option value="Yearly">Yearly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Weekly">Weekly</option>
+                  </select>
+                </label>
+              </div>
             </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-times">
-                <span class="u-hidden">Close</span>
-              </span>
+            <div class="form-container">
+              <div class="textarea">
+                <label class="textarea__label" for="basic-form3">
+                  <span class="textarea__content">Message</span>
+                  <textarea class="textarea__control" id="basic-form3" rows="5"></textarea>
+                </label>
+              </div>
             </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-plus">
-                <span class="u-hidden">Open</span>
-              </span>
+            <div class="form-container">
+              <fieldset class="radio-group">
+                <legend>Would you recommend our services</legend>
+                <ul> 
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1a">
+                        <input class="radio-group__control" type="radio" id="1a" name="basic-form4">
+                        <span class="radio-group__content">No</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1b">
+                        <input class="radio-group__control" type="radio" id="1b" name="basic-form4">
+                        <span class="radio-group__content">I might</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1c">
+                        <input class="radio-group__control" type="radio" id="1c" name="basic-form4">
+                        <span class="radio-group__content">Yes</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radio-group__container">
+                      <label class="radio-group__label" for="1d">
+                        <input class="radio-group__control" type="radio" id="1d" name="basic-form4">
+                        <span class="radio-group__content">Definitely</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-          </div>
-<pre><code class="language-html">&lt;span class="fas fa-chevron-left"&gt;
-  &lt;span class="u-hidden"&gt;Left&lt;/span&gt;
-&lt;/span&gt;
+            <div class="form-container">
+              <div class="checkbox">
+                <label class="checkbox__label" for="basic-form5">
+                  <input class="checkbox__control" type="checkbox" name="example3" id="basic-form5">
+                  <span class="checkbox__content">Subscribe to newsletter</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-container">
+              <button type="submit" class="button--primary">Submit</button>
+            </div>
+          </form>
 
-&lt;span class="fas fa-chevron-right"&gt;
-  &lt;span class="u-hidden"&gt;Right&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span class="fas fa-times"&gt;
-  &lt;span class="u-hidden"&gt;Close&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span class="fas fa-plus"&gt;
-  &lt;span class="u-hidden"&gt;Open&lt;/span&gt;
-&lt;/span&gt;
-</code></pre>
         </div>
       </div>
     </div>

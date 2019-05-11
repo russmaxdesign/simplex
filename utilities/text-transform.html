@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Adding color - Simplex Component Library</title>
+  <title>Text-transform utility classes - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Adding color used by the Simplex Component Library">
+  <meta name="Description" lang="en" content="Text-transform utility classes - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -51,10 +51,9 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../elements/index.html">Elements</a></li>
-          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
           <li><a href="../components/index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
-          <li><a class="current" href="index.html">Icons</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
         </ul>
       </nav>
@@ -64,7 +63,7 @@
   <!-- intro row -->
   <div class="bg-primary u-row-pad-4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white u-mar-y--0">Icons</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
@@ -75,35 +74,59 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="icons-decorative.html">Decorative icons</a></li>
-            <li><a href="icons-non-decorative.html">Non-decorative icons</a></li>
-            <li><b>Adding color</b></li>
-            <li><a href="icons-buttons.html">Icons inside buttons</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><a href="text-align.html">Text-align</a></li>
+            <li><b>Text-transform</b></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="clearfix.html">Clearfix</a></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><a href="image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="simplex-page-heading">Adding color</h2>
-          <p>Color can be added to any static icon using color utility
-          classes.</p>
-          <div class="u-mar-b--h">
-            <div class="simplex-example--small">
-              <span class="fas fa-chevron-left c-primary"></span>
-            </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-chevron-right c-gray--40"></span>
-            </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-times c-red"></span>
-            </div>
-            <div class="simplex-example--small">
-              <span class="fas fa-plus c-green"></span>
-            </div>
+          <h2 class="simplex-page-heading">Text-transform</h2>
+          <p>Text-transform utility classes allow authors to transform content
+          to uppercase, lowercase or captal case.</p>
+
+          <h4>Overall usage</h4>
+          <p>Used to apply specific text-transformation properties to any
+          element or component.</p>
+
+          <h4>Accessibility</h4>
+          <p>N/A</p>
+          <hr class="simplex-hr">
+
+          <h4>.u-text-transform--uppercase</h4>
+          <div class="simplex-example">
+            <span class="u-text-transform--uppercase">.u-text-transform--uppercase</span>
           </div>
-<pre><code class="language-html">&lt;span class="fas fa-chevron-left c-primary"&gt;&lt;/span&gt;
-&lt;span class="fas fa-chevron-right c-gray--40"&gt;&lt;/span&gt;
-&lt;span class="fas fa-times c-red"&gt;&lt;/span&gt;
-&lt;span class="fas fa-plus c-green"&gt;&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="u-text-transform--uppercase"&gt;.u-text-transform--uppercase&lt;/span&gt;
 </code></pre>
+          <hr class="simplex-hr">
+
+          <h4>.u-text-transform--lowercase</h4>
+          <div class="simplex-example">
+            <span class="u-text-transform--lowercase">.u-text-transform--lowercase</span>
+          </div>
+<pre><code class="language-html">&lt;span class="u-text-transform--lowercase"&gt;.u-text-transform--lowercase&lt;/span&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>.u-text-transform--capitalize</h4>
+          <div class="simplex-example">
+            <span class="u-text-transform--capitalize">.u-text-transform--capitalize</span>
+          </div>
+<pre><code class="language-html">&lt;span class="u-text-transform--capitalize"&gt;.u-text-transform--capitalize&lt;/span&gt;
+</code></pre>
+          <hr class="simplex-hr">
         </div>
       </div>
     </div>

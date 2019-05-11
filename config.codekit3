@@ -1502,6 +1502,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/utilities/_text-transform.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/utilities/_text-transform.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/utilities/_visible.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1642,6 +1655,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/components/header.html",
+		"oF": 0
+		},
+	"/components/icons.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/components/icons.html",
 		"oF": 0
 		},
 	"/components/index.html": {
@@ -1924,52 +1945,36 @@
 		"oAP": "/elements/w.html",
 		"oF": 0
 		},
-	"/examples/01-home.html": {
+	"/examples/focus-example.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/01-home.html",
+		"oAP": "/examples/focus-example.html",
 		"oF": 0
 		},
-	"/examples/02-general-page.html": {
+	"/examples/form-example.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/02-general-page.html",
+		"oAP": "/examples/form-example.html",
 		"oF": 0
 		},
-	"/examples/03-blog-post.html": {
+	"/examples/general-page.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/03-blog-post.html",
+		"oAP": "/examples/general-page.html",
 		"oF": 0
 		},
-	"/examples/04-blog-archive.html": {
+	"/examples/home-page.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/examples/04-blog-archive.html",
-		"oF": 0
-		},
-	"/examples/05-form.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/examples/05-form.html",
-		"oF": 0
-		},
-	"/examples/06-focus.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/examples/06-focus.html",
+		"oAP": "/examples/home-page.html",
 		"oF": 0
 		},
 	"/examples/index.html": {
@@ -2034,46 +2039,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/grid/xs.html",
-		"oF": 0
-		},
-	"/icons/icons-buttons.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/icons/icons-buttons.html",
-		"oF": 0
-		},
-	"/icons/icons-color.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/icons/icons-color.html",
-		"oF": 0
-		},
-	"/icons/icons-decorative.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/icons/icons-decorative.html",
-		"oF": 0
-		},
-	"/icons/icons-non-decorative.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/icons/icons-non-decorative.html",
-		"oF": 0
-		},
-	"/icons/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/icons/index.html",
 		"oF": 0
 		},
 	"/index.html": {
@@ -2269,6 +2234,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/utilities/text-align.html",
+		"oF": 0
+		},
+	"/utilities/text-transform.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/text-transform.html",
 		"oF": 0
 		},
 	"/utilities/visible.html": {

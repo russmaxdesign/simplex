@@ -1684,6 +1684,15 @@ th {
   .u-text-right--lg {
     text-align: right; } }
 
+.u-text-transform--uppercase {
+  text-transform: uppercase; }
+
+.u-text-transform--lowercase {
+  text-transform: lowercase; }
+
+.u-text-transform--capitalize {
+  text-transform: capitalize; }
+
 .table--striped tbody > tr:nth-of-type(odd) {
   background: #f2f2f2; }
 
@@ -3972,7 +3981,7 @@ th {
     width: auto;
     border-bottom: 0;
     margin: 0;
-    padding: 1em .8em;
+    padding: 1em;
     line-height: 1;
     text-align: center; }
   .header__nav a.current:before {
