@@ -1,61 +1,61 @@
 // all
 
-.u-pad-r0 { padding-right: 0; }
-.u-pad-rh { padding-right: .5em; }
-.u-pad-r1 { padding-right: 1em; }
-.u-pad-r2 { padding-right: 2em; }
-.u-pad-r3 { padding-right: 3em; }
-.u-pad-r4 { padding-right: 4em; }
-.u-pad-r5 { padding-right: 5em; }
+.u-pad-r-0 { padding-right: 0; }
+.u-pad-r-h { padding-right: .5em; }
+.u-pad-r-1 { padding-right: 1em; }
+.u-pad-r-2 { padding-right: 2em; }
+.u-pad-r-3 { padding-right: 3em; }
+.u-pad-r-4 { padding-right: 4em; }
+.u-pad-r-5 { padding-right: 5em; }
 
 
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-pad-r0-xs { padding-right: 0; }
-  .u-pad-rh-xs { padding-right: .5em; }
-  .u-pad-r1-xs { padding-right: 1em; }
-  .u-pad-r2-xs { padding-right: 2em; }
-  .u-pad-r3-xs { padding-right: 3em; }
-  .u-pad-r4-xs { padding-right: 4em; }
-  .u-pad-r5-xs { padding-right: 5em; }
+  .u-pad-r-0-xs { padding-right: 0; }
+  .u-pad-r-h-xs { padding-right: .5em; }
+  .u-pad-r-1-xs { padding-right: 1em; }
+  .u-pad-r-2-xs { padding-right: 2em; }
+  .u-pad-r-3-xs { padding-right: 3em; }
+  .u-pad-r-4-xs { padding-right: 4em; }
+  .u-pad-r-5-xs { padding-right: 5em; }
 }
 
 
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-pad-r0-sm { padding-right: 0; }
-  .u-pad-rh-sm { padding-right: .5em; }
-  .u-pad-r1-sm { padding-right: 1em; }
-  .u-pad-r2-sm { padding-right: 2em; }
-  .u-pad-r3-sm { padding-right: 3em; }
-  .u-pad-r4-sm { padding-right: 4em; }
-  .u-pad-r5-sm { padding-right: 5em; }
+  .u-pad-r-0-sm { padding-right: 0; }
+  .u-pad-r-h-sm { padding-right: .5em; }
+  .u-pad-r-1-sm { padding-right: 1em; }
+  .u-pad-r-2-sm { padding-right: 2em; }
+  .u-pad-r-3-sm { padding-right: 3em; }
+  .u-pad-r-4-sm { padding-right: 4em; }
+  .u-pad-r-5-sm { padding-right: 5em; }
 }
 
 
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-pad-r0-md { padding-right: 0; }
-  .u-pad-rh-md { padding-right: .5em; }
-  .u-pad-r1-md { padding-right: 1em; }
-  .u-pad-r2-md { padding-right: 2em; }
-  .u-pad-r3-md { padding-right: 3em; }
-  .u-pad-r4-md { padding-right: 4em; }
-  .u-pad-r5-md { padding-right: 5em; }
+  .u-pad-r-0-md { padding-right: 0; }
+  .u-pad-r-h-md { padding-right: .5em; }
+  .u-pad-r-1-md { padding-right: 1em; }
+  .u-pad-r-2-md { padding-right: 2em; }
+  .u-pad-r-3-md { padding-right: 3em; }
+  .u-pad-r-4-md { padding-right: 4em; }
+  .u-pad-r-5-md { padding-right: 5em; }
 }
 
 
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-pad-r0-lg { padding-right: 0; }
-  .u-pad-rh-lg { padding-right: .5em; }
-  .u-pad-r1-lg { padding-right: 1em; }
-  .u-pad-r2-lg { padding-right: 2em; }
-  .u-pad-r3-lg { padding-right: 3em; }
-  .u-pad-r4-lg { padding-right: 4em; }
-  .u-pad-r5-lg { padding-right: 5em; }
+  .u-pad-r-0-lg { padding-right: 0; }
+  .u-pad-r-h-lg { padding-right: .5em; }
+  .u-pad-r-1-lg { padding-right: 1em; }
+  .u-pad-r-2-lg { padding-right: 2em; }
+  .u-pad-r-3-lg { padding-right: 3em; }
+  .u-pad-r-4-lg { padding-right: 4em; }
+  .u-pad-r-5-lg { padding-right: 5em; }
 }

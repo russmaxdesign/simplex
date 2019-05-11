@@ -1,61 +1,61 @@
 // all
 
-.u-pad-y--0 { padding-top: 0; padding-bottom: 0; }
-.u-pad-y--h { padding-top: .5em;  padding-bottom: .5em;  }
-.u-pad-y--1 { padding-top: 1em;  padding-bottom: 1em;  }
-.u-pad-y--2 { padding-top: 2em;  padding-bottom: 2em;  }
-.u-pad-y--3 { padding-top: 3em;  padding-bottom: 3em;  }
-.u-pad-y--4 { padding-top: 4em;  padding-bottom: 4em;  }
-.u-pad-y--5 { padding-top: 5em;  padding-bottom: 5em;  }
+.u-pad-y-0 { padding-top: 0; padding-bottom: 0; }
+.u-pad-y-h { padding-top: .5em;  padding-bottom: .5em;  }
+.u-pad-y-1 { padding-top: 1em;  padding-bottom: 1em;  }
+.u-pad-y-2 { padding-top: 2em;  padding-bottom: 2em;  }
+.u-pad-y-3 { padding-top: 3em;  padding-bottom: 3em;  }
+.u-pad-y-4 { padding-top: 4em;  padding-bottom: 4em;  }
+.u-pad-y-5 { padding-top: 5em;  padding-bottom: 5em;  }
 
 
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-pad-y--0-xs { padding-top: 0; padding-bottom: 0; }
-  .u-pad-y--h-xs { padding-top: .5em;  padding-bottom: .5em;  }
-  .u-pad-y--1-xs { padding-top: 1em;  padding-bottom: 1em;  }
-  .u-pad-y--2-xs { padding-top: 2em;  padding-bottom: 2em;  }
-  .u-pad-y--3-xs { padding-top: 3em;  padding-bottom: 3em;  }
-  .u-pad-y--4-xs { padding-top: 4em;  padding-bottom: 4em;  }
-  .u-pad-y--5-xs { padding-top: 5em;  padding-bottom: 5em;  }
+  .u-pad-y-0-xs { padding-top: 0; padding-bottom: 0; }
+  .u-pad-y-h-xs { padding-top: .5em;  padding-bottom: .5em;  }
+  .u-pad-y-1-xs { padding-top: 1em;  padding-bottom: 1em;  }
+  .u-pad-y-2-xs { padding-top: 2em;  padding-bottom: 2em;  }
+  .u-pad-y-3-xs { padding-top: 3em;  padding-bottom: 3em;  }
+  .u-pad-y-4-xs { padding-top: 4em;  padding-bottom: 4em;  }
+  .u-pad-y-5-xs { padding-top: 5em;  padding-bottom: 5em;  }
 }
 
 
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-pad-y--0-sm { padding-top: 0; padding-bottom: 0; }
-  .u-pad-y--h-sm { padding-top: .5em;  padding-bottom: .5em;  }
-  .u-pad-y--1-sm { padding-top: 1em;  padding-bottom: 1em;  }
-  .u-pad-y--2-sm { padding-top: 2em;  padding-bottom: 2em;  }
-  .u-pad-y--3-sm { padding-top: 3em;  padding-bottom: 3em;  }
-  .u-pad-y--4-sm { padding-top: 4em;  padding-bottom: 4em;  }
-  .u-pad-y--5-sm { padding-top: 5em;  padding-bottom: 5em;  }
+  .u-pad-y-0-sm { padding-top: 0; padding-bottom: 0; }
+  .u-pad-y-h-sm { padding-top: .5em;  padding-bottom: .5em;  }
+  .u-pad-y-1-sm { padding-top: 1em;  padding-bottom: 1em;  }
+  .u-pad-y-2-sm { padding-top: 2em;  padding-bottom: 2em;  }
+  .u-pad-y-3-sm { padding-top: 3em;  padding-bottom: 3em;  }
+  .u-pad-y-4-sm { padding-top: 4em;  padding-bottom: 4em;  }
+  .u-pad-y-5-sm { padding-top: 5em;  padding-bottom: 5em;  }
 }
 
 
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-pad-y--0-md { padding-top: 0; padding-bottom: 0; }
-  .u-pad-y--h-md { padding-top: .5em;  padding-bottom: .5em;  }
-  .u-pad-y--1-md { padding-top: 1em;  padding-bottom: 1em;  }
-  .u-pad-y--2-md { padding-top: 2em;  padding-bottom: 2em;  }
-  .u-pad-y--3-md { padding-top: 3em;  padding-bottom: 3em;  }
-  .u-pad-y--4-md { padding-top: 4em;  padding-bottom: 4em;  }
-  .u-pad-y--5-md { padding-top: 5em;  padding-bottom: 5em;  }
+  .u-pad-y-0-md { padding-top: 0; padding-bottom: 0; }
+  .u-pad-y-h-md { padding-top: .5em;  padding-bottom: .5em;  }
+  .u-pad-y-1-md { padding-top: 1em;  padding-bottom: 1em;  }
+  .u-pad-y-2-md { padding-top: 2em;  padding-bottom: 2em;  }
+  .u-pad-y-3-md { padding-top: 3em;  padding-bottom: 3em;  }
+  .u-pad-y-4-md { padding-top: 4em;  padding-bottom: 4em;  }
+  .u-pad-y-5-md { padding-top: 5em;  padding-bottom: 5em;  }
 }
 
 
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-pad-y--0-lg { padding-top: 0; padding-bottom: 0; }
-  .u-pad-y--h-lg { padding-top: .5em;  padding-bottom: .5em;  }
-  .u-pad-y--1-lg { padding-top: 1em;  padding-bottom: 1em;  }
-  .u-pad-y--2-lg { padding-top: 2em;  padding-bottom: 2em;  }
-  .u-pad-y--3-lg { padding-top: 3em;  padding-bottom: 3em;  }
-  .u-pad-y--4-lg { padding-top: 4em;  padding-bottom: 4em;  }
-  .u-pad-y--5-lg { padding-top: 5em;  padding-bottom: 5em;  }
+  .u-pad-y-0-lg { padding-top: 0; padding-bottom: 0; }
+  .u-pad-y-h-lg { padding-top: .5em;  padding-bottom: .5em;  }
+  .u-pad-y-1-lg { padding-top: 1em;  padding-bottom: 1em;  }
+  .u-pad-y-2-lg { padding-top: 2em;  padding-bottom: 2em;  }
+  .u-pad-y-3-lg { padding-top: 3em;  padding-bottom: 3em;  }
+  .u-pad-y-4-lg { padding-top: 4em;  padding-bottom: 4em;  }
+  .u-pad-y-5-lg { padding-top: 5em;  padding-bottom: 5em;  }
 }
