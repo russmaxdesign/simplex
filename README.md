@@ -8,9 +8,6 @@ See [Licence information](LICENCE) for use.
 
 ## To do
 
-- Create utility classes for font-family
-- lay out example home page using utilities
-- Add dividers between variationson utilities pages
 - Change input, select, textarea, checkbox and radio so labels don't wrap
 
 Banner photo by [Jeremy Bishop](https://unsplash.com/photos/1braZySlEKA) on [Unsplash](https://unsplash.com/)
