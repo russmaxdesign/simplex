@@ -61,14 +61,14 @@
   </div>
 
   <!-- intro row -->
-  <div class="bg-primary u-row-pad-4 simplex-banner">
+  <div class="bg-primary u-row-pad4 simplex-banner">
     <div class="content-container" id="content">
       <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
   <!-- content row -->
-  <div class="bg-white u-row-pad-3">
+  <div class="bg-white u-row-pad3">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-3">
@@ -83,6 +83,7 @@
             <li><a href="hidden.html">Hidden</a></li>
             <li><a href="visible.html">Visible</a></li>
             <li><a href="float.html">Float</a></li>
+            <li><a href="clear.html">Clear</a></li>
             <li><a href="clearfix.html">Clearfix</a></li>
             <li><a href="border.html">Border</a></li>
             <li><a href="margin.html">Margin</a></li>
@@ -104,14 +105,61 @@
           <h4>Accessibility</h4>
           <p>Color combinations should only be used as presented to maintain
           color contrast ratios. Grays should not be used below
-          <code>c-gray--55</code>.</p>
+          <code>c-gray55</code>.</p>
           <hr class="simplex-hr">
 
-          <h4>Primary and secondary</h4>
-          <div class="simplex-example c-primary">c-primary<br>5.54:1 - PASS</div>
-          <div class="simplex-example c-secondary">c-secondary<br>5.62:1 - PASS</div>
+          <div class="simplex-example c-primary">c-primary</div>
+          <div class="simplex-example c-primary90">c-primary90</div>
+          <div class="simplex-example c-primary85">c-primary85</div>
+          <div class="simplex-example c-primary80">c-primary80</div>
+          <div class="simplex-example c-primary75">c-primary75</div>
+          <div class="simplex-example c-primary70">c-primary70</div>
+          <div class="simplex-example c-primary65">c-primary65</div>
+          <div class="simplex-example c-primary60">c-primary60</div>
+          <div class="simplex-example c-primary55">c-primary55</div>
+          <div class="simplex-example c-primary50">c-primary50</div>
+          <div class="simplex-example c-primary45">c-primary45</div>
+          <div class="simplex-example c-primary40">c-primary40</div>
 <pre><code class="language-html">&lt;div class="c-primary"&gt;c-primary&lt;/div&gt;
-&lt;div class="c-secondary"&gt;c-secondary&lt;/div&gt;
+&lt;div class="c-primary90"&gt;c-primary90&lt;/div&gt;
+&lt;div class="c-primary85"&gt;c-primary85&lt;/div&gt;
+&lt;div class="c-primary80"&gt;c-primary80&lt;/div&gt;
+&lt;div class="c-primary75"&gt;c-primary75&lt;/div&gt;
+&lt;div class="c-primary70"&gt;c-primary70&lt;/div&gt;
+&lt;div class="c-primary65"&gt;c-primary65&lt;/div&gt;
+&lt;div class="c-primary60"&gt;c-primary60&lt;/div&gt;
+&lt;div class="c-primary55"&gt;c-primary55&lt;/div&gt;
+&lt;div class="c-primary50"&gt;c-primary50&lt;/div&gt;
+&lt;div class="c-primary45"&gt;c-primary45&lt;/div&gt;
+&lt;div class="c-primary40"&gt;c-primary40&lt;/div&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>Secondary</h4>
+          <div class="simplex-example c-secondary">c-secondary<br>5.62:1 - PASS</div>
+          <div class="simplex-example c-secondary90">c-secondary90</div>
+          <div class="simplex-example c-secondary85">c-secondary85</div>
+          <div class="simplex-example c-secondary80">c-secondary80</div>
+          <div class="simplex-example c-secondary75">c-secondary75</div>
+          <div class="simplex-example c-secondary70">c-secondary70</div>
+          <div class="simplex-example c-secondary65">c-secondary65</div>
+          <div class="simplex-example c-secondary60">c-secondary60</div>
+          <div class="simplex-example c-secondary55">c-secondary55</div>
+          <div class="simplex-example c-secondary50">c-secondary50</div>
+          <div class="simplex-example c-secondary45">c-secondary45</div>
+          <div class="simplex-example c-secondary40">c-secondary40</div>
+<pre><code class="language-html">&lt;div class="c-secondary"&gt;c-secondary&lt;/div&gt;
+&lt;div class="c-secondary90"&gt;c-secondary90&lt;/div&gt;
+&lt;div class="c-secondary85"&gt;c-secondary85&lt;/div&gt;
+&lt;div class="c-secondary80"&gt;c-secondary80&lt;/div&gt;
+&lt;div class="c-secondary75"&gt;c-secondary75&lt;/div&gt;
+&lt;div class="c-secondary70"&gt;c-secondary70&lt;/div&gt;
+&lt;div class="c-secondary65"&gt;c-secondary65&lt;/div&gt;
+&lt;div class="c-secondary60"&gt;c-secondary60&lt;/div&gt;
+&lt;div class="c-secondary55"&gt;c-secondary55&lt;/div&gt;
+&lt;div class="c-secondary50"&gt;c-secondary50&lt;/div&gt;
+&lt;div class="c-secondary45"&gt;c-secondary45&lt;/div&gt;
+&lt;div class="c-secondary40"&gt;c-secondary40&lt;/div&gt;
 </code></pre>
           <hr class="simplex-hr">
 
@@ -127,43 +175,29 @@
 </code></pre>
           <hr class="simplex-hr">
 
-          <h4>Links</h4>
-          <div class="simplex-example c-link-color">c-link-color<br>6.16:1 - PASS</div>
-          <div class="simplex-example c-link-color-visited">c-link-color-visited<br>7.57:1 - PASS</div>
-          <div class="simplex-example c-link-color-hover">c-link-color-hover<br>9.26:1 - PASS</div>
-          <div class="simplex-example c-link-color-focus">c-link-color-focus<br>21.00:1 - PASS</div>
-          <div class="simplex-example c-link-color-active">c-link-color-active<br>9.93:1 - PASS</div>
-<pre><code class="language-html">&lt;div class="c-link"&gt;c-link&lt;/div&gt;
-&lt;div class="c-link-visited"&gt;c-link-visited&lt;/div&gt;
-&lt;div class="c-link-hover"&gt;c-link-hover&lt;/div&gt;
-&lt;div class="c-link-focus"&gt;c-link-focus&lt;/div&gt;
-&lt;div class="c-link-active"&gt;c-link-active&lt;/div&gt;
-</code></pre>
-          <hr class="simplex-hr">
-
           <h4>Grays</h4>
-          <div class="simplex-example c-gray--90">c-gray--90<br>17.40:1 - PASS</div>
-          <div class="simplex-example c-gray--85">c-gray--85<br>15.13:1 - PASS</div>
-          <div class="simplex-example c-gray--80">c-gray--80<br>12.63:1 - PASS</div>
-          <div class="simplex-example c-gray--75">c-gray--75<br>10.37:1 - PASS</div>
-          <div class="simplex-example c-gray--70">c-gray--70<br>8.45:1 - PASS</div>
-          <div class="simplex-example c-gray--65">c-gray--65<br>7.00:1 - PASS</div>
-          <div class="simplex-example c-gray--60">c-gray--60<br>5.74:1 - PASS</div>
-          <div class="simplex-example c-gray--55">c-gray--55<br>4.74:1 - PASS</div>
-          <div class="simplex-example c-gray--50">c-gray--50<br>3.94:1 - FAIL</div>
-          <div class="simplex-example c-gray--45">c-gray--45<br>3.36:1 - FAIL</div>
-          <div class="simplex-example c-gray--40">c-gray--40<br>2.84:1 - FAIL</div>
-<pre><code class="language-html">&lt;div class="c-gray--90"&gt;c-gray--90&lt;/div&gt;
-&lt;div class="c-gray--85"&gt;c-gray--85&lt;/div&gt;
-&lt;div class="c-gray--80"&gt;c-gray--80&lt;/div&gt;
-&lt;div class="c-gray--75"&gt;c-gray--75&lt;/div&gt;
-&lt;div class="c-gray--70"&gt;c-gray--70&lt;/div&gt;
-&lt;div class="c-gray--65"&gt;c-gray--65&lt;/div&gt;
-&lt;div class="c-gray--60"&gt;c-gray--60&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--55&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--50&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--45&lt;/div&gt;
-&lt;div class="c-gray--55"&gt;c-gray--40&lt;/div&gt;
+          <div class="simplex-example c-gray90">c-gray90<br>17.40:1 - PASS</div>
+          <div class="simplex-example c-gray85">c-gray85<br>15.13:1 - PASS</div>
+          <div class="simplex-example c-gray80">c-gray80<br>12.63:1 - PASS</div>
+          <div class="simplex-example c-gray75">c-gray75<br>10.37:1 - PASS</div>
+          <div class="simplex-example c-gray70">c-gray70<br>8.45:1 - PASS</div>
+          <div class="simplex-example c-gray65">c-gray65<br>7.00:1 - PASS</div>
+          <div class="simplex-example c-gray60">c-gray60<br>5.74:1 - PASS</div>
+          <div class="simplex-example c-gray55">c-gray55<br>4.74:1 - PASS</div>
+          <div class="simplex-example c-gray50">c-gray50<br>3.94:1 - FAIL</div>
+          <div class="simplex-example c-gray45">c-gray45<br>3.36:1 - FAIL</div>
+          <div class="simplex-example c-gray40">c-gray40<br>2.84:1 - FAIL</div>
+<pre><code class="language-html">&lt;div class="c-gray90"&gt;c-gray90&lt;/div&gt;
+&lt;div class="c-gray85"&gt;c-gray85&lt;/div&gt;
+&lt;div class="c-gray80"&gt;c-gray80&lt;/div&gt;
+&lt;div class="c-gray75"&gt;c-gray75&lt;/div&gt;
+&lt;div class="c-gray70"&gt;c-gray70&lt;/div&gt;
+&lt;div class="c-gray65"&gt;c-gray65&lt;/div&gt;
+&lt;div class="c-gray60"&gt;c-gray60&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray55&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray50&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray45&lt;/div&gt;
+&lt;div class="c-gray55"&gt;c-gray40&lt;/div&gt;
 </code></pre>
         </div>
       </div>
@@ -171,7 +205,7 @@
   </div>
 
   <!-- footer row -->
-  <div class="footer u-row-pad-2">
+  <div class="footer u-row-pad2">
     <div class="content-container">
       <div class="row">
         <div class="col-sm-6">

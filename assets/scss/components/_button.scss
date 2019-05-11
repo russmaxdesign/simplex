@@ -3,7 +3,7 @@
 .button--primary,
 .button--secondary,
 .button--link,
-.button--small {
+.button-small {
   display: inline-block;
   height: $button-height;
   border-radius: $base-border-radius;
@@ -132,7 +132,7 @@
 
 // small
 
-.button--small {
+.button-small {
   width: 2.25em;
   height: 2.25em;
   padding: $button-padding-small;

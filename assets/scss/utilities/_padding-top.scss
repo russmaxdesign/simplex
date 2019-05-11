@@ -1,61 +1,61 @@
 // all
 
-.u-pad-t--0 { padding-top: 0; }
-.u-pad-t--h { padding-top: .5em; }
-.u-pad-t--1 { padding-top: 1em; }
-.u-pad-t--2 { padding-top: 2em; }
-.u-pad-t--3 { padding-top: 3em; }
-.u-pad-t--4 { padding-top: 4em; }
-.u-pad-t--5 { padding-top: 5em; }
+.u-pad-t0 { padding-top: 0; }
+.u-pad-th { padding-top: .5em; }
+.u-pad-t1 { padding-top: 1em; }
+.u-pad-t2 { padding-top: 2em; }
+.u-pad-t3 { padding-top: 3em; }
+.u-pad-t4 { padding-top: 4em; }
+.u-pad-t5 { padding-top: 5em; }
 
 
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-pad-t--0-xs { padding-top: 0; }
-  .u-pad-t--h-xs { padding-top: .5em; }
-  .u-pad-t--1-xs { padding-top: 1em; }
-  .u-pad-t--2-xs { padding-top: 2em; }
-  .u-pad-t--3-xs { padding-top: 3em; }
-  .u-pad-t--4-xs { padding-top: 4em; }
-  .u-pad-t--5-xs { padding-top: 5em; }
+  .u-pad-t0-xs { padding-top: 0; }
+  .u-pad-th-xs { padding-top: .5em; }
+  .u-pad-t1-xs { padding-top: 1em; }
+  .u-pad-t2-xs { padding-top: 2em; }
+  .u-pad-t3-xs { padding-top: 3em; }
+  .u-pad-t4-xs { padding-top: 4em; }
+  .u-pad-t5-xs { padding-top: 5em; }
 }
 
 
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-pad-t--0-sm { padding-top: 0; }
-  .u-pad-t--h-sm { padding-top: .5em; }
-  .u-pad-t--1-sm { padding-top: 1em; }
-  .u-pad-t--2-sm { padding-top: 2em; }
-  .u-pad-t--3-sm { padding-top: 3em; }
-  .u-pad-t--4-sm { padding-top: 4em; }
-  .u-pad-t--5-sm { padding-top: 5em; }
+  .u-pad-t0-sm { padding-top: 0; }
+  .u-pad-th-sm { padding-top: .5em; }
+  .u-pad-t1-sm { padding-top: 1em; }
+  .u-pad-t2-sm { padding-top: 2em; }
+  .u-pad-t3-sm { padding-top: 3em; }
+  .u-pad-t4-sm { padding-top: 4em; }
+  .u-pad-t5-sm { padding-top: 5em; }
 }
 
 
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-pad-t--0-md { padding-top: 0; }
-  .u-pad-t--h-md { padding-top: .5em; }
-  .u-pad-t--1-md { padding-top: 1em; }
-  .u-pad-t--2-md { padding-top: 2em; }
-  .u-pad-t--3-md { padding-top: 3em; }
-  .u-pad-t--4-md { padding-top: 4em; }
-  .u-pad-t--5-md { padding-top: 5em; }
+  .u-pad-t0-md { padding-top: 0; }
+  .u-pad-th-md { padding-top: .5em; }
+  .u-pad-t1-md { padding-top: 1em; }
+  .u-pad-t2-md { padding-top: 2em; }
+  .u-pad-t3-md { padding-top: 3em; }
+  .u-pad-t4-md { padding-top: 4em; }
+  .u-pad-t5-md { padding-top: 5em; }
 }
 
 
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-pad-t--0-lg { padding-top: 0; }
-  .u-pad-t--h-lg { padding-top: .5em; }
-  .u-pad-t--1-lg { padding-top: 1em; }
-  .u-pad-t--2-lg { padding-top: 2em; }
-  .u-pad-t--3-lg { padding-top: 3em; }
-  .u-pad-t--4-lg { padding-top: 4em; }
-  .u-pad-t--5-lg { padding-top: 5em; }
+  .u-pad-t0-lg { padding-top: 0; }
+  .u-pad-th-lg { padding-top: .5em; }
+  .u-pad-t1-lg { padding-top: 1em; }
+  .u-pad-t2-lg { padding-top: 2em; }
+  .u-pad-t3-lg { padding-top: 3em; }
+  .u-pad-t4-lg { padding-top: 4em; }
+  .u-pad-t5-lg { padding-top: 5em; }
 }

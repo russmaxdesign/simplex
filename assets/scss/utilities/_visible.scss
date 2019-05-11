@@ -1,9 +1,9 @@
 // all
 
-.u-visible--xs,
-.u-visible--sm,
-.u-visible--md,
-.u-visible--lg {
+.u-visible-xs,
+.u-visible-sm,
+.u-visible-md,
+.u-visible-lg {
   display: none !important;
 }
 
@@ -11,7 +11,7 @@
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-visible--xs {
+  .u-visible-xs {
     display: inline-block !important;
   }
 }
@@ -20,7 +20,7 @@
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-visible--sm {
+  .u-visible-sm {
     display: inline-block !important;
   }
 }
@@ -29,7 +29,7 @@
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-visible--md {
+  .u-visible-md {
     display: inline-block !important;
   }
 }
@@ -38,7 +38,7 @@
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-visible--lg {
+  .u-visible-lg {
     display: inline-block !important;
   }
 }

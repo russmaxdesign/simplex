@@ -30,7 +30,7 @@ dd code {
   margin-bottom: 0;
 }
 
-.simplex-example--small {
+.simplex-example-small {
   display: inline-block;
   width: 2.2em;
   border: 1px solid $gray15;
@@ -63,7 +63,8 @@ pre[class*='language-'] {
 .simplex-banner {
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% -180px;
+  background-attachment: fixed;
 }
 
 

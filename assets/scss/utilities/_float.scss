@@ -12,48 +12,20 @@
   float: none;
 }
 
-.u-clear-left {
-  clear: left;
-}
-
-.u-clear-right {
-  clear: right;
-}
-
-.u-clear-both {
-  clear: both;
-}
-
-.clear-fix {
-  @include clearfix;
-}
-
 
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-float-left--xs {
+  .u-float-left-xs {
     float: left;
   }
 
-  .u-float-right--xs {
+  .u-float-right-xs {
     float: right;
   }
 
-  .u-float-none--xs {
+  .u-float-none-xs {
     float: none;
-  }
-
-  .u-clear-left-xs {
-    clear: left;
-  }
-
-  .u-clear-right-xs {
-    clear: right;
-  }
-
-  .u-clear-both-xs {
-    clear: both;
   }
 }
 
@@ -61,28 +33,16 @@
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-float-left--sm {
+  .u-float-left-sm {
     float: left;
   }
 
-  .u-float-right--sm {
+  .u-float-right-sm {
     float: right;
   }
 
-  .u-float-none--sm {
+  .u-float-none-sm {
     float: none;
-  }
-
-  .u-clear-left-sm {
-    clear: left;
-  }
-
-  .u-clear-right-sm {
-    clear: right;
-  }
-
-  .u-clear-both-sm {
-    clear: both;
   }
 }
 
@@ -90,28 +50,16 @@
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-float-left--md {
+  .u-float-left-md {
     float: left;
   }
 
-  .u-float-right--md {
+  .u-float-right-md {
     float: right;
   }
 
-  .u-float-none--md {
+  .u-float-none-md {
     float: none;
-  }
-
-  .u-clear-left-md {
-    clear: left;
-  }
-
-  .u-clear-right-md {
-    clear: right;
-  }
-
-  .u-clear-both-md {
-    clear: both;
   }
 }
 
@@ -119,27 +67,15 @@
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-float-left--lg {
+  .u-float-left-lg {
     float: left;
   }
 
-  .u-float-right--lg {
+  .u-float-right-lg {
     float: right;
   }
 
-  .u-float-none--lg {
+  .u-float-none-lg {
     float: none;
-  }
-
-  .u-clear-left-lg {
-    clear: left;
-  }
-
-  .u-clear-right-lg {
-    clear: right;
-  }
-
-  .u-clear-both-lg {
-    clear: both;
   }
 }

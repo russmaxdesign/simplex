@@ -1216,6 +1216,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/utilities/_clear.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/utilities/_clear.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/utilities/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2138,6 +2151,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/utilities/border.html",
+		"oF": 0
+		},
+	"/utilities/clear.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/utilities/clear.html",
 		"oF": 0
 		},
 	"/utilities/clearfix.html": {

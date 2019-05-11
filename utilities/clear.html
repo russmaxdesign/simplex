@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   <!-- Title -->
-  <title>Q elements - Simplex Component Library</title>
+  <title>Clear class - Simplex Component Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <meta name="Description" lang="en" content="Q elements within the Simplex Component Library">
+  <meta name="Description" lang="en" content="Clear class - usage and examples">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
@@ -50,8 +50,8 @@
       <nav class="header__nav">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a  class="current" href="index.html">Elements</a></li>
-          <li><a href="../utilities/index.html">Utilities</a></li>
+          <li><a href="../elements/index.html">Elements</a></li>
+          <li><a class="current" href="index.html">Utilities</a></li>
           <li><a href="../components/index.html">Components</a></li>
           <li><a href="../grid/index.html">Grid</a></li>
           <li><a href="../examples/index.html">Examples</a></li>
@@ -63,7 +63,7 @@
   <!-- intro row -->
   <div class="bg-primary u-row-pad4 simplex-banner">
     <div class="content-container" id="content">
-      <h1 class="c-white u-mar-y--0">HTML elements</h1>
+      <h1 class="c-white u-mar-y--0">Utility classes</h1>
     </div>
   </div>
 
@@ -74,40 +74,93 @@
         <div class="col-sm-3">
           <ul class="list--navigation">
             <li><a href="index.html">Introduction</a></li>
-            <li><a href="a.html">A elements</a></li>
-            <li><a href="b.html">B elements</a></li>
-            <li><a href="c.html">C elements</a></li>
-            <li><a href="d.html">D elements</a></li>
-            <li><a href="e.html">E elements</a></li>
-            <li><a href="f.html">F elements</a></li>
-            <li><a href="h.html">H elements</a></li>
-            <li><a href="i.html">I elements</a></li>
-            <li><a href="k.html">K elements</a></li>
-            <li><a href="l.html">L elements</a></li>
-            <li><a href="m.html">M elements</a></li>
-            <li><a href="n.html">N elements</a></li>
-            <li><a href="o.html">O elements</a></li>
-            <li><a href="p.html">P elements</a></li>
-            <li><b>Q elements</b></li>
-            <li><a href="r.html">R elements</a></li>
-            <li><a href="s.html">S elements</a></li>
-            <li><a href="t.html">T elements</a></li>
-            <li><a href="u.html">U elements</a></li>
-            <li><a href="v.html">V elements</a></li>
-            <li><a href="w.html">W elements</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="background.html">Background-color</a></li>
+            <li><a href="font.html">Font-size</a></li>
+            <li><a href="font-family.html">Font-family</a></li>
+            <li><a href="text-align.html">Text-align</a></li>
+            <li><a href="text-transform.html">Text-transform</a></li>
+            <li><a href="hidden.html">Hidden</a></li>
+            <li><a href="visible.html">Visible</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><b>Clear</b></li>
+            <li><a href="clearfix.html">Clearfix</a></li>
+            <li><a href="border.html">Border</a></li>
+            <li><a href="margin.html">Margin</a></li>
+            <li><a href="padding.html">Padding</a></li>
+            <li><a href="row-padding.html">Row-padding</a></li>
+            <li><a href="image.html">Image</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="simplex-page-heading">Q elements</h2>
+          <h2 class="simplex-page-heading">Clear</h2>
+          <p>The clearfix class provides a way for an element to clear a
+          floated element above.</p>
+
+          <h4>Overall usage</h4>
+          <p>Used in layouts to clear floated elements above.</p>
+
+          <h4>Accessibility</h4>
+          <p>N/A</p>
           <hr class="simplex-hr">
 
-          <h4>q (quotation)</h4>
-          <p>This element represents some phrasing content quoted from another
-          source.</p>
+          <h4>Clears at all sizes</h4>
           <div class="simplex-example">
-            This is the <q>Q element</q> in a sentence.
+            <div class="u-clear-left">u-clear-left</div>
+            <div class="u-clear-right">u-clear-right</div>
+            <div class="u-clear-both">u-clear-both</div>
           </div>
-<pre><code class="language-html">&lt;q&gt;Q element&lt;/q&gt;
+<pre><code class="language-html">&lt;div class="u-clear-left"&gt;u-clear-left&lt;/div&gt;
+&lt;div class="u-clear-right"&gt;u-clear-right&lt;/div&gt;
+&lt;div class="u-clear-both"&gt;u-clear-both&lt;/div&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>xs only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-left-xs">u-clear-left-xs</div>
+            <div class="u-clear-right-xs">u-clear-right-xs</div>
+            <div class="u-clear-both-xs">u-clear-both-xs</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clear-left-xs"&gt;u-clear-left-xs&lt;/div&gt;
+&lt;div class="u-clear-right-xs"&gt;u-clear-right-xs&lt;/div&gt;
+&lt;div class="u-clear-both-xs"&gt;u-clear-both-xs&lt;/div&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>sm only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-left-sm">u-clear-left-sm</div>
+            <div class="u-clear-right-sm">u-clear-right-sm</div>
+            <div class="u-clear-both-sm">u-clear-both-sm</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clear-left-sm"&gt;u-clear-left-sm&lt;/div&gt;
+&lt;div class="u-clear-right-sm"&gt;u-clear-right-sm&lt;/div&gt;
+&lt;div class="u-clear-both-sm"&gt;u-clear-both-sm&lt;/div&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>md only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-left-md">u-clear-left-md</div>
+            <div class="u-clear-right-md">u-clear-right-md</div>
+            <div class="u-clear-both-md">u-clear-both-md</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clear-left-md"&gt;u-clear-left-md&lt;/div&gt;
+&lt;div class="u-clear-right-md"&gt;u-clear-right-md&lt;/div&gt;
+&lt;div class="u-clear-both-md"&gt;u-clear-both-md&lt;/div&gt;
+</code></pre>
+          <hr class="simplex-hr">
+
+          <h4>lg only</h4>
+          <div class="simplex-example">
+            <div class="u-clear-left-lg">u-clear-left-lg</div>
+            <div class="u-clear-right-lg">u-clear-right-lg</div>
+            <div class="u-clear-both-lg">u-clear-both-lg</div>
+          </div>
+<pre><code class="language-html">&lt;div class="u-clear-left-lg"&gt;u-clear-left-lg&lt;/div&gt;
+&lt;div class="u-clear-right-lg"&gt;u-clear-right-lg&lt;/div&gt;
+&lt;div class="u-clear-both-lg"&gt;u-clear-both-lg&lt;/div&gt;
 </code></pre>
         </div>
       </div>

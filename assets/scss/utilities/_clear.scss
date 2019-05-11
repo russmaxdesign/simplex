@@ -1,0 +1,82 @@
+// all
+
+.u-clear-left {
+  clear: left;
+}
+
+.u-clear-right {
+  clear: right;
+}
+
+.u-clear-both {
+  clear: both;
+}
+
+
+
+// xs only
+
+@media (max-width: $screen-xs-max) {
+  .u-clear-left-xs {
+    clear: left;
+  }
+
+  .u-clear-right-xs {
+    clear: right;
+  }
+
+  .u-clear-both-xs {
+    clear: both;
+  }
+}
+
+
+// sm only
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .u-clear-left-sm {
+    clear: left;
+  }
+
+  .u-clear-right-sm {
+    clear: right;
+  }
+
+  .u-clear-both-sm {
+    clear: both;
+  }
+}
+
+
+// md only
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .u-clear-left-md {
+    clear: left;
+  }
+
+  .u-clear-right-md {
+    clear: right;
+  }
+
+  .u-clear-both-md {
+    clear: both;
+  }
+}
+
+
+// lg only
+
+@media (min-width: $screen-lg-min) {
+  .u-clear-left-lg {
+    clear: left;
+  }
+
+  .u-clear-right-lg {
+    clear: right;
+  }
+
+  .u-clear-both-lg {
+    clear: both;
+  }
+}

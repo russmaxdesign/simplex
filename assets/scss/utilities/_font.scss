@@ -23,98 +23,98 @@
 // xs only
 
 @media (max-width: $screen-xs-max) {
-  .u-font50--xs { font-size: $font50; }
-  .u-font48--xs { font-size: $font48; }
-  .u-font46--xs { font-size: $font46; }
-  .u-font44--xs { font-size: $font44; }
-  .u-font42--xs { font-size: $font42; }
-  .u-font40--xs { font-size: $font40; }
-  .u-font38--xs { font-size: $font38; }
-  .u-font36--xs { font-size: $font36; }
-  .u-font34--xs { font-size: $font34; }
-  .u-font32--xs { font-size: $font32; }
-  .u-font30--xs { font-size: $font30; }
-  .u-font28--xs { font-size: $font28; }
-  .u-font26--xs { font-size: $font26; }
-  .u-font24--xs { font-size: $font24; }
-  .u-font22--xs { font-size: $font22; }
-  .u-font20--xs { font-size: $font20; }
-  .u-font18--xs { font-size: $font18; }
-  .u-font16--xs { font-size: $font16; }
-  .u-font14--xs { font-size: $font14; }
+  .u-font50-xs { font-size: $font50; }
+  .u-font48-xs { font-size: $font48; }
+  .u-font46-xs { font-size: $font46; }
+  .u-font44-xs { font-size: $font44; }
+  .u-font42-xs { font-size: $font42; }
+  .u-font40-xs { font-size: $font40; }
+  .u-font38-xs { font-size: $font38; }
+  .u-font36-xs { font-size: $font36; }
+  .u-font34-xs { font-size: $font34; }
+  .u-font32-xs { font-size: $font32; }
+  .u-font30-xs { font-size: $font30; }
+  .u-font28-xs { font-size: $font28; }
+  .u-font26-xs { font-size: $font26; }
+  .u-font24-xs { font-size: $font24; }
+  .u-font22-xs { font-size: $font22; }
+  .u-font20-xs { font-size: $font20; }
+  .u-font18-xs { font-size: $font18; }
+  .u-font16-xs { font-size: $font16; }
+  .u-font14-xs { font-size: $font14; }
 }
 
 
 // sm only
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .u-font50--sm { font-size: $font50; }
-  .u-font48--sm { font-size: $font48; }
-  .u-font46--sm { font-size: $font46; }
-  .u-font44--sm { font-size: $font44; }
-  .u-font42--sm { font-size: $font42; }
-  .u-font40--sm { font-size: $font40; }
-  .u-font38--sm { font-size: $font38; }
-  .u-font36--sm { font-size: $font36; }
-  .u-font34--sm { font-size: $font34; }
-  .u-font32--sm { font-size: $font32; }
-  .u-font30--sm { font-size: $font30; }
-  .u-font28--sm { font-size: $font28; }
-  .u-font26--sm { font-size: $font26; }
-  .u-font24--sm { font-size: $font24; }
-  .u-font22--sm { font-size: $font22; }
-  .u-font20--sm { font-size: $font20; }
-  .u-font18--sm { font-size: $font18; }
-  .u-font16--sm { font-size: $font16; }
-  .u-font14--sm { font-size: $font14; }
+  .u-font50-sm { font-size: $font50; }
+  .u-font48-sm { font-size: $font48; }
+  .u-font46-sm { font-size: $font46; }
+  .u-font44-sm { font-size: $font44; }
+  .u-font42-sm { font-size: $font42; }
+  .u-font40-sm { font-size: $font40; }
+  .u-font38-sm { font-size: $font38; }
+  .u-font36-sm { font-size: $font36; }
+  .u-font34-sm { font-size: $font34; }
+  .u-font32-sm { font-size: $font32; }
+  .u-font30-sm { font-size: $font30; }
+  .u-font28-sm { font-size: $font28; }
+  .u-font26-sm { font-size: $font26; }
+  .u-font24-sm { font-size: $font24; }
+  .u-font22-sm { font-size: $font22; }
+  .u-font20-sm { font-size: $font20; }
+  .u-font18-sm { font-size: $font18; }
+  .u-font16-sm { font-size: $font16; }
+  .u-font14-sm { font-size: $font14; }
 }
 
 
 // md only
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  .u-font50--md { font-size: $font50; }
-  .u-font48--md { font-size: $font48; }
-  .u-font46--md { font-size: $font46; }
-  .u-font44--md { font-size: $font44; }
-  .u-font42--md { font-size: $font42; }
-  .u-font40--md { font-size: $font40; }
-  .u-font38--md { font-size: $font38; }
-  .u-font36--md { font-size: $font36; }
-  .u-font34--md { font-size: $font34; }
-  .u-font32--md { font-size: $font32; }
-  .u-font30--md { font-size: $font30; }
-  .u-font28--md { font-size: $font28; }
-  .u-font26--md { font-size: $font26; }
-  .u-font24--md { font-size: $font24; }
-  .u-font22--md { font-size: $font22; }
-  .u-font20--md { font-size: $font20; }
-  .u-font18--md { font-size: $font18; }
-  .u-font16--md { font-size: $font16; }
-  .u-font14--md { font-size: $font14; }
+  .u-font50-md { font-size: $font50; }
+  .u-font48-md { font-size: $font48; }
+  .u-font46-md { font-size: $font46; }
+  .u-font44-md { font-size: $font44; }
+  .u-font42-md { font-size: $font42; }
+  .u-font40-md { font-size: $font40; }
+  .u-font38-md { font-size: $font38; }
+  .u-font36-md { font-size: $font36; }
+  .u-font34-md { font-size: $font34; }
+  .u-font32-md { font-size: $font32; }
+  .u-font30-md { font-size: $font30; }
+  .u-font28-md { font-size: $font28; }
+  .u-font26-md { font-size: $font26; }
+  .u-font24-md { font-size: $font24; }
+  .u-font22-md { font-size: $font22; }
+  .u-font20-md { font-size: $font20; }
+  .u-font18-md { font-size: $font18; }
+  .u-font16-md { font-size: $font16; }
+  .u-font14-md { font-size: $font14; }
 }
 
 
 // lg only
 
 @media (min-width: $screen-lg-min) {
-  .u-font50--lg { font-size: $font50; }
-  .u-font48--lg { font-size: $font48; }
-  .u-font46--lg { font-size: $font46; }
-  .u-font44--lg { font-size: $font44; }
-  .u-font42--lg { font-size: $font42; }
-  .u-font40--lg { font-size: $font40; }
-  .u-font38--lg { font-size: $font38; }
-  .u-font36--lg { font-size: $font36; }
-  .u-font34--lg { font-size: $font34; }
-  .u-font32--lg { font-size: $font32; }
-  .u-font30--lg { font-size: $font30; }
-  .u-font28--lg { font-size: $font28; }
-  .u-font26--lg { font-size: $font26; }
-  .u-font24--lg { font-size: $font24; }
-  .u-font22--lg { font-size: $font22; }
-  .u-font20--lg { font-size: $font20; }
-  .u-font18--lg { font-size: $font18; }
-  .u-font16--lg { font-size: $font16; }
-  .u-font14--lg { font-size: $font14; }
+  .u-font50-lg { font-size: $font50; }
+  .u-font48-lg { font-size: $font48; }
+  .u-font46-lg { font-size: $font46; }
+  .u-font44-lg { font-size: $font44; }
+  .u-font42-lg { font-size: $font42; }
+  .u-font40-lg { font-size: $font40; }
+  .u-font38-lg { font-size: $font38; }
+  .u-font36-lg { font-size: $font36; }
+  .u-font34-lg { font-size: $font34; }
+  .u-font32-lg { font-size: $font32; }
+  .u-font30-lg { font-size: $font30; }
+  .u-font28-lg { font-size: $font28; }
+  .u-font26-lg { font-size: $font26; }
+  .u-font24-lg { font-size: $font24; }
+  .u-font22-lg { font-size: $font22; }
+  .u-font20-lg { font-size: $font20; }
+  .u-font18-lg { font-size: $font18; }
+  .u-font16-lg { font-size: $font16; }
+  .u-font14-lg { font-size: $font14; }
 }
