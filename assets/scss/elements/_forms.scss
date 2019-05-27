@@ -59,7 +59,7 @@ input[type='color'] {
   display: block;
   width: 100%;
   height: $input-height;
-  border: 2px solid $input-border-color;
+  border: $input-border-width solid $input-border-color;
   border-radius: $base-border-radius;
   margin: 0;
   padding: $input-padding;

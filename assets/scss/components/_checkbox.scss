@@ -28,14 +28,14 @@
   display: block;
   width: 1.2em;
   height: 1.2em;
-  border: 2px solid $input-border-color;
+  border: $radio-border-width solid $input-border-color;
   border-radius: .2em;
   content: '';
   background: $white;
 }
 
 .checkbox__control:checked::after {
-  border: 2px solid $link-color;
+  border-color: $link-color;
   background-color: $link-color;
   background-image: url(../img/icons/icon-tick-white.svg);
   background-repeat: no-repeat;
@@ -45,11 +45,11 @@
 // invalid
 
 .checkbox--invalid .checkbox__control::after {
-  border: 2px solid $isinvalid-color;
+  border-color: $isinvalid-color;
 }
 
 .checkbox--invalid .checkbox__control:checked::after {
-  border: 2px solid $link-color !important;
+  border-color: !important;
 }
 
 
@@ -60,7 +60,7 @@
 }
 
 .checkbox__control:focus::after {
-  border: 4px solid $focus-border;
+  border: $radio-border-width-focus solid $focus-border;
   outline: 0;
 }
 

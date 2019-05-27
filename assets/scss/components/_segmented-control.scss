@@ -33,7 +33,7 @@
     z-index: 1;
     display: block;
     height: $input-height;
-    border: 2px solid $input-border-color;
+    border: $input-border-width solid $input-border-color;
     border-right: 0;
     padding: 0 1em ;
     cursor: pointer;

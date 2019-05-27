@@ -1,7 +1,7 @@
 // buttons
 
 $button-font-family:                     $base-font-family;
-$button-border-width:                    2px;
+$button-border-width:                    $input-border-width;
 $button-padding:                         .5em 1.5em;
 $button-padding-small:                   .4em .5em;
 $button-height:                          $input-height;

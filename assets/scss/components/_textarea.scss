@@ -24,7 +24,7 @@
 // focus
 
 .textarea__control:focus {
-  border: 3px solid $focus-border;
+  border: $input-border-width-focus solid $focus-border;
   outline: 0;
 }
 

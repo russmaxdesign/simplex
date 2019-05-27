@@ -36,6 +36,7 @@ $link-color-active:            #8C0000;
 $link-focus-outline:           2px dotted $black;
 $link-focus-outline-reverse:   2px dotted $white;
 
+
 // hover colors
 
 $hover-color:                  $gray35;
@@ -82,6 +83,10 @@ $input-padding:                0 .5em;
 $input-color:                  $gray70;
 $input-height:                 2.5em; // sets height and line-height
 $base-border-radius:           .2em;
+$input-border-width:           1px;
+$input-border-width-focus:     2px;
+$radio-border-width:           2px;
+$radio-border-width-focus:     3px;
 
 
 // content-container

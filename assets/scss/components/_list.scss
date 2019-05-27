@@ -165,7 +165,7 @@
 .list--pagination a,
 .list--pagination b {
   float: left;
-  border: 2px solid $gray45;
+  border: $input-border-width solid $gray45;
   border-radius: .2em;
   margin: 0 3px 0 0;
   padding: .4em .7em .3em;
