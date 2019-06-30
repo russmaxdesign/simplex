@@ -6,13 +6,21 @@
   list-style: none;
 }
 
+.radio-group li {
+  margin: .2em 0;
+  line-height: 1;
+}
+
+
 // container
 
 .radio-group__container {
+  position: relative;
   display: inline-block;
   clear: left;
+  overflow: hidden;
   margin-bottom: 0;
-  padding: .2em 1em .35em .3em;
+  padding: .2em .7em .2em .2em;
   cursor: pointer;
 }
 
@@ -23,11 +31,34 @@
 
 // control
 
-.radio-group__control::after {
+.radio-group__control {
   position: relative;
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.radio-group__control:hover {
+  cursor: pointer;
+}
+
+
+// label
+
+.radio-group__label {
+  float: left;
+  padding: 0;
+  line-height: 1;
+}
+
+.radio-group__label:hover {
+  cursor: pointer;
+}
+
+.radio-group__control + .radio-group__label::before {
+  position: absolute;
   z-index: 1;
-  top: -.1em;
-  left: -.1em;
+  top: .1em;
+  left: 0;
   display: block;
   width: 1.25em;
   height: 1.25em;
@@ -37,13 +68,21 @@
   background: $white;
 }
 
+.radio-group__label:hover::before {
+  cursor: pointer;
+}
+
+
 // invalid
 
-.radio-group--invalid .radio-group__control::after {
+.radio-group--invalid .radio-group__label::before {
   border-color: $isinvalid-color;
 }
 
-.radio-group__control:checked::after {
+
+// checked
+
+.radio-group__control:checked + .radio-group__label::before {
   border-color: $link-color;
   background-color: $link-color;
   background-image: url(../img/icons/icon-circle-white.svg);
@@ -58,7 +97,7 @@
   outline: none;
 }
 
-.radio-group__control:focus::after {
+.radio-group__control:focus + .radio-group__label::before {
   border: $radio-border-width-focus solid $focus-border;
   outline: 0;
 }
@@ -70,28 +109,22 @@
   cursor: not-allowed;
 }
 
-.radio-group--disabled .radio-group__content {
+.radio-group--disabled .radio-group__container:hover {
+  cursor: not-allowed;
+  background: none;
+}
+
+.radio-group--disabled .radio-group__control {
+  cursor: not-allowed;
+}
+
+.radio-group--disabled .radio-group__label {
   cursor: not-allowed;
   color: $disabled-color;
 }
 
-.radio-group--disabled .radio-group__control::after {
+.radio-group--disabled .radio-group__label::before {
   border-color: $disabled-border;
   cursor: not-allowed;
   background: $disabled-background;
-}
-
-.radio-group--disabled .radio-group__container:hover {
-  background: none;
-}
-
-
-// content
-
-.radio-group__content {
-  position: relative;
-  top: 1px;
-  left: 4px;
-  display: inline-block;
-  cursor: pointer;
 }

@@ -123,17 +123,15 @@
           <code>&lt;label&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox">
-              <label class="checkbox__label" for="example1">
-                <input class="checkbox__control" type="checkbox" name="example3" id="example1">
-                <span class="checkbox__content">Checkbox label</span>
-              </label>
+              <div class="checkbox__container">
+                <input class="checkbox__control" type="checkbox" id="example1">
+                <label class="checkbox__label" for="example1">Checkbox label</label>
+              </div>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="checkbox"&gt;
-  &lt;label class="checkbox__label" for="example1"&gt;
-    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example1"&gt;
-    &lt;span class="checkbox__content"&gt;Checkbox&lt;/span&gt;
-  &lt;/label&gt;
+  &lt;input class="checkbox__control" type="checkbox" id="example1"&gt;
+  &lt;label class="checkbox__label" for="example1"&gt;Checkbox label&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
 
@@ -143,16 +141,20 @@
           the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox">
-              <label class="checkbox__label" for="example2">
-                <input class="checkbox__control" type="checkbox" name="example3" id="example2" required>
-                <span class="checkbox__content">Checkbox label <span class="message--required">(Required)</span></span>
-              </label>
+              <div class="checkbox__container">
+                <input class="checkbox__control" type="checkbox" id="example2" required>
+                <label class="checkbox__label" for="example2">
+                  Checkbox label
+                  <span class="message--required">(Required)</span>
+                </label>
+              </div>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__control" type="checkbox" id="example2" required&gt;
   &lt;label class="checkbox__label" for="example2"&gt;
-    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example2" required&gt;
-    &lt;span class="checkbox__content"&gt;Checkbox label &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
+    Checkbox label
+    &lt;span class="message--required"&gt;(Required)&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
@@ -163,30 +165,33 @@
           correctly.</p>
           <div class="simplex-example">
             <div class="checkbox checkbox--invalid">
-              <label class="checkbox__label" for="example3">
-                <input class="checkbox__control" type="checkbox" name="example3" id="example3" required>
-                <span class="checkbox__content">Checkbox label <span class="message--required">(Required)</span></span>
-                <p class="message--error--radio-group" id="e4">
-                  <span class="fas fa-times">
-                    <span class="u-hidden">Error</span>
-                  </span>
-                  Error message
-                </p>
-              </label>
+              <div class="checkbox__container">
+                <input class="checkbox__control" type="checkbox" id="example3" required aria-describedby="error3">
+                <label class="checkbox__label" for="example3">
+                  Checkbox label
+                  <span class="message--required">(Required)</span>
+                </label>
+              </div>
+              <p class="message--error--radio-group" id="error3">
+                <span class="fas fa-times">
+                  <span class="u-hidden">Error</span>
+                </span>
+                Error message
+              </p>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="checkbox checkbox--invalid"&gt;
+  &lt;input class="checkbox__control" type="checkbox" id="example3" required aria-describedby="error3"&gt;
   &lt;label class="checkbox__label" for="example3"&gt;
-    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example3" required&gt;
-    &lt;span class="checkbox__content"&gt;Checkbox label &lt;span class="message--required"&gt;(Required)&lt;/span&gt;&lt;/span&gt;
-    &lt;!-- Error message --&gt;
-    &lt;p class="message--error--radio-group" id="e4"&gt;
-      &lt;span class="fas fa-times"&gt;
-        &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
-      &lt;/span&gt;
-      Error message
-    &lt;/p&gt;
+    Checkbox label
+    &lt;span class="message--required"&gt;(Required)&lt;/span&gt;
   &lt;/label&gt;
+  &lt;p class="message--error--radio-group" id="error3"&gt;
+    &lt;span class="fas fa-times"&gt;
+      &lt;span class="u-hidden"&gt;Error&lt;/span&gt;
+    &lt;/span&gt;
+    Error message
+  &lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
           <hr class="simplex-hr">
@@ -197,17 +202,15 @@
           the <code>&lt;input&gt;</code>.</p>
           <div class="simplex-example">
             <div class="checkbox checkbox--disabled">
-              <label class="checkbox__label" for="example4">
-                <input class="checkbox__control" type="checkbox" name="example3" id="example4" disabled>
-                <span class="checkbox__content">Checkbox label</span>
-              </label>
+              <div class="checkbox__container">
+                <input class="checkbox__control" type="checkbox" id="example4" disabled>
+                <label class="checkbox__label" for="example4">Checkbox label</label>
+              </div>
             </div>
           </div>
 <pre><code class="language-html">&lt;div class="checkbox checkbox--disabled"&gt;
-  &lt;label class="checkbox__label" for="example4"&gt;
-    &lt;input class="checkbox__control" type="checkbox" name="example3" id="example4" disabled&gt;
-    &lt;span class="checkbox__content"&gt;Checkbox label&lt;/span&gt;
-  &lt;/label&gt;
+  &lt;input class="checkbox__control" type="checkbox" id="example4" disabled&gt;
+  &lt;label class="checkbox__label" for="example4"&gt;Checkbox label&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
         </div>

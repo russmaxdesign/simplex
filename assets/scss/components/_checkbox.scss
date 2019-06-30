@@ -1,30 +1,63 @@
-// parent
+// unordered list
 
-.checkbox {
+.checkbox ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkbox li {
+  margin: .2em 0;
+  line-height: 1;
+}
+
+
+// container
+
+.checkbox__container {
+  position: relative;
   display: inline-block;
   clear: left;
   margin-bottom: 0;
-  padding: .2em 1em .5em .3em;
+  padding: .2em .7em .2em .2em;
   cursor: pointer;
 }
 
-.checkbox:hover {
+.checkbox__container:hover {
   background: $hover-background;
-}
-
-// disabled
-
-.checkbox--disabled {
-  cursor: not-allowed;
-  color: $disabled-color;
 }
 
 
 // control
 
-.checkbox__control::after {
+.checkbox__control {
   position: relative;
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.checkbox__control:hover {
+  cursor: pointer;
+}
+
+
+// label
+
+.checkbox__label {
+  float: left;
+  padding: 0;
+  line-height: 1;
+}
+
+.checkbox__label:hover {
+  cursor: pointer;
+}
+
+.checkbox__control + .checkbox__label::before {
+  position: absolute;
   z-index: 1;
+  top: .1em;
+  left: 0;
   display: block;
   width: 1.2em;
   height: 1.2em;
@@ -34,22 +67,26 @@
   background: $white;
 }
 
-.checkbox__control:checked::after {
+.checkbox__label:hover::before {
+  cursor: pointer;
+}
+
+
+// invalid
+
+.checkbox--invalid .checkbox__label::before {
+  border-color: $isinvalid-color;
+}
+
+
+// checked
+
+.checkbox__control:checked + .checkbox__label::before {
   border-color: $link-color;
   background-color: $link-color;
   background-image: url(../img/icons/icon-tick-white.svg);
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-// invalid
-
-.checkbox--invalid .checkbox__control::after {
-  border-color: $isinvalid-color;
-}
-
-.checkbox--invalid .checkbox__control:checked::after {
-  border-color: !important;
 }
 
 
@@ -59,7 +96,7 @@
   outline: none;
 }
 
-.checkbox__control:focus::after {
+.checkbox__control:focus + .checkbox__label::before {
   border: $radio-border-width-focus solid $focus-border;
   outline: 0;
 }
@@ -67,32 +104,26 @@
 
 // disabled
 
-.checkbox--disabled .checkbox__control::after {
-  border-color: $disabled-border;
-  cursor: not-allowed;
-  background: $disabled-background;
-}
-
 .checkbox--disabled {
   cursor: not-allowed;
 }
 
-.checkbox--disabled:hover {
+.checkbox--disabled .checkbox__container:hover {
+  cursor: not-allowed;
   background: none;
 }
 
-.checkbox--disabled .checkbox__content {
+.checkbox--disabled .checkbox__control {
   cursor: not-allowed;
 }
 
+.checkbox--disabled .checkbox__label {
+  cursor: not-allowed;
+  color: $disabled-color;
+}
 
-// content
-
-.checkbox__content {
-  position: relative;
-  top: .2em;
-  left: .4em;
-  display: inline-block;
-  margin: 0 0 .2em;
-  cursor: pointer;
+.checkbox--disabled .checkbox__label::before {
+  border-color: $disabled-border;
+  cursor: not-allowed;
+  background: $disabled-background;
 }

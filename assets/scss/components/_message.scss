@@ -2,11 +2,10 @@
 
 .message--error,
 .message--error--radio-group {
+  clear: both;
   display: block;
   border-radius: $base-border-radius;
-  padding: .5em;
   color: darken($red, 5%);
-  background: lighten($red, 55%);
   font-size: $font14;
 }
 
